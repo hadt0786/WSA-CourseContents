@@ -1,0 +1,58 @@
+<!-- ******************************************************
++ Description : Transition shadow
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Transition shadow</title>
+    <style>
+        
+        .box {
+            width:150px; 
+            height:150px;
+        }
+        .bg-lightgrey {
+            background-color: lightgrey;
+        }
+        .bg-white {
+            background-color: white;
+        }        
+        
+        .box-shadow-paper {
+            box-shadow: 1px 1px 1px 1px #ccc;
+            transition: box-shadow 1s ease;
+        }
+
+        .box-shadow-paper:hover {
+            box-shadow: 3px 3px 5px 6px #ccc;
+        }
+
+        .box-shadow-one-edge {
+            box-shadow: 0 1px 1px -6px black;
+            transition: all 1s ease-out;
+        }
+
+        .box-shadow-one-edge:hover {
+            transform: scale(1.1, 1.1);
+            box-shadow: 0 8px 6px -6px black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <br><br>
+        <div class="box box-shadow-one-edge bg-lightgrey"><br></div>
+
+        <br><br>
+        <div class="box box-shadow-paper bg-white"><br></div>
+    </center>
+</body>
+
+</html>

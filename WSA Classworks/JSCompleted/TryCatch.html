@@ -1,0 +1,54 @@
+<!--
+* @Developer: Divek
+* @Problem  :Try Catch
+* @Company  : XYZ
+* @Date     : 15-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+<script>
+    //This try block tries to excute the code inside try block
+try{
+    //calling some undefined function
+    someJunk();
+    }
+    //catch block catches the error and shows the error message and name
+    catch(e)
+        {
+            console.log("Error name:  "+e.name); 
+            console.log("Error Message:  "+e.message);
+        }
+    
+    //will continue to run
+    finally{
+        
+    console.log("Entering finally block")
+        //inputting From user 1st number and second number
+    /*
+    
+                                *****Custom Throw Example ******
+    */    
+        var firsNum = prompt("Please enter frist num", "");
+       var secondNum = prompt("Please enter second num", "");
+        
+        //This try block tries to excute the code inside try block and check if secondNum is equal to zero
+        try{
+            if(secondNum==0){
+                //throwing an custom exception to catch
+                
+                throw("Divide by zero is not possible ");
+            }
+            else{
+                //Output the result
+                var result=firsNum/secondNum;
+                console.log("Result is :"+result);
+            }
+          
+        }
+        catch(e){
+            //logs the error in console screen
+            console.log("Error "+e);
+    }
+    }
+</script>

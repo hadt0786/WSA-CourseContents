@@ -1,0 +1,54 @@
+<!--
+* @Developer: Divek John
+* @Problem  :  Madman Logic
+* @Company  : XYZ
+* @Date     : 05-06-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+<script>
+ var numbers = new Array(+prompt("Enter the number of person"));
+        var doDelete=true,Iteration=1;
+		
+		for (var i = 0; i < numbers.length; i++) {
+            numbers[i] = i + 1; //get number of person from prompt and render the array
+        }
+		
+		
+		document.write("At the start : from "+numbers[0]+" to "+numbers[numbers.length-1]+"<br>"); //printing the array 1 and N at the start
+		
+		(function DoOrDie(){
+		for(i in numbers){  	  //loop for each element of an array
+		//debugger;
+		
+        if(doDelete == false ) {
+		console.log(numbers[i]+" is delted at loop "+Iteration);
+			delete numbers[i];//delete the element
+            doDelete = true;
+        }
+		
+        else {
+            doDelete =false;
+        }
+	}
+	//removes all the undefined array variables
+	numbers= numbers.filter(Number);
+	
+	//print all the array elements in current loop;
+    document.write("Iteration "+Iteration+":"+numbers+"<br>");  
+	 
+	//increase iteration for the count print
+    Iteration++;     
+    if(numbers.length != 1){
+	  // calling DoOrDie function  until only one element in array
+      DoOrDie();    
+    }
+	else  if(numbers.length == 1){
+	  document.write("<h1 align='center'>"+numbers[0]+" Survives  ! <br>");  
+	}
+}());
+
+
+
+</script>

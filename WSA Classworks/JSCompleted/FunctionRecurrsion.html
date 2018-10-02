@@ -1,0 +1,31 @@
+  <!--
+* @Developer: Divek
+* @Problem  :Function Recurrsion ! (Factorial of Num using recursion)
+* @Company  : XYZ
+* @Date     : 25-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factorial of Num  using recursion</title>
+    <script>
+		function factorial(n) {
+			if(n == 0)
+				return 1;
+			else
+				return n*factorial(n-1);
+		}
+
+		var num = +prompt("Enter a number");
+		document.write("Factorial of "+num+" is : "+factorial(num));				
+	</script>
+</head>
+<body>
+    
+</body>
+</html>

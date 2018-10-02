@@ -1,0 +1,43 @@
+<!-- ******************************************************
++ Description : Radial gradiant
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Radial Gradiant</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+        }
+        
+        /* default */
+        .radial-default {
+            background: radial-gradient(white, aqua 20%, blue 50%, black 80%);
+        }        
+        
+        .radial-corner {
+
+            background: radial-gradient(circle at top left, white, aqua 20%, blue 50%, black 80%);
+        }        
+
+
+    </style>
+</head>
+
+<body>
+    <center>
+
+        <h2> Radial Gradient - Default</h2>
+        <div class="box radial-default"></div>
+        
+        <h2> Radial Gradient - Corner</h2>
+        <div class="box radial-corner"></div>
+
+    </center>
+</body>
+
+</html>

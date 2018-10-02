@@ -1,0 +1,94 @@
+<!-- Given an array of 2n integers, write a JavaScript program to find sum of min(ai, bi).
+Description:
+Given an array of 2n integers, your task is to group these integers into n pairs of integer, say (a1,
+b1), (a2, b2), ..., (an, bn) which makes sum of min(ai, bi) for all i from 1 to n as large as possible.
+Example:
+Input : [1,2,3,4]
+Output : 4
+Explanation: n is 2.
+minimum sum of pairs = min(1, 2) + min(3, 4) = 4.
+Note:
+•
+•
+n is a positive integer, which is in the range of [1, 10000].
+All the integers in the array will be in the range of [-10000, 10000].
+Prerequisites:
+• Arrays
+• Loops
+Sample Execution:
+Test Case 1:
+positive integer n: 4
+array : [3,5,6,2,8,1,4,1]
+Sum of min(ai,bi) : min(3,5)+min(6,2)+min(8,1)+min(4,1) = 7
+Test Case 2:
+positive integer n: 5
+array : [10,22,32,12,10,34,7,23,45,50]
+Sum of min(ai,bi) : 84 -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 23</title>
+
+    <style>
+    body{
+        background: lightgreen;
+    }
+    
+    </style>
+
+    <script>
+    var len = Number(prompt("enter the length of an array"));
+    len = len*2;
+    var array = [];
+    for(var i = 0;i<len;i++)
+    {
+        array[i] = Number(prompt("enter the element at index "+i));
+    }
+    //array.sort();
+    //document.write(array);
+    var sum = 0, minArray =[];
+    
+    function min(val, val2)
+    {
+    
+        var ans = (val > val2)?val2:val;
+        return ans;
+    }
+    var index = 1
+    for(var j = 0;j<array.length;j+=2)
+    {
+        
+        minArray[0] = Number(array[j]);
+        minArray[1] = Number(array[index]);
+        index+=2;
+
+
+
+        document.write((minArray[0],minArray[1])+"<br>");
+        sum = sum+min(minArray[0],minArray[1]);
+        Number(sum);
+        }
+    
+document.write("The minimum sum "+sum +"<br>");
+
+// var sumMax = 0;
+// for(var x = 1;x<array.length;x+=2)
+//     {
+//         sumMax = sumMax + array[x];
+//     }
+//     document.write("The max sum "+sumMax);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

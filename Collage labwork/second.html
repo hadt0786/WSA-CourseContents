@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Validate Text Boxes</title>
+<script type ="text/javascript">
+function validate()
+{
+var myArray=new Array();
+for(var i=0;i<document.myform.length;i++)
+{
+if(document.myform.elements[i].value.length==0)
+{
+myArray.push(document.myform.elements[i].name);
+}
+}
+if(myArray.length!=0){
+alert("the following text boxes are empty:\n"+myArray);
+}
+}
+</script>
+</head>
+<body>
+<h1>Student Details Form</h1>
+<form name="myform" onsubmit="validate()">
+Name:<input type="text" name="Name"/><br/><br/>
+Class:<input type="text" name="Class"/><br/><br/>
+Age:<input type="text" name="Age"/><br/><br/>
+<input type="submit" value="send message"/>
+</form>
+</body>
+</html>
+
+
+

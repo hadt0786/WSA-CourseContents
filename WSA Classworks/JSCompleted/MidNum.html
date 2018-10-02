@@ -1,0 +1,72 @@
+<!--
+* @Developer: Divek
+* @Problem  : To find mid number
+* @Company  : XYZ
+* @Date     : 10-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To find mid num</title>
+    <script>
+        var firstNum = prompt("Please Enter 1st num", "");
+        var secNum = prompt("Please Enter 2nd num", "");
+        var thirdNum = prompt("Please Enter 3rd num", "");
+        var Midnum=firstNum;
+
+	 /*checking if 1st num is greater than second num*/
+        if(firstNum>secNum){              
+
+	    /*checking if 2nd num is greater than 3rd num*/
+            if(secNum>thirdNum){
+			
+		 /* setting mid as 2nd num*/                
+                Midnum=secNum;               
+            }
+ 	   
+	   /*checking if 2rd num is greater than 1st num*/
+            else if(thirdNum>firstNum){ 
+		
+		/* setting mid as first num*/   
+                Midnum=firstNum;           
+            }
+
+            else{
+		/* setting mid as 3rd num*/
+                Midnum=thirdNum; 
+            }
+        }
+        else
+        {
+	    /*checking if 2nd num is lesser than 3rd num*/
+            if(secNum<thirdNum){  
+                 
+               /* setting mid as sec num*/        
+                Midnum=secNum;             
+            }
+	     /*checking if 3rd num is lesser than 1st num*/
+            else if(thirdNum<firstNum){  
+        
+		 /* setting mid as first num*/        
+		Midnum=firstNum;      
+            }
+
+            else{
+		 /* setting mid as 3rd num*/
+                Midnum=thirdNum;           
+            }
+
+        }
+	//Alert the Mid element
+        alert("mid is :"+Midnum); 
+    </script>
+</head>
+<body>
+
+</body>
+</html>

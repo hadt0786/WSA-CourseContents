@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bom Timer</title>
+</head>
+
+<script>
+    
+        var timerId;
+    
+        function myTimerid()
+        {
+            timeValue = parseInt(prompt("enter your reminder duration in millisecond"));
+    
+            timerId = setInterval("alert('Procrastination is a gift..keep snoozing')",timevalue);
+    
+        }
+        function myreminderClear()
+        {
+            clearInterval(timeId);
+        }
+        function myAlarmSet()
+        {
+            timevalue = parseInt(prompt("Enter yor alaram duaration in millisecond"));
+            timeId = setTimeout("alert('Get Up.. make things happen')",timevalue);
+        }
+        
+        </script>
+
+<body>
+
+    <h1> javascript window Object</h1>
+
+<button onclick="myAlarmSet()"> Set my alarm</button>
+<button onclick="myreminderClear()">Reminder clear</button>
+<button onclick="myTimerid()">Timer Id</button>
+
+</body>
+</html>

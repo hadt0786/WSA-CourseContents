@@ -1,0 +1,50 @@
+<!-- *************************************************************
++ Description : Invoking a function as method
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 02-01-2017
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <script>
+		
+		// Function as a part of the object 
+		// Invoke the function using this pointer...
+		
+		var obj = { 
+			firstName: "Virat",
+            lastName: "Kohli",
+            fullName: function() { 
+                return this.firstName + " " + this.lastName;
+            }
+        };
+            
+        // Calling this way is 'member' function
+        document.write("Full name is " + obj.fullName()); 
+		
+		// Constructor mechanism - 001
+		
+		var Fullname = function(firstname, lastname) {
+			// create a property fullname	
+			return this.fullname = firstname + " " + lastname;
+		};
+		
+		var obj = new Fullname(“Tenali”, “Raman”);
+		document.write("Full name is " + obj.fullname); 
+	   
+	   
+		
+		
+		
+		
+        </script>
+    </head>
+    
+<body>
+</body>
+    
+</html>
+

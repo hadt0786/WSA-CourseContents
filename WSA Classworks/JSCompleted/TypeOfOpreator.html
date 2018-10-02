@@ -1,0 +1,55 @@
+<!--
+* @Developer: Divek
+* @Problem  :TypeOf opreator and instance Delete and comma opreator
+* @Company  : XYZ
+* @Date     : 15-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+  <script>
+      //typeof returns datatype of given object
+      document.write(typeof 0+"<br>");
+      document.write(typeof "abc"+"<br>");
+      document.write(typeof NaN+"<br>");
+      document.write(typeof false+"<br>");
+      document.write(typeof [1,2,3,5,4]+"<br>");
+      
+      
+      //instanceof returns true is instance of something 
+      
+      var ipl=["CSK","RCB","SRK","RR"];
+      
+      if(ipl instanceof Array){
+      document.write("Its instance of array <br>");}
+      
+      if(ipl instanceof Object){
+      document.write("Its instance of Object <br>");}
+      
+      if(ipl instanceof String){
+      document.write("Its instance of String <br>");}
+      
+    /*  if(ipl instanceof NaN){
+      document.write("Its instance of NaN <br>");}*/
+    
+      if(ipl instanceof Number){
+      document.write("Its instance of Number <br>");}
+      
+          
+   ///Delete opreator
+      var rcb= { slogan:"<br><br><br>Ee sala cup Namde",teamcaption:"RCB",captian:"Virat"};
+       document.write(rcb.slogan+"<br>"+rcb.teamcaption+"<br>"+rcb.captian);
+      //Deleting the current element in array not its space or array size
+      delete rcb.captian;
+      
+      
+      //Comma opreator is used to excute two expression sequentially
+       document.write(rcb.slogan,"<br>",rcb.teamcaption,"<br>",rcb.captian);
+       var x=2, y=1;
+      //Result is y is assigned to k here 
+        var k=(x,y);
+      document.write("<br><br><br>"+k);
+      
+  
+      
+</script>

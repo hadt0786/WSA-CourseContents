@@ -1,0 +1,35 @@
+<html>
+<head>
+<title> Reposnsive image</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+img{
+max-width:100%;
+height:auto;
+}
+
+
+
+/*potriat mode*/
+@media screen and (orientation: portrait) {
+.portrait{display:inline-block;}
+.landscape{display:none;}
+}
+/*landscape mode*/
+@media screen and (orientation: landscape) {
+.landscape{display:inline-block;}
+.portrait{display:none;}
+
+}
+</style>
+
+</head>
+<body>
+<div class="landscape">
+<img src="./images/cherry-800x480.jpg" alt="cherryport.jpg"/>
+</div>
+<div class="portriat">
+<img src="./images/cherry-480x800.jpg" alt="cherrylands.jpg"/>
+</div>
+</body>
+</html>

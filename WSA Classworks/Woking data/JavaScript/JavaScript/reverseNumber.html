@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function reverseNum(n1)
+		{
+			var reverseN = 0;
+			while (n1 != 0) {
+				var rem = n1%10;
+				n1 = Math.floor(n1/10);
+				reverseN = (reverseN * 10) + rem;
+			}
+			return reverseN;
+			
+		}
+		var num1=+prompt("Enter the number");
+		var reversed=reverseNum(num1);
+		document.write("<br>Reverse of "+num1+" is: "+reversed);
+		
+	</script>
+</head>
+</html>

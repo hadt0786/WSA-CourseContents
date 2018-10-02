@@ -1,0 +1,38 @@
+<!-- ******************************************************
++ Description : Child's absolute position relative to parent
++ Author      : Webstack Academy (P) Ltd
++ Date        : 4-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Absolute position</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+        .parent {
+            position: relative; 
+            left: 200px;
+            top: 200px;
+            background: lightgreen;
+        }
+        .child {
+            position: absolute;
+            left: 70%;
+            top: 50%;
+            background: skyblue;
+        }        
+    </style>
+</head>
+    
+<body>
+
+<div class="box parent"><p class="child">Hello</p></div>
+
+</body>
+    
+</html>

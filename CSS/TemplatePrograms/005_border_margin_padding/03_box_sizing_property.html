@@ -1,0 +1,39 @@
+<!-- ******************************************************
++ Description : Box sizing property
++ Author      : Webstack Academy (P) Ltd
++ Date        : 4-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Box sizing property</title>
+    <style>
+        .div-non-sized {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            padding: 20px;
+            margin: 30px;
+        }       
+        .div-sized {
+            width: 100px;
+            height: 100px;
+            border: 2px solid blue;
+            padding: 20px;
+            margin: 30px; /* margin is excluded from box-sizing */
+            box-sizing: border-box;
+        }       
+    </style>
+</head>
+    
+<body>
+    <p>Both boxes have 100px width, 100px height, 20px padding and 2px border</p>
+    <h3>Non Sized Box</h3>
+    <div class = "div-non-sized"></div>
+    <h3>Sized Box</h3>
+    <div class = "div-sized"></div>
+</body>
+    
+</html>

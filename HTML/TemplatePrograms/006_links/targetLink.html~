@@ -1,0 +1,12 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<a href="http://www.google.com" target="_blank">Google</a>
+
+<p>The target attribute is "_blank", so the link will open in a new browser window or tab.</p>
+
+</body>
+</html>
+

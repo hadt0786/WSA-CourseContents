@@ -1,0 +1,88 @@
+<!-- Write a JavaScript program to create three paragraphs with different class name and manipulate
+style rules using CSS class selectors.
+Description :
+• Create a html page with 3 paragraph.
+• Your job is call a function in javascript which will dynamically change the style of the
+paragraph.
+Objective : Understand the Dom in javascript
+prerequisites:
+• HTML
+• CSS
+• DOM
+Sample Execution: -->
+
+<!DOCTYpE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 42</title>
+    <style>
+            body{
+                background: lightgreen;
+            }
+            
+            </style>
+
+
+
+</head>
+<body>
+
+    <p class="example"> This is the first paragraph This is the first paragraph This is the first paragraph 
+            This is the first paragraph This is the first paragraph This is the first paragraph 
+            This is the first paragraph This is the first paragraph This is the first paragraph
+    </p>
+
+    <p class="example"> This is second paragraph This is second paragraph This is second paragraph This is second paragraph 
+            This is second paragraph This is second paragraph This is second paragraph This is second paragraph This is second paragraph 
+            This is second paragraph This is second paragraph This is second paragraph 
+            This is second paragraph This is second paragraph This is second paragraph 
+
+    </p>
+
+    <p class="example"> This is the third pargraph  This is the third pargraph  This is the third pargraph  This is the third pargraph 
+            This is the third pargraph  This is the third pargraph  This is the third pargraph  This is the third pargraph 
+            This is the third pargraph  This is the third pargraph  This is the third pargraph 
+            This is the third pargraph  This is the third pargraph 
+
+    </p>
+
+    <button onclick="alignLeft()"> ALign Left</button>
+    <button onclick="alignRight()"> Align right</button>
+    <button onclick="alignCenter()"> ALign Center</button>
+
+<script>
+
+//var para = document.getElementsByTagName("p");
+
+function alignLeft(){
+    var para = document.getElementsByClassName("example");
+    var len = para.length;
+    for(x = 0; x<len;x++){
+    para[x].style.textAlign = "left";
+}
+}
+function alignRight(){
+    var para = document.getElementsByClassName("example")
+    var len = para.length;
+    for(x = 0; x<len;x++){
+ para[x].style.textAlign = "right";
+}
+}
+function alignCenter(){
+    var para = document.getElementsByClassName("example");
+    var len = para.length;
+
+    for(x = 0; x<len;x++){
+    para[x].style.textAlign = "center";
+}
+}
+
+</script>
+
+
+
+</body>
+</html>

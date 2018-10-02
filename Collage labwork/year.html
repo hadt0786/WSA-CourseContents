@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>data display</title>
+<script type="text/javascript">                                                                             var days=["First","Second","Third","Fourth","Fifth",Sixth","Seventh","Eighth","Ninth",Tenth","Eleventh","Twelth","Thirteenth",Fourteenth","Fifteenth","Sixteenth","Seventeenth","Eighteenth","Nineteenth","Twentyeth",
+"Twentyfirst","Twentysecond","Tewntythird"];
+
+var months=["January","February","March","April","May","June","July","Agust","September","October","November","December"];
+var year="Two Thousand Saventeen";
+var dateObj=new Date();
+var currMonth=dateObj.getMonth();
+var currDate=dateObj.getDate();
+var currYear=dateObj.getFullYear();
+if(currYear==2017)
+alert("today's date is:"+days[currDate-1]+" "+months[currMonth]+" "+year);
+else
+alert("today's date is:"+days[currDate-1]+" "+months[currMonth]+" "+currYear);
+</script>
+</head>
+</html>

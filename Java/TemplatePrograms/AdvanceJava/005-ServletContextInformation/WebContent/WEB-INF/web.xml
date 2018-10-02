@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>005ServletContextInformation</display-name>
+	<servlet>
+		<servlet-name>MyServlet</servlet-name>
+		<servlet-class>com.emertxe.MyServlet1</servlet-class>
+
+		<!-- Servlet Initialization parameter -->
+
+		<init-param>
+			<param-name>Name</param-name>
+			<param-value>Vikas</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyServlet</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+	<context-param>
+		<param-name>Name</param-name>
+		<param-value>Vikas</param-value>
+	</context-param>
+	<context-param>
+		<param-name>Email</param-name>
+		<param-value>vikash_kumar@emertxe.com</param-value>
+	</context-param>
+</web-app>

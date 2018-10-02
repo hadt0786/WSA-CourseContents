@@ -1,0 +1,33 @@
+<!-- Program Description : Program using div tag with same class name states
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.states {
+    background-color: pink;
+    color: blue;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+} 
+</style>
+</head>
+<body>
+<div class="states">
+<h2>Karnataka</h2>
+<p>Karnataka  is a state in south western region of India.The capital and largest city is Bangalore (Bengaluru). Karnataka is bordered by the Arabian Sea.</p>
+</div>
+<div class="states">
+<h2>Tamilnadu</h2>
+<p>Tamil Country) is one of the 29 states of India. Its capital and largest city is Chennai (formerly known as Madras).</p>
+</div>
+
+<div class="states">
+<h2>Jharkhand</h2>
+<p> Jharkhand is a state in eastern India carved out of the southern part of Bihar on 15 November 2000.The state shares its border with the states of Bihar to the north, Uttar Pradesh and Chhattisgarh to the west, Odisha to the south, and West Bengal to the east</p>
+</div>
+
+</body>
+</html>
+

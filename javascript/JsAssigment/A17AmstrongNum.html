@@ -1,0 +1,34 @@
+
+   
+
+   <script>
+    
+  //armstrong  NUmbers
+
+
+function findDSum(Number){
+            var Sum=0,digit,reminder=0;/* Declaring Variables and setting some intial value*/
+   while(Number!=0){
+            digit = Number % 10;/**/
+              Sum = Sum + digit*digit*digit;
+            reminder =(reminder*10) + digit;
+            Number = parseInt(Number/10);
+        }   
+    return Sum;
+    
+}
+
+
+for(i=100; i<999; i++){
+  var c=findDSum(i);
+    console.log("c value"+c);
+    if(c==i){
+        document.write(+i+" is an armstrong Number<br>");
+    }
+    else{
+        console.log(i);
+    }
+
+}
+
+</script>

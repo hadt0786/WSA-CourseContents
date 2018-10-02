@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		function power(x,y) {
+			if(y == 0)
+				return 1;
+			else
+				return x*power(x,(y-1));
+		}
+
+		var num = +prompt("Enter a number");
+		var raise= +prompt("enter the power");
+		document.write(num+" power of "+raise+" is : "+power(num,raise));				
+	</script>
+</body>
+</html>

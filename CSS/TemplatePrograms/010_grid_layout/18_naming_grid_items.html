@@ -1,0 +1,56 @@
+<!-- ****************************************************
++ Description : Spanning rows and columns
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spanning rows and columns</title>
+<style>
+    .header { grid-area: header; }
+    
+    .navmenu { grid-area: navmenu; }
+    
+    .main { grid-area: main; }
+    
+    .side { grid-area: side; }
+    
+    .footer { grid-area: footer; }
+    
+.grid-container {
+  display: grid; /* set display property as grid */
+  grid-gap: 20px 20px; /* row-gap  column-gap */
+  grid-template-areas:
+    'header header header header header header'
+    'navmenu main main main side side'
+    'footer footer footer footer footer footer';
+  background-color: #808080;
+  padding: 10px;
+}
+/* set property for grid items (child) */
+.grid-container > div {
+  background-color: rgba(242, 242, 242, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+    
+</style>
+</head>
+<body>
+
+<h1>Grid layout :</h1>
+
+<div class="grid-container">
+  <div class="header">Header</div>
+  <div class="navmenu">Nav Menu</div>
+  <div class="main">Main</div>  
+  <div class="side">Side</div>
+  <div class="footer">Footer</div>
+</div>
+
+</body>
+</html>

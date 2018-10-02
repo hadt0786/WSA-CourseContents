@@ -1,0 +1,75 @@
+<!-- ******************************************************
++ Description : Animations
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Animations</title>
+    <style>
+        
+        /* Container for the box */
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }   
+        
+        /* Define box */
+        .box {
+            height: 250px;
+            width: 250px;
+            background-color: red;
+        }
+
+        /* define animation class */
+        .anim-morph-shape {
+            
+            /* Animation name */
+            animation-name: morph-shape-frames;
+
+            /* Duration of animation */
+            animation-duration: 1.5s;
+
+            /* Timing function */
+            animation-timing-function: ease-out;
+
+            /* Animation direction */
+            animation-direction: alternate;
+
+            /* Repeatition */
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes morph-shape-frames {
+            0% {
+                transform: scale(.3);
+                background-color: red;
+                border-radius: 100%;
+            }
+            50% {
+                background-color: orange;
+                transform: scale(1.5);
+            }
+            100% {
+                transform: scale(1);
+                background-color: yellow;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box anim-morph-shape"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!--
+* @Developer: Divek
+* @Problem  :Program to catch Number Not in an Range
+* @Company  : XYZ
+* @Date     : 15-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+<script>
+    //debugger is used to debug  our page  when debug windows is open
+      debugger; 
+ var number = prompt("Enter a Number between 5 to 20", "");
+    
+     
+        //This try block tries to excute the code inside try block and Number is greater than 20 and number is lesser than 5 
+        try{
+            if(number>20 || number<5){
+                //throwing an custom exception to catch Number Not in an Range
+                
+                throw("Number Not in an Range");
+            }
+            else{
+                //Output the result
+                console.log("Number is in range :)");
+            }
+          
+        }
+        catch(e){
+            //logs the error in console screen
+            console.log("Error: "+e);
+    }
+</script>

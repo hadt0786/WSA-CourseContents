@@ -1,0 +1,100 @@
+<!--Ask user to enter the Employee Name, Id and Salary.
+Calculate the gross salary as
+gross salary= salary + ta +da
+consider, ta =15 % of salary
+da = 35 % of salary-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assigment 1.4</title>
+    <style>
+        body{
+            background: lightgreen;
+        }
+        
+        .back{
+            
+            background: black;
+            width: 350px;
+            position: absolute;
+            margin-left: 33%;
+            margin-top:  12%;
+            opacity: 0.4;
+            z-index: -1;
+            height: 350px;
+           
+        }
+        
+          p
+        {
+           /* background: lightgrey;*/
+            width: 280px;
+            margin-top: 15px;
+            height: 35px;
+            color: black;
+            font-size: 20px;
+        
+        }
+        .para{
+            margin-left:36.6%;
+            position: absolute;
+                    margin-top: 12%;
+                
+        }
+        input
+        {
+           /* background: lightgrey;*/
+            width: 280px;
+            margin-top: 15px;
+            height: 35px;
+            border-radius: 25px;
+            padding: 2px;
+        
+        }
+      
+        button[type="submit"]{
+            background: #fff;
+            color: black;
+           height: 38px;
+               width: 285px;
+             border-radius: 25px;
+             padding: 2px;
+        }
+        input:focus{
+              box-shadow: 5px 5px 15px black;
+             width: 300px;
+            margin-left: -10px;
+           
+        }
+       
+    </style>
+    <script>
+        function callme(){
+        var Name =document.getElementById("Name").value;
+        var Id = document.getElementById("Id").value;
+        var Salary =  parseInt(document.getElementById("Salary").value);
+        var travelAllowance=Salary*15/100;  
+        var dailyAllowance=Salary*35/100;
+        var grossSalary =Salary+travelAllowance+dailyAllowance; 
+            
+         document.getElementById("paragraph").innerHTML="Employee Name  "+Name+"<br>Employee ID Is "+Id+" <br>Employee Gross Salary Is "+grossSalary;
+        }
+    </script>
+</head>
+<body>
+<div class="back"></div>
+ <div  class="para"style=" margin-left:35.6%;
+            position: absolute;
+                    margin-top: 14%;">
+                           <input id="Name" type="text" placeholder="  Name">  <br>
+                             <input id="Id" type="text" placeholder="  ID">  <br>
+                               <input id="Salary" type="text" placeholder="  Salary">  <br> <br>
+                          <button id="button"type="submit" onclick="callme();">Calculate</button><br>
+                             <p id="paragraph" type="text" ></p> <br>
+                            
+        
+      </div>
+ 
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> Checkbox Example</title>
+ </head>
+<body>
+ <form method="post" autocomplete="on">
+   First Name:<input type="text" name="firstname" placeholder="first name"/>
+   <br/><br/>
+   Last Name: <input type="text" name="lastname" placeholder="lastname"/>
+ <br/><br/>
+   <!-- rdio button are bound togather by name attribute-->
+    Gender <label> <br/>
+    <input type="radio" name="gender" value="Male" checked/> Male<br/>
+    <input type="radio" name="gender" value="Female"/>Female<br/></lable>
+     <!-- With fieldset you can disable all the ground input-->
+        <fieldset>
+            <legend text-align="center"> What is your Favorite pet?</legend>
+               <input type="checkbox" name="animla" value="cat" />Cat<br/>
+               <input type="checkbox" name="animla" value="dog" />Dog<br/>
+               <input type="checkbox" name="animla" value="cow" />Cow<br/>
+               <input type="checkbox" name="animla" value="buffalo"  disable/>Buffalo<br/>
+
+                <input type="submit" value="submit"/>
+                <input type="reset" value="reset"/>
+
+         </fieldset>
+  
+ 
+    
+  </form>
+</body>
+</html

@@ -1,0 +1,29 @@
+  <!--
+* @Developer: Divek
+* @Problem  :Function invocation
+* @Company  : XYZ
+* @Date     : 24-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Function invocation methid 1</title>
+  </head>
+  <script>
+      
+      // Defining a function constructor  first give arguments and then function methods 
+      /*  if(FirstNum>SecondNum){ return FirstNum; } else {return SecondNum;}*/ 
+      var objName={firstName:"John",lastName:"Doe", fullname:function(){return this.firstName+" "+this.lastName;}}
+      
+      document.write("Full name is="+objName.fullname()+"<br>"); 
+      document.write("First name is="+objName.firstName+"<br>");   
+      document.write("Last name is="+objName.lastName+"<br>");
+      </script>
+  <body>
+      
+  </body>
+  </html>

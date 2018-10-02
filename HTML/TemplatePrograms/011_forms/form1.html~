@@ -1,0 +1,15 @@
+<!-- Program Description : Program to create a simple form to input firstname and lastname of the user and submit the data
+Author : Sandhya 
+Written  : 21-oct-2016-->
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+Firstname   :<input type=”text”  name=”firstname”/><br/>
+LastName  :<input type=”text” name=”lastname”/><br/>
+<
+<input type=”submit” value=”Submit Now”/>
+</form>
+</body>
+</html>
+

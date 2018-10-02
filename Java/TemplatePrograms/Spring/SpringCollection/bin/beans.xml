@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+
+
+	<bean id="rep" class="com.Report">
+
+
+		<property name="customerList">
+
+
+			<list>
+
+				<bean id="cust" class="com.Customer">
+
+
+					<property name="name" value="vikash"></property>
+					<property name="age" value="27"></property>
+					<property name="address" value="Bangalore"></property>
+
+				</bean>
+				
+				<bean id="cust1" class="com.Customer">
+
+
+					<property name="name" value="Jay"></property>
+					<property name="age" value="34"></property>
+					<property name="address" value="Bangalore"></property>
+
+				</bean>
+				
+				<bean id="cust2" class="com.Customer">
+
+
+					<property name="name" value="Mubeen"></property>
+					<property name="age" value="27"></property>
+					<property name="address" value="Blr"></property>
+
+				</bean>
+
+			</list>
+
+		</property>
+
+
+	</bean>
+
+
+</beans>

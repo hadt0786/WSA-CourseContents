@@ -1,0 +1,15 @@
+
+/*style for table*/
+body{
+    background-color: palegoldenrod; 
+}
+h1{
+    color:hotpink;
+}
+table,th,td
+{
+ margin:12px;
+ border: solid 1px red;
+ color: blue;
+ padding: 3px 5px;
+}

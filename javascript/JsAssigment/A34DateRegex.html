@@ -1,0 +1,21 @@
+<!--Write a JavaScript program to search a date within a string.-->
+
+
+
+
+<script>
+     
+var str=prompt("Enter date in dd-mm-yyy format");
+var reg=/[0-9]{2}\/[0-1][1-9]\/[0-9]{4}/g;
+    var arr=[];
+  arr = str.split(" ");
+
+for(x in arr){
+    
+    if(reg.test(arr[x]) ){
+        document.write("Date is "+arr[x]+"<br>");
+    }
+    console.log("given string is "+arr[x]);
+}
+
+</script>

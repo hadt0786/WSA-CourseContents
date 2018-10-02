@@ -1,0 +1,35 @@
+<!--Write a program to compute sum and product of array of integer.-->
+<script>
+function callmemsum(){
+var sum=0;
+  for(var IloopIndex=0; IloopIndex<arguments.length; IloopIndex++){
+       
+        
+      
+  sum=sum+arguments[IloopIndex];
+
+    
+      
+    }
+    
+ return "Sum of array "+sum;
+    }
+    var product=1;
+    function callmemsumproduct(){
+        var product=1;
+      for(var IloopIndex=0; IloopIndex<arguments.length; IloopIndex++){
+       
+        
+      
+  product=product*arguments[IloopIndex];
+
+    
+      
+    }
+
+        return "Multiplication of Array "+product;
+    }
+    
+    document.write(callmemsum(10,3,60,80,90)+"<br>");
+    document.write(callmemsumproduct(40,10,60,80,90));
+    </script>

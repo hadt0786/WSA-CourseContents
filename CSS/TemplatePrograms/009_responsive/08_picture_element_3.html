@@ -1,0 +1,42 @@
+<!-- ****************************************************
++ Description : Resolution switching
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Picture Element</title>
+        <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+                       
+        </style>
+        <!-- set the viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+    </head>
+    <body>
+         <!-- landscape mode -->
+        <picture>
+            <source srcset="./images/cherry-320x240.jpg 320w, 
+                            ./images/cherry-480x320.jpg 480w, 
+                            ./images/cherry-800x480.jpg 800w" 
+                    sizes="(max-width: 320px) 240px, 
+                           (max-width: 480px) 320px, 
+                           (max-width: 800px) 480px, 1280px" />
+            
+            <!-- default image is specified here -->
+            <img src="./images/cherry-1280x800.jpg" alt="cherry" />
+        </picture>
+
+        <h1>The cherry fruit</h1>
+        <p>This is a red cherry fruit. It is sweet and sour in taste. The fruit is also used to decorate cakes.</p>
+    </body>
+    
+</html>

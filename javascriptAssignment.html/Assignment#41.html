@@ -1,0 +1,88 @@
+<!-- Write a JavaScript program
+a) To create three paragarph
+b) Create three buttons left ,right and center.
+c) Dynamically change the allignment of paragraph by using the getElementByTagName().
+Description :
+•Create a html page with 3 paragraph and 3 buttons left, right and center.
+•
+Your job is call a function in javascript which will dynamically align the paragraph by using
+the getElemnetByTagName().
+Objective : Understand the Dom in javascript
+Prerequisites:
+• HTML
+• DOM
+Sample Execution: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 41</title>
+    <style>
+            body{
+                background: lightgreen;
+            }
+            
+            </style>
+
+</head>
+<body>
+
+    <p> This is the first paragraph This is the first paragraph This is the first paragraph 
+            This is the first paragraph This is the first paragraph This is the first paragraph 
+            This is the first paragraph This is the first paragraph This is the first paragraph
+    </p>
+
+    <p> This is second paragraph This is second paragraph This is second paragraph This is second paragraph 
+            This is second paragraph This is second paragraph This is second paragraph This is second paragraph This is second paragraph 
+            This is second paragraph This is second paragraph This is second paragraph 
+            This is second paragraph This is second paragraph This is second paragraph 
+
+    </p>
+
+    <p> This is the third pargraph  This is the third pargraph  This is the third pargraph  This is the third pargraph 
+            This is the third pargraph  This is the third pargraph  This is the third pargraph  This is the third pargraph 
+            This is the third pargraph  This is the third pargraph  This is the third pargraph 
+            This is the third pargraph  This is the third pargraph 
+
+    </p>
+
+    <button onclick="alignLeft()"> ALign Left</button>
+    <button onclick="alignRight()"> Align right</button>
+    <button onclick="alignCenter()"> ALign Center</button>
+
+<script>
+
+//var para = document.getElementsByTagName("p");
+
+function alignLeft(){
+    var para = document.getElementsByTagName("p");
+    var len = para.length;
+    for(x = 0; x<len;x++){
+    para[x].style.textAlign = "left";
+}
+}
+function alignRight(){
+    var para = document.getElementsByTagName("p");
+    var len = para.length;
+    for(x = 0; x<len;x++){
+ para[x].style.textAlign = "right";
+}
+}
+function alignCenter(){
+    var para = document.getElementsByTagName("p");
+    var len = para.length;
+
+    for(x = 0; x<len;x++){
+    para[x].style.textAlign = "center";
+}
+}
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- *************************************************************
++ Description : Simple event handling for mouse operations
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+<script>
+        function OnMouseIn (elem) {
+            elem.style.backgroundColor = "red";
+        }
+        function OnMouseOut (elem) {
+            elem.style.backgroundColor = "blue";
+        }
+		function OnMouseClick (elem) {
+            elem.style.backgroundColor = "green";
+        }
+		function OnMouseDoubleClick (elem) {
+            elem.style.backgroundColor = "yellow";
+        }
+</script>
+</head>
+<body>
+    <p onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)" onclick="OnMouseClick (this)" 
+	   ondblclick = "OnMouseDoubleClick (this)">
+        This is a paragraph text. Check all possible mouse actions here. 
+    </p>
+</body>
+

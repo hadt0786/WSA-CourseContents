@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+<button onclick="Myopen()">new window</button>
+<button onclick="move()">move</button>    
+<button onclick="resize()">resize</button>
+<button onclick="close()">close</button>
+<script>
+
+var myWindow;
+function Myopen()
+{
+    myWindow = window.open("", "new window", "width=400,height=300;"," ");
+
+}
+function move()
+{
+    myWindow.moveTo(150,250);
+}
+function resize()
+{
+    myWindow.resizeTo(350,450);
+}
+function close()
+{
+    window.close();
+}
+
+</script>
+
+
+</body>
+</html>

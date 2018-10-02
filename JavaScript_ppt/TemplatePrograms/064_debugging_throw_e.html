@@ -1,0 +1,55 @@
+<!-- *************************************************************
++ Description : Debugging Techniques - Throw excersies 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+<html>
+	<h1> Debugging - Throw example </h1>
+    <head> 
+		<script>
+            function errorFuncAge()
+            {
+				var x = prompt("Enter the age");
+				
+               	try {
+					if ( x < 18 ){
+						throw("Not eligible for voting"); 
+					}
+					else
+					{
+						document.write("Vote for the right person and party");
+					}
+				}
+				
+				catch ( e ) {
+					alert("Error: " + e );
+				}
+            }
+			
+			function errorFuncNumberRange()
+            {
+				var x = parseInt(prompt("Enter the number"));
+				
+               	try {
+					if ( x < 5 || x > 20 ) {
+						throw("Out of range"); 
+					}
+					else
+					{
+						document.write("Within the range...");
+					}
+				}
+				
+				catch ( e ) {
+					alert("Error: " + e );
+				}
+            }
+		</script>
+    </head>
+    <body>
+      <button onclick="errorFuncAge()">Test Thow Example - 001</button>  
+	  <button onclick="errorFuncNumberRange()">Test Thow Example - 002</button>  
+	</body>
+</html>

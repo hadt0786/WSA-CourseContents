@@ -1,0 +1,30 @@
+<!--
+* @Developer: Divek
+* @Problem  : Do while loop !
+* @Company  : XYZ
+* @Date     : 1-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+<script>
+    
+   var iteration = 0;
+do {
+ var Rows = parseInt(prompt("Please Enter number rows", ""));
+        
+	/* making it reverse to print  an inverse triangle from rows to 1 */
+	for(var iLoopIndex=Rows; iLoopIndex>=1;iLoopIndex--){    
+
+ 	/* to print star in reverse from iLoopIndex  to 1*/
+            for(jLoopIndex=iLoopIndex; jLoopIndex>=1;jLoopIndex--){    
+                document.write("*"+"&nbsp"+"&nbsp");
+
+            }
+
+            document.write("<br>");
+
+        }
+           loopFlag=confirm("Do You want to continue ?");
+} while (loopFlag); 
+</script>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping  SYSTEM  "src/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+<!-- defining employee class -->
+
+<class name="com.Employee" table="Employee">
+
+
+	<id name="id" column="id" type="integer">
+	</id>
+	
+	<property name="name" column="name" type="string"></property>
+	<property name="department" column="department" type="string"></property>
+
+</class>
+
+<!-- defining student class -->
+
+<class name="com.Student" table="Student">
+
+<id name="id" column="id" type="integer"></id>
+
+<property name="name" column="name" type="string"></property>
+	<property name="age" column="age" type="integer"></property>
+
+</class>
+
+<!-- defining teacher class -->
+
+
+<class name="com.Teacher" table="Teacher">
+
+<id name="id" column="id" type="integer">
+	</id>
+	
+	<property name="name" column="name" type="string"></property>
+	<property name="subject" column="subject" type="string"></property>
+	
+</class>
+
+
+</hibernate-mapping>

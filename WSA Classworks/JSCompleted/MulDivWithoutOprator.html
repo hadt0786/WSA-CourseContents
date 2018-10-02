@@ -1,0 +1,51 @@
+<!--
+* @Developer: Divek
+* @Problem  :calculate multiple and division without / or * opreator
+* @Company  : XYZ
+* @Date     : 18-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+        //Promting users to input First number  and the opreator
+        var numberOne=prompt("Enter an number");
+		var operation=prompt("Enter the operation only * or /");
+        
+        //setting Result as zero intially
+        var result=0.0;
+  
+
+		switch(operation) {
+    //Checking which opreand the user is inputted using Switch case and Calulating according to the given opreator
+		case "*" :
+                //doing left shift to multiply by 2
+					result=numberOne<<1;	
+                //Break Statement is used to Exit the switch case
+		              break;
+                
+		case "/" :
+                      //doing left shift to divde by 2
+					result=numberOne>>1;
+		              break;
+                
+		default:
+    //Setting default Result as zero if invalid opreator is found
+			result=0;	
+		}
+       if(result){
+		 alert(numberOne+" "+operation+" "+2+" ="+result);		
+       }
+        else
+            alert("Invalid Operator");
+	
+	</script>
+</body>
+</html>

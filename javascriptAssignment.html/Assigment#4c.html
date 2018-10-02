@@ -1,0 +1,42 @@
+<!-- c) To capitalize the first letter of each word in a string.
+c) Input : my name is sachin tendulkar
+Output : My Name Is Sachin Tendulkar -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    //using function charAt() and charAt().toUppercase()
+
+        var string  = prompt("enter the string");
+        var ans = "";
+       
+        var array = string.split(" ");
+
+        for(var i = 0 ; i < array.length;i++)
+        {
+        var ans = array[i].charAt(0).toUpperCase()+array[i].substr(1,array[i].length).toLowerCase()+" ";
+        
+        
+        
+        
+        document.write(ans);
+        
+        }
+       
+    
+
+
+    
+    </script>
+    
+</body>
+</html>

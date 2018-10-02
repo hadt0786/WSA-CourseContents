@@ -1,0 +1,72 @@
+<!-- Write a JavaScript program to find area and perimeter of rectangle.
+Description :
+• Create an object rectangle and have the properties like width, height.
+• Rectangle object should contain 2 function, one is area and other is perimeter.
+• Calculate the area and perimeter of rectangle using the object Rectangle.
+Objective : Understand the objects in javascript.
+Prerequisites:
+• Object
+• Function
+Sample Execution:
+Input : Width : 11
+Height : 12
+Output : Area : 132
+perimeter : 46 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 31</title>
+
+    <style>
+    
+    body{
+        background:lightgreen;
+
+    }
+    
+    </style>
+
+    <script>
+    
+    var rectangle = {
+
+       width : {
+            widthInWidth: Number(prompt("enter the width"))
+
+        },
+
+       length : {
+            lengthInLength : Number(prompt("Enter the length"))
+        },
+
+         area : function () {
+            //return (Number(rectangle.width.widthInWidth)*Number(rectangle.length.lengthInLength));
+            return (Number(this.width.widthInWidth)*Number(this.length.lengthInLength));
+        },
+
+        perimeter : function()
+        {
+            //return 2*(rectangle.width.widthInWidth + rectangle.length.lengthInLength);
+            return 2*(this.width.widthInWidth + this.length.lengthInLength);
+        }
+
+        };
+        document.write(rectangle.area()+" <br>");
+        document.write(rectangle.perimeter());
+    
+    </script>
+
+
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

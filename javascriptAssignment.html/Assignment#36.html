@@ -1,0 +1,55 @@
+<!-- Write a JavaScript function to check whether a string contains alpha ,dash and underscore.Description :
+• Input string from user.
+• With the help of regular expression check whether string contains any alphanumeric, dash
+and underscore in it.
+Objective : Understand the type coversion and regular expression in javascript.
+Prerequisites:
+• Regular expression
+Sample Execution:
+Test case 1:
+Input : hi -8_
+Output : string contains alpha, numeric, dash
+Test case 2:
+Input : Hi how are you
+Output : String doesn’t contain alpha, numeric or dash. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 36</title>
+
+    <style>
+    
+    body{
+        background: lightgreen;
+    }
+
+    </style>
+
+
+</head>
+<body>
+    
+<script>
+    var str = prompt("Enter a String which contains alphabets numeric and or dash and underscore");
+    var array = str.split("");
+    ans= "";
+    reg = /^[A-Za-z0-9\-\_]/g;
+    if(reg.test(str))
+    {
+       ans = "string contains alpha, numeric, dash";
+    }
+    else{
+        ans = "String doesn’t contain alpha, numeric or dash.";
+    }
+
+document.write(ans);
+</script>
+
+
+
+</body>
+</html>

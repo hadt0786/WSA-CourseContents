@@ -1,0 +1,72 @@
+<!--Create an Email Registration form with Name, Permanent address, mailing
+address, phone number, date of birth, email id, “username display name” and
+password.
+Add appropriate validation using auto-complete, placeholder, Email attribute.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assigment 19</title>
+    <style>
+        body{
+            background: black;
+        }
+        
+        .back{
+            
+            background: lightgrey;
+            width: 350px;
+            position: absolute;
+            margin-left: 33%;
+            margin-top: 12%;
+            opacity: 0.4;
+            z-index: -1;
+            height: 400px;
+           
+        }
+        
+          input
+        {
+           /* background: lightgrey;*/
+            width: 280px;
+            margin-top: 15px;
+            height: 35px;
+             -webkit-transition:width:5s;
+            transition:width:5s;
+        }
+        form{
+            margin-left:35.6%;
+            position: absolute;
+                    margin-top: 12%;
+                
+        }
+        input[type="submit"]{
+            background: black;
+            color: whitesmoke;
+           height: 38px;
+               width: 285px;
+        }
+        input:focus{
+              box-shadow: 5px 5px 15px black;
+             width: 300px;
+            margin-left: -10px;
+           
+        }
+    </style>
+    </head>
+    <body>
+        <div  class="back" >  </div>
+    <form onsubmit="window.alert('Submitted Sucessfully');" >
+        <input type="text" placeholder="Username"  >  <br>
+                <input type="password" placeholder="**********" required >  <br>
+          <input type="email" placeholder="Joe@email.com" title="Enter An valid email" required>  <br>
+               <input type="textarea" placeholder="Permanant address " rows="10" >  <br>
+                        <input type=date placeholder="22/04/1992">  <br>
+                            <input type="text" required pattern="[0-9]{10}" placeholder="8956412333" title="Enter only numbers">
+        <br>
+                                <input type="submit" >  <br>
+                            
+        
+        </form>
+          
+    </body>
+</html>

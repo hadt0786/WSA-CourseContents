@@ -1,0 +1,29 @@
+<!-- *************************************************************
++ Description : DOM - Get Elements by id and modify H1
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<html>
+
+
+<script>  
+	// Get the H1 tag element 
+	function testH1Property(){        
+		element = document.getElementById("h1test");
+		
+		// Change properties here 
+		element.style.backgroundColor = "blue";
+		element.style.textAlign = "right";
+		element.style.fontSize = "xx-large";
+		element.style.fontFamily = "Tahoma";
+	}
+ </script>
+
+ <body>
+	<h1 id="h1test" style="text-align:center;" >Heading class - Example</h2>
+	<button onclick="testH1Property()">Test - H1 properties change</button>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!-- Program Description : Program to create a simple to display user information and creating multiline input comment using textarea
+Author : Sandhya 
+Written  : 21-oct-2016-->
+<!DOCTYPE html>
+<html>
+<body>
+<form> 
+<fieldset>
+ <legend>UserInfo</legend>
+<label for="username">Username:</label>
+<input type="text" name=”username”><br /><br/>
+<label for="password">Password:</label>
+<input type="password">
+<br><br>
+<label for ="Comment"> Comment :</label><br><br>
+<textarea name="comment" cols ="30" rows="10"> Write Your Comment </textarea>
+        </fieldset>
+        <input type="submit" value="Submit Now" />
+</form>
+</body>
+</html>
+

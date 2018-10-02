@@ -1,0 +1,62 @@
+<!-- ******************************************************
++ Description : Method Translate
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Method Translate</title>
+    <style>
+        /* A container acts as 3D space */
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            /* flat | preserve-3d */
+            transform-style: preserve-3d;
+            perspective: 50px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: grey;
+             /* for aligning text to center */
+            line-height: 150px;
+            
+            transition: all 1.6s;
+            z-index: 0;
+        }
+
+        .move-a:hover {
+            /*      transform: translateX(30px) translateY(200px) translateZ(10px); */
+            transform: translate3d(30px, 200px, -10px);
+            background-color: rgba(0, 128, 0, 0.5);
+            z-index: -1;
+        }
+
+        .move-b:hover {
+            /*      transform: translateX(60px) translateY(-110px) translateZ(20px); */
+            transform: translate3d(60px, -110px, 20px);
+            background-color: rgba(128, 0, 0, 0.5);
+            z-index: 2;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box move-a">Moved A box</div> <br>
+        <div class="box">Static box</div> <br>
+        <div class="box move-b">Moved B box</div> <br>
+    </div>
+</body>
+
+</html>

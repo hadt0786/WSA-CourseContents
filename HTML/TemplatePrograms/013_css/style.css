@@ -1,0 +1,21 @@
+
+/* body of the page */
+body
+{
+	background-color:lightgreen;
+}
+
+/* heading */
+h1
+{
+	font-family:courier;
+	color:deeppink;
+}
+
+/* Paragraph */
+p
+{
+	font-size:200%;
+	color:magenta;
+}
+

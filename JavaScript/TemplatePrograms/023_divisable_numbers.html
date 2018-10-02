@@ -1,0 +1,36 @@
+<!-- *************************************************************
++ Description : Function to print divisible number [1..100]
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Divisible number</title>
+        <script>
+            
+			function divisible(num)
+			{
+				var loop;
+								
+				for (loop = 1;loop <= 100;loop++)
+				{
+					if (loop % num == 0)
+						document.write("Divisible number: " + loop + "<br>");
+				}
+			}
+			
+			var value = 5;
+						
+			divisible(value);
+			
+		</script>
+    </head>
+    <body>
+    </body>
+    
+</html>
+

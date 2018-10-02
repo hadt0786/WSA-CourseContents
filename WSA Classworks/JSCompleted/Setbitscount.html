@@ -1,0 +1,23 @@
+<!--
+* @Developer: Divek
+* @Problem  :Bitwise opreator count bits
+* @Company  : XYZ
+* @Date     : 18-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+  <script>
+
+    var num=Number(prompt("Enter a number "));
+		var count=0;
+		for(var idx=32;idx>=1;idx--)
+		{
+			if(num & (1<<idx))
+			{
+				count++;
+			}
+		
+        }
+      document.write("Number of set bits: "+count);
+</script>

@@ -1,0 +1,6 @@
+/* set background color for tablet and laptop device */
+@media only screen and (orientation: portrait) {
+    body {
+        background-color: darkgreen;
+    }
+}

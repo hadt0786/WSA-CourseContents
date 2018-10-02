@@ -1,0 +1,15 @@
+<!-- Program Description : Program to use  style sheet Externally from style.css file 
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>HTML</h1>
+<p>HTML is a markup language used to create web page.</p>
+
+</body>
+</html>

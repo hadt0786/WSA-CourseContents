@@ -1,0 +1,39 @@
+Define a User Object with following fields:
+
+firstName
+lastName
+email
+phone
+password
+tosAgreement - boolean
+
+Create a directory call UserApp
+--------------------------------
+Create index.js
+Write test code to test the functions in lib/data.js
+
+Create a subdirectory directory data
+Create a subdirectory directory data/users
+
+
+Create lib/data.js
+===================
+Write following functions in data.js
+
+var data{};
+
+// Create a file in data/users/9955665544.json and store userObject.
+// Invoke callback function with err, otherwise invoke callback with false
+data.create('users',"9955665544", userObject,function(err){});
+
+// Read data from file data/users/<phone>.json. After reading data, invoke callback
+// function with data read, and err as false. Otherwise invoke callback function with err
+data.read('users',phone,function(err,data){ });
+
+// Update data in file data/users/<phone>.json with userData.
+// Invoke callback function with err, otherwise invoke callback with false
+data.update('users',phone,userData,function(err){});
+
+// Delete the file  data/users/<phone>.json
+// Invoke callback with err other invoke callback with false
+data.delete('users',phone,function(err){});

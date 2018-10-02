@@ -1,0 +1,45 @@
+<!-- *************************************************************
++ Description : BOM - Timer / Alarm example
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE HTML --> 
+
+<html>
+<head>
+<script>
+
+var timerId;
+
+function myReminderSet()
+{
+	timeValue = parseInt(prompt("Enter your reminder duration, in milliseconds"));
+	timerId   = setInterval("alert('Procrastination is a gift...keep snoozing')",timeValue);
+}
+
+function myReminderClear()
+{
+	clearInterval(timerId);
+}
+
+function myAlarmSet()
+{
+	timeValue = parseInt(prompt("Enter your alarm duration, in milliseconds"));
+	timerId   = setTimeout("alert('Get up...make things happen')",timeValue);
+
+}
+</script>
+
+<body>
+<h1>JavaScript window object : Time methods</h1>
+
+<button onclick="myReminderSet()">Set my reminder frequency</button>
+<button onclick="myReminderClear()">Clear reminder</button>
+<button onclick="myAlarmSet()">Set my Alarm</button> 
+
+
+</body>
+
+</html>
+

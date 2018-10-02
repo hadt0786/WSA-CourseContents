@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Course List</title>
+</head>
+
+<body>
+
+  <h1>Course List</h1>
+
+
+  <div id="showcourse"> </div>
+
+  <button type="button" onclick="loadDoc()">Get Courses</button>
+  </div>
+
+  <script>
+
+    function loadDocSimple() {
+      // Create a request object
+      var xhttp = new XMLHttpRequest();
+
+      // Register the function to be called when server responds
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("demo").innerHTML = this.responseText; // Display response
+        }
+      };
+
+      xhttp.open("GET", "/api/courses", true); // There is a file called ajax_info.txt on server
+      xhttp.send(); // Send the request
+    }
+
+    function createTableFromCourseList(courseList) {
+      // Create a table element
+      var table = document.createElement("table");
+      // Create a heading
+
+      // Create the row and set row data
+      for (var i = 0; i < courseList.length; i++) {
+        // Insert a row
+        var tr = table.insertRow(-1);
+        // Insert cells
+        var tcell = tr.insertCell(-1);
+        tcell.innerHTML = courseList[i].name;
+
+        tcell = tr.insertCell(-1);
+        tcell.innerHTML = courseList[i].author;
+
+      }
+
+      // Return the table element
+      return table;
+    }
+
+    function loadDoc() {
+      // Create a request object
+      var xhttp = new XMLHttpRequest();
+
+      // Register the function to be called when server responds
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4) {
+          if (this.status == 200) {
+            // Parse the JSON response
+            var courseList = JSON.parse(this.responseText);
+            //console.log(courseList);
+
+            var table = createTableFromCourseList(courseList);
+
+          }
+          else {
+            var table = document.createElement("p");
+            table.innerText = this.statusText;
+          }
+          // Set the table to course list placeholder
+          var divContainer = document.getElementById("showcourse");
+          divContainer.innerHTML = "";
+          divContainer.appendChild(table);
+        }
+
+        console.log(this.readyState);
+      };
+
+      xhttp.open("GET", "/api/courses", true); // There is a file called ajax_info.txt on server
+      xhttp.send(); // Send the request
+    }
+
+  </script>
+
+</body>
+
+</html>

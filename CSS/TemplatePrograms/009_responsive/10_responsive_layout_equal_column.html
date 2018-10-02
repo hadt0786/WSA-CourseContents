@@ -1,0 +1,64 @@
+<!-- ****************************************************
++ Description : Making layout flexible by using media query
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Altering layout using media query</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+        width: 33.33%;
+        padding: 15px;
+        border: 1px solid black;
+        float: left;
+    }
+    
+    .row {
+            /* */
+    }
+        
+    /* Pseudo element to self-clear floats */
+    .row::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+
+    /* Media query to alter the layout */
+    @media (max-width:600px) {
+        .column {
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <h2>Column 1</h2>
+    <p>Text</p>
+  </div>
+  <div class="column">
+    <h2>Column 2</h2>
+    <p>Text</p>
+  </div>
+  <div class="column">
+    <h2>Column 3</h2>
+    <p>Text</p>
+  </div>
+</div>
+
+</body>
+</html>

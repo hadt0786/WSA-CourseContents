@@ -1,0 +1,75 @@
+<!-- Write a JavaScript program to search a date within a string.
+Description :
+• Input string from user.
+• Search the string whether it contains any date in it and display the date to the user.
+Objective : Understand the type coversion and regular expression in javascript.
+Prerequisites:
+• Regular expression
+Sample Execution:
+Test case 1:
+Input : hi today is 4/05/2018
+Output : Dates in string : 4/05/2018
+Test case 2:
+Input : 04-05-2018 is the date today and tomorrow is 05/05/2018
+Output : Dates in the string are : 04-04-2018
+05/05/2018 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 34</title>
+
+<style>
+
+body{
+    background:lightgreen;
+}
+
+</style>
+
+
+<script>
+
+var p = prompt(" Enter the string in dd/mm/yy format");
+
+var regex = /[0-9]{2}\/[0-1][1-9]\/[0-9]{4}/g;
+
+var array = [];
+array = p.split(" ");
+
+for(x in array){
+    if(regex.test(array[x])){
+        document.write("The date is "+array[x]);
+    }
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

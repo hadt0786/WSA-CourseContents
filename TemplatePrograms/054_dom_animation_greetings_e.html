@@ -1,0 +1,93 @@
+<!-- *************************************************************
++ Description : DOM - Animation - Moving multiple elements
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+<style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: lightgrey;
+}
+
+#animateOrange {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: orange;
+}
+
+#animateGreen {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: green;
+}
+</style>
+
+<body>
+
+<p>
+<button onclick="myMove()">Play Animation</button>
+<button onclick="stopAnimation()">Stop Animation</button>
+</p> 
+
+<div id ="container">
+<div id ="animateOrange"></div>
+<div id ="animateGreen"></div>
+</div>
+
+<script>
+
+// Making timerId as global variable as setting and resetting happens from different functions
+var timerId;
+
+// Get random numbers to get X and Y co-ordinates
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+function stopAnimation()
+{
+	clearInterval(timerId);
+}
+
+function myMove() {
+
+  var elemOrange = document.getElementById("animateOrange");   
+  var elemGreen  = document.getElementById("animateGreen");
+  
+  var pos = 0;
+  
+  timerId = setInterval(newFrame, 250);
+  
+  function newFrame() 
+  {
+	  
+    var topValue  = parseInt(getRandomInt(300));
+    var leftValue = parseInt(getRandomInt(300));
+    
+	// Checking if random values are obtained 
+	//console.log("Top" + topValue);
+    //console.log("Left" + leftValue);    
+   
+	// Move elements in a random manner 
+	elemOrange.style.top  = topValue + 'px';
+    elemOrange.style.left = leftValue + 'px';
+    
+    topValue  = parseInt(getRandomInt(300));
+    leftValue = parseInt(getRandomInt(300));
+	
+	elemGreen.style.top  = topValue + 'px';
+    elemGreen.style.left = leftValue + 'px';
+			
+  }
+}
+</script>
+
+</body>
+</html>

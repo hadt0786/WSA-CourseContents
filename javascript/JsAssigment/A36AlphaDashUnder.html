@@ -1,0 +1,19 @@
+<!--Write a JavaScript function to check whether a string contains alpha ,dash and underscore.-->
+
+
+
+
+
+
+<script>
+       var str=prompt("Enter a String ");
+
+var regx=/[a-z]/gi;
+    var regx2=/[0-9]/gi;;  
+    var regx3=/\-/gi;
+    
+    (regx.test(str)&&regx2.test(str)&&regx3.test(str) )?alert("string contains alpha, numeric, dash"): (regx2.test(str)&&regx3.test(str) )?alert("String contains numeric or dash."):
+    (regx3.test(str) )?alert("String contains  dash."):alert("String doesn’t contain alpha, numeric and dash. ")
+
+
+</script>

@@ -1,0 +1,49 @@
+<!-- 
+    
+    Write a Javascript Function to generate the unique PIN number of given length n.
+Description:
+• Given the length, your job is to generate the unique PIN number.
+• For example, if user enters length as 4 then u should generate 4 digit unique number for
+individual user.
+Objective:
+•
+To understand the concept of numbers and mathemeatic operations in javascript.
+Prerequisites:
+• Loop
+• NumberSample Execution:
+Test Case 1:
+                Input: length : 4
+                Output: 4561 (random number not necessarily the same output)
+
+Test Case 2:
+                Input: 6
+                Output: 123456 -->
+
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                    <title>Unique PIN Numer</title>
+                </head>
+                <body>
+                    
+                    <script>
+                    
+                    //random function in javascript
+                    //1 - Math.random()
+
+                    var min = 1;
+                    var max = prompt("eneter the len of num");
+                     
+                    for(var i = min;i<=max;i++){
+                    var ran = parseInt(Math.random()*(+max - +min)+ +min);
+                    //                  function        multiply by range   setting digit befor decimal
+                    document.write(ran);
+                    }
+
+                    </script>
+
+                </body>
+                </html>

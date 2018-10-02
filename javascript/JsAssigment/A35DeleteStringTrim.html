@@ -1,0 +1,47 @@
+<!--Write a JavaScript program that works as a trim() function using regular expression.-->
+<script>
+    var str=prompt("Enter a String with special cahracters");
+
+var condition=confirm("For Delete space press Ok or for delete Special char press Cancel");
+    
+       var arr=[];
+  arr = str.split(" ");
+    var newstr="";
+    
+    
+function trimSpec(opt){
+    var regvar="\\" +prompt("Enter an Special character to remove");
+  for(x in opt){
+        
+          var pattern=new RegExp(regvar);
+    if(pattern.test(opt[x]) ){
+     console.log("given string is "+opt[x]);
+    }
+    else{
+        newstr+=arr[x]+" ";
+    
+}
+}  
+    
+}
+    
+    function removeSpace(x){
+      return x.replace(/^\s+|\s+$|\s/gm,''); 
+    }
+    if(condition){
+        newstr=removeSpace(str);
+        var valu="spaces"
+        
+    }
+    else{
+        trimSpec(arr);
+         var valu="special char"
+        
+    }
+        
+
+    alert("After removing "+valu+"\""+newstr+"\" ");
+
+
+
+</script>

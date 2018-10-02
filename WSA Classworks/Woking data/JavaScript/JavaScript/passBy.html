@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var y=10;
+		var a={z:10};
+
+		function passByValue(y) {
+			y += 5;		
+		}
+		function passByReference(obj) {
+			obj.z += 5;		
+		}
+		function getFullName(obj) {
+			document.write("Type of obj: "+typeof obj);
+			return obj.firstName+" "+obj.lastName;
+		}
+
+		var x={firstName:"Nagaratna",lastName:"Harikant"};
+		
+		
+		document.write("<br>Full Name: "+getFullName(x));
+		document.write("<br>Before y: "+y);
+		passByValue(y);
+		document.write("<br>After passing value y: "+y);
+
+		document.write("<br>Before a.z: "+a.z);
+		passByReference(a);
+		document.write("<br>After passing a.z: "+a.z);
+	</script>
+</head>
+</html>

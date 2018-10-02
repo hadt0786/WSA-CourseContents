@@ -1,0 +1,64 @@
+<!-- *************************************************************
++ Description : Debugging - Various error types 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+<html>
+	<h1> Debugging - Various Error Types </h1>
+    <head> 
+		<script>
+             function refErrorFunc()
+            {
+               try {
+                    // Write some incorrect stuff here...
+					somejunk(); 
+               } 
+               
+               catch ( e ) {
+					alert("Error Name    : " + e.name);
+					alert("Error Message : " + e.message);
+               }
+            }
+			
+			function rangeErrorFunc()
+			{
+			
+				try {
+					
+					// Define an Array with invalid boundary 
+					var testArray = Array(-1);
+					console.log("The length of the array :" + testArray.length);
+				}
+				
+				catch ( e ) {
+					alert("Error Name    : " + e.name);
+					alert("Error Message : " + e.message);
+				}
+			}	
+			
+			function syntaxErrorFunc()
+			{
+			
+				try {
+					
+					// Make a syntax error
+					eval("alert('Hello)"); 
+				}
+				
+				catch ( e ) {
+					alert("Error Name    : " + e.name);
+					alert("Error Message : " + e.message);
+				}
+			}			
+				
+				
+        </script> 
+    </head>
+    <body>
+      <button onclick="refErrorFunc()">Error - Reference Error</button>  
+	  <button onclick="rangeErrorFunc()">Error - Range Error</button>
+	  <button onclick="syntaxErrorFunc()">Error - Syntax Error</button>
+	</body>
+</html>

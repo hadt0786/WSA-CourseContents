@@ -1,0 +1,74 @@
+<!-- Write a JavaScript program that will create button
+a) For open a new google search window
+b) Resize the window .
+c) Scroll the window 10 pixels to the right.
+d) Move the new window relative to its current position.
+Description :
+• Create a webpage with button of value create, resize, scroll.
+• When user clicks on that button it should open a new google search window.
+• When user clicks on resize, decrease the size of the window.
+• When user clicks on scroll, the window should be scrolled left or right.
+Objective : Understand the BOM in javascript
+Prerequisites:
+• HTML
+• CSS
+• BOM
+Sample Execution: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 44</title>
+</head>
+<body>
+
+    <button onclick="createNewWindow()"> Create new Window</button>
+    <button onclick="moveWindow()"> Move the window</button>
+    <button onclick="resizeWindow()"> RESIZE THE WINDOW</button>
+    <button onclick="scrollWindow()">Scroll the window</button>
+    <button onclick="scrollThisWindow()">Scroll this window</button>
+    <button onclick="closeWindow()">close the window</button>
+    
+    <script>
+    var thisWindow;
+    function createNewWindow(){
+        thisWindow = window.open("","new window","width=1000,height=1000");
+    }
+
+    function moveWindow(){
+        thisWindow.moveTo(50,100);
+        thisWindow.document.write("Move the window");
+
+        var move = 500;
+        while(move>0){
+            thisWindow.document.write(move);
+            move--;
+        }
+
+    }
+
+    function resizeWindow(){
+        thisWindow.resizeTo(200,300);
+    }
+
+    function scrollWindow(){
+        thisWindow.scrollBy(300,0);
+    }
+
+    function scrollThisWindow(){
+        scrollBy(1000,0);
+        confirm("window is moved by 200, 0 ");
+    }
+
+    function closeWindow(){
+     thisWindow.close();   
+    }
+
+
+    </script>
+    
+</body>
+</html>

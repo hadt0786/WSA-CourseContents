@@ -1,0 +1,31 @@
+<!-- *************************************************************
++ Description : Write a program to print the pattern
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 19-Apr-2018
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>JavaScript for in loop example</title>
+	<script>
+		var n = Number(prompt("Enter total number of characters in the pattern:"));
+		var m = Number(prompt("Enter number of characters in the middle pattern:"));
+		
+		firstlast = parseInt((n-m)/2);
+		
+		for (var i = 0; i < firstlast; i++)
+			document.write("$");
+		
+		for (i = 0; i < m; i++)
+			document.write("*");
+		
+		for (i = 0; i < firstlast; i++)
+			document.write("$");
+		
+	</script>
+</head>
+
+</html>	

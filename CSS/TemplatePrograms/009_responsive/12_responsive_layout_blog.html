@@ -1,0 +1,122 @@
+<!-- ****************************************************
++ Description : Making layout flexible by using media query
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Altering layout using media query</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/* First ensure that all HTML elements have the box-sizing property set to border-box. 
+ * This makes sure that the padding and border are included in the total 
+ * width and height of the elements.
+ */
+ 
+* {
+    box-sizing: border-box;
+}
+
+    /* div {border: 1px solid red;}    */
+    
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Image frame */
+.imageframe {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    
+     background-color: lightblue;
+     padding: 20px;
+     margin-top: 20px;
+    
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, 
+   make the two columns stack on top of each other instead of 
+   next to each other */
+@media (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Description</h5>
+      <div class="imageframe" style="height:200px;">Image</div>
+      <p>Text</p>
+      <p>Text</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Description</h5>
+      <div class="imageframe" style="height:200px;">Image</div>
+      <p>Text</p>
+      <p>Text</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="imageframe" style="height:100px;">Image</div>
+      <p>Text</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="imageframe"><p>Image</p></div>
+      <div class="imageframe"><p>Image</p></div>
+      <div class="imageframe"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Text</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

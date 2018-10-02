@@ -1,0 +1,45 @@
+<!-- *************************************************************
++ Description : DOM - Animation - Simple 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<html>
+<style>
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+<body>
+<h1>Animation Example - Move the box </h1> 
+<p>
+<button onclick="moveTheSquare()">Click here to move</button>
+</p> 
+
+<div id ="animate"></div>
+
+<script>
+function moveTheSquare() {
+
+  var aniElem         = document.getElementById("animate");   
+  var winPosition     = 0;
+  var timerFunctionId = setInterval(animationFrame, 2);
+
+  function animationFrame() {
+    if (winPosition == 350) {
+       clearInterval(timerFunctionId);
+    } else {
+        winPosition++; 
+        aniElem.style.left = winPosition + 'px'; 
+    }
+  }
+}
+</script>
+
+</body>
+</html>

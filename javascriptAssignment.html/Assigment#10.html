@@ -1,0 +1,55 @@
+<!-- Write a Javascript program to scramble the word to given position.
+Description:
+• Accept a input string and position to shuffle the each word of the string
+• For example, if user enters string “abcd” and position as 3,1,0,2 then the output should be dbac
+Example:
+Example 1:
+Input: string: abcd
+position: 3,1,0,2
+Output: dbac
+Prerequisites:
+• Function
+• For LoopSample Execution :
+Test case :
+Input: string: abcd
+position: 3,1,0,2
+Output: dbac -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignement 10</title>
+<style>
+body{
+    background: lightgreen;
+}
+
+</style>
+
+</head>
+<body>
+    
+<script>
+
+    var string = prompt(" enter the string");
+    var position =prompt("enter the position ");
+
+    var arrayString = string.split("");
+    var positionArray = position.split("");
+    var ans = "";
+
+    for(x in arrayString)
+    {
+       ans+=arrayString[positionArray[x]];
+    }
+    document.write(ans);
+
+</script>
+
+
+</body>
+</html>

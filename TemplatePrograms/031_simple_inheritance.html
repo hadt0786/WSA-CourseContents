@@ -1,0 +1,34 @@
+<!-- *************************************************************
++ Description : Simple inheritance 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+<script>
+	
+	var person = function()  // parent 
+	{
+		this.name = "Anshul";
+	}
+	
+	// Adding a new property using prototype 
+	person.prototype.city = "Bangalore";
+  
+	var student = function() // child
+	{
+		this.course = "FullStack Web Development";
+	}
+
+	// Inheriting all properties from parent using 'new'
+	student.prototype = new person();
+
+	var data = new student();
+	
+	document.write(data.name); 
+	document.write(data.city);
+	document.write(data.course);  
+</script>
+</html>
+

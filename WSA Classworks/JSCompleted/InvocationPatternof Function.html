@@ -1,0 +1,35 @@
+
+  <!--
+* @Developer: Divek
+* @Problem  :Making a function defined and making as an object methid 2
+* @Company  : XYZ
+* @Date     : 25-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Making a function defined and making as an object</title>
+    <script>
+        //creating a function and create a property fullname
+var Fullname = function(firstname, lastname) {
+
+return this.fullname = firstname + "" + lastname;
+};
+        
+        //making a function object by using new Keyword
+var obj = new Fullname("Divek", "John");
+        
+document.write("Full name is " + obj.fullname);
+</script>
+</head>
+<body>
+    
+</body>
+</html>

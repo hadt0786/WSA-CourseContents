@@ -1,0 +1,11 @@
+<!-- Program Description : Program to change text color of heading
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<body>
+<!-- Text Color Example -->
+<h2 style="color:green;">Green Tree</h2>
+<h2 style="color:red;">Red Flower</h2>
+
+</body>
+</html>

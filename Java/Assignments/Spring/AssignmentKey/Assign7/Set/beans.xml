@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- beans tag (spring_schema) -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<!-- bean tag -->
+	<bean id="r" class="Report">
+		<property name="set" >
+		<set>
+			<value>100</value>
+			<value>200</value>
+			<bean id="s1" class="Student">
+				<property name="name" value="likhitha" />
+				<property name="age" value="27" />
+				<property name="add" value="bangalore" />
+
+
+			</bean>
+
+			<bean id="s2" class="Student">
+				<property name="name" value="hima" />
+				<property name="age" value="28" />
+				<property name="add" value="Detroit" />
+
+
+			</bean>
+		</set>
+	</property>
+	</bean>
+
+</beans>
+

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		function sumOfDigits(n) {
+			if( n == 0)
+				return 0;
+			else
+				return (n%10) +sumOfDigits(parseInt(n/10));
+		}
+		var number = +prompt("Enter digits"); 
+		document.write("Sum of digit "+number+" is : "+sumOfDigits(number));				
+	</script>
+</body>
+</html>

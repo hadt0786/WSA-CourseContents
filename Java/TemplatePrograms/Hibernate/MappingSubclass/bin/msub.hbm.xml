@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM
+	"src/hibernate-mapping-3.0.dtd">
+	
+	<hibernate-mapping>
+	
+	<class name="com.Employee" table="employee" discriminator-value="other">
+	
+	<id name="id" column="id" type="integer"></id>
+	<discriminator column="type" type="string"></discriminator>
+	
+	<property name="name" column="name" type="string"></property>
+	<property name="co_name" column="co_name" type="string"></property>
+	<!--<property name="type" column="type" type="string"></property>  -->
+	<subclass name="com.Trainer" discriminator-value="Trainer"></subclass>
+	<subclass name="com.Manager" discriminator-value="Manager"></subclass>
+	
+	</class>
+	
+
+	</hibernate-mapping>

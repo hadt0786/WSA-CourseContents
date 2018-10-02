@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assigment 1.3</title>
+    <style>
+        body{
+            background: teal;
+        }
+        
+        .back{
+            
+            background: black;
+            width: 350px;
+            position: absolute;
+            margin-left: 33%;
+            margin-top:  12%;
+            opacity: 0.4;
+            z-index: -1;
+            height: 350px;
+           
+        }
+        
+          p
+        {
+           /* background: lightgrey;*/
+            width: 280px;
+            margin-top: 15px;
+            height: 35px;
+            color: whitesmoke;
+            font-size: 25px;
+        
+        }
+        .para{
+            margin-left:36.6%;
+            position: absolute;
+                    margin-top: 12%;
+                
+        }
+        input
+        {
+           /* background: lightgrey;*/
+            width: 280px;
+            margin-top: 15px;
+            height: 35px;
+            border-radius: 25px;
+            padding: 2px;
+        
+        }
+      
+        button[type="submit"]{
+            background: black;
+            color: whitesmoke;
+           height: 38px;
+               width: 285px;
+             border-radius: 25px;
+             padding: 2px;
+        }
+        input:focus{
+              box-shadow: 5px 5px 15px black;
+             width: 300px;
+            margin-left: -10px;
+           
+        }
+       
+    </style>
+    <script>
+        function callme(){
+        var side1 =parseFloat(document.getElementById("Side1").value);
+        var side2 = parseFloat(document.getElementById("Side2").value);
+        var side3 =  parseFloat(document.getElementById("Side3").value);
+        var perimeter = parseFloat((side1 + side2 + side3)/2);
+            debugger;
+        var a =(perimeter*((perimeter-side1)*(perimeter-side2)*(perimeter-side3)));
+var area=a**(1/2);
+         document.getElementById("paragraph").innerHTML="Area of Triangle is "+area+perimeter;
+        }
+    </script>
+</head>
+<body>
+<div class="back"></div>
+ <div  class="para"style=" margin-left:35.6%;
+            position: absolute;
+                    margin-top: 14%;">
+                           <input id="Side1" type="text" placeholder="Side1">  <br>
+                             <input id="Side2" type="text" placeholder="Side2">  <br>
+                               <input id="Side3" type="text" placeholder="Side3">  <br> <br>
+                          <button id="button"type="submit" onclick="callme();">Calculate</button><br>
+                             <p id="paragraph" type="text" placeholder="Username"></p> <br>
+                            
+        
+      </div>
+ 
+</body>
+</html>

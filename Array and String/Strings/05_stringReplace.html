@@ -1,0 +1,32 @@
+<!-- *************************************************************
++ Description : Demo of string replace()
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 28-07-2018
+************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Replace()</title>
+        <script>
+            var str = "Hello World Welcome to JS";
+            
+            //Replacing string normal way
+            var repStr = str.replace("JS","WSA");
+
+            document.write("Replaced String normal way: "+repStr);
+
+            //Replacing string using regular expression: case sensitive
+            var str1 = "A blue bottle with a blue liquid is on a Blue table";
+            var replStr = str1.replace(/blue/g,"green");
+
+            document.write("<br><br>Replaced String using regular expression: "+replStr);
+            
+            //Replacing string using regular expression: case insensitive
+            var str1 = "A blue bottle with a blue liquid is on a Blue table";
+            var replStr = str1.replace(/blue/gi,"green");
+
+            document.write("<br><br>Replaced String using regular expression: "+replStr);
+        </script>
+    </head>
+</html>

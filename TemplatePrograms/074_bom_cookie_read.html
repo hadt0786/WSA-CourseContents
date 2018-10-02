@@ -1,0 +1,51 @@
+<!-- *************************************************************
++ Description : BOM - Reading Cookies
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html-->
+<html>
+    <h1>Cookies - Ensure you run them from servers</h1>    
+<head>
+	<script>
+        
+		// Function to set / write cookie
+		function writeCookie()
+		{
+			document.cookie = "username=WSA;";
+			document.cookie = "expires=Tue, 14 Oct 2014 20:23:32 GMT;";
+			document.cookie = "path=/;";
+				
+			alert(document.cookie);
+			
+		}
+		
+		// Functioon to get cookie 
+		function readCookie()
+        {
+			
+				var cookieVal = decodeURIComponent(document.cookie);
+            
+				// Dump all cookies in the console 
+                console.log("All Cookies : " + cookieVal);
+				
+				// Cookied are separate by ';',Split them first 
+				cookieArray = cookieVal.split(';');
+                
+				for(var cIndex=0; cIndex < cookieArray.length; cIndex++){
+                
+					// Split them again by '=' to get name and values
+                    cookieName  = cookieArray[cIndex].split('=')[0];
+					cookieValue = cookieArray[cIndex].split('=')[1];
+					document.write ("Key is : " + cookieName + " and Value is : " + cookieValue + "<br>");
+				} 
+		}		
+	</script>
+</head>
+	<body>
+	<button onclick="writeCookie()">Write Cookie</button>
+	<button onclick="readCookie()">Read Cookie</button>
+  	</body>
+</html>
+

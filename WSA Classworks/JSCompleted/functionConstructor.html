@@ -1,0 +1,28 @@
+<!--
+* @Developer: Divek
+* @Problem  :Defining a function constructor finding max of 2 number
+* @Company  : XYZ
+* @Date     : 24-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Function constructor</title>
+  </head>
+  <script>
+      
+      // Defining a function constructor  first give arguments and then function methods 
+      /*  if(FirstNum>SecondNum){ return FirstNum; } else {return SecondNum;}*/ 
+      var functionName= new Function("FirstNum","SecondNum",
+                                     "return(FirstNum >SecondNum) ? FirstNum : SecondNum");
+      
+      document.write("Biggest is="+functionName(5,25));
+      </script>
+  <body>
+      
+  </body>
+  </html>

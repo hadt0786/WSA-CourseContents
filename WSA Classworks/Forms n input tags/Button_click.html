@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> Multiline input comment</title>
+ </head>
+<body>
+ <form method="post" autocomplete="on">
+   First Name:<input type="text" name="firstname" placeholder="first name"/>
+   <br/><br/>
+   Last Name: <input type="text" name="lastname" placeholder="lastname"/>
+ <br/><br/>
+   <!-- rdio button are bound togather by name attribute-->
+    Gender <label> <br/>
+    <input type="radio" name="gender" value="Male" checked/> Male<br/>
+    <input type="radio" name="gender" value="Female"/>Female<br/></lable> <br/><br/>
+     <!-- With fieldset you can disable all the ground input-->
+        <fieldset>
+            <legend text-align="center"> What is your Favorite pet?</legend>
+               <input type="checkbox" name="animla" value="cat" />Cat<br/>
+               <input type="checkbox" name="animla" value="dog" />Dog<br/>
+               <input type="checkbox" name="animla" value="cow" />Cow<br/>
+               <input type="checkbox" name="animla" value="buffalo"  disable/>Buffalo<br/>
+
+                <input type="submit" value="submit"/>
+                <input type="reset" value="reset"/>
+          </fieldset><br/></br/>
+         <!-- display selection text-->
+           Select Icecream type:
+              <!--list of required option --->
+              <select name="Ice cream Flavours">
+                <option value="choose">Choose..</option>
+                <option value="Butter Scotch"> Butter Scotch</option>
+               <option value="valila">Vanila</option>
+               <option value="Strawberry"> Strawberry</option>
+              </select><br/> <br/> <br/>
+          <!--fieldset element is udee to gorup the related date-->
+         <fieldset>
+           <!-- legend defines the caption for the gorup data-->
+           <legend>User info</legend>
+     <lable for="username">User Name: </lable>
+     <input id="username" type="text"><br/><br/>
+      <lable for="password">Password: </lable>
+     <input id="password" type="password"><br/><br/>  
+    <lable for="comment">Comment: </lable><br/><br/>    
+     <textarea id="commnet" cols"50" rows"5"> Write your comment</textarea>  
+     <input type="submit" value="submit"/>
+      </fieldset><br/><br/><br/>
+    
+   <!--- onclick event binding-->
+   <button type="button" onclick="alert('Welcome to html5 world')">Click me</button>
+    
+
+</form>
+</body>
+</html

@@ -1,0 +1,90 @@
+<!-- *****************************************************************
++ Description : Program to design a responsive web page
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++***************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    <title>Responsive web page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+    
+    #karnataka,  #tamilnadu, #jharkhand, #uttar-pradesh{
+        
+    }
+    
+    .flex-container {
+        display: -webkit-flex;
+        display: flex;  
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+
+    .flex-container > * {
+        padding: 15px;
+        -webkit-flex: 1 100%;
+        flex: 1 100%;
+    }
+    
+    .states {
+        float: left;
+        margin: 5px;
+        padding: 15px;
+        /* width: 50%; */
+        height: 300px;
+        border: 2px solid green;
+        color : #800000;
+    } 
+
+    /* media query for tablets */
+        @media only screen and (min-width: 768px) {
+        #karnataka {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1; max-width: 44%}
+        /* #tamilnadu {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;} */
+        #tamilnadu {-webkit-order:1;order:1; max-width: 44%}
+        #jharkhand {-webkit-order:2;order:2; max-width: 44%}
+        #uttar-pradesh {-webkit-order:2;order:2; max-width: 44%}
+    }
+    /* media query for mobile phones */
+    @media only screen and (max-width: 720px) {
+        #karnataka {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1; max-width: 100%}
+        /* #tamilnadu {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;} */
+        #tamilnadu {-webkit-order:2;order:2; max-width: 100%}
+        #jharkhand {-webkit-order:3;order:3; max-width: 100%}
+        #uttar-pradesh {-webkit-order:4;order:4; max-width: 100%}
+    }
+</style>
+</head>
+    
+<body>
+
+<h1 style="color:#800000">Responsive Web Design Demo</h1>
+
+    <div class="flex-container">
+        <div class="states" id="karnataka">
+            <h2>Karnataka</h2>
+            <p>Karnataka  is a state in south western region of India.The capital and largest city is Bangalore (Bengaluru). Karnataka is bordered by the Arabian Sea.</p>
+        </div>
+
+        <div class="states" id="tamilnadu">
+            <h2>Tamilnadu</h2>
+            <p>Tamil Country) is one of the 29 states of India. Its capital and largest city is Chennai (formerly known as Madras).</p>
+        </div>
+
+        <div class="states" id="jharkhand">
+            <h2>Jharkhand</h2>
+            <p> Jharkhand is a state in eastern India carved out of the southern part of Bihar on 15 November 2000.The state shares its border with the states of Bihar to the north, Uttar Pradesh and Chhattisgarh to the west, Odisha to the south, and West Bengal to the east</p>
+        </div>
+        <div class="states" id="uttar-pradesh">
+            <h2>UttarPradesh</h2>
+            <p> is the most populous state in the Republic of India as well as the most populous country subdivision in the world. It was created on 1 April 1937 as the United Provinces during British rule, and was renamed Uttar Pradesh in 1950. Lucknow is the capital city of Uttar Pradesh. Ghaziabad, Kanpur, Gorakhpur, Allahabad, Raebareli, Moradabad, Bareilly, Aligarh, Sonbhadra, and Varanasi are known for their industrial importance in the state.</p>
+        </div>
+    </div>
+</body>
+    
+</html>
+

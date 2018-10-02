@@ -1,0 +1,34 @@
+<!-- *************************************************************
++ Description : Write a program to calculate power of two 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 19-Apr-2018
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>JavaScript for in loop example</title>
+	<script>
+		var N = Number(prompt("How many numbers?"));
+		var i,value;
+		var base=1;
+		
+		for (i=1; i <= N; i = i + 1)
+		{
+			var j;
+			for (j=1; j<=i; j++)
+			{
+				value = base * 2;
+				base = value;
+			}
+			document.write("The Value" + " " + i + "is -> " + value + "<br>");
+			base = 1;
+		}
+	
+		
+	</script>
+</head>
+
+</html>	

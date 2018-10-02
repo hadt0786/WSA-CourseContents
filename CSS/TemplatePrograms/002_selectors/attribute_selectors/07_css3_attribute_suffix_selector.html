@@ -1,0 +1,36 @@
+<!-- ******************************************************
++ Description : Internal style sheet - attribute selector 
++               with value and element selector
++ Author      : Webstack Academy (P) Ltd
++ Date        : 2-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <title>Attribute selector with value and element selector</title>
+	
+	<style>
+
+    /* Suffix Selector : Selecting element with title attribute
+     * whose value is suffixed by .in 
+     */
+	[title$=".in"] {
+		color: magenta;
+        font-weight: bold;
+        font-style: italic;
+	}       
+	</style>
+	
+</head>
+<body>   
+    <p title="www.google.com">Google Global domain server</p>
+    <p title="www.google.co.in">Google India domain server</p>
+    <p title="www.google.co.fr">Google France domain server</p>
+    <p title="www.google.co.uk">Google United Kingdom domain server</p>
+</body>
+
+</html>

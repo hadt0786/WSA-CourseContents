@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Whack a Penguine></title>
+
+  <style>
+  div{
+    width:33%;
+    float:left;
+    background-image:url('./img/mound.png');
+    height: 200px;
+  }
+  body{
+    background: lightblue;
+    padding: 0 25% 0 25%;
+
+  }
+  div:hover{
+    background-image: url('./img/mound_hover.png');
+  }
+
+          @keyframes scaleupNdown{
+            0%{
+               transform:  scale(.8);
+            }
+            50%{
+                  transform:  scale(1.5);                  
+            }
+            100%{
+                     transform:  scale(.8);
+            }
+        }
+  
+  </style>
+
+</head>
+<body>
+
+  <div onclick="clickEffect(this)"></div>
+  <div onclick="clickEffect(this)"></div>
+  <div onclick="clickEffect(this)"></div>
+  <div onclick="clickEffect(this)"></div>
+  <div onclick="clickEffect(this)"></div>
+  <div onclick="clickEffect(this)"></div>
+  <div onclick="clickEffect(this)"></div>
+  <div onclick="clickEffect(this)"></div>
+  <div onclick="clickEffect(this)"></div>
+
+
+</body>
+
+<script>
+  function clickEffect(ele){
+    var ran = Math.floor(Math.random()*9);
+    if(ran == 8){
+   var div =  document.getElementsByTagName('div');
+   for(var x =0 ; x<div.length;x++){
+     if(div[x]!=ele){
+       div[x].style.background="lightblue";
+       ele.style.animation="scaleupNdown 1s infinite"
+       ele.style.backgroundSize="100%";
+        }
+   }
+    }
+    //console.log(ran);
+    
+    ele.style.backgroundImage = "url(./img/penguin"+ran+".png)";
+
+    
+
+  }
+</script>
+
+</html>

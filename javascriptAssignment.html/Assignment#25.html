@@ -1,0 +1,64 @@
+<!-- Write a JavaScript function to check whether it is palindrome or not.
+Description :
+•
+A palindrome is a word, phrase, number, or other sequence of characters which reads the
+same backward as forward, such as madam or racecar.
+•
+Display whether the input text or number is palindrome or not
+Objective : Understand the loop and arithmetic operation in javascript.
+Prerequisites:
+• number
+• string
+• control flow
+Sample Execution:
+Test case:
+Input : 111
+Output : palindrome
+Test case:
+Input : madam
+Output : palindrome -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 25</title>
+
+    <style>
+    
+    body{
+        background:lightgreen;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <script>
+        //not
+        var str = prompt("Enter the string to check whether it is palindrome or not");
+        //console.log(str.length);
+        var revstr = "";
+        for(var  i = str.length-1;i>=0;i--)
+        {
+          revstr += str.charAt(i);
+                
+        }   
+         document.write((str==revstr)?"true":"false");
+    
+        
+// <!-- 
+//         if(isNaN(str))
+//         {
+//             console.log("Num");
+//         }
+//         else{
+//             console.log("String");
+//         } -->
+    
+    </script>
+    
+</body>
+</html>

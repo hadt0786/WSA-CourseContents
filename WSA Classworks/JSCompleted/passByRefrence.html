@@ -1,0 +1,34 @@
+<!--
+* @Developer: Divek
+* @Problem  :Pass by refrence
+* @Company  : XYZ
+* @Date     : 24-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pass by refrence</title>
+</head>
+
+<script>
+    function callMeByReference(obj){
+        
+        //changing the value by refrence
+        obj.value="John Simson";
+        
+    }
+    
+    var obj={Name :"John"};
+    console.log(obj);
+    callMeByReference(obj);
+    
+    document.write("obj value should be changed to john simson now  <em>&quot"+obj.value+"&quot;</em>")
+    </script>
+<body>
+    
+</body>
+</html>

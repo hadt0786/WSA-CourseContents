@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOM location method</title>
+</head>
+<h1> Bom Location Model</h1>
+<button onclick="myLocReplace()"> Local replace</button>
+<button onclick="myLocAssign()">Local Assign</button>
+<button onclick="myLocReload()">Local Reload</button>
+
+<body>
+    
+    <script>
+    
+    function myLocReplace()
+    {
+        var myUrl = prompt(" enter the url, you want to replace, please note you can;t come back");
+         location.replace(myUrl);
+    }
+
+    function myLocAssign()
+
+    {
+        var myUrls = prompt("Enter the url you want to assign");
+        location.assign(myUrls);
+    }
+
+
+    function myLocReload()
+    {
+            location.reload();
+    }
+
+    </script>
+
+
+
+</body>
+</html>

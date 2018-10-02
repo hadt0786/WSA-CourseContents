@@ -1,0 +1,32 @@
+<!-- ******************************************************
++ Description : Internal style sheet - attribute selector 
++               with value and element selector
++ Author      : Webstack Academy (P) Ltd
++ Date        : 2-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+<html>
+<head>   
+    <title>Attribute selector with value and element selector</title>
+	<style>
+    /* Word Selector : Selecting element with lang attribute whose
+     value
+     * is space separated list of words and one of 
+     * them is 'cat'
+     */
+	[title~="cat"] {
+		background-color: yellow;
+        color: red;
+        font-style: italic;
+	}      
+	</style>	
+</head>
+<body>   
+    <p title="cat dog mouse">This paragraph is for animals</p>
+    <p title="fish puffer-fish goldfish">This paragraph is for Aquatic animals.</p>
+    <p title="lion cheetah panther belongs to cat family">This paragraph is for cat and big cats.</p>
+    <p title="sparrow parrot peocock">This paragraph is for birds.</p>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+  <!--
+* @Developer: Divek
+* @Problem  :Function Recurrsion ! (Square root of using function recursion)
+* @Company  : XYZ
+* @Date     : 25-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>power root of an function recursion</title>
+</head>
+<script>
+function power(x,y) {
+    debugger;			if(y == 0)
+				return 1;
+			else
+				return x*power(x,(y-1));
+		}
+
+		var num = +prompt("Enter a number");
+		var raise= +prompt("enter the power");
+		document.write(num+" power of "+raise+" is : "+power(num,raise));	
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!-- ****************************************************
++ Description : Layout using Flexbox properties
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Layout using Flexbox properties</title>
+        
+        <meta name="viewport" content="width=device-width initial-scale=1.0" />
+        
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+            }
+            .header, footer {
+              display: flex;
+              color: white;
+              /* align text in the center */
+              justify-content: center;
+              align-items: center;
+              background: black;
+              height: 10vh;
+              flex: 100%;
+            }
+
+            .main {
+              height: 80vh;
+              flex: 100%;
+              text-align: left;
+              background: deepskyblue;
+            }
+            .aside {
+              height: 80vh;
+            }
+            .left, right { flex: 100%; }
+
+            .bg-yellow {
+                background-color: goldenrod;
+            }
+            .bg-teal {
+                background-color: teal;
+            }
+            
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                border: 1px solid red;
+            } 
+
+            /* tablet screen */
+            @media only screen and (min-width: 500px) and (max-width: 799px){
+              .main  { flex: 70%; }
+              .left  { flex: 30%; } 
+              .right { flex: 100%;}
+            }
+            /* mobile screen */
+            @media only screen and (max-width: 499px) {
+                .flex-container {
+                    flex-direction: column;
+                }
+            }       
+            /* large screen */
+            @media only screen and (min-width: 800px) {
+                
+                .main    { flex: 60%; }
+                .left, .right { flex: 20%;} 
+            }
+                     
+        </style>
+
+    </head>
+    <body>
+
+
+            <header class="header"><h1>Header</h1></header>
+            <div class="flex-container">
+                 <aside class="aside left bg-teal"><h1>Aside 1</h1></aside>
+                <article class="main">
+                    <h1>This is main article area.</h1>  
+                </article>
+                <aside class="aside right bg-yellow"><h1>Aside 2</h1></aside>
+            </div>
+            <footer class="footer"><h1>Footer</h1></footer>
+
+    </body>
+    
+</html>

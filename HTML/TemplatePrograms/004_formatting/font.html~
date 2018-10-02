@@ -1,0 +1,12 @@
+<!-- Program Description : Program to change font color
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<head>
+<title>My Web Page</title></head>
+<body bgcolor="#FFFF00”>
+<font color="#FF0000"> 
+<h1> Emertxe IT Training Center </h1></font>
+<font color ="#00FF00">
+<h2> M.G Road </h2></font>
+</body></html>

@@ -1,0 +1,41 @@
+<!-- ******************************************************
++ Description : Internal style sheet - Child combinator 
++               with value and element selector
++ Author      : Webstack Academy (P) Ltd
++ Date        : 2-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <title>Child Combinator</title>
+	<style>
+    /* Selects all <ul> that are direct child to <div> */
+    div > nav > ul {
+      color: green;
+    }            
+	</style>	
+</head>
+<body>
+    <div>
+        <h2>Food items</h2>
+        <ul>
+            <li>Kitkat </li>
+            <li>Dairy Milk </li>
+            <li>5 Star </li>
+        </ul>        
+        <nav>
+            <ul>
+                <li>Butter Scotch </li>
+                <li>Vanila </li>
+                <li>Tutti Frutti </li>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+
+</html>

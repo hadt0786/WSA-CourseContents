@@ -1,0 +1,33 @@
+<!-- *************************************************************
++ Description : Objects creation 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Global variables</title>
+		<script>
+            var productInfo = {
+				category : "Mobile phone",
+				name : "one plus 5",
+				price : 45000,
+				printProductInfo : function() {
+					document.write("The product information goes as follows: " + "<br>");
+					document.write("Category :" + this.category +  "<br> Name :" + this.name + "<br>Price :" + this.price);
+				}
+			};
+			
+			productInfo.printProductInfo();
+			
+		</script>
+    </head>
+    <body>
+    </body>
+    
+</html>
+
+

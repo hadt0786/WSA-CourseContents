@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<style>
+p {
+    border: 1px solid Magenta; 
+   margin: 50px;
+   padding: 30px;
+}
+
+<!-- solid is border style it can be dotted ,dashed ,double etc) -->
+</style>
+</head>
+<body>
+<p> Emertxe - Leaders in Embedded Systems & LINUX & IoT Training Institute </p>
+
+</body>
+</html>
+

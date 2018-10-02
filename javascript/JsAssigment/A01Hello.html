@@ -1,0 +1,88 @@
+<!--
+* @Developer: Divek
+* @Problem  : program to display the hello message along with the user name.
+* @Company  : XYZ
+* @Date     : 17-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assigment 1.1 Js</title>
+    <style>
+        body{
+            background: cyan;
+        }
+        
+        .back{
+            
+            background: black;
+            width: 350px;
+            position: absolute;
+            margin-left: 33%;
+            margin-top:  12%;
+            opacity: 0.4;
+            z-index: -1;
+            height: 130px;
+           
+        }
+        
+          input
+        {
+           /* background: lightgrey;*/
+            width: 280px;
+            margin-top: 15px;
+            height: 35px;
+        
+        }
+        form{
+            margin-left:35.6%;
+            position: absolute;
+                    margin-top: 12%;
+                
+        }
+        input[type="submit"]{
+            background: black;
+            color: whitesmoke;
+           height: 38px;
+               width: 285px;
+        }
+        input:focus{
+              box-shadow: 5px 5px 15px black;
+             width: 300px;
+            margin-left: -10px;
+           
+        }
+    </style>
+    </head>
+    <script>
+   function callMe(){
+       
+       var userName=document.getElementById("username").value;
+       if(userName){
+       alert("Hello  "+userName+" Hope Your are fine !");}
+       else{
+            alert("Please input Username");}    
+           
+   }
+        
+    </script>
+    <body>
+        <div  class="back" >  </div>
+        
+    <form onsubmit="callMe();" autocomplete="off" >
+        <input id="username" type="text" placeholder="Username">  <br>
+                          <input type="submit" >  <br>
+                            
+        
+        </form>
+          
+    </body>
+</html>
+
+
+
+
+

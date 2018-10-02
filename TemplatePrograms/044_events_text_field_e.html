@@ -1,0 +1,57 @@
+<!-- *************************************************************
++ Description : Handling text field events 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<html>
+<body>
+
+<!-- onfocus example -->
+
+Onfocus Text box: <input type="text" onfocus="myFocusFunction(this)">
+
+<br><br>
+
+<!-- onblur example -->
+
+Onblur Text box: <input type="text" onblur="myBlurFunction(this)">
+
+<br><br>
+
+<!-- onchange example -->
+<p>Which course you are doing?</p>
+
+<select id="courseSelection" onchange="myChangeFunction()">
+  <option value="Code: TEST">Choose a Course
+  <option value="Code: FED">Frontend Developer
+  <option value="Code: BED">Backend Developer
+  <option value="Code: FSD">FullStack Developer
+  <option value="Code: MC">FullStack Masters Course
+</select>
+
+
+<script>
+
+// Function to handle blur 
+function myBlurFunction(obj) { 
+    obj.style.background = "red";
+}
+
+// Function to handle focus
+function myFocusFunction(obj) { 
+    obj.style.background = "yellow";
+}
+
+
+// Function to handle selection 
+function myChangeFunction() {
+    var x = document.getElementById("courseSelection").value;
+    document.write("The course you have selected is: " + x);
+}
+
+
+</script>
+
+</body>
+</html>

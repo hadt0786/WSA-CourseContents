@@ -1,0 +1,38 @@
+<!--
+* @Developer: Divek
+* @Problem  : To print Numbered triangle
+* @Company  : XYZ
+* @Date     : 10-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Print triangle</title>
+    <script>
+        var Rows = parseInt(prompt("Please Enter number rows", ""));
+
+	 /*Looping until Rows get completed */
+        for(var iLoopIndex=1; iLoopIndex<=Rows ;iLoopIndex++){   
+
+	    /* to print trangle in  from 1  to iLoopIndex */
+            for(var jLoopIndex=1; jLoopIndex<=iLoopIndex; jLoopIndex++){
+
+		/*Printing jLoopIndex to get number */   
+                document.write(jLoopIndex+"&nbsp"+"&nbsp");
+
+            }
+
+            document.write("<br>");
+
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

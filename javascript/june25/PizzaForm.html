@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment</title>
+
+    <style>
+    body{
+        background: lightgreen;
+    }
+    
+    </style>
+</head>
+<body>
+
+        <form name="form1" onsubmit="validate(this);">
+               
+        
+        <input type="radio" name="j" id="simpleVeg" onsubmit="validatePizza(this);" >Simple Veg<br>
+
+        <input type="radio" name="j"id="vegSupreme" onsubmit="validatePizza(this);">Veg Supreme<br>
+
+        <input type="radio" name="j"id="vegDelight" onsubmit="validatePizza(this);">Veg Delight<br>
+
+        <input type="radio" name="a"id="personal" onsubmit="validatePizzaSize(this);" >Personal pan<br>
+
+        <input type="radio" id="medium" onsubmit="validatePizzaSize(this);">medium<br>
+
+        <input type="radio" id="large" onsubmit="validatePizzaSize(this);">Large<br>
+
+        <input type="radio" id="thin" onsubmit="validatePizzaCrust(this);">Thin<br>
+        <input type="radio" id="normal" onsubmit="validatePizzaCrust(this);">normal<br>
+        <input type="radio" id="special" onsubmit="validatePizzaCrust(this);">Special<br>
+
+        <select id="payment" >
+            <option value="COD">COD</option>
+            <option value = "paytm">Pay TM</option>
+            <option value="creditCard">Credit card</option>
+            <option value="DebitCard">DEbit card</option>
+        </select>
+
+        <input type = "checkbox" id="license" >
+        TERMS AND CONDITION : <input type="text" name="termsAndCondition" >Terms and COnditon <br>
+
+
+
+
+             Discount CODE:<input type="text" name="DiscountCode"><br>
+
+             NAME:<input type="text" name="Name"><br>
+
+             EMail:<input type="text" name="Email"><br>
+
+             Phone Number:<input type="number" name="phoneNumber"><br>
+            <button type="submit" onsubmit="validateForm();">Submit</button>
+        
+            </form>
+        
+            <script>
+             function validateForm(form1)
+             {
+                 
+                 if(document.form1.mySelect.selectedIndex==0)
+                 {
+                     alert("please select you Meal");
+                     return false;
+                 }
+             }
+
+             function validatePizza(form1)
+             {
+                 if(document.form1.simpleVeg.selectedIndex==checked && document.form1.vegSupreme.selectedIndex==checked
+                 && document.form1.vegDelight.selectedIndex==false )
+                 alert("please choose the pizza");
+                 return false;
+             }
+            function validatePizzaSize(form1)
+            {
+                if(document.form1.personal.selectedIndex==false && document.form1.medium.selectedIndex==false
+                 && document.form1.large.selectedIndex==false )
+                 alert("please choose the pizza size");
+                 return false;
+            }
+            function validatePizzaCrust(form1)
+            {
+                if(document.form1.personal.selectedIndex==false && document.form1.medium.selectedIndex==false
+                 && document.form1.large.selectedIndex==false )
+                 alert("please choose the pizza size");
+                 return false;
+            }
+            
+            </script>
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- d) To reverse a given string. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To reverse a given string.</title>
+    <style>
+    body{
+        background: lightgreen;
+    }
+    </style>
+</head>
+<body>
+
+    <script>
+    
+    var str = prompt("Enter the string to reverse");
+
+    var strToArray = [];
+    strToArray= str.split("");
+
+var ans = "";
+    for(var x = (strToArray.length-1);x>=0;x--)
+    {
+            ans+=strToArray[x];
+    }
+document.write(ans);
+    
+    </script>
+    
+</body>
+</html>

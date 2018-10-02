@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function square(num)
+		{
+			document.write("<br>Formal number of arguments: "+square.length);
+			document.write("<br>Actual number of arguments: "+arguments.length);
+			if(square.length != arguments.length) {
+				throw "function square shall be passed one arguments";
+			}
+			
+			return num*num;
+		}
+		 
+		document.write("<br>Formal number of arguments: "+square.length);
+		document.write("<br>Sum: "+square(4,9,8,7));
+	</script>
+</head>
+</html>

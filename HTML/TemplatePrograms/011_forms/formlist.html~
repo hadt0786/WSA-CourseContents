@@ -1,0 +1,16 @@
+<!-- Program Description : Program to create a simple form to display list of ice cream flavours using list box
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+<select name=”Ice Cream Flavours”> 
+<option value =”Butter Scotch” Selected>Butter Scotch</option>
+<option value =”Vanilla”>Vanilla</option>
+<option value =”Strawberry”>Straw Berry</option>
+</select>
+</form>
+</body>
+</html>
+

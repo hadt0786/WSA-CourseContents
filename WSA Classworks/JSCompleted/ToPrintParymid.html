@@ -1,0 +1,41 @@
+<!--
+* @Developer: Divek
+* @Problem  : To print A parmid 
+* @Company  : XYZ
+* @Date     : 10-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+  <script>
+var rows = parseInt(prompt("Please enter number rows", ""));     
+
+/*Assigning Star and Space counter AS 1*/       
+var space=rows-1,star=1;
+	/*Running loop for rows*/					
+	for(var iLoopindex=1; iLoopindex<=rows; iLoopindex++){
+
+	
+		 /*Running loop for space to print*/		
+    		for(var kLoopIndex=1; kLoopIndex<=space; kLoopIndex++){	
+		 
+      		  document.write("&nbsp");
+        }
+         /*Running loop for star to print*/  
+        for(var jLoopIndex=1; jLoopIndex<=star; jLoopIndex++){
+        
+        document.write("*");
+        }   
+  
+    /*decrementing space*/
+    space--;
+
+   /*incremnting star*/							
+    star+=2;							
+   
+    /*Breaking a line in html*/
+    document.write("<br>")					
+ } 
+        
+        
+    </script>

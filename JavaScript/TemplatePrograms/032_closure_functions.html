@@ -1,0 +1,66 @@
+<!-- *************************************************************
++ Description : Closure function example
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Closure function example</title>
+		<script>
+            function calculate (operation,arg1,arg2)
+			{
+				
+				switch (operation)
+				{
+					case '+':
+						return function addition(arg1,arg2)
+						{
+							return arg1 + arg2;
+						}
+						break;
+					case '-':
+						return function subtraction(arg1,arg2)
+						{
+							return arg1 - arg2;
+						}
+						break;
+					case '*':
+						return function multiplication(arg1,arg2)
+						{
+							return arg1 * arg2;
+						}
+						break;	
+						
+					case '/':
+						return function division(arg1,arg2)
+						{
+							return arg1 / arg2;
+						}
+						break;	
+					
+					default :  
+						document.write("Invalid input");
+						break;
+				}					
+			
+			}
+			
+			var val1 = 300;
+			var val2 = 200; 
+			
+			var close = calculate('+',val1,val2); 
+			document.write("The actual output is: " + close(val1,val2) + "<br>");			
+			
+			var close = calculate('-',val1,val2); 
+			document.write("The actual output is: " + close(val1,val2) + "<br>");			
+			
+		</script>
+    </head>
+    <body>
+    </body>
+    
+</html>

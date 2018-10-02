@@ -1,0 +1,82 @@
+<!-- Write a JavaScript program
+a) To make a paragraph using createElement method
+b) Create a new node with nav element .
+c) Create a text node with <strong> element.
+d) Add two node in the parent node.
+Description :
+• Create a paragraph in webpage using createElement method of javascript.
+• Create new node in that page with nav element.
+• Add a text node with <strong> element.
+• Add two node to the parent node of that web page.
+Objective : Understand the Dom in javascript
+Prerequisites:
+• HTML
+• CSS
+• DOM
+Sample Execution: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 43</title>
+    <style>
+    body{
+        background: lightgreen;
+    }
+    
+    </style>
+</head>
+<body>
+    
+
+<script>
+    //not completed function remaining
+    var button1 = document.createElement("button");
+    
+    var button1TextNode = document.createTextNode(" Paragraph created  PARENT");
+
+    var button1Attribute = document.createAttribute("onclick");
+
+    button1Attribute.value = "changeParagraph();";
+
+    button1.setAttributeNode(button1Attribute);
+
+    document.appendChild(button1);
+    document.appendChild(button1TextNode);
+   
+    
+    var button2 = document.createElement("button");
+
+    var button2TextNode = document.createTextNode(" create using navagation link");
+
+    var button2Attribute = document.createAttribute("onclick");
+
+    button2Attribute.value="createNav()";
+
+    button2.setAttributeNode(button2Attribute);
+
+    document.appendChild(button2);
+    document.appendChild(button1TextNode);
+
+   var button3 = document.createElement("button");
+
+    var button3textNode = document.createTextNode("Created a strong paragraph");
+
+    var button3Attribute = document.createAttribute("onclick");
+
+    button3Attribute.value = "createStrong();";
+
+    button3.setAttributeNode(button3Attribute);
+
+    document.appendChild(button3);
+    document.appendChild(button3textNode);
+
+
+</script>
+
+
+</body>
+</html>

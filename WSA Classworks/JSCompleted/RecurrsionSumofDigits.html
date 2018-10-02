@@ -1,0 +1,34 @@
+  <!--
+* @Developer: Divek
+* @Problem  :Function Recurrsion ! (Sum of digits using recursion)
+* @Company  : XYZ
+* @Date     : 25-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sum of digits  using recursion</title>
+    <script>
+
+	function sumOfDigits(n) {
+                debugger;
+        //check if n is zero Return 0 to stop the stack of function
+			if( n == 0)
+				return 0;
+			else
+                //else  return the current Number to the same function  for next calculation 
+				return (n%10) +sumOfDigits(parseInt(n/10));
+		}
+		var number = +prompt("Enter digits"); 
+		document.write("Sum of digit "+number+" is : "+sumOfDigits(number));				
+	</script>
+</head>
+<body>
+    
+</body>
+</html>

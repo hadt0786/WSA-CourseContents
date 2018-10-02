@@ -1,0 +1,86 @@
+<!-- Write a JavScript function to find factors of a positive integer.
+Description :
+•
+"Factors" are the numbers you multiply to get another number. For instance, factors of 15
+are 3 and 5, because 3×5 = 15. Some numbers have more than one factorization (more than
+one way of being factored). For instance, 12 can be factored as 1×12, 2×6, or 3×4.
+•
+Your job is to find the factors of the entered number.
+Objective : Understand the string number and arithmentic operation in javascript.
+Prerequisites:
+• number
+• arithmetic operation
+• control flow
+Sample Execution:
+Test case:
+Input : 2
+Output : factors of 2 are : 1,2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 29</title>
+    <style>
+    
+    body{
+        background: lightgreen;
+    }
+    
+    </style>
+</head>
+<body>
+        <script>
+            
+          
+                //not wroking properly
+                var num = Number(prompt("enter the number"));
+                
+                
+                var ans ="1"+" ";
+                for(var  i = 2;i<=7;i++)
+                {
+
+                    if(num%i!=0)
+                    {
+                         
+                        if(num%2==0)
+                        {   
+                            
+                            ans+="2"+" ";   
+                            num = parseInt(num/2);   
+
+                        }
+                        if(num%3==0)
+                        {
+                            
+                            ans+="3"+" ";
+                            num=parseInt(num/3);
+                        }
+                        if(num%5==0)
+                        {
+                            
+                            ans+="5"+" ";
+                            num=parseInt(num/5);
+                        }
+                        if(num%7==0)
+                        {
+                           // countOf7++;
+                            ans+="7"+" ";
+                            num = parseInt(num/7);
+                            
+
+                        }
+                    }
+                    else
+                    {
+                        ans+=num+" ";
+                    }
+                }
+                document.write(ans+" "+num);
+            
+            </script>
+</body>
+</html>

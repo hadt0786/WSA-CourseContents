@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+
+.tooltip{
+position:relative;
+display:inline-block;
+border-bottom:1px dotted black;
+}
+
+.tooltip .tooltiptext{
+visibility:hidden;
+width:150px;
+background:black;
+color:#fff;
+text-align:center;
+border-radius:6px;
+padding:5px 0;
+position:absolute;/* position of tooltip*/
+z-index: 3;
+
+}
+
+.tooltip:hover .tooltiptext{
+visibility:visible;
+}
+
+.tooltip  .tooltiptext{
+top: -5px;
+left:105%;
+}
+
+</style>
+</head>
+<body>
+<p>
+<span class="tooltip"> Tom
+ <span class="tooltiptext"> Tom is a cat! </span>
+</span>
+jumped over jerry to catch him but 
+<span class="tooltip"> jerry
+<span class="tooltiptext">jerry is a mouse!!</span>
+</span>
+narrow escaped into his home</p>
+</body>
+</html>

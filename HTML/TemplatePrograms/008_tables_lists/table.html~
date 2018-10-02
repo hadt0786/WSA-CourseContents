@@ -1,0 +1,35 @@
+<!-- Program Description : Program to create a simple table with border
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Employee Details </h1>
+<table border=”2” bordercolor=”#0000FF”>
+<!-- tr -> table row  -->
+<tr>
+<!-- th -> table heading -->
+<th>Employee Name</th>
+<th>Employee Id</th>
+<th>Salary</th>
+</tr>
+  <tr>
+<!-- td -> table data -->
+    <td>Smith</td>
+    <td>E001</td>
+    <td>45000</td>
+  </tr>
+  <tr>
+    <td>Mac</td>
+    <td>E002</td>
+    <td>42000</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>E003</td>
+    <td>46000</td>
+  </tr>
+</table>
+
+</body>
+</html>

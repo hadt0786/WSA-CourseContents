@@ -1,0 +1,36 @@
+<!-- ******************************************************
++ Description : Internal style sheet - attribute selector 
++               with value and element selector
++ Author      : Webstack Academy (P) Ltd
++ Date        : 2-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <title>Attribute selector with value and element selector</title>
+	
+	<style>
+
+    /* Prefix selector - Selecting an element with title attribute
+     * whose value is prefixed (preceded) by test 
+     */
+	[title^="test"] {
+		color: red;
+        font-weight: bold;
+	}       
+	</style>	
+</head>
+<body>   
+    <p title="test">This paragraph describes test categories.</p>
+    <p title="testing">This paragraph explains testing strategy.</p>
+    <p title="tester">This paragraph is for testers.</p>
+    <p title="animals">Humans will have boring life without animals.</p>
+    <p title="birds">Birds are colorful and beautiful.</p>
+    <p title="food">The food is yummy and tasty.</p>
+</body>
+
+</html>

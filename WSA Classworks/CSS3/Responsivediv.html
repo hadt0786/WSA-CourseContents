@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+
+<html>
+<meta name="viewport" content="width=device-width, intial-scale=1.0"/>	
+    <head>
+    	 <title>Responsive div</title>
+		
+    </head>
+    <style>
+.p::after{
+/*border:1px solid blue;*/
+content:" ";
+display:table;
+clear:both;
+padding:10px;
+}
+.c{
+width:32%;
+border:solid green;
+display :inline-block;
+float:right;}
+
+@media (max-width:600px)
+{
+.c{
+
+width:100%;
+}
+}
+
+h1,p{font-size: 5vw;}
+</style>
+    <body>
+
+     <div class="p"> 
+                       <div class="c"> 
+                         <h1>Column1</h1>
+                          <p>Text</p>
+                      </div>
+
+                         <div class="c"> 
+                         <h1>Column1</h1>
+                          <p>Text</p>
+                      </div>
+
+                       <div class="c"> 
+                         <h1>Column1</h1>
+                          <p>Text</p>
+                      </div>
+    </div>
+    </body>
+    
+</html>
+

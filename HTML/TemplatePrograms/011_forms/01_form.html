@@ -1,0 +1,35 @@
+<!-- *********************************************************
+ + Description : Simple form to input firstname and lastname
+ +
+ + Author      : Web Stack Academy
+ + Date        : 21-oct-2016
+ ********************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Simple form example</title>
+    </head>
+    
+    <body>
+
+        <form>
+            <!-- The “for” attribute of the <label> tag should be equal to the id attribute 
+                 of the related element to bind them together -->
+            <label for="firstname">First Name : </label>
+            <input id="firstname" type="text" /><br /><br />
+            
+            <!-- A label can be bound to an element either by using the "for" attribute,
+            or by placing the element inside the <label> element --> 
+            <label>Last Name  : <input id="lastname" type="text" /> </label> <br /> <br />
+            
+            <!-- By clicking below text will not help select the input field -->
+            Middle Name : <input id="middlename" type="text" /> <br /> <br />
+            <input type="submit" value="Submit" />
+        </form>
+
+    </body>
+</html>
+

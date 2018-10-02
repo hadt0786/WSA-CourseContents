@@ -1,0 +1,17 @@
+{
+  "name": "changecase",
+  "version": "1.0.0",
+  "description": "Program to illustrate use of change-case npm module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "(MIT)"
+  ],
+  "author": "Akash",
+  "license": "MIT",
+  "dependencies": {
+    "change-case": "^3.0.2"
+  }
+}

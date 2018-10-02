@@ -1,0 +1,36 @@
+<!--
+* @Developer: Divek
+* @Problem  : To print inverse triangle
+* @Company  : XYZ
+* @Date     : 10-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Print triangle</title>
+    <script>
+        var Rows = parseInt(prompt("Please Enter number rows", ""));
+        
+	/* making it reverse to print  an inverse triangle from rows to 1 */
+	for(var iLoopIndex=Rows; iLoopIndex>=1;iLoopIndex--){    
+
+ 	/* to print star in reverse from iLoopIndex  to 1*/
+            for(jLoopIndex=iLoopIndex; jLoopIndex>=1;jLoopIndex--){    
+                document.write("*"+"&nbsp"+"&nbsp");
+
+            }
+
+            document.write("<br>");
+
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

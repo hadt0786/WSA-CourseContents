@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var person=new Object({firstName: "Rajani", lastName:"Kanth"});
+		document.write("person is an "+typeof person+"<br>");
+
+		if((delete person.lastName)==true)
+			document.write("Person's lastname deleted<br>");
+		else
+			document.write("Person's lastname could not be deleted<br>");
+		document.write(person.firstName+ " "+person.lastName+"<br>");
+
+		if(delete person.fullname == true)
+			document.write("Deletion of non existing property returns true<br>");
+		else
+			document.write("Deletion of non existing property returns false<br>");
+	</script>
+</head>
+<body>
+</body>
+</html>

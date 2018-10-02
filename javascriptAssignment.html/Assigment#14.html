@@ -1,0 +1,54 @@
+<!-- Write a program to generate fibonaci series.
+Description :
+•
+In mathematics, the Fibonacci numbers are the numbers in the following integer sequence,
+called the Fibonacci sequence, and characterized by the fact that every number after the
+first two is the sum of the two preceding ones.
+0,1,1,2,3,5,8,13.............n
+Objective : Understand the recursion and loop in javascript.
+Prerequisites:
+• For loop
+• recursion
+Sample Execution:
+Test case:
+Input : 10
+Output : 0,1,1,2,3,5,8,13,21,34 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignement 14</title>
+
+    <style>
+    
+    body{
+        background: lightgreen;
+    }
+
+    
+    </style>
+    <script>
+
+            var num = Number(prompt("Enter the number of fibonacci series"));
+
+            var array = [];
+            array[0] = 0;
+            array[1] = 1;
+            document.write(" "+array[0]," "+array[1])
+            for( var x = 2 ; x<num;x++)
+            {
+                array[x] = array[x-1]+array[x-2];
+                document.write(" "+array[x]+" ");
+            }
+
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!-- *************************************************************
++ Description : Print bits
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Print bits</title>
+        <script>
+            
+            var n = 47;
+			var count = 0;
+
+            for(var idx = 31; idx >= 0; idx--) {
+                
+                if(n & (1 << idx)) 
+                    count++;
+					
+            }
+			document.write("Number of set bits are: " + count);
+        </script>
+    </head>
+    <body>
+    </body>
+    
+</html>
+

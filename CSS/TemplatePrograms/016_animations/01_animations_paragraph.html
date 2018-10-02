@@ -1,0 +1,53 @@
+<!-- ******************************************************
++ Description : Animations background color
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        .anim-swing {
+            animation-duration: 5s;
+
+            /* Name of animation */
+            animation-name: swing-frames;
+
+            /* How many times the animation is repeated */
+            animation-iteration-count: infinite;
+
+            /* Default delay is zero */
+/*            animation-delay: 5s;*/
+
+            /* Direction of animation */
+            animation-direction: alternate;
+
+            /* Timing function */
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes swing-frames {
+            from {
+                margin-left: 0%;
+                color: blue;
+            }
+            to {
+                margin-left: 100%;
+                width: 100%;
+                color: red;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <p class="anim-swing"><b>This is swinging text!!</b></p>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!-- ******************************************************
++ Description : Border image property
++ Author      : Webstack Academy (P) Ltd
++ Date        : 4-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<style>
+#img1 {
+    border: 20px solid transparent;
+    padding: 15px;
+    /*-webkit-border-image: url(images3.png) 30 round; 
+    -o-border-image: url(images4.png) 30 round;*/ 
+    border-image: url(images4.png) 50 round;
+    width:100px;
+}
+
+#img2 
+
+{
+    border: 20px solid transparent;
+    padding: 15px;
+    border-image: url(images4.png) 30 repeat;
+    width:100px;
+}
+
+#img3 
+
+{
+    border: 20px solid transparent;
+    padding: 15px;
+    border-image: url(images4.png) 50 stretch;
+    width:100px;
+}
+
+
+
+</style>
+</head>
+<body>
+<center>
+<br>
+<p id="img1"><b>Round</b></p>
+<br>  
+<p id ="img2" ><b>Repeat </b></p>
+<br>  
+<p id ="img3" ><b>Stretch </b></p>
+
+</center>
+</body>
+</html>

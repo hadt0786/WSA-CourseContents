@@ -1,0 +1,45 @@
+<!-- *************************************************************
++ Description : Write a program in javascript for calculator 
++
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 18-Apr-2018
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>JavaScript prompt usage example</title>
+	<script>
+		
+		var num1 = Number(prompt("Enter the first number"));
+		var num2 = Number(prompt("Enter the second number"));
+		var op = prompt("Enter the operator [+ , - , * , /]");
+		
+		switch(op)
+		{
+			case '+':
+				ans = num1 + num2;
+				document.write("Addition operation->" + ans);
+				break;
+			case '-':
+				ans = num1 - num2;
+				document.write("Subtraction operation->" + ans);
+				break;
+			case '*':
+				ans = num1 * num2;
+				document.write("Multiplication operation->" + ans);
+				break;
+			case '/':
+				ans = num1 / num2;
+				document.write("Division operation->" + ans);
+				break;
+		}
+			
+	</script>
+</head>
+
+<body>
+    
+</body>

@@ -1,0 +1,75 @@
+<!-- *************************************************************
++ Description : DOM - Get Elements by name,id and class name
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<html>
+
+
+<script>  
+
+	// Get all elements that are having id as "num" 
+	function GetById(){        
+		// Store them in the div section of the HTML itself
+		document.getElementById("div1").innerHTML = document.getElementById("num").value;
+	}
+	
+	// Get all elements that are having name as "number"
+	function GetByName()
+	{
+		var nums = document.getElementsByName("number");
+		var res = '';
+		for(var i = 0; i < nums.length; i++)
+		{
+			res += nums[i].value + "<br/>";
+			// Store them in the div section of the HTML itself
+			document.getElementById("div1").innerHTML = res;
+		}
+	}   
+	
+	// Get all elements by classname as "example", which is a collection type  
+	function GetByClass() 
+	{
+		var classData = document.getElementsByClassName("example").length;
+		var res = '';
+		
+		for(var i = 0; i < classData; i++)
+		{
+			// Getting the innerHTML portion of the class 
+			res += document.getElementsByClassName("example")[i].innerHTML; + "<br/>";
+			document.getElementById("div1").innerHTML = res;
+		}
+		
+	}
+	
+ </script>
+
+ <body>
+    <form id="form1">
+    <div>
+        <input type="text" id="num" value="12345" />
+        <input type="text" name="number" value="1000" />
+        <input type="text" name="number" value="2000" />
+        <input type="text" name="number" value="3000" />
+    </div>
+	
+	<div class="example">Class example - 001</div>
+	<div class="example">Class example - 002</div>
+	<div class="example">Class example - 003</div>
+	<div class="example">Class example - 004</div>
+	
+    <br />
+    <div id="div1" style="border-style: solid; border-width: thick; border-color: blue;
+        width: 515px; height: 100px;">
+        Div Section 
+    </div>
+    <br />
+    <input type="button" onclick="GetById();" value="Get Element By Id" />
+    <input type="button" onclick="GetByName();" value="Get Element By Name" />
+	<input type="button" onclick="GetByClass();" value="Get Element By Class" />
+    </form>
+</body>
+</html>

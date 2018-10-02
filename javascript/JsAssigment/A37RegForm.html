@@ -1,0 +1,144 @@
+<!--Write a JavaScript program to create email registration form and validate the following data , all the
+fields must have entered data.-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> Simple Form example</title>
+  <style>
+     
+      form{
+          background-color: dimgray;
+          width: 340px;
+          height: auto;
+          position: absolute;
+          top:8%;
+          left:35%;
+          padding: 25px;
+          box-shadow: 5px 5px 15px black;
+          border-radius: 25px;
+              transition: background-color 2s ease;
+      }
+      
+      body{
+          background:cyan; 
+           transition: background-color 2s ease !important;
+      }
+      
+      input[type="text"],input[type="password"],input[type="email"],input[type="date"],input[type="number"]{
+         padding:10px;
+          width: 300px;
+          margin: 5px;
+                  border-radius: 5px;
+      }
+        button,select,input[type="reset"]{
+         padding:10px;
+          width: 150px;
+          margin-left: 15px;
+         border-radius: 5px;
+            
+      }
+      button:hover,input[type="reset"]:hover{
+            background-color: peachpuff;
+          
+      }
+      a{
+          text-decoration: none
+              color:cyan;
+      }
+      input[type="checkbox"],input[type="radio"]{
+          margin-left: 15px;
+      }
+      
+      input:hover, a:hover{
+          transform: scale(1.02);
+          box-shadow: 2px 2px 10px cyan;
+          
+      }
+      p{
+          color: cyan;
+           margin-left: 15px;
+      }
+
+      form:hover{
+      background-color: cyan ;
+
+      }
+      body:hover{
+      	          background:grey; 
+
+      }
+     </style>
+ </head>
+<body>
+ <form  autocomplete="off" name="form">
+  <p id='msg'></p>
+   <input id="firstname" type="text" name="firstname" placeholder="First name" required="true"> 
+   <input  id="name" type="text" name="Name" placeholder="Name" required="true">
+      <input  id="email" type="email" name="email" placeholder="Email" required="true">
+               <input  id="nmu" type="number" name="num" placeholder="Mobile" required="true">
+          <input  id="2email" type="email" name="aemail" placeholder="Alternate Email" required="true">
+      <input  id="password" type="text" name="Password" placeholder="Password" required="true">
+      <input  id="cpassword"  type="password" name="cPassword" placeholder="Confirm Password" required="true">
+        <input  value="2016-04-10"  type="date" name="DOB" id="DOB" required="true">
+            
+      <br>   <br>
+      <input id="gender"  type="radio" name="gender" value="Male" checked> Male
+      <input   type="radio" name="gender" value="Female">Female
+           <br>   <br>
+   
+              <select  id="country"  name="select" required="true">
+                    <option value="choose">Choose Your Contry..</option>
+                <option value="India">India</option>
+                <option value="Usa"> Usa</option>
+               <option value="Aus">Aus</option>
+               <option value="Uk"> Uk</option>
+              </select>
+                 <br>   <br>
+                 <label> <input id="condition"  type="checkbox" name="checkbox" required="true">I agree  <a href="#">Terms</a>  and <a href="#">Condition</a>  </label> <br> <br>
+     <button type="submit" onclick="val();"  >Submit</button>
+        <input type="reset" value="reset"/>
+    
+    
+  </form>
+</body>
+      <script>
+      	var date = new Date();
+ 
+var day = date.getDate();
+var month = date.getMonth() + 1;
+var year = date.getFullYear();
+
+if (month < 10) month = "0" + month;
+if (day < 10) day = "0" + day;
+
+var today = year + "-" + month + "-" + day;
+      	document.getElementById('DOB').value =  today;
+ var expmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+   function val(){
+             (document.form.firstname.value.length<5  || document.form.firstname.value=="" )?alert(" FirstName length < 5 or null"):       (document.form.Name.value.length<8 || document.form.Name.value=="")?alert("Name Length Should be more than 8"): ( !(document.form.email.value.match(expmail))|| !(document.form.aemail.value.match(expmail) ))? alert("invalid Email !"):(document.form.num.value.length>10 || document.form.num.value==""  )?alert(" Invalid number"):(validatePassword ()||document.form.Password.value!=document.form.cPassword.value ||document.form.Password.value==""||document.form.cPassword.value=="")?alert("Password Not matching or invalid"): ((document.form.DOB.value==today) )?alert("please select a valid date !"):  (document.form.country.value=="choose")?alert("Please select country"):
+             (document.form.checkbox.checked == false)?alert("Please agree Terms and condition") :alert("Form submitted sucessfully");
+ 
+    
+       
+function validatePassword() {
+    var p = document.getElementById('password').value,
+        errors = [];
+    if (p.length < 8) {
+        errors.push("Your password must be at least 8 characters"); 
+    }
+    if (p.search(/[a-z]/i) < 0) {
+        errors.push("Your password must contain at least one letter.");
+    }
+    if (p.search(/[0-9]/) < 0) {
+        errors.push("Your password must contain at least one digit."); 
+    }
+    if (errors.length > 0) {
+        alert(errors.join("\n"));
+        return false;
+    }
+    return false;
+}
+        
+    }
+    </script>
+       </html>

@@ -1,0 +1,37 @@
+<!--
+* @Developer: Divek
+* @Problem: To Calculate Grade using the given percentage
+* @Company: XYZ
+* @Date:    10-5-2018
+* @copyright  WSA Academy
+* @license    GPL
+* @version    1.0
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result Grade with percentage</title>
+    <script>
+        var percentage = prompt("Please Enter Percentage", "");
+
+        if(percentage>=80){// checking if percentage is grater than 80 than a grade
+            grade="A grade";
+        }
+        else if(percentage>=60){// checking if percentage is grater than 60 than b grade
+            grade="B grade";
+        }
+        else if(percentage>=40){// checking if percentage is grater than 40 than c grade
+            grade="C Grade";
+        }
+        else if(percentage<40){// checking if percentage is lesser than 40 than failed
+            grade="Sorry You have failed";
+        }
+        alert("Result is : "+grade)// alerting the grade ;
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

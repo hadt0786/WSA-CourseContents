@@ -1,0 +1,39 @@
+
+<script>
+
+var str =prompt("enter s string");
+var regExp=/u{1}/i;
+var regExp2=/d{1}/i;
+var regExp3=/l{1}/i;
+var regExp4=/r{1}/i;
+var regExp5=/lr/ig;
+var regExp6=/rl/ig;
+var regExp7=/ll/ig;
+var regExp6=/rr/ig;
+var regExp8=/ud/ig;
+var regExp9=/du/ig;
+var regExp10=/uu/ig;
+var regExp11=/dd/ig;
+
+if(str.length==2||str.length==4){
+//for lr and rl or ll and rr
+if(regExp5.test(str)&&regExp6.test(str)||regExp7.test(str)&&regExp8.test(str)){
+alert("Wow Made it");
+}
+//for ud and du or dd and ll
+else if(regExp8.test(str)&&regExp9.test(str)||regExp10.test(str)&&regExp11.test(str)){
+alert("working dduu is");
+}
+//for lrdu rdlu nx4 combination
+else if (regExp.test(str)&& regExp2.test(str) && regExp3.test(str) && regExp4.test(str) )
+{
+alert("working found");
+}
+else{
+alert("not found");
+}
+}
+else{
+alert("nope found");
+}
+</script>

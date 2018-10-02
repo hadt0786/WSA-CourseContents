@@ -1,0 +1,83 @@
+<!-- *************************************************************
++ Description : Program to create a table with table header, 
++               table footer 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Table Enhanced</title>
+	<style>
+	td, th {
+    	border: 1px solid #dddddd;
+    	text-align: left;
+    	padding: 8px;
+    }
+    /* background color of table body rows */
+    tbody tr:nth-child(even) {
+    		background-color: #dddddd;
+		
+	}
+    </style>
+</head>
+
+<body>
+<h1> Employee Details </h1>
+
+<table border="1" style="border-collapse:collapse; width:34%;">
+<thead><!-- table header -->
+	<tr bgcolor="magenta">
+		<th colspan="3" style="text-align:center">Employee Details</th>
+	</tr>
+  <tr bgcolor="yellow"> <!-- row -->
+    <th>Employee Name</th>
+    <th>Employee Id</th>
+    <th>Salary</th>
+  </tr>
+</thead>
+
+<!-- table footer 
+<tfoot bgcolor=magenta> 
+  <tr>
+    <td>Total</td>
+    <td>Total</td>
+    <td>Total</td>
+  </t
+</tfoot>
+-->
+<tbody> <!-- table body -->
+  <tr> <!-- row -->
+    <td>Rajanikanth</td>
+    <td>E001</td>
+    <td>45000</td>
+  </tr>
+  <tr> <!-- row -->
+    <td>Kamal Hasan</td>
+    <td>E002</td>
+    <td>42000</td>
+  </tr>
+  <tr> <!-- row -->
+    <td>Salman Khan</td>
+    <td>E003</td>
+    <td>46000</td>
+  </tr>
+    <tr> <!-- row -->
+    <td>Amir Khan</td>
+    <td>E004</td>
+    <td>50000</td>
+  </tr>
+    <tr> <!-- row -->
+    <td>Ranveer Kapoor</td>
+    <td>E005</td>
+    <td>55000</td>
+  </tr>
+</tbody>
+
+</table>
+
+</body>
+</html>
+

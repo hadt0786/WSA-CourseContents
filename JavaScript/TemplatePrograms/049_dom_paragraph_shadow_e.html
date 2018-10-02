@@ -1,0 +1,29 @@
+<!-- *************************************************************
++ Description : DOM - Get Elements by id, shadow property
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="myP1">My paragraph - First lesson</p>
+<p id="myP2">My paragraph - Second lesson</p>
+
+
+<button type="button" onclick="myParagraphFunction()">Add shadow</button>
+
+<script>
+
+function myParagraphFunction() {
+    document.getElementById("myP1").style.textShadow = "5px 10px";
+    document.getElementById("myP2").style.textShadow = "5px 10px";
+}
+
+</script>
+
+</body>
+</html>

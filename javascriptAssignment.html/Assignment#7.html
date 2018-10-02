@@ -1,0 +1,47 @@
+<!-- Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz”
+instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples
+of both three and five print “FizzBuzz”.
+Description:
+• Accept the positive integer n = 100.
+• If number is 3,9,12,15................99, then print Fizz
+• If number is 5,10,15,20...............100, then print Buzz
+• If number is 3,5,910,12,15...........100, then print FizzBuzz
+Objective : To understand the concept of numbes and loops in Javascript.
+Prerequisites:
+• Loops
+• Conditiponal loop
+Sample Execution:
+Test Case 1:
+positive integer n: 100
+Output : 1,2,Fizz,4,Buzz,Fizz,7,8,Fizz,Buzz,11,Fizz,13,14,FizzBuzz....................Buzz -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fizz Buzz</title>
+    <style>
+    body{
+        background:lightgreen;
+    }
+    
+    </style>
+</head>
+<body>
+    <script>
+    
+    var n = Number(prompt("Enter the number"));
+
+    var array = [];
+
+   for(var i = 3;i<=n;i++)
+   {
+            var ans = (i%3==0 && i%5==0)?"FizzBuzz":(i%3==0)?"Fizz":(i%5==0)?"Buzz": " ";
+            document.write("<h1>"+i + " "+ans + "<h1>"+"<br>")     
+   }
+    </script>
+</body>
+</html>

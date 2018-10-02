@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		function sumOfNumbers(n) {
+			if(n.length <= 0)
+				return 1;
+			else
+				return n+sumOfNumbers(n-1);
+		}
+
+		var num = +prompt("Enter digits");
+		document.write("Sum of natural numbers "+num+" is : "+sumOfNumbers(num));				
+	</script>
+</body>
+</html>

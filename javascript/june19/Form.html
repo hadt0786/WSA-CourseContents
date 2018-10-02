@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form javascript</title>
+<script>
+
+function validate()
+{
+    var numValue,formMessage;
+    numValue = document.getElementById("num").value;
+
+    if(isNaN(numValue)||(numValue<5)||(numValue>20))
+    {
+        formMessage=" NOT A valid";
+
+    }
+    else{
+        formMessage="ok";
+
+    }
+    document.getElementById("ex").innerHTML = formMessage;
+}
+
+</script>
+
+
+</head>
+<body>
+    
+    <p>
+        Please input a number between 5 and 20"
+    </p>
+`<input id = "num">
+<button type="button" onclick="validate()">SUBMIT</button>
+<p id="ex"></p>
+
+</body>
+</html>

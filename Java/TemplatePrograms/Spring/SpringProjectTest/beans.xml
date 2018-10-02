@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+
+<!-- instantiating the Account class -->
+
+<bean id ="accObj"  class="com.Account">
+
+<property name="accNo" value="123456789"></property>
+<property name="accHolder" value="Vikash"></property>
+
+</bean>
+
+<!-- instantiating the Transaction class -->
+
+<bean id ="tran"  class="com.Transaction">
+
+<property name="acc" ref="accObj"></property>
+
+
+</bean>
+
+</beans>

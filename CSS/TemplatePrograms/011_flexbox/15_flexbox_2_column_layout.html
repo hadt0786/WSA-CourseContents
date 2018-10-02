@@ -1,0 +1,95 @@
+<!-- ****************************************************
++ Description : Web page layout using flex container
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style> 
+    .flex-container {
+        display: flex;  
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .flex-container > * {
+        padding: 15px;
+        flex: 100%;
+    }
+
+    .article {
+        text-align: left;
+    }
+
+    header {background: black;color:white;}
+    footer {background: grey;color:white;}
+    .nav {background:#eee;}
+
+    .nav ul {
+        list-style-type: none;
+        flex-direction:row;
+        padding: 0;
+    }
+
+        .nav ul li {
+        list-style-type: none;
+        display: inline-flex;
+        padding: 0;
+    }
+    
+    .nav ul a {
+        text-decoration: none;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .nav {
+            text-align:left;
+            flex:auto;
+        }
+        .nav ul {
+        list-style-type: none;
+        flex-direction:column;
+        padding: 0;
+    }
+                .nav ul li {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+    }
+        .article {
+            flex:5 0px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1>States</h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="#">Bengaluru</a></li>
+  <li><a href="#">Mysuru</a></li>
+  <li><a href="#">Mangalore</a></li>
+</ul>
+</nav>
+
+<article class="article">
+  <h1>Karnataka</h1>
+  <p>Karnataka is a state in southwest India with Arabian Sea coastlines. The capital, Bengaluru (formerly Bangalore), is a high-tech hub known for its shopping and nightlife. .</p>
+  <p>The southwest, Mysore is home to lavish temples including Mysore Palace, former seat of the region’s maharajas. Hampi, once the medieval Vijayanagara empire’s capital, contains ruins of Hindu temples, elephant stables and a stone chariot..</p>
+</article>
+
+<footer>Copyright &copy; Webstack Academy</footer>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>COOKIES</title>
+
+<h1> Cookies Example</h1>
+
+<script>
+
+    function writeCookie()
+    {
+        document.cookie = "username=WSA";
+        document.cookie =  "expires=Tue, 14 Oct 2014 20:23:32 GMT;";
+		document.cookie = "path=/;";
+        alert(document.cookie);
+    }
+    function readCookie()
+    {
+        var cookieVal = decodeURIComponent(document.cookie); 
+        console.log("All cookies "+cookieVal);
+
+        cookieArray = cookieVal.split(";");
+        for(cIndex = 0 ;cIndex<cookieArray.length;cIndex++)
+        {
+            cookieName = cookieArray[cIndex].split("=")[0];
+            cookieValue = cookieArray[cIndex].split("=")[1];
+            document.write("Key is "+cookieName+" cookie value "+cookieValue+"<br>");
+        }
+    }
+</script>
+
+
+</head>
+<body>
+    <button onclick="writeCookie()">Write Cookie</button>
+	<button onclick="readCookie()">Read Cookie</button>
+</body>
+</html>

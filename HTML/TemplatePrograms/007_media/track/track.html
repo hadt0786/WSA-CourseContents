@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+
+<html>
+	
+    <head>
+    	 <title>Track example</title>
+    </head>
+    
+    <body>
+		
+		<video width="500px" height="375px" controls="controls" crossorigin="anonymous">
+		
+			<source src="media/sample_video.mp4" srclang="en" type="video/mp4" />
+			<source src="media/sample_video.ogg" srclang="en" type="video/ogg"/>
+            
+			 <!-- Video Text Track --> 			
+			<track src="./media/sample_en.vtt" kind="subtitles" srclang="en" label="English" default/>
+  			<track src="./media/sample_hi.vtt" kind="subtitles" srclang="hi" label="Hindi" />
+
+			Your browser does not support the video tag.
+		
+		</video>				
+        
+    </body>
+    
+</html>
+

@@ -1,0 +1,47 @@
+<!-- **********************************************************
++ Description : Tooltip using absolute position
++ Author      : Webstack Academy (P) Ltd.
++ Date        : 20-Nov-2016
++********************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Tooltip</title>
+<style>
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white; /* text color */
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip .tooltiptext {
+    top: -5px;
+    left: 105%;
+}
+</style>
+</head>
+<body>
+
+<p><span class="tooltip">Tom<span class="tooltiptext">Tom is a cat!!</span></span> jumped over Jerry to catch him but <span class="tooltip">Jerry<span class="tooltiptext">Jerry is a mouse!!</span></span> narrow escaped and ran into his home.</p>
+
+</body>    
+</html>

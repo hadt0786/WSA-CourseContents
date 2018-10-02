@@ -1,0 +1,51 @@
+<!-- ******************************************************
++ Description : Box shadow
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Box Shadow</title>
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            background-color: cyan;
+            text-align: left;
+        }
+        
+        .bs-no-blur {
+            box-shadow: 10px 10px grey;
+        }
+        
+        .bs-blur-20 {
+            box-shadow: 10px 10px 20px grey;
+        }        
+
+    </style>
+</head>
+
+<body>
+    
+    <br> <br>    
+    <center>
+
+        <div class="bs-no-blur">
+            <h3>Example - no blur, no-spread</h3>
+        </div>
+        
+            <br> <br>      <br> <br>  
+        <div class="bs-blur-20">
+            <h3>Example - blur 20px</h3>
+
+        </div>  
+        
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!-- *************************************************************
++ Description : Regular expressions 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Regular expressions - Finding alphanumeric</title>
+		<script>
+			
+			// Check if the given input is alphanumeric or not
+			function string_check(str)  
+			{  
+				var regexp = /[^a-z]+[0-9]+/i;  
+				if (regexp.test(str))  
+				{  
+					document.write("Alphanumeric matching" + "<br>");  
+				}   
+				else  
+				{  
+					document.write("Alphanumeric NOT matching" + "<br>");  
+				}  
+			}  
+			string_check("webstack academy");  
+			string_check("fullSTACK CourSE" );
+			string_check("nostack123");
+			string_check("nostack....");
+			string_check("&$#***");
+		</script>
+    </head>
+    <body>
+    </body>
+</html>
+
+

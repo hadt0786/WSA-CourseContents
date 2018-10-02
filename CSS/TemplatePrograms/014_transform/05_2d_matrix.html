@@ -1,0 +1,45 @@
+<!-- ******************************************************
++ Description : Method skew
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Method skew</title>
+    <style>
+        * {
+            margin: 20px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: grey;
+            text-align: center;
+            /* for text alignment */
+            line-height: 150px;
+        }
+
+        .modified {
+            /* scaleX, skewY, skewX, scaleY, translateX, translateY */
+            transform-origin: left;
+            transform: matrix(2, 0, 0, 1, 0, 0);
+/*transform: matrix(1, 0, 1, 1, 80, 0);*/
+
+            background-color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">Static box</div> <br>
+    <div class="box modified">Modified box</div> <br>
+    <div class="box">Static box</div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!-- Program Description : HTML5 program with heading and Paragraphs 
+Author : Sandhya 
+Date : 19-oct-2016-->
+<!DOCTYPE html>
+<html>
+<body>
+<title>My web page with Headings and Paragraph</title>
+</head>
+<body>
+        <h1>Introduction</h1>
+                <p> This is the first paragraph of the page.</p>
+        <h2>The less important heading</h2>
+                <p>This is the second paragraph and it is right below a h2-heading</p>
+        <h3>My 3rd level heading</h3>
+                <p>Just another paragraph </p>
+        
+</body>
+</html>
+

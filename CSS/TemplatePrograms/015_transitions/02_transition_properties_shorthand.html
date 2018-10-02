@@ -1,0 +1,35 @@
+<!-- ******************************************************
++ Description : Transitions shorthand property
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Transitions shorthand property</title>
+    <style>
+        h1 {
+            font-size: 30px;
+
+            /* <property> <duration> <timing-function> <delay> */
+            transition: font-size 3s ease-in-out;
+        }
+
+        h1:hover {
+            /* font size when mouse hover over heading */
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>This is heading</h1>
+    </nav>
+</body>
+
+</html>

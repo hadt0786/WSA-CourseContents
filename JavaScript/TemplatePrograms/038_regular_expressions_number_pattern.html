@@ -1,0 +1,38 @@
+<!-- *************************************************************
++ Description : Regular expressions 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Regular expressions - Finding number pattern</title>
+		<script>
+			
+			// Check if the given input is alphanumeric or not
+			function number_pattern_check(str)  
+			{  
+				var regexp = /[0-9]+\-[0-9]+/;  
+				if (regexp.test(str))  
+				{  
+					document.write("Number pattern matching" + "<br>");  
+				}   
+				else  
+				{  
+					document.write("Number patten not maching" + "<br>");  
+				}  
+			}  
+			number_pattern_check("1234-5678");  
+			number_pattern_check("12345678");  
+			number_pattern_check("abc1234");  
+			number_pattern_check("7777-8888");  
+		</script>
+    </head>
+    <body>
+    </body>
+</html>
+
+

@@ -1,0 +1,16 @@
+{
+  "name": "ReferenceAndSubDocuments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "embedding12.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.2.7",
+    "nodemodule": "^0.3.0"
+  }
+}

@@ -1,0 +1,43 @@
+<!-- *************************************************************
++ Description : Differrent ways of defining string
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 28-07-2018
+************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Definition</title>
+        <script>
+            var str = "";
+            var str1 = "Hello World";
+            var str2 = new String("Hello World from new");
+            var str3 = new String(str1);
+            var str4 = new String("hi","hello");
+
+            document.write("Empty string: "+str);
+            document.write("<br>String: "+str1);
+            document.write("<br>String created using new: "+str2);
+            document.write("<br>Passed str1 to str3 with new: "+str3);
+            document.write("<br>Passed 2 string => 'hi hello', but returns only "+str4+"!!!!");
+
+
+
+            //Difference between str="hello World" and str=new String("Hello World");
+            var str1 = "Hello World";
+            var str2 = new String("Hello World");
+
+            var cs= (str1==str2) ? true:false;
+
+            var compareStr1 = (str1 === str2) ? true : false;
+
+            document.write("<br><br>Result of comparision ==: "+cs);
+
+            document.write("<br><br>Result of comparision ===: "+compareStr1);
+
+            document.write("<br>typeof str1: "+typeof str1);
+            document.write("<br>typeof str2: "+typeof str2);
+
+        </script>
+    </head>
+</html>

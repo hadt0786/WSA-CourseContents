@@ -1,0 +1,52 @@
+<!-- Write a JavaScript program to display your name in every 30 seconds using timer.
+Description :
+• Create a webpage which should display the user name in every 30 seconds
+• Use timer function of BOM.
+Objective : Understand the BOM in javascript
+Prerequisites:
+• HTML
+• CSS
+• BOM
+Sample Execution: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 45</title>
+
+    <style>
+    body{
+        background: lightgreen;
+    }
+    </style>
+
+    <p id ="p"></p>
+
+</head>
+<body>
+    
+<script>
+
+    var time = Number(prompt(" Enter the time period"));
+    time = time*1000;
+    var t = setInterval(timeInterval,time);
+    
+    var count = 0;
+    function timeInterval(){
+        document.getElementById("p").innerHTML += " this is "+count;
+        count++;
+        if(count==20){
+            clearInterval(t);
+        }
+    }
+
+
+</script>
+
+
+
+</body>
+</html>

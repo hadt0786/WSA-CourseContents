@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<!-- Ordered List with type attribute -->
+<h2> Scripting Langauge </h2>
+<ol type="A">
+<li> Shell script </li>
+<li> Java  Script </li>
+</ol>
+<h2> RDBMS </h2>
+<ol type ="I">
+<li> MS-Access</li>
+<li> SQL</li>
+</ol> 
+
+</body>
+</html>
+

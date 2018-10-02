@@ -1,0 +1,10 @@
+<!-- Program Description : Program to change font family of heading and paragraph
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<body>
+<h1 style="font-family:verdana;">Emertxe IT Training Center</h1>
+<p style="font-family:courier;">Emertxe - Leaders in Embedded Systems & LINUX & IoT Training Institute</p>
+</body>
+</html>
+

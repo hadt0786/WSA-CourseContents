@@ -1,0 +1,11 @@
+<!-- Program Description : Program to set the alignment of heading and Paragraph
+Author : Sandhya 
+Written  : 20-oct-2016-->
+
+<!DOCTYPE html>
+<body>
+<h1 style="text-align:left;">Left Heading</h1>
+<p style="text-align:right;">Right paragraph.</p>
+</body>
+</html>
+

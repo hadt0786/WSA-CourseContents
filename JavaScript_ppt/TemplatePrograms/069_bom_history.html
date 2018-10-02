@@ -1,0 +1,39 @@
+<!-- *************************************************************
++ Description : BOM - History objects
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!---- DOCTYPE html ---->
+
+
+<html>
+<head>
+<h1>IMPORTANT: Don't run this program directly. Ensure there are good number
+of pages are browsed in your window and then invoke it, otherwise the windows
+will not have any history associated with it.</h1>
+
+<p id="history"></p>
+
+<script>
+
+function getHistoryLength()
+{
+	hLength = window.history.length;
+	document.getElementById("history").innerHTML = "The history length" + hLength + "<br>";
+}	
+	
+
+function goBack() {
+    window.history.back()
+}
+
+</script>
+</head>
+<body>
+
+<button onclick="getHistoryLength()">Get History Length</button>
+<button onclick="goBack()">Go Back</button>
+
+</body>
+</html>

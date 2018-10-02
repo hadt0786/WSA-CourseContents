@@ -1,0 +1,13 @@
+<!-- Program Description : Program to create a frame with url address
+Author : Sandhya 
+Written  : 20-oct-2016-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe src="http://www.google.com" style="border:medium solid black"></iframe>
+
+</body>
+</html>
+

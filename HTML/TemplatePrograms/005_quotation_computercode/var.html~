@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Code example:</p>
+<code>var student = {
+    name:"Smith",
+    course:"Java"
+}</code>
+
+</body>
+</html>
+

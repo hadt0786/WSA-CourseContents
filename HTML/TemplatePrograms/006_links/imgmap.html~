@@ -1,0 +1,18 @@
+<!-- Program Description : Program to describe 
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<html>
+<body>
+<p>Click on the sun or on one of the planets to watch it closer:</p>
+
+<img src="shape.jpg" alt="shapes" usemap="#shape" style="width:145px;height:126px;">
+
+<map name="shape">
+  <area shape="rect" coords="0,0,82,126" alt="Roses" href="roses_flowers_plant_216000.jpg">
+  <area shape="circle" coords="90,58,3" alt="Sunflower" href="images.jpg">
+ 
+</map>
+</body>
+</html>
+

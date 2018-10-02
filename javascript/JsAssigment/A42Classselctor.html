@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Align para</title>
+</head>
+<style>
+    
+    </style>
+
+<body>
+    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, tempore autem debitis voluptates eum necessitatibus tenetur nisi numquam soluta repellat praesentium assumenda, impedit blanditiis asperiores, beatae ratione molestiae voluptate doloremque. lorem</p>
+
+       <p class="para">Lorem ipsum dolor sit amet,um assumenda, impedit blanditiis asperiores, beatae ratione molestiae voluptate doloremque. lorem</p>
+        
+           <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. at praesentium assumenda, impedit blanditiis asperiores, beatae ratione molestiae voluptate doloremque. lorem</p>
+           
+           <button onclick="change()">change</button>
+
+</body>
+<script>
+    
+    function change(){
+      var p = document.getElementsByClassName("para");
+for (var x = 0,  x < p.length; x++) {
+
+            p[x].style.textAlign="right";
+                        p[x].style.color="grey";
+                                    p[x].style.fontSize="25px";
+                                        p[x].style.background="cyan";
+            
+        }
+    }
+    
+
+    
+    </script>
+</html>

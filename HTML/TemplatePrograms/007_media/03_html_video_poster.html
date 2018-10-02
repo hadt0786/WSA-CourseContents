@@ -1,0 +1,32 @@
+<!-- *****************************************************************
++ Description : Poster attribute example
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++***************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Video poster example</title>
+    </head>
+    
+    <body>
+        <!--
+        <video width=“100%” height=“auto” controls autoplay>
+        -->
+        <!-- -->
+        <video width="1200px" height="600px" controls poster="./images/birds-1280x688.jpg">
+        
+            <source src="./video/birds_sd.3gp" type="video/3gpp" />
+            <!-- alternate video if above format is not supported -->
+            <source src="./video/birds_hd.mp4" type="video/mp4" />
+        
+            <!-- This text will be displayed only if browser does not support video tag -->
+            Your browser does not support video tag
+        </video>
+        
+    </body>
+    
+</html>

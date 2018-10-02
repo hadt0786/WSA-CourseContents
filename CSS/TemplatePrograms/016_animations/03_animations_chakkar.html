@@ -1,0 +1,57 @@
+<!-- ******************************************************
++ Description : Animations
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    <style> 
+        .box {
+            width: 200px;
+            height: 200px;
+            background: gold;
+        }
+        
+        .anim-bg {
+            animation: bg-color-frames 5s infinite;
+        }
+        .anim-chakkar {
+        animation: chakkar-frames 5s alternate infinite;
+        }
+
+        /* Keyframes for background color */
+        @keyframes bg-color-frames {
+          0% {
+            background-color: aqua;
+          }
+          100% {
+            background-color: darkmagenta;
+          }
+        }
+        
+        /* keyframes for chakkar animation */
+        @keyframes chakkar-frames {
+          0% {
+            transform: rotate(0turn);
+          }
+          100% {
+            transform: rotate(5turn);
+              margin-left: 100%;
+          }
+        }
+        
+    </style>
+</head>
+    
+<body class="anim-bg">
+
+<div class="box anim-chakkar"></div>
+
+</body>
+</html>
+
+

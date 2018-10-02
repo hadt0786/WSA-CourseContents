@@ -1,0 +1,166 @@
+<!-- Write a JavaScript program to create email registration form and validate the following data , all the
+fields must have entered data.
+a) Enter The FirstName and LastName . Define PlaceHolder and field size 10.
+b) Enter the User Name . User Name should be of minimum 8 character.
+c) Enter the Password and confirm it in the next box .[ Pasword between 6 to
+20 characters which contain at least one numeric digits ,one uppercase and
+one lowercase letter.
+d) Enter the birthday starting from month of Birth , day , year.
+e) Select Your Country .
+f) Select your gender ( Create checkbox)
+g) Enter the phone Number . (Phone number should be of 10 digits with no
+comma , no space , no punctuation mark.
+h) Enter alternative Email address.
+i) Agree to the Google terms of service and privacy policy by ticking the box.
+j) Click the submit button. On submit the form welcome message should
+display.
+Description :
+• Create a html page with above mentioned field.
+• Validate all the field using javascript as described in the question.
+Objective : Understand the validation of html page using javascript.
+Prerequisites:
+• HTML
+• Control flow
+• Functions -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keyword" content="Javascript form validation example"/>
+    <meta name="description" content="This is the example of javascript form validation"/>
+
+    <title>JAVASCRIPT FORM VALIDATION Assignment 37</title>
+
+    <link rel='stysheet' href='form-validation.css' type= 'text/css'/>
+    <style>
+    
+    h1{
+    margin-left:75px;
+}
+form li{
+    list-style:none;
+    margin-bottom:5px;
+}
+
+form ul li label{
+
+    float: left;
+    clear:left;
+    width:100px;
+    text-align: right;
+    margin-right:10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:14px;
+}
+
+font ul li input, select, span{
+    float:left;
+    margin-bottom:10px;
+}
+
+form textarea{
+    float:left;
+    width:350px;
+    height : 150px;
+}
+[type="submit"]{
+    clear:left;
+    margin : 20px 0 0 230px;
+    font-size:18px;
+}
+p{
+    margin-left:70px;
+    font-weight: bold;
+}
+    
+    </style>
+    <script> src = "sample-form-validation.js"</script>
+
+
+</head>
+<body onLoad="document.registration.userid.focus()">
+<h1> Registration Form</h1>
+
+<p> Use the tab keys to move from one box to othet</p>
+
+<form name="registration" onsubmit="return formValidation();">
+
+    <ul>
+
+        <li><label for="userid">User Id</label></li>
+        <li><input type="text" placeholder="User Nane" size="12">
+            </label></li>
+            <br>
+        
+         <li><label for="passid">PASSWORD</label></li>
+        <li><input type="password" placeholder="password" size="12"/>
+                </label></li>
+                <br>
+        
+        <li><label for="username">User Name</label></li>
+        <li><input type="text" placeholder="User Name" size="12"/>
+                    </label></li>
+                    <br>
+        
+        <li><label for="address">Address</label></li>
+        <li><input type="text" placeholder="Address" size="12"/>
+                        Address</label></li>
+                        <br><br>
+
+        <li><label for="country">Country</label></li>
+        <li><select name="country" >
+            <option selected="" value="Default">Please select the 
+                Country
+            </option>
+
+            <option value="A">AUSTRAILIA</option>
+            <option value="B">BANGLADESH</option>
+            <option value="C">CANADA</option>
+            <option value="D">DENMARK</option>
+            <option value="E">ETHIOPIA</option>
+        </select></li>
+
+        <br><br>
+
+        <li><label for="zip">ZIP CODE</label></li>
+        <li><input type="text" name="zip"/></li>
+
+        <br><br>
+
+        <li><label for="email" >Email Id</label></li>
+        <li><input type="text" placeholder="Email" size="12"</li>
+
+        <br><br>
+
+        <li><label for="gender" >GENDER</label></li>
+        <li><input type="radio" name="sex" value="Male"/><span>Male</span>
+        </li>
+        <li><input type="radio" name="sex" value="FEMALE"/><span>FEMale</span>
+        </li>
+
+        <br><br>
+
+        <li><label>Language:</label></li>
+        <li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
+        <li><input type="checkbox" name="nonen" value="noen" /><span>Non English</span></li>
+        
+        <br><br>
+
+        <li><label for="desc">About:</label></li>
+        <li><textarea name="desc" id="desc"></textarea></li>
+        <li><input type="submit" name="submit" value="Submit" /></li>
+
+        <br><br>
+
+    </ul>
+
+
+</form>
+
+
+</body>
+</html>

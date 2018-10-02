@@ -1,0 +1,49 @@
+<!--
+* @Developer: Divek
+* @Problem  : Find max of 3
+* @Company  : XYZ
+* @Date     : 10-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Max of 3</title>
+
+    <script>
+        var FirstNum = parseInt(prompt("Please Enter 1st number", ""));
+        var SecondNum = parseInt(prompt("Please enter 2nd number", ""));
+        var ThirdNum = parseInt(prompt("Please enter 3rd number", ""));
+
+
+	/*Check if First Num is great than seconc num*/
+        if(FirstNum>SecondNum){  
+	   
+	 /* sets first num as max*/    
+            max=FirstNum;           
+        }
+            else{
+		
+		//If not Secnum is max
+                max=SecondNum;          
+             }
+		 //check if max is greater than 3rd number
+                 if(ThirdNum>max){ 
+
+     		     // if false set third num as max
+                     max=ThirdNum; 
+        }
+
+	//alerting user the maximum number
+        alert("Max Is =" + max);   
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

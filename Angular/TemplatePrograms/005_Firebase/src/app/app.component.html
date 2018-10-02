@@ -1,0 +1,25 @@
+<!-- <h1>Angular integration with firebase</h1>
+
+<ul>
+  <li *ngFor="let item of items | async">
+    <!- {{item.coursename}} {{item.duration}} -->
+    <!-- </li> -->
+  <!-- </ul> -->
+
+  <!-- <p><b>Perform any of the DB operation(Hardcoded way):</b></p>
+  <button (click)="fbAddCourses()">Add Courses</button>
+  <button (click)="fdDeleteCourses()">Delete Courses</button>
+  <button (click)="fdUpdateCourse()">Update Courses</button> -->
+<br><br>
+  <p><b>List of courses currently available in WSA -Dynamic way</b></p>
+  <p><b>Perform any of DB operations (Dynamic way):</b></p>
+  
+  <div *ngFor = "let item of items | async">
+     {{item.id}} --> {{item.coursename}} --> {{item.duration}}
+     <button (click)="firebaseDeleteCourse(item)">Delete Course</button>
+    </div>
+
+    <input [(ngModel)] = "myCoursename" />
+    <input [(ngModel)] = "myCourseduration" />
+
+    <button (click)= "firebaseAddCourse()">Add Course</button>

@@ -1,0 +1,39 @@
+<!-- *************************************************************
++ Description : DOM - Table Handling
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<head>
+    <title>Example: Javascript Inline Event Handlers </title> 
+   <style> 
+     p{font-family:Verdana;
+       background:#FA8B7C;
+       color:#fff;
+       padding:10px; border:4px solid #555;}
+   </style>
+   </head> 
+   <body> 
+  <p onmouseover="this.style.background='#44c767';
+                  this.style.fontStyle='arial'">
+   	JavaScript can respond to the following type of events: 
+  	Mouse Actions , Keyboard Actions , Form Actions ,
+   	Page Loads , Time Intervals and Errors.             
+     </p>
+     <i>Hover over the text to see the effects.</i>
+    </body>
+
+	<script>
+  var item = document.getElementsByTagName("p");  
+   for(var i=0; i < item.length; i++){
+     item[i].onmouseover = mouseOverHandler;
+     item[i].onmouseout = mouseOutHandler;}   
+ function mouseOverHandler(e){
+     e.target.style.background = "#8B0000";
+     e.target.style.fontStyle="italic";}   
+ function mouseOutHandler(e){
+     e.target.style.removeProperty('background');
+     e.target.style.removeProperty('font-style');}
+</script>

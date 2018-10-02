@@ -1,0 +1,32 @@
+<!--
+* @Developer: Divek
+* @Problem  :Program to set voting rights using Try catch
+* @Company  : XYZ
+* @Date     : 15-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+<script>
+ var Age = prompt("whats Your age ?", "");
+    
+        
+        //This try block tries to excute the code inside try block and Age is less then 18
+        try{
+            if(Age<18){
+                //throwing an custom exception to catch
+                
+                throw("Voter not Eligible for Voting ");
+            }
+            else{
+                //Output the result
+                console.log("Eligible for Voting");
+            }
+          
+        }
+        catch(e){
+            //logs the error in console screen
+            console.log("Error: "+e);
+    }
+
+</script>

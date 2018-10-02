@@ -1,0 +1,38 @@
+<!-- *********************************************************
+ + Description : Canvas to draw text
+ + Author      : Web Stack Academy
+ + Date        : 20-08-2018
+ ********************************************************* -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas1" width="300" height="200" style="border:1px solid #d3d3d3;">
+    </canvas>
+    <canvas id="canvas2" width="300" height="200" 
+    style="border:1px solid #d3d3d3;">
+    </canvas>
+    <script>
+        var c = document.getElementById("canvas1");
+        var ctx = c.getContext("2d");
+
+        // filled Text
+        ctx.font = "30px Arial";
+        ctx.fillText("WSA", 10, 50);
+
+        //Stroke text
+        var c = document.getElementById("canvas2");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("WSA", 10, 50);
+    </script>
+                
+</body>
+</html>
+        
+</body>
+</html>

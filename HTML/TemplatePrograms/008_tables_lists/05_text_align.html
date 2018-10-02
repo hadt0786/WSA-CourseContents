@@ -1,0 +1,45 @@
+<!-- *************************************************************
++ Description : Cell with text-align attribute 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Column Span Example</title>
+    <style>
+        th, td {
+            height: 30px;
+            width: 80px;
+            text-align: right;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Table starts here -->
+    <table border="1">
+        <caption>Students details</caption>
+
+        <!-- 1st row in the table -->
+        <tr>
+            <th>Name</th>
+            <!-- This cell spans over two columns -->
+            <th colspan="2">Marks</th>
+        </tr>
+        <!-- 2nd row in the table -->
+        <tr>
+            <td>Smith</td>
+            <td>65</td>
+            <td>55</td>
+        </tr>
+        <!-- Table end -->
+    </table>
+</body>
+
+</html>

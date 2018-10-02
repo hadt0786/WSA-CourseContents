@@ -1,0 +1,38 @@
+<!-- Get the number of days in a month. e.g,
+If user enters the month as january then the program should display the output as 31. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get the number of days in a month. e.g,
+            If user enters the month as january then the program should display the output as 31.</title>
+    <style>
+    
+    body{
+        background: lightgreen;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <script>
+    
+    var year = Number(prompt("Enter the year"));
+
+
+    if(year%4==0)
+    {
+        document.write("leap year"+" 366");
+    }
+    else{
+        document.write(year +"has days"+"365");
+    }
+    
+    </script>
+    
+</body>
+</html>

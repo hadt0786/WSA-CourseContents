@@ -1,0 +1,71 @@
+<!-- ******************************************************
++ Description : z-index
++ Author      : Webstack Academy (P) Ltd
++ Date        : 4-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>z-index</title>
+    <style>
+        
+        .box {
+            width: 400px;
+            height: 300px;
+        }
+        
+        .parent {
+            position: relative;
+            left: 200px;
+            top: 200px;
+            background: rgba(128, 0, 32, 0.6);
+            border: 1px solid red;
+        }
+        
+        .child {
+            position: absolute;
+            font-size: 2em;
+        }   
+        
+        .front {
+            z-index: 3;
+            background: yellow;
+            left: 20px;
+            top: 30px;
+        }
+        
+        .middle {
+            z-index: 2;
+            background: lightpink;
+            left: 35px;
+            top: 45px;
+        }
+        
+        .back {
+            /* Elements with negative index are not displayed.
+             * But, if background of overlapping element is 
+             * (semi)transparent, then the back side elements are
+             * also displayed
+             */
+            z-index: -1; 
+            background: skyblue;
+            left: 50px;
+            top: 60px;
+        }
+
+    </style>
+</head>
+    
+<body>
+
+<div class="box parent">
+    <p class="child front">Hello world</p>
+    <p class="child middle">Hello World</p>
+    <p class="child back">Webstack Academy</p>
+</div>
+
+</body>
+    
+</html>

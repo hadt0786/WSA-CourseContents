@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation move</title>
+
+    <style>
+    
+    #animate
+    {
+        width: 50px;
+        height:50px;
+        position: absolute;
+        top:0;
+        left: 0;;
+
+        background-color:red;
+
+    }
+        </style>
+</head>
+<body>
+    <p>
+    <button style="position:absolute; top:20%;left:10%;"onclick="movetheSquare()" >Click here to Move</button>
+    </p>
+
+    <div id="animate" ></div>
+
+
+    <script>
+    function movetheSquare()
+    {
+    var aniElem = document.getElementById("animate");
+    var winPosition = 0;
+   
+    var timeFunctionId = setInterval(animationFrame,2);
+        
+        function animationFrame()
+        {
+           if(winPosition==350)
+           {
+               clearInterval(timeFunctionId);
+               movetheSquareDown();
+           }
+           else {
+               winPosition++;
+               aniElem.style.left = winPosition+'px';
+           }
+        }
+    
+    }
+    function movetheSquareDown()
+    {
+    var aniElem = document.getElementById("animate");
+    var winPosition = 0;
+   
+    var timeFunctionId = setInterval(animationFrame,2);
+        
+        function animationFrame()
+        {
+           if(winPosition==350)
+           {
+               clearInterval(timeFunctionId);
+               movetheSquareAfterDownMoveLeft();
+           }
+           else {
+               winPosition++;
+               aniElem.style.top = winPosition+'px';
+           }
+        }
+    
+    }
+
+function movetheSquareAfterDownMoveLeft()
+    {
+    var aniElem = document.getElementById("animate");
+    var winPosition = 350;
+   
+    var timeFunctionId = setInterval(animationFrame,2);
+        
+        function animationFrame()
+        {
+           if(winPosition==0)
+           {
+               clearInterval(timeFunctionId);
+               movetheSquareAfterDownMoveUp();  
+           }
+           else {
+               winPosition--;
+               aniElem.style.left = winPosition+'px';
+           }
+        }
+    
+    }
+    function movetheSquareAfterDownMoveUp()
+    {
+    var aniElem = document.getElementById("animate");
+    var winPosition = 350;
+   
+    var timeFunctionId = setInterval(animationFrame,2);
+        
+        function animationFrame()
+        {
+           if(winPosition==0)
+           {
+               clearInterval(timeFunctionId);
+               
+           }
+           else {
+               winPosition--;
+               aniElem.style.top = winPosition+'px';
+           }
+        }
+    
+    }
+    </script>
+    
+</body>
+</html>

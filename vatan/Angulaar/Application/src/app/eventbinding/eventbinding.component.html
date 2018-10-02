@@ -1,0 +1,20 @@
+<h2>Event Binding Examples:View -> Buauness logic</h2>
+<p><b>Example of Event Handling: Button Click</b></p>
+<button (click)="SaveFunction()">Click here to save</button>
+
+<p><b>Example of Event Handling and parameter passing: Button Click</b></p>
+<button (click)="mySaveFunctionWithEvent($event)">Click here to save</button>
+
+<p><b>Example of Event Handling: Event Bubbling</b></p>
+<div (click)="myDivButtonEvent()" >
+<button (click)="mySaveFunctiontwoWithEvent($event)">Click here to save</button>
+</div>
+
+<p><b>Example of Event Handling: Event Enter key</b></p>
+<input (keyup.enter)="myKeyPress()">
+
+<p><b>Example of Event Handling: Event Enter key</b></p>
+<input #userInput (keyup.enter)="myKeyPressWithValue(userInput.value)">
+
+<p [style.backgroundColor]="color"><b>Color Changing</b></p>
+<button (click)="myFun()">Green</button>

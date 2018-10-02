@@ -1,0 +1,55 @@
+<!-- ******************************************************
++ Description : Method Translate
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Method Translate</title>
+    <style>
+        /* A container acts as 3D space */
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+/*            transform-origin: left;*/
+            /* flat | preserve-3d */
+            transform-style: preserve-3d;
+            perspective: 800px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: grey;
+
+            /* for aligning text to center */
+            line-height: 150px;
+
+            /* transition effect */
+            transition: all 1.6s;
+        }
+
+        .box:hover {
+            transform: scale3d(2, 1, 1);
+            background-color: rgba(128, 0, 0, 0.5);
+        }
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <div class="box">Scale 3D box</div>
+        </div>
+    </center>
+</body>
+
+</html>

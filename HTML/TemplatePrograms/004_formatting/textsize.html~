@@ -1,0 +1,10 @@
+<!-- Program Description : Program to change Font size of heading and paragraph
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<body>
+<h1 style="font-size:200%;">Heading 1</h1>
+<p style="font-size:150%;">Paragraph 1</p>
+</body>
+</html>
+

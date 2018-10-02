@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		
+		var fullName=new Function("firstname","lastname","return firstname+' '+lastname;");
+		document.write("Full Name: "+fullName("Tenali","rama"));
+
+		var sum=new Function("num1","num2","return num1+num2;");
+		document.write("<br>Sum: "+sum(10,20));
+
+		var s=new Function("return 10;");
+
+		document.getElementById("n").value=s();
+	</script>
+</head>
+<body>
+<input type="text" id="n" />
+</body>
+</html>

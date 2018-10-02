@@ -1,0 +1,53 @@
+<!-- ******************************************************
++ Description : Transform
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Transform</title>
+    <style>
+        * {
+            margin: 25px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+
+        /* Transition effect to move the box up slowly */
+
+        .box {
+            /* initial shadow */
+            box-shadow: 0px 2px 5px black;
+
+            /* transition: <property> <duration> <timing-function> <delay> */
+            /* transition on all (transform, box-shadow and z-index) properties */
+            transition: all 1.6s;
+        }
+
+        .box:hover {
+            transform: scale(1.1, 1.1) rotate(90deg);
+            /* final shadow after transition */
+            box-shadow: 1px 5px 14px black;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <br><br>
+        <div class="box" align="center"></div>
+    </center>
+</body>
+
+</html>

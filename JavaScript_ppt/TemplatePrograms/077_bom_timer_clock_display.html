@@ -1,0 +1,22 @@
+<!-- *************************************************************
++ Description : BOM - Timer / Alarm example
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE HTML --> <html>
+<body>
+<p id="ex"></p>
+
+<script>
+	var timeID = setInterval(myTimer, 1000);
+
+	function myTimer() {
+    
+	var d = new Date();
+    document.getElementById("ex").innerHTML = d.toLocaleTimeString();
+}
+</script>
+</body>
+</html>
+

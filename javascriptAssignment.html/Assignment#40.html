@@ -1,0 +1,73 @@
+<!-- Write a JavaScript program toa) count and display the items in a list box in a alert window.
+b) remove items from a dropdown list.
+Description :
+• Create a html page with a dropdownlist which should contains list of items.
+• Your job is call a function in javascript which will display the number of items in list and
+delete() function which will delete the specified state from that list.
+Objective : Understand the Dom in javascript
+Prerequisites:
+• HTML
+• DOM
+Sample Execution:
+Input : Dropdown List : Karnataka
+Kerala
+Tamilanadu
+Telangana
+UP
+select the state : Kerala
+Output :
+Number of items in list : 5
+Dropdown List : Karnataka
+Tamilanadu
+Telangana
+UP -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+            body{
+                background: lightgreen;
+            }
+            
+            </style>
+
+</head>
+<body>
+        <p>India States</p>
+        <select id="selectId">
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Tamilanadu">Tamilanadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="UP">Uttar Pradesh</option>
+
+              </select>   
+              <button onsubmit="getArrayLength()"> Submit </button>
+
+<script>
+//not working
+    function getArrayLength(){
+        var x = document.getElementById("selectId");
+        var text1 = "No of items";
+
+        l = document.getElementById("selectId");
+        text1=text1+l;
+
+        for(var i =0; i<x.length;i++){
+            text1=text1+"\n"+x.options[i].text;
+        }
+        alert(text1);
+    }
+
+</script>
+
+
+
+</body>
+</html>

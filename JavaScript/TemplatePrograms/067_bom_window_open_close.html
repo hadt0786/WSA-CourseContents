@@ -1,0 +1,48 @@
+<!-- *************************************************************
++ Description : BOM - Window opening and closing 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<html>
+
+<body>
+
+<button onclick="myWinOpen()">Open Window</button>
+<button onclick="myWinMove()">Move Window</button>
+<button onclick="myWinClose()">Close Window</button>
+<button onclick="myWinResize()">Resize Window</button> 
+
+</body>
+
+<script>
+
+var myWindow;
+
+function myWinOpen()
+{
+	myWindow = window.open("http://www.emertxe.com", "BOM - Window", "width=400,height=400");
+}
+
+function myWinMove()
+{
+	myWindow.moveTo(500,300);
+	myWindow.document.write("Moved the window now.This is how I make DOM as a part of BOM");
+}
+
+function myWinResize()
+{
+	myWindow.resizeTo(1000,500);
+}
+
+function myWinClose()
+{
+	myWindow.close();
+}
+
+</script>
+
+</html>
+

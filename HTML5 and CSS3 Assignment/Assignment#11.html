@@ -1,0 +1,52 @@
+<!-- Q. 11) A web page to display trailer of a movie and playlist to play audio songs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Q. 11) A web page to display trailer of a movie and playlist to play audio songs</title>
+    <style>
+    body {
+        padding-top: 80px;
+        text-align: center;
+        font-family: monaco, monospace;
+        background: url(http://media.giphy.com/media/Jrd9E2kuPuOYM/giphy.gif) 100%;
+        background-size: cover;
+      }
+
+      div{
+          box-align: center;
+      }
+    </style>
+</head>
+<body>
+
+<div>
+    <center>
+            <caption>
+        <iframe width="500" height="500" src="https://www.youtube.com/watch?v=C8UqmUQ3g9M" 
+        frameborder="0" allow:"autoplay; encrypted media" allowfullscreen></iframe>
+        <br><br>
+
+        <figcaption style="color:black;" >This is the youtube video</figcaption><br>
+
+        <video src="audio.mp3" width="500" height="300" control="autoplay"></video>
+    </caption>
+        
+
+    </center>
+</div>
+    
+<div>
+    <center>
+
+        <audio controls><source src= "newaudio.mp3" type="audio/mpeg"> This is the apeg format</audio>
+    </center>
+</div>
+    
+
+
+</body>
+</html>

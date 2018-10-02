@@ -1,0 +1,41 @@
+<!--
+* @Developer: Divek
+* @Problem  : Input and print Name adress Phone and City
+* @Company  : XYZ
+* @Date	    : 10-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Detials</title>
+
+    <script>
+ 	//asking Input from user for name adress phone and City to the users
+        var Name = prompt("Please enter your Name", "");      
+        var Address = prompt("Please enter your Address", "");
+        var Phone = prompt("Please enter your Phone", "");
+        var City = prompt("Please enter your City", "");
+    
+	//Checking if All inputs are Given	
+	if(Name && Address && Phone && City){
+
+	//printing all the details that are Captured
+        document.write("Name    :" + Name +"<br>");            
+        document.write("Address :" + Address +"<br>");
+        document.write("Phone   :" + Phone +"<br>");
+        document.write("City    :" + City +"<br>");
+	}
+	else{
+	 //Print an error statement
+	 document.write("You Just missed a Input !");
+	  }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

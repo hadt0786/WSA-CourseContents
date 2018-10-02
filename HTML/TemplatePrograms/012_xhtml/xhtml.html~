@@ -1,0 +1,21 @@
+<!-- Program Description : Program to display a message using XHTML
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>XHTML Page </title>
+</head>
+
+<body>
+<!-- All elements must be properly nested with each other -->
+  <b><i>Emertxe IT Training</i></b>
+<!-- All empty elements must be closed -->
+<br />Embedded System, Java , Linux ,Web Development  
+
+</body>
+
+</html>

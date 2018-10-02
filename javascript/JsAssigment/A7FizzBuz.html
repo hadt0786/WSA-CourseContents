@@ -1,0 +1,27 @@
+<!--the numbers from 1 to 100. But for multiples of three print “Fizz”
+instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples
+of both three and five print “FizzBuzz”.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fizz Buzz</title>
+    <script>
+var arr=new Array(100);
+    for (i=0; i<=99; i++ ){
+        
+         arr[i]=i+1;
+    }
+    
+        
+ for(x in arr){
+     
+    (arr[x]%3==0 && arr[x]%5==0)?document.write("FizzBuzz"):(arr[x]%3==0)?document.write("Fizz"):(arr[x]%5==0)?document.write("Buzz"):document.write(arr[x]);
+     document.write("<br>");
+ }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

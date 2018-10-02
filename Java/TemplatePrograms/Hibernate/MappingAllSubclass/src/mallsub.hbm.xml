@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM
+	"src/hibernate-mapping-3.0.dtd"> 
+	
+	<hibernate-mapping>
+	
+	<class name="com.Student" table="student">
+	<id name="id" column="id" type="integer">
+	</id>
+	<property name="name" column="name" type="string"></property>
+	<joined-subclass name="com.StudentAddress" table="studentAddress">
+	
+	<key column="id"></key>
+	<property name="address" column="address" type="string"></property>
+	
+	</joined-subclass>
+		
+	
+	</class>
+	</hibernate-mapping>

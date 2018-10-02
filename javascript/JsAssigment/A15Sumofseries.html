@@ -1,0 +1,58 @@
+<!-- Write a program to generate following sum of series
+a) 1 + 1/2 +1/3 +...............................+1/n.
+b) 2 + 4 + 6 +.........................................+n.
+Description :
+• Program to work on the number series as mentioned above.
+• N is a positive integer.
+• You must generate the sum of the series until the given range of n.
+Objective : Understand the numbers and conditional loops in javascript.
+Prerequisites:
+• For loop
+• arithmetic operation.
+Sample Execution:
+Test case:
+Input : 3
+Output : a) 1.33
+         b) 12 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignemnt 16</title>
+
+    <style>
+    
+    body{
+        background: lightgreen;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <script>
+
+        var num = Number(prompt("Enter the number of terms want to genrate "));
+
+        var array = [];
+        var sum = 0;
+        for(var i = 1 ; i<=num;i++)
+        {
+            array[i] = 1/i;
+            sum+=array[i]; 
+        }
+        var sum2 = 0;
+        for(var j = 2 ; j<=(num*2);j+=2)
+        {   
+            sum2 = sum2+j;
+        }
+
+        document.write(sum+" "+sum2);
+
+    </script>
+    
+</body>
+</html>

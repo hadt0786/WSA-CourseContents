@@ -1,0 +1,54 @@
+<!-- Write a JavaScript function to accept a parameter as a string and converts the first letter of each
+word in uppercase letter.
+Description :
+• Accept the input string from user.
+• Convert first character from each word to uppercase.
+Objective : Understand the string concept in javascript.
+Prerequisites:
+• string
+• control flow
+Sample Execution:
+Test case:
+Input : i am geetha
+Output : I am Geetha -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 27</title>
+
+    <style>
+    
+    body{
+        background: lightgreen;
+    }
+    
+    </style>
+    <script>
+    
+                     var string  = prompt("enter the string");
+                    var ans = "";
+                        string.trim(" ");
+                    var array = string.split(" ");
+
+                    for(var i = 0 ; i < array.length;i++)
+                    {
+                    var ans = array[i].charAt(0).toUpperCase()+array[i].substr(1,array[i].length).toLowerCase()+" ";
+                    
+                    
+                    
+                    
+                    document.write(ans);
+                    
+                    }
+    
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

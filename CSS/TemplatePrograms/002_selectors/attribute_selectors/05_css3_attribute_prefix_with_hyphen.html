@@ -1,0 +1,38 @@
+<!-- ******************************************************
++ Description : Internal style sheet - attribute selector 
++               with value and element selector
++ Author      : Webstack Academy (P) Ltd
++ Date        : 2-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <title>Attribute selector with value and element selector</title>
+	
+	<style>
+
+    /* Prefix- selector : Selecting an element with 
+    lang attribute
+     * whose value can be "en" or "en-"  
+     */
+	[lang|="en"] {
+		color: blue;
+        font-weight: bold;
+	}      
+	</style>	
+</head>
+
+<body>    
+    <p lang="en">This paragraph is for General english.</p>
+    <p lang="en-US">This paragraph is for American english.</p>
+    <p lang="en-GB">This paragraph is for Great Britain english.</p>
+    <p lang="en-AU">This paragraph is for Australian english.</p>
+    <p lang="es">This paragraph is for Spanish.</p>
+    <p lang="fr">This paragraph is for french.</p>
+</body>
+
+</html>

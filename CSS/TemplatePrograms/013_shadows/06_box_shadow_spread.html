@@ -1,0 +1,44 @@
+<!-- ******************************************************
++ Description : Box shadow
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Box Shadow</title>
+    <style>
+    .box {
+        width: 200px;
+        height: 100px;
+        padding: 15px;
+    }
+
+    .bs-spread-20 {
+        /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+        box-shadow: 0px 0px 20px 20px orange;            
+    }        
+        
+    .bs-spread-40 {
+        /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+        box-shadow: 0px 0px 20px 40px orange;            
+    }
+        
+    </style>
+</head>
+    
+<body>
+
+    <br> <br><br><br>
+    
+    <center>
+        <div class="box bs-spread-20" align="center" style="font-size:35px;color:orange">Webstack Academy</div>
+        <br><br><br><br><br><br>
+        <div class="box bs-spread-40" align="center" style="font-size:35px;color:orange">Webstack Academy</div>        
+    </center>
+    
+</body>
+</html>
+

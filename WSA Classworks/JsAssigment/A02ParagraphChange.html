@@ -1,0 +1,86 @@
+<!--
+* @Developer: Divek
+* @Problem  : program to change the content of the paragraph
+* @Company  : XYZ
+* @Date     : 17-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assigment 1.2 Js</title>
+    <style>
+        body{
+            background: teal;
+        }
+        
+        .back{
+            
+            background: black;
+            width: 350px;
+            position: absolute;
+            margin-left: 33%;
+            margin-top:  12%;
+            opacity: 0.4;
+            z-index: -1;
+            height: 150px;
+           
+        }
+        
+          p
+        {
+           /* background: lightgrey;*/
+            width: 280px;
+            margin-top: 15px;
+            height: 35px;
+            color: whitesmoke;
+            font-size: 25px;
+        
+        }
+        .para{
+            margin-left:35.6%;
+            position: absolute;
+                    margin-top: 12%;
+                
+        }
+        button[type="submit"]{
+            margin-top: 10px;
+            background: teal;
+            color: whitesmoke;
+           height: 38px;
+               width: 285px;
+        }
+       
+    </style>
+    </head>
+    <script>
+   function callme(){
+  document.getElementById("paragraph").innerHTML="This Paragraph is now changed !";
+       document.getElementById("button").innerHTML="Already Changed :)";
+         
+        
+           
+   }
+        
+    </script>
+    <body>
+        <div  class="back" >  </div>
+    <div  class="para"style=" margin-left:35.6%;
+            position: absolute;
+                    margin-top: 12%;">
+  
+        <p id="paragraph" placeholder="Username">This is a sample Paragraph It will change when click the button </p> <br>
+                          <button id="button"type="submit" onclick="callme()">Change</button>
+                            
+        
+      </div>
+          
+    </body>
+</html>
+
+
+
+
+

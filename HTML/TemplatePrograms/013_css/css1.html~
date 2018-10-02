@@ -1,0 +1,19 @@
+<!-- Program Description : Program to use style sheet internally
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> <!-- style tag can be written within head tag-->
+body {background-color: pink;}
+h1   {font-family: verdana;}
+p    {color: red;}
+</style>
+</head>
+<body>
+
+<h1>HTML</h1>
+<p>Html is the markup language  used to create web page </p>
+
+</body>
+</html

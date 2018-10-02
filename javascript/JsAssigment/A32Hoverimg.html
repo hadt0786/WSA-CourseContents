@@ -1,0 +1,14 @@
+<!--Write a JavaScript to display a image on cursor over-->
+<script>
+function changesrc(){
+    document.getElementsByTagName("img")[0].src="c.jpg";
+}
+    function rollback(){
+    document.getElementsByTagName("img")[0].src="cat.jpg";
+}
+
+
+</script>
+
+
+<img src="cat.jpg" onmousemove="changesrc()" onmouseout="rollback()">

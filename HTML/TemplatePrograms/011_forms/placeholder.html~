@@ -1,0 +1,13 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+        First name: <input type="text" name="firstname" placeholder="firstname"/> <br>
+Surname: <input type="text" name="surname" placeholder="surname"/> <br>
+<input type="submit" value="Submit now" />
+</form>
+
+</body>
+</html>
+

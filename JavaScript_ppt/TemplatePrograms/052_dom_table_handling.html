@@ -1,0 +1,59 @@
+<!-- *************************************************************
++ Description : DOM - Table Handling
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<head>
+<style>
+table, td {
+    border: 1px solid green;
+}
+</style>
+</head>
+<body>
+<table id="ipl">    
+<tr>
+    <td>MS Dhoni</td>
+    <td>CSK</td>
+</tr>
+<tr>
+    <td>Virat Kohli</td>
+    <td>RCB</td>
+</tr>
+<tr>
+    <td>SS Iyer</td>
+    <td>DD</td>
+</tr>
+</table>
+<br>
+
+<button onclick="createTable()">Insert</button>
+<button onclick="deleteRow()">Delete</button>
+
+<script>
+function createTable() {
+
+	// Get hold of the table first by using DOM API 
+    var table = document.getElementById("ipl");
+	
+	// Row is the child of table 
+    var row   = table.insertRow(0);
+	
+	// Cells are child of the row 
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+	
+	// Now change the content in the table 
+    cell1.innerHTML = "Dinesh Karthik";
+    cell2.innerHTML = "KKR";
+}
+function deleteRow() {
+    var table = document.getElementById("ipl");
+    var row = table.deleteRow(0);    
+}
+</script>
+</body>
+</html>

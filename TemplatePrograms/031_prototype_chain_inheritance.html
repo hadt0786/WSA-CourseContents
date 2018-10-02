@@ -1,0 +1,45 @@
+<!-- *************************************************************
++ Description : Simple prototype example
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+	<script>
+		function company() //parent 
+		{	
+			this.techFocus = "Embedded Systems & IoT";
+		}	
+		company.prototype.companyName = "Emertxe";
+  
+		var emertxeEmployee =  new company();
+		document.write("----------------------------------------------------------------------------" + "<br>");
+		document.write("Parent organization Name             : " + emertxeEmployee.companyName + "<br>");  
+		document.write("Parent organization Technology Focus : " + emertxeEmployee.techFocus + "<br>");
+		document.write("----------------------------------------------------------------------------" + "<br>");
+ 
+		function spinOff() //child
+		{
+			this.techFocus = "Fullstack Web Application Development";
+		}
+	
+		// It will only inherit prototype proporties added!! Not all 
+		
+		spinOff.prototype = company.prototype;
+		spinOff.prototype.newCompanyName = "WebStack Academy";
+	
+		var wsaEmployee =  new spinOff();
+	
+		document.write("----------------------------------------------------------" + "<br>");
+		document.write("WSA's parent organization :" + wsaEmployee.companyName + "<br>");  
+		document.write("WSA's organization name :" + wsaEmployee.newCompanyName + "<br>");
+		document.write("WSA's technology focus :" + wsaEmployee.techFocus + "<br>");		
+		document.write("----------------------------------------------------------" + "<br>");
+		
+		document.write("Ulta: " + emertxeEmployee.newCompanyName + "<br>");
+		
+		
+	</script>
+</html>
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var obj, arrSum;
+		function square(a) {
+			return a*a;		
+		}
+		
+		function sum(x,y) { 
+			return x+y;		
+		}
+
+		arrSum=[5,3];
+
+		document.write("Square of 3: "+square.call(obj,3));
+		document.write("<br>Sum of numbers: "+sum.apply(obj,arrSum));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

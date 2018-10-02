@@ -1,0 +1,58 @@
+<!-- *************************************************************
++ Description : Program for typeof operators
++ Author      : Webstack Academy (P) Ltd
++ Date        : 19-Apr-2018
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>JavaScript operators - Typeof</title>
+	
+	<p id="typedemo"></p>
+	<p id="instancedemo"></p>
+	<p id="deletedemo"></p>
+	
+	<script>
+		// Typeof operator 
+		document.getElementById("typedemo").innerHTML = 
+		typeof 0 + "<br>" + 
+		typeof "abc" + "<br>" +
+		typeof NaN + "<br>" +
+		typeof false + "<br>" +
+		typeof [3,4,5,6];
+		
+		// Instance of operator
+		var ipl = ["CSK" , "RCB" , "KKR" , "KXIP" , "MI" , "RR" , "SRH"];
+		document.getElementById("instancedemo").innerHTML = 
+			(ipl instanceof Array)  + "<br>"  + 
+			(ipl instanceof Object) + "<br>" + 
+			(ipl instanceof String) + "<br>" + 
+			(ipl instanceof Number);
+			
+		// Delete operator	
+		var rcb = {
+			slogan:"Ee Sala Cup Namde",
+			teamsize:15,
+			jersy:"red"
+		};
+		
+		delete rcb.teamsize;
+		document.getElementById("deletedemo").innerHTML =
+		"RCB slogan is : " + rcb.slogan + "<br> Teamsize is : " + rcb.teamsize + "<br> Jersy color is : " + rcb.jersy;
+		
+		// Comma operator 
+		
+		var i=100;
+		
+		var j=(i++, ++i);
+		document.write("Example of comma operator. Value of j is" + j);
+		
+			
+		
+	</script>	
+</head>
+
+</html>	

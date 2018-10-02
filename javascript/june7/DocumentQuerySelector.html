@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Query Example</title>
+
+    <h2 class="example">Class Example</h2>
+    <div style=" width:300px;color:#800000" class="example">Div class exammple</div>
+
+    <p>Choose your option</p>
+
+    <button onclick="testQuerySelector()">test query selector example</button>
+    <button onclick="testQuerySelectorAll()">Test all Query selector</button>
+
+
+</head>
+<body>
+    
+
+    
+    <script>
+        function testQuerySelector(){
+            var x = document.querySelector(".example");
+            x.style.backgroundColor = "red";
+        }
+    
+        function testQuerySelectorAll(){
+            var x = document.querySelectorAll(".example");
+            x[0].style.background = "red";
+            x[1].style.background ="blue";        }
+    </script>
+
+
+</body>
+</html>

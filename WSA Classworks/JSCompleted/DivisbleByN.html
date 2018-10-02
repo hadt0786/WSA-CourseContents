@@ -1,0 +1,26 @@
+<!--
+* @Developer: Divek
+* @Problem  :Divisble by N 
+* @Company  : XYZ
+* @Date     : 22-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+<script>
+var Limit = parseInt(prompt("Please enter Limit ", ""));
+var Divide = parseInt(prompt("Please enter Divisible num", ""));
+  
+    Callme(Limit,Divide);
+    
+    function Callme(Limit, Divide){
+    for( var IloopIndex=1; IloopIndex<=Limit; IloopIndex++)
+        {
+            if(IloopIndex%Divide==0)
+                
+            document.write(IloopIndex+" Is Divisble By "+Divide+"<br>")    
+        }
+        
+    }
+
+</script>

@@ -1,0 +1,19 @@
+<html>
+<head>
+<tittle>Mathematical Expression</tittle>
+<script type="text/javascript">
+function calc()
+{
+var enteredexpr=document.getElementById("expr").value;
+document.getElementById("result").value=eval(enteredexpr);
+}
+</script>
+</head>
+<body>
+<form name="frmExp">
+enter Any Valid Expression:<input type=""text" id="expr"/><br/><br/>
+<input type="button"value="Evaluate"onclick="calc()"/><br/><br/>
+Result of the Expression:<input type="text"id="result"><br/><br/>
+</form>
+</body>
+</html>

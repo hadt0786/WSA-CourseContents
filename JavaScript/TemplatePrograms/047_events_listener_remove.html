@@ -1,0 +1,43 @@
+<!-- ***********************************************x`**************
++ Description : EventListener example - Removing event listeners
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<html>
+<body>
+
+<p>EventListener works on the document. Click and check! </p>
+
+<button onclick="removeHandler()" id="firstButton">Remove Handler</button>
+<button onclick="addHandlerAgain()" id="firstButton">Add Again</button>
+<script>
+
+var count = 1;
+document.addEventListener("mousemove", myEventHandler);
+
+function myEventHandler(){
+
+	if (count % 2 == 0) {
+		document.body.style.backgroundColor = "orange";
+	} else {
+		document.body.style.backgroundColor = "green";
+	}
+	count++;
+}
+
+function removeHandler(){
+    document.removeEventListener("mousemove",myEventHandler);
+}
+
+function addHandlerAgain() {
+	document.addEventListener("mousemove", myEventHandler);
+}	
+
+
+</script>
+
+</body>
+</html>

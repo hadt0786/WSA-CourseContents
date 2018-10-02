@@ -1,0 +1,43 @@
+<!-- ****************************************************
++ Description : Flexbox
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Flexbox</title>
+        
+        <meta name="viewport" content="width=device-width initial-scale=1.0" />
+        
+        <style>
+            .flex-container {
+                display: flex;
+                
+               /* flex-direction: row; */
+                flex-wrap: wrap; /* nowrap | wrap | wrap-reverse */
+                /* shorthand of flex-direction and flex-wrap */
+                /* flex-flow: row wrap; */
+                
+                border: 1px solid red;
+            }
+            
+            .flex-item {
+                border: 1px solid blue;
+            }
+        </style>
+
+    </head>
+    <body>
+         
+        <div class="flex-container">
+          <div class="flex-item">ITEM1 - This is flex item 1. this is flex item 2.</div>
+          <div class="flex-item">ITEM2 - this is flex item 2. this is flex item 2.</div>
+          <div class="flex-item">ITEM3 - this is flex item 3. this is flex item 3. </div>
+        </div>
+    </body>
+    
+</html>

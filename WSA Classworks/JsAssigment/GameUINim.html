@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nime Game</title>
+  
+    <style>
+        body{
+            background-color: salmon;
+            
+                
+        }
+        input{
+            padding: 10px;
+    width: 200px;
+            margin-left: 5%;
+            margin-top: 8%;
+            
+        }
+        
+        button{
+                padding: 10px;
+             width: 100px;
+            margin-left: 5%;
+            margin-top: 8%;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+   <div style="position: absolute; background: ; width:280px; top:20%; right: 39%; height: 120px;  ">
+        <h3 style="color: white;  ;width: 95%; padding: 8%; " id="paragraph" placeholder="Username">Player One start the Game !</h3>
+   </div>
+    <br><br></br>
+     <div style="position: absolute; background: grey; width:250px; top:40%; right: 40%; height: 200px;  ">
+       <input id="Stone" type="number"   placeholder="Enter Number of Stones to play">
+      <input id="input" type="number"   placeholder="Number of stones to Remove" >
+      <button onclick="location.reload();">Reset</button>
+     <button id="start"onclick="callMe();">Start</button>
+
+   </div>
+    
+</body>
+  <script>
+             
+              var turn=1;
+/*  document.getElementById("paragraph").innerHTML="";*/
+      
+        function callMe(){
+						  var Stones = document.getElementById("Stone").value;
+			
+							document.getElementById("Stone").readOnly=true;
+        
+     if(Stones>1)
+         {
+         
+             if(turn)
+                 {
+                    
+                    var RemStone = document.getElementById("input").value;
+                      document.getElementById("start").innerHTML="OK";
+                   
+                   if(RemStone>3 || RemStone<=0)
+                         {
+                             
+                          /*  alert("Given Stone  is  Grater than 3") ;*/
+                              document.getElementById("paragraph").innerHTML="Player One Invaid input Only 1,2 or 3 allowed";
+                                    turn=1;
+                         }
+                   
+                     else if(Stones==RemStone )
+                         {
+                          /*    alert("Player one is Winner") ;*/
+                               document.getElementById("paragraph").innerHTML="Game Over ! Player One Wins the game";
+                             Stones=0;
+                      
+                         }
+                     else{
+                        
+							 if(Stones<3 && RemStone>Stones){
+							                               document.getElementById("paragraph").innerHTML="Hmm sorry Insufficent stones try again"
+                           
+						   }
+						   else{
+						   Stones-=RemStone;
+						   if(Stones==1){
+						   document.getElementById("paragraph").innerHTML="Game Over ! Player Two Wins the game";
+						                                        Stones=0;
+						   
+						   }
+						   else{
+						   document.getElementById("paragraph").innerHTML="Player Two Enter Number of Stones To Remove from 1 to 3 Stone="+Stones;
+						    document.getElementById("Stone").value=Stones;
+                            turn=0;
+							}
+						   }
+						   
+                     }
+                     
+                  
+                     
+                 }
+             else{
+                 
+                     
+                  var RemStone = document.getElementById("input").value; 
+                     if(RemStone>3 || RemStone<=0  )
+                    
+                         {
+                             
+                       /*     alert("Given Stone is  Grater than 3") ;*/
+                             document.getElementById("paragraph").innerHTML=" Player Two Invaid input Only 1,2 or 3 or allowed";
+                               turn=0;
+                         }
+                     else if(Stones==RemStone)
+                         {
+                              document.getElementById("paragraph").innerHTML="Game Over ! Player Two wins";
+                     /*         alert("Player Two is Winner") ;*/
+                                     Stones=0;
+                            
+                             
+                         }
+                     else{
+					  if(Stones<3 && RemStone>Stones){
+							                               document.getElementById("paragraph").innerHTML="Hmm Sorry Insufficent stones Try Agian";
+                                    turn=0;
+                           
+						   }
+                         else{
+                          Stones-=RemStone;
+						   if(Stones==1){
+						   document.getElementById("paragraph").innerHTML="Game Over ! Player One Wins the game";
+						                                        Stones=0;
+						   }
+						   else{
+                            turn=1;
+                            document.getElementById("Stone").value=Stones;
+                          document.getElementById("paragraph").innerHTML="Player One Enter Number of Stones To Romove from 1 to 3 Stone="+Stones;
+						  }
+						  }
+                     }
+                   
+                 
+             }
+             
+             
+         }
+        else{
+		document.getElementById("Stone").readOnly=false
+             document.getElementById("paragraph").innerHTML="Stones cannot be less than 1 or an Equation;";
+			 
+            
+        }
+        }
+        
+    </script>
+</html>

@@ -1,0 +1,40 @@
+<!-- *************************************************************
++ Description : Write a program to calculate number palindrome
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 19-Apr-2018
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>JavaScript for in loop example</title>
+	<script>
+		var n = Number(prompt("Enter the number:"));
+		var loop = n;
+		var rev = 0;
+		var last;
+		
+		while (loop != 0)
+		{
+			last = loop % 10;
+			loop = parseInt(loop/10);
+			rev = (rev * 10) + last;
+		}
+		
+		document.write("The reverse is: " + rev + "<br>");
+		
+		if (n == rev)
+		{
+			document.write("The given number is palindrome");
+		}
+		else
+		{
+			document.write("The given number is not palindrome");
+		}
+		
+	</script>
+</head>
+
+</html>	

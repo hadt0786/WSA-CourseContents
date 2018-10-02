@@ -1,0 +1,171 @@
+<!-- vWrite a JavaScript program
+a) Create a paragraph using HTML.
+b) Create two buttons changeFont and borderImage.
+c) When the user click on buttons , the onclick event handler calls function
+changeParaText and addBorder.
+d) The changeParaText function then executes the statement that will change
+the font color , font size , font family and font weight of paragraph and
+addBorder function will add border image to the paragraph.
+Description :
+• Have a <p> paragraph </p> tag and two buttons (change font, border image) in html.
+• When user clicks on change font button it should change the font, size, font weight, color of
+the paragragh.
+•
+When user clicks on border image button it should add the border to paragraph.
+Objective : Understand the events handling in javascript.
+Prerequisites:
+• DOM
+• HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 33</title>
+
+    <style>
+    body{
+        background:lightgreen;
+    }
+    
+    </style>
+
+
+    <script>
+    
+        //not working
+    var paragraph = document.createElement("P");
+    var textNode = document.createTextNode("PAragraph created");
+    //var buttonFont = document.createElement("button");
+    //var buttonBorder = document.createElement("button");
+    paragraph.appendChild(textNode);
+    document.body.appendChild(paragraph);
+    //document.paragraph.appendChild(paragraphTextNode);
+    //document.paragraph.appendChild(buttonFont);
+    //document.paragraph.appendChild(buttonBorder);
+
+    var newParagraph = document.createTextNode("This is the change paragraph");
+    buttonFont.appendChild(newParagraph);
+
+    var newBorder = document.createTextNode("The border has been changed");
+    buttonBorder.appendChild(newBorder);
+
+
+        
+
+
+    var buttonFontAttribute = document.createAttribute("onclick");
+    buttonFontAttribute.value = "changeFont()";
+    buttonBorder.setAttributeNode(buttonFontAttribute);
+
+    
+    
+    var buttonBorder = document.createAttribute("onclick");
+    buttonBorder.value = "changeBorder()";
+    buttonBorder.setAttributeNode(buttonBorder);
+
+    
+    
+    
+    var paragraphCreate = document.createTextNode(" This is NEW paragraph chande Test Test Test Test Test Test"+ 
+    +"Test Test"+ 
+    "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test ") ;
+
+    paragraph.appendChild(paragraphCreate);
+
+    var paragraphCreate = document.getElementById("p")[0];
+
+    function changeFont(){
+
+        paragraphCreate.style.fontSize = "30px";
+        paragraphCreate.style.color = "green";
+        paragraphCreate.style.fontWeight = "10px";
+        paragraphCreate.style.background = "white"; 
+
+    }   
+
+    function changeBorder(){
+        paragraph.style.border = "15px solid transparent";
+        //paragraph.style.borderImage = "url(img.jp) 10px round";
+    }
+
+
+
+    
+    
+    </script>
+
+
+</head>
+<body>
+    <p>old one</p>
+    <script>
+    
+            //not working
+        var paragraph = document.createElement("P");
+        var textNode = document.createTextNode("PAragraph created");
+        //var buttonFont = document.createElement("button");
+        //var buttonBorder = document.createElement("button");
+        paragraph.appendChild(textNode);
+        document.body.appendChild(paragraph);
+        //document.paragraph.appendChild(paragraphTextNode);
+        //document.paragraph.appendChild(buttonFont);
+        //document.paragraph.appendChild(buttonBorder);
+    
+        var newParagraph = document.createTextNode("This is the change paragraph");
+        buttonFont.appendChild(newParagraph);
+    
+        var newBorder = document.createTextNode("The border has been changed");
+        buttonBorder.appendChild(newBorder);
+    
+    
+            
+    
+    
+        var buttonFontAttribute = document.createAttribute("onclick");
+        buttonFontAttribute.value = "changeFont()";
+        buttonBorder.setAttributeNode(buttonFontAttribute);
+    
+        
+        
+        var buttonBorder = document.createAttribute("onclick");
+        buttonBorder.value = "changeBorder()";
+        buttonBorder.setAttributeNode(buttonBorder);
+    
+        
+        
+        
+        var paragraphCreate = document.createTextNode(" This is NEW paragraph chande Test Test Test Test Test Test"+ 
+        +"Test Test"+ 
+        "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test ") ;
+    
+        paragraph.appendChild(paragraphCreate);
+    
+        var paragraphCreate = document.getElementById("p")[0];
+    
+        function changeFont(){
+    
+            paragraphCreate.style.fontSize = "30px";
+            paragraphCreate.style.color = "green";
+            paragraphCreate.style.fontWeight = "10px";
+            paragraphCreate.style.background = "white"; 
+    
+        }   
+    
+        function changeBorder(){
+            paragraph.style.border = "15px solid transparent";
+            //paragraph.style.borderImage = "url(img.jp) 10px round";
+        }
+    
+    
+    
+        
+        
+        </script>
+    
+    
+    
+</body>
+</html>

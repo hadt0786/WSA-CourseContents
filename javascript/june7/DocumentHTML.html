@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Write a JavaScript program to modify the text-align, font-size, font-family of
+            heading1 using getElementById</title>
+
+
+
+
+    <h1 id="h1Id" style = " text-align:center;
+    font-size:30;
+    font-family:Arial, Helvetica, sans-serif;">This is the content in the heading 1. 
+                    the i.d of h1 id "h1ID"
+    </h1>
+        <button onclick="GetByID();"> Get Element by Id and query selector all</button>
+<style>
+
+    h1{
+        text-align:center;
+        font-size:30px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+
+
+</style>
+
+
+    
+</head>
+<body>
+
+<script>
+
+    //calling getElementByID
+    function GetByID(){
+
+
+//document.getElementById("h1ID").style.textAlign="right";
+        var n = document.querySelectorAll("h1ID");
+        
+            for(x in n){
+        var x = document.querySelector("h1ID");
+           
+            n[x].style.fontSize = "10px";
+            
+            }
+
+    }
+
+
+</script>
+    
+    
+</body>
+</html>

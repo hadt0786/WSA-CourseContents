@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+th {
+    text-align: left;
+}
+</style>
+</head>
+<body>
+<table border="1">
+<caption>Students details</caption>
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Marks</th>
+  </tr>
+  <tr>
+    <td>Smith</td>
+    <td>65</td>
+    <td>55</td>
+  </tr>
+</table>
+</body>
+</html>

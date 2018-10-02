@@ -1,0 +1,27 @@
+<!-- *************************************************************
++ Description : Demo of string split()
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 28-07-2018
+************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String split()</title>
+        <script>
+            var str = "Hello World Welcome to JS";
+
+            var arrayOfStr = str.split(" ");
+            document.write("Array of string is: ["+arrayOfStr+"]");
+
+            //Split only limited number of string
+            var arrayOfStr = str.split(" ",2);
+            document.write("<br>Limited Array of string is: ["+arrayOfStr+"]");
+
+            var str = "Hello,World,Welcome to JS";
+            var arrayOfStr = str.split(",");
+            document.write("<br>Array of string is: ["+arrayOfStr+"]");
+
+        </script>
+    </head>
+</html>

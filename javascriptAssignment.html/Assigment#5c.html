@@ -1,0 +1,39 @@
+<!-- c) Check whether the input value is numeric or not. e.g if user enters 9 then it should display
+it as a numeric. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>c) Check whether the input value is numeric or not. e.g if user enters 9 then it should display
+            it as a numeric.</title>
+
+    <script>
+
+        //not working
+
+    var str = prompt("Enter the numeric ");
+
+    var strArray = [];
+        strArray = Number(str.split(""));
+
+    for(x in strArray)
+    {
+        if(typeof strArray[x]=='number'){
+       document.write(typeof strArray[x] instanceof +" "+"is a number");
+
+        }    
+        else{
+            document.writeln("none");
+        }
+        }
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

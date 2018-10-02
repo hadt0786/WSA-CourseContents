@@ -1,0 +1,53 @@
+
+
+    <script>
+    
+    var array = [];
+    
+
+    var array2d = [ [0,0,0,1], [0,0,1,1], [0,1,1,1], [1,1,1,1] ];
+    //document.write(array2d.length);
+
+
+
+
+/// for counting total num of 1 in array
+var count =0;
+(function onecounter(){
+    for(var column = 0; column<array2d.length;column++){
+        for(var row = 0 ;row<4;row++){
+    if(array2d[row][column]){
+        count++;
+    }
+        }
+    }
+
+
+})();
+ 
+
+count*=4;
+(function columnfinder(){
+    for(var column = 0; column<array2d.length;column++){
+        for(var row = 0 ;row<4;row++){
+            if(array2d[row][column]){
+        count--;
+            }
+        }
+    }
+})();
+
+(function rowfinder(){
+    for(var column = 0; column<array2d.length;column++){
+        for(var row = 0 ;row<4;row++){
+            if(array2d[column][row]){
+        count--;
+            }
+        }
+    }
+})();
+count+=2;
+debugger;
+
+    </script>
+

@@ -1,0 +1,35 @@
+<!-- *************************************************************
++ Description : Display the element of an array in ascending 
++               and descending order
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+<body>
+    <script>
+        var arr = [‘banana’, ‘apple’, ‘mango’, ‘grapes’];
+        
+        arr.sort();
+        
+        document.write("Ascending Order"+"<br>"); 
+        
+        for (i=0;i<arr.length;i++){  
+            document.write(arr[i] + "<br>");  
+        }
+        
+        arr.reverse();  
+        
+        document.write("Descending Order"+"<br>");
+        
+        for (i=0;i<arr.length;i++){  
+            document.write(arr[i] + "<br>");  
+        }   
+    </script>
+</body>
+    
+</html>
+

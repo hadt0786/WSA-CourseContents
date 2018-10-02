@@ -1,0 +1,6 @@
+/* set background color for mobile device */
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: red;
+    }
+}

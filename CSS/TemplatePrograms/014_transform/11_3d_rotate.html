@@ -1,0 +1,76 @@
+<!-- ******************************************************
++ Description : Method Translate
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Method Translate</title>
+    <style>
+        /* A container acts as 3D space */
+
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+            /* flat | preserve-3d */
+            transform-style: preserve-3d;
+            
+            perspective: 800px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: grey;
+            margin-left: 20px;
+
+            /* for aligning text to center */
+            line-height: 150px;
+
+            /* transition effect */
+            transition: all 1.6s;
+        }
+
+        .rotate-x:hover {
+            transform: rotate3d(1, 0, 0, 180deg);
+            transform-origin: center;
+            background-color: rgba(128, 0, 0, 0.5);
+        }
+        .rotate-y:hover {
+            transform: rotate3d(0, 1, 0, 180deg);
+            transform-origin: center;
+            background-color: rgba(128, 0, 0, 0.5);
+        }
+        .rotate-z:hover {
+            transform: rotate3d(0, 0, 1, 180deg);
+            transform-origin: center;
+            background-color: rgba(128, 0, 0, 0.5);
+        }
+        .rotate-all:hover {
+            transform: rotate3d(1, 1, 1, 180deg);
+            transform-origin: center;
+            background-color: rgba(128, 0, 0, 0.5);
+        }
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <div class="box rotate-x">Rotate 3D X</div>
+            <div class="box rotate-y">Rotate 3D Y</div>
+            <div class="box rotate-z">Rotate 3D Z</div>
+            <div class="box rotate-all">Rotate 3D All</div>
+        </div>
+    </center>
+</body>
+
+</html>

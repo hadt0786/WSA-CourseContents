@@ -1,0 +1,33 @@
+
+<select  id="opt">
+  <option value="One">One</option>
+  <option value="Two">Two</option>
+  <option value="Three">Three</option>
+  <option value="Four">Four</option>
+   <option value="Five">Five</option>
+</select>
+<script>
+var count = document.getElementById("opt").options.length
+alert(count);
+    var parentele = document.getElementById("opt");
+    var options = parentele.getElementsByTagName('option');
+    
+    parentele.removeChild(options[+prompt("Enter the postion to delete 0 to 4")]);
+    
+    var invalue=prompt("Enter Name of option to delete")
+    var del=1;
+    for(x=0; x<4; x++){
+        if(parentele[x].innerHTML==invalue){
+            parentele.removeChild(parentele[x])
+            var del=0
+        }
+    }
+    (del)?alert("unable to delte object Error not found"):alert("Delete by value is sucess");
+    
+    
+    var nwecount = document.getElementById("opt").options.length
+alert("after deletion new list count is "+nwecount);
+
+
+    
+</script>

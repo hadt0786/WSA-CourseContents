@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form example</title>
+    <style>
+    body{
+        background:lightgreen;
+    }
+    
+    </style>
+</head>
+<body>
+    <form name="form1" onsubmit="validateForm(this);">
+        Username:<input type="text" name="UserName"><br>
+        Password:<input type="submit" name="Password"><br>
+
+
+
+    </form>
+
+    <script>
+     function validateForm(form)
+     {
+         var Username = document.form1.UserName.value;
+         var Password = document.form1.Password.value;
+         if(Username.length==0){
+             alert("you must enter a username");
+             return false;
+
+         }
+         else if(Password.length<8){
+             alert("Password must be atleast 6 character");
+            return false;
+         }
+
+     }
+    
+    
+    </script>
+</body>
+</html>

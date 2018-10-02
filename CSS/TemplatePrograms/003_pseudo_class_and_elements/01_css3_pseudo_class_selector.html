@@ -1,0 +1,40 @@
+<!-- ******************************************************
++ Description : Internal style sheet - Pseudo calss selector 
++               with value and element selector
++ Author      : Webstack Academy (P) Ltd
++ Date        : 2-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <title>Pseudo class selector</title>
+	<style>
+    a:link { color : blue; }       /* Unvisited link */
+    a:visited { color : green; }     /* visited link */   
+    /* font color when hovering mouse pointer over link */
+    a:hover { color:  deeppink; }
+    a:active { background-color : yellow; }      /* font color of active link */
+    input:focus { background-color: green;}
+    p:first-child { color: red;}
+	</style>	
+</head>
+<body>
+        <h2>Social Links</h2>
+        <ul>
+            <li><a href="#">Dummy</a></li>
+            <li><a href="http://www.google.com" target="_blank">Google</a></li>
+            <li><a href="http://www.yahoo.com" target="_blank">Yahoo</a></li>
+            <li><a href="http://www.facebook.com" target="_blank">Facebook</a></li>
+        </ul>
+        <input type="text" name="focus" placeholder="Focus on the text box">
+        <div>
+            <p>First paragraph in div. This paragraph will be in red color</p>
+            <p>Second paragraph in div. This paragraph will not be indented</p>
+         </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!-- Write a Javascript program to determine whether the robot makes a circle or not.
+Description:
+• Initially, there is a Robot at position (0, 0). Given a sequence of its moves, judge if this robot
+makes a circle, which means it moves back to the original place or not.
+•
+The move sequence is represented by a string. And each move is represent by a character.
+•
+The valid robot moves are R (Right), L (Left), U (Up) and D (down).
+•
+The output should be true or false representing whether the robot makes a circle.
+Example:
+Example 1:
+Input: "UD"
+Output: true
+Example 2:
+Input: "LL"
+Output: false
+Example 3:
+Input: "LRRL"
+Output: True
+Example 4:
+Input: "LLUD"
+Output: false
+Prerequisites:
+• Switch
+• Conditiponal loop
+
+Sample Execution:
+Test Case 1:
+Robot Move : LL
+Output : false -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Robot move</title>
+
+    <style>
+    
+    body{
+        background: lightgreen;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <script>
+    
+    var str  = prompt("Enter the move").toUpperCase();
+    
+    document.write(str);
+    var move = [];
+    move = str.split("");
+    var sumArray1 = [];
+    var sumArray2 = [];
+    for(x in move)
+    {
+        if(move[x]=='L')
+        {
+            sumArray1[x]=Number(1);
+        }
+        if(move[x]=='R')
+        {
+            sumArray1[x]=Number(-1);
+        }
+        if(move[x]=='U')
+        {
+            sumArray2[x]=Number(2);
+        }
+        if(move[x]=='D')
+        {
+            sumArray2[x]=Number(-2);
+        }
+    }
+    var sum1= 0,sum2 =0;
+    for(x in sumArray1)
+    {
+        sum1 = sum1 + sumArray1[x];
+    }
+
+     for(x in sumArray2)
+    {
+        sum2 = sum2 + sumArray2[x];
+    }
+    document.write(sum1);
+    document.writeln(sum2);
+
+    if(sum1==0 && sum2==0)
+    {
+        document.write("true");
+    }
+    else
+    {
+        document.write("false");
+    }
+
+    </script>
+    
+</body>
+</html>

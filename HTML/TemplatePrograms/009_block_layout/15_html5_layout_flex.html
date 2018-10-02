@@ -1,0 +1,103 @@
+<!-- ****************************************************
++ Description : Web page layout using flex container
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flex Layout</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+        }
+
+        .flex-container>* {
+            padding: 15px;
+            flex: 1 100%;
+        }
+
+        .article {
+            text-align: left;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+        }
+
+        footer {
+            background-color: grey;
+            color: white;
+        }
+
+        .nav {
+            background-color: #eee;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav ul a {
+            text-decoration: none;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .nav {
+                text-align: left;
+                flex: 1 auto;
+                order: 1;
+            }
+
+            .nav ul {
+                flex-direction: column;
+                align-items: left;
+            }
+            .article {
+                flex: 5 0px;
+                order: 2;
+            }
+
+            footer {
+                order: 3;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <header>
+            <h1>States</h1>
+        </header>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Bengaluru</a></li>
+                <li><a href="#">Mysuru</a></li>
+                <li><a href="#">Mangalore</a></li>
+            </ul>
+        </nav>
+
+        <article class="article">
+            <h1>Karnataka</h1>
+            <p>Karnataka is a state in southwest India with Arabian Sea coastlines. The capital, Bengaluru (formerly Bangalore), is a high-tech hub known for its shopping and nightlife. .</p>
+            <p>The southwest, Mysore is home to lavish temples including Mysore Palace, former seat of the region’s maharajas. Hampi, once the medieval Vijayanagara empire’s capital, contains ruins of Hindu temples, elephant stables and a stone chariot..</p>
+        </article>
+
+        <footer>Copyright &copy; Webstack Academy</footer>
+    </div>
+
+</body>
+
+</html>

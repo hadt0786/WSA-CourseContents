@@ -1,0 +1,51 @@
+<!-- ******************************************************
++ Description : Method scale
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Method scale</title>
+    <style>
+        * {
+            margin: 20px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: grey;
+            text-align: center;
+            /* for text alignment */
+            line-height: 150px;
+            transition: all 1.6s;
+        }
+
+        .scaled:hover {
+            transform-origin: left;
+            
+            /* case 1 */
+                  transform: scale(2, 2);
+            
+            /* or right */
+            /* case 2 */
+            /*       transform: scale(0.6); */
+            /* case 3 */
+            /*        transform: scale(-1, 1); */
+            background-color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">Static box</div> <br>
+    <div class="box scaled">Scaled box</div> <br>
+    <div class="box">Static box</div>
+</body>
+
+</html>

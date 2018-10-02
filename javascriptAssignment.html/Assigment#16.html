@@ -1,0 +1,49 @@
+<!-- Write a program to input any two number and swap that without using third variable.
+Description :
+•
+Generally swapping will be done by using 3 variables. But in this program you should be
+able to swap the two numbers without using 3 rd variable.
+Objective : Understand the numbers and swap in javascript.
+Prerequisites:
+• arithmetic operation.
+Sample Execution:
+Test case:
+Input : num1 : 3
+num2 : 4
+Output : num1 : 4
+num2 : 3 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignemetn 16</title>
+
+    <style>
+    
+    body{
+        background: lightgreen;
+    }
+    
+    </style>
+</head>
+<body>
+    <script>
+    
+    
+    var a = Number(prompt("Enter the first number"));
+    var b = Number(prompt("Enter the second number"));
+   
+    document.write(a+" "+b+"<br>");
+    
+    a = a+b;
+    b = a-b;
+    a = a-b;
+
+    document.write(a+" "+b+"<br>");
+
+    </script>
+</body>
+</html>

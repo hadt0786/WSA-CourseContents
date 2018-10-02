@@ -1,0 +1,46 @@
+<!--------------------------------------
+Description - 
+---------------------------------------->
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    
+    <script>
+    
+    function OnMouseOut (elem)
+     {
+         elem.style.backgroundColor = "blue";
+     }
+     function OnMouseIn (elem)
+     {
+         elem.style.backgroundColor = "red";
+     }
+     function OnMouseOver (elem)
+     {
+         elem.style.backgroundColor = "purple";
+     }
+     function OnMouseClick (elem)
+     {
+         elem.style.backgroundColor = "green";
+     }
+
+
+    </script>
+    
+
+</head>
+<body>
+    
+     <p onmouseover="OnMouseOver (this)" onmouseout="OnMouseOut (this)" onmousein = "OnMouseIn (this)"
+    onmouseclick="OnMouseClick (this)" >
+    This is the paragraph content check all the mouse function
+</p> 
+
+
+</body>
+</html>

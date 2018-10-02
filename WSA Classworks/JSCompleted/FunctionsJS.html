@@ -1,0 +1,56 @@
+<!--
+* @Developer: Divek
+* @Problem  :Function 
+* @Company  : XYZ
+* @Date     : 22-05-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+
+<script>
+    
+    //Function with param and With returns
+function AddWithParam(param1, param2)
+    {
+         console.log("Called   AddWithParam  Function");
+        return(param1+param2);
+       
+    }
+    
+    //function without param but returns Some value
+    function AddwithoutParam()
+    {
+         console.log("Called   AddwithoutParam  Function");
+        return 5+2;
+               
+    } 
+    
+    //Function without param and ruturns
+    
+    function AddwithoutReturn()
+    {
+        
+       var sum=1+2;
+                console.log("Called   AddwithoutReturn  Function  "+sum);
+    } 
+    
+    
+    //Function with param but no Return
+    function AddwithParamWithoutReturn(param1, param2)
+    {
+        
+     var sum=param1+param2;
+                console.log("Called   AddwithParamWithoutReturn  Function  "+sum);
+    }
+    
+    // Calling the defined function 
+    var AddWithParamValue=AddWithParam(10, 20); 
+    var AddwithoutParamValue=AddwithoutParam(); 
+    var AddwithoutReturnValue=AddwithoutReturn(); 
+    var AddwithParamWithoutReturn=AddwithParamWithoutReturn(10, 20);
+    
+    //Print the Called function value
+    document.write(AddWithParamValue+"<br>"+AddwithoutParamValue+"<br>"+AddwithoutReturnValue+"<br>"+AddwithParamWithoutReturn);
+
+</script>

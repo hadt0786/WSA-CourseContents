@@ -1,0 +1,39 @@
+<!-- e) To insert a string within a specific position in another string. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>e) To insert a string within a specific position in another string.</title>
+
+    <style>
+    body{
+        background: lightgreen;
+    }
+    
+    </style>
+
+</head>
+<body>
+
+    <script>
+    
+    var str = prompt(" Enter the string 1");
+    var str2 = prompt("enter the string 2");
+
+    var position = Number(prompt("Enter the position in string 1 for string 2 insert"));
+
+    var ans = [str.slice(0,position),str2.slice(0,str2.length)+" ",str.slice(position+1,str.length-1)];
+    var ansString = '';
+    for(x in ans)
+    {
+        ansString+=ans[x];
+    }
+    document.write(ansString);
+    </script>
+    
+</body>
+</html>

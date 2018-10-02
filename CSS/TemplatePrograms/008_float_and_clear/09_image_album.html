@@ -1,0 +1,80 @@
+<!-- ******************************************************
++ Description : Collapsing parent problem
++ Author      : Webstack Academy (P) Ltd
++ Date        : 4-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Collapsing parent problem</title>
+    <style>
+
+    footer{
+        background: blue;
+        color: white;
+        text-align: center;
+    }
+    div {
+        width: 300px;
+        height: auto;
+        border: 2px solid blue;
+    }
+
+    img {
+        float: left;
+        margin: 2px;
+        border: 1px solid grey;
+    }
+        
+    .clearfix:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+    
+    .media-frame-left {
+        float:left;
+    }
+    .media-frame-right {
+        float:right;
+    }
+    .row {
+        width: 100%;    
+    }
+    .ml-col {
+        margin-left: 14%;
+    }
+        p {
+            clear:left;
+        }
+        
+    </style>
+</head>
+    
+<body>
+    <div class="row clearfix">
+    <div class="media-frame-left">
+        <div class="clearfix">
+            <img src="./images/bouquet.jpg"/>
+            <p>Picture </p>
+        </div>
+    </div>
+    <div class="media-frame-left ml-col">
+        <div class="clearfix">
+        <img src="./images/cat.jpg"/>
+        <p>Picture </p>
+        </div>
+    </div>
+    <div class="media-frame-right ml-col">
+        <div class="clearfix">
+        <img src="./images/cherry-320x480.jpg"/>
+        <p>Picture</p>
+        </div>
+    </div>
+    </div>
+</body>
+    
+</html>
+

@@ -1,0 +1,61 @@
+<!-- *************************************************************
++ Description : DOM - Add and remove elements into HTML 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Try out adding and removing elements using DOM.....</p>
+
+<div id = "divtag">
+<p id = "dpara1"> Deleting this paragraph...1</p>
+<p id = "dpara2"> Deleting this paragraph...2</p> 
+</div> 
+
+<button onclick="myButtonAdd()">Add a Button</button>
+<button onclick="myTextButtonAdd()">Add a Labeled Button</button>
+	<button onclick="myParagraphRemove()">Remove a Paragraph</button>
+
+<script>
+
+function myButtonAdd() {
+    
+	// Create a button element 
+	var button = document.createElement("BUTTON");
+    
+	// Append into HTML 
+	document.body.appendChild(button);
+}
+
+function myTextButtonAdd() {
+    
+	var namedButton = document.createElement("BUTTON");
+    var buttonText  = document.createTextNode("CLICK ME");
+    
+	// Append required text into button child -> Parent 
+	namedButton.appendChild(buttonText);
+	
+	// Now append the button as a new child to HTML 
+    document.body.appendChild(namedButton);
+}
+
+function myParagraphRemove() {
+    
+	// Get the paragraph and its parent that need to be removed 
+	var deletePara       = document.getElementById("dpara1");
+	var deleteParaParent = document.getElementById("divtag")
+	
+	// Delete using parent similar to append 
+	deleteParaParent.removeChild(deletePara);
+}
+
+
+</script>
+
+</body>
+</html>

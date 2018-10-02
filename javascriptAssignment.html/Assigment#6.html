@@ -1,0 +1,86 @@
+<!-- Write in javascript language that takes an integer argument N and returns the sum of the first N + 1
+even Lucas Numbers.
+Description:
+• Lucas number is defined to be the sum of its two immediate previous terms, thereby forming
+a fibonacci integer series. The first two Lucas numbers are L0= 2 and L1 = 1 as opposed to
+the first two Fibonacci numbers F0 = 0 and F1 = 1. Though closely related in definition,
+Lucas and Fibonacci numbers exhibit distinct properties.
+The Lucas numbers may thus be defined as follows:
+(where n belongs to the natural
+numbers)
+Objective : To understand the concept of Recursion in javascript.
+
+Example:
+Input : n=6
+Lucas Series : 2,1,3,4,7,11
+Explanation:
+L0 = 2
+L1 = 1
+L2 = L0+L1 = 3
+L3 = L2+L1 = 4
+L4 = L3+L2 = 7
+L5 = L4+L3 = 11
+Sum of even integer : 2+4 = 6
+Prerequisites:
+• Loops
+• Conditiponal loop
+Sample Execution:
+Test Case 1:
+positive integer n: 6
+Lucas Series : 2,1,3,4,7,11
+Sum of even integer : 6
+Test Case 2:
+positive integer n: 10
+Lucas Series : 2,1,3,4,7,11,18, -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LUCAS SERIES</title>
+    <style>
+    
+    body{
+        background: lightgreen;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <script>
+    
+    var n = Number(prompt("Enter the positive integers"));
+    LucaNumber(n);
+
+
+    function LucaNumber(n)
+    {
+        var array = [];
+        var sum  = 0;
+        array[0] = 2;
+        array[1] = 1;
+        document.write(array[0]+" "+array[1]+" ");
+        for(var i = 2 ; i<n;i++){
+           
+            array[i] = array[i-1]+array[i-2];
+           document.write(array[i]+" ");    
+    }
+
+    for(var x = 0 ; x<n;x+=3)
+    {
+        sum+=array[x];
+        
+    }  
+        document.writeln("<br>"+"Sum of the lucas array "+sum);
+    }
+
+    
+
+    </script>
+    
+</body>
+</html>

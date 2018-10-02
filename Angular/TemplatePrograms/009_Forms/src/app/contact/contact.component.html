@@ -1,0 +1,83 @@
+<div class="container">
+  <div class="row>">
+    <div class="col-md-6">
+      <h2>Contact Us</h2>
+      <form #myForm="ngForm" (ngSubmit)="captureForm(myForm)">
+
+        <!-- Group 1 - Basic Information  -->
+        <div ngModelGroup="basicInfo">
+          <div class="form-group">
+            <label for="firstName">First Name
+              <input required ngModel name="firstName" type="text" id="firstName" #firstName="ngModel" (change)="createLog(firstName)"
+                class="form-control" id="firstName" placeholder="first name">
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="cityName">City Name
+              <input required minlength="3" maxLength="20" pattern="Bangalore" ngModel name="cityName" type="text" class="form-control"
+                (change)="createLog(cityName)" id="cityName" #cityName="ngModel" placeholder="Bangalore">
+              <div class="alert alert-danger" *ngIf="cityName.touched && !cityName.valid">
+                <div *ngIf="cityName.errors.required">City name cannot be blank</div>
+                <div *ngIf="cityName.errors.minlength">Minimum Length Error</div>
+                <div *ngIf="cityName.errors.pattern">Pattern is not Matching</div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+
+        <!-- Group 2 - Course Information  -->
+        <div ngModelGroup="courseInfo">
+          <div class="form-group">
+            <label for="courses">Courses</label>
+            <select ngModel name="courses" id="courses" class="form-control">
+              <option class="dropdown-item" *ngFor="let course of courseNames" [value]="course.id" >{{ course.method }}</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="placementStatus">Placement Status</label>
+            <input required ngModel name="placementStatus" type="text" class="form-control" (change)="createLog(placementStatus)" id="placementStatus"
+              #placementStatus="ngModel" placeholder="">
+          </div>
+        </div>
+
+
+        <!-- Checkbox Examples -->
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" ng-model name="termsAndConditions"> Are you find witht terms and conditions?
+          </label>
+        </div>
+        <p>Mode of learning</p>
+
+
+        <!-- Radio Button Example -->
+        <div class="radio col-sm-6">
+          <label>
+            <input ngModel type="radio" name="modeOfLearning" value="1"> Classroom - Full
+            <br>
+          </label>
+
+          <label>
+            <input ngModel type="radio" name="modeOfLearning" value="2"> Classroom - Weekend
+            <br>
+          </label>
+
+          <label>
+            <input ngModel type="radio" name="modeOfLearning" value="3"> Classroom - Online
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="paymentMethod">Payment Method</label>
+          <select ngModel name="paymentMethod" id="paymentMethod" class="form-control">
+            <option *ngFor="let option of paymentOptions" [value]="option.id">{{ option.method }}</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" [disabled]="!myForm.valid">Sign in</button>
+      </form>
+    </div>
+  </div>
+</div>

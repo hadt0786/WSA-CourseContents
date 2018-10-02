@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+  <title>Course List</title>
+</head>
+
+<body>
+
+  <h1>Course List</h1>
+
+
+  <div id="showcourse"> </div>
+
+  <!-- <button type="button" onclick="loadDoc()">Get Courses</button> -->
+  <button type="button" onclick="submitRequest('/api/courses', 
+  'GET', undefined, undefined, handleGetCourse)">Get Courses</button>
+  </div>
+
+  <script>
+
+    function createTableFromCourseList(courseList) {
+      // Create a table element
+      var table = document.createElement("table");
+      // Create a heading
+
+      // Create the row and set row data
+      for (var i = 0; i < courseList.length; i++) {
+        // Insert a row
+        var tr = table.insertRow(-1);
+        // Add id attribute for course ID
+        tr.setAttribute("id", courseList[i]._id);
+        // Insert cells
+        var tcell = tr.insertCell(-1);
+        tcell.innerHTML = courseList[i].name;
+
+        tcell = tr.insertCell(-1);
+        tcell.innerHTML = courseList[i].author;
+
+        // Add 2 more cells for Edit and Delete buttons
+        tcell = tr.insertCell(-1);
+        // Create edit button
+        var editButton = document.createElement("button");
+        editButton.setAttribute("type", "button");
+        editButton.setAttribute("class", "edit");
+        editButton.innerHTML = "Edit";
+        tcell.appendChild(editButton);
+
+        // Delete button
+        tcell = tr.insertCell(-1);
+        // Create delete button
+        var deleteButton = document.createElement("button");
+        deleteButton.setAttribute("type", "button");
+        deleteButton.innerHTML = "Delete";
+        tcell.appendChild(deleteButton);
+      }
+
+      // Return the table element
+      return table;
+    }
+
+    function handleGetCourse(err, courseList) {
+      if (err) {
+        var table = document.createElement("p");
+        table.innerText = this.statusText;
+      }
+      else { // We got course list
+        var table = createTableFromCourseList(courseList);
+      }
+      // Set the table to course list placeholder
+      var divContainer = document.getElementById("showcourse");
+      divContainer.innerHTML = "";
+      divContainer.appendChild(table);
+
+      // Invoke the bind functions
+      bindEditButtons();
+
+    }
+
+
+    // Bind Edit buttons
+    function bindEditButtons() {
+      var elements = document.querySelectorAll("button.edit");
+      if (!elements)
+        return;
+
+      console.log(elements);
+      for (var i in elements) {
+        elements[i].addEventListener("click", function (e) {
+          console.log(e);
+          // Display the populated form for updating course
+
+          // Get the course id
+          // Perform a get request to get course info
+          // Display a populated form with update button
+
+        });
+      }
+    }
+  </script>
+
+</body>
+
+</html>

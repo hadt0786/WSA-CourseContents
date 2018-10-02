@@ -1,0 +1,39 @@
+<!-- ***************************************************************
++ Description : Internal style sheet - General Sibling Combinator
++               with value and element selector
++ Author      : Webstack Academy (P) Ltd
++ Date        : 2-nov-2016
+*************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <title>General Sibling Combinator</title>
+	
+	<style>
+
+    /* Selects all <p> that follows <div> 
+     * <p> may not necessarily follow <div> immediately
+     */
+        div ~ p {
+      color: green;
+    }    
+          
+	</style>
+	
+</head>
+
+<body>
+    <div>
+        <p>This is child paragraph of division.</p>
+    </div>
+    <h2>First Heading - Adjacent to div</h2>
+    <p>This is first paragraph from division.</p>
+    <h2>Second Heading</h2>
+    <p>This is second paragraph from division.</p>
+</body>
+
+</html>

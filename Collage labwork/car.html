@@ -1,0 +1,22 @@
+<html>
+<head>
+<tittle>object constructor</tittle>
+<script type="text/javascript">
+function car(c_Brand,c_Colour,c_Year)
+{
+this.Brand=c_Brand;
+this.Colour=c_Colour;
+this.Year=c_Year;
+}
+my_car=new car("swift","red","2012");
+function display_car()
+{
+document.write("Brand="+this.Brand+"<br/>");
+document.write("Colour="+this.Colour+"<br/>");
+document.write("Year="+this.Year+"<br/>");
+}
+my_car.display_car=display_car;
+my_car.display_car();
+</script>
+</head>
+</html>

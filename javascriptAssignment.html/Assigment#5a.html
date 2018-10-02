@@ -1,0 +1,72 @@
+<!-- a) To Convert a decimal number to binary, octal and hexadecimal. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>a) To Convert a decimal number to binary, octal and hexadecimal.</title>
+
+    <style>
+    
+    body{
+        background: lightgreen;
+    }
+    </style>
+
+</head>
+<body>
+    <script>
+    
+    var num = Number(prompt(" enter the Number"));
+    decimalToBinary(num);
+    decimalToHexaDecimal(num);
+    decimalToOctal(num);
+    function decimalToBinary(num)
+    {
+        var bin = 2;
+        var ans = "";
+        while(num>0)
+        {
+            var rem = parseInt(num%bin);
+            ans+=rem;
+            var quo = parseInt(num/bin);
+            num = quo;
+
+        }
+        document.write("<br>"+ans);
+    }
+    function decimalToHexaDecimal(num)
+    {
+        var bin = 16;
+        var ans = "";
+        while(num>0)
+        {
+            var rem = parseInt(num%bin);
+            ans+=rem;
+            var quo = parseInt(num/bin);
+            num = quo;
+
+        }
+        document.write("<br>"+ans);
+    }
+    function decimalToOctal(num)
+    {
+        var bin = 8;
+        var ans = "";
+        while(num>0)
+        {
+            var rem = parseInt(num%bin);
+            ans+=rem;
+            var quo = parseInt(num/bin);
+            num = quo;
+
+        }
+        document.write("<br>"+ans);
+    }
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!-- ******************************************************
++ Description : background-clip property
++ Author      : Webstack Academy (P) Ltd
++ Date        : 2-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Background-clip property</title>
+    <style>
+    #div1 {
+        border: 20px dotted green;
+        padding:40px;
+        background: pink;
+    }
+    #div2 {
+        border: 20px dotted red;
+        padding:40px;
+        background: pink;
+        background-clip: padding-box;
+    }
+    #div3 {
+        border: 20px dotted blue;
+        padding:40px;
+        background: pink;
+        background-clip: content-box;
+    }
+    </style>
+</head>
+    
+<body>
+    <p>No background-clip (border-box is default):</p>
+    <div id="div1">
+    <h2>Flowers</h2>
+    <p>Flowers are a part of the most important occasions in our lives.</p>
+    </div>
+
+    <p><b>background-clip: padding-box:</b></p>
+    <div id="div2">
+    <h2>Religious Flower</h2>
+    <p><b>Flowers are  used in various religious ritual performances. Particularly, flowers are common in almost all the wedding ceremonies.</b> </p>
+    </div>
+
+    <p><b>background-clip: content-box:</b></p>
+    <div id="div3">
+    <h2>Roses</h2>
+    <p><b>Roses for the longest time have enjoyed the honor of being the most popular flowers in the world</b></p>
+    </div>
+
+</body>
+    
+</html>
+
+

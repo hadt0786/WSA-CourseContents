@@ -1,0 +1,75 @@
+<form #myForm ="ngForm" (ngSubmit)="captureForm(myForm)">
+
+  <!--Group basic info-->
+  <div ngModelGroup ="basicInfo">
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input required ngModel name="firstName" id="firstName" #firstName="ngModel" (change)="createLog(firstName)" type="text" class="form-control">
+    <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">FirstName cannot be blank
+      </div>
+</div>
+
+<!-- Example for specific validation -->
+<div class="form-group">
+  <label for="cityName">City Name</label>
+  <input 
+  required 
+  minlength="3" 
+  maxlength="10" 
+  pattern="Bangalore" 
+  ngModel
+  name="cityName"
+  id="cityName"
+  #cityName="ngModel" 
+  type="text" 
+  class="form-control">
+  <div class="alert alert-danger" *ngIf="cityName.touched && !cityName.valid">
+    <div *ngIf="cityName.errors.required">City Name cannot be blank</div>
+    <div *ngIf="cityName.errors.minlength">Minimum length error</div>
+    <div *ngIf="cityName.errors.pattern">Pattern is not matching</div>
+  </div>
+</div>
+</div>
+
+<!--Group2 - Course Information-->
+<div ngModelGroup="courseInfo">
+  <div class="form-group">
+    <label for="courseName">Course Name</label>
+    <input required ngModel name="courseName" id="courseName" #courseName="ngModel" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="placementStatus">Placement Status</label>
+    <input required ngModel name="placementStatus" id="placementStatus" #placementStatus="ngModel" type="text" class="form-control">
+  </div>
+</div>
+<p> Mode of Learning</p>
+<!--Checkbox example-->
+<div class="checkbox">
+  <label>
+    <input type="checkbox" ngModel name="termsAndConditions">Are you fine with terms and conditions?
+  </label>
+</div>
+
+<p> Mode of Learning</p>
+<!--Radio button example-->
+<div class="radio"> 
+    <label>
+        <input type="radio" ngModel name="modeOfLearning" value="1">
+        Classroom - Fulltime
+    </label>
+</div>
+<div class="radio"> 
+    <label>
+        <input type="radio" ngModel name="modeOfLearning" value="2">
+        Classroom - Weekend
+    </label>
+</div>
+<div class="radio"> 
+    <label>
+        <input type="radio" ngModel name="modeOfLearning" value="3">
+        online
+    </label>
+</div>
+<!--Button for disablibg and enabling-->
+<button class="btn btn-primary" [disabled]="!myForm.valid">Submit</button>
+</form>

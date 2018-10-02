@@ -1,0 +1,107 @@
+<!--
+* @Developer: Divek
+* @Problem: To print A parmid 
+* @Company: XYZ
+* @Date:    10-5-2018
+* @copyright  WSA Academy
+* @license    GPL
+* @version    1.0
+  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>While loop</title>
+    <script> 
+ /*   N=5;
+        i=1;
+        while(i<=N)
+            {
+            document.write("i="+i+"</h1>")    
+              i++;  
+            }*/
+  /*      
+      var n,s=0,d,r=0;
+        n=1234;
+        
+        
+        while(n!=0){
+            
+          d=n%10;
+          s=s+d;
+          r=(r*10)+d;    
+          n=parseInt(n/10);
+        }
+        
+
+        document.write("Sum is"+s+"<br>");
+              document.write("And Reverse is "+r);*/
+/*        var p = parseInt(prompt("Please enter number", "")); 
+        var n = parseInt(prompt("Please enter Base", ""));
+        t=p;
+        
+
+        
+    
+        for(var i=1; i<=n; i++){
+            p=parseInt(p*n);
+           
+        }
+   document.write(+t+" power "+n+" is "+p);*/
+        
+ /*    var fone = parseInt(prompt("Please enter first num", ""));
+             var ftwo = parseInt(prompt("Please enter second num", ""));
+       var sum=0;
+        for(var i=1; i<=ftwo; i++){
+            var sum=parseInt(sum+fone);
+           
+        }
+        
+        document.write("multiplication is  = "+sum);*/
+    var rows = parseInt(prompt("Please enter number rows", ""));     
+ 
+/*for(var i=1; i<=rows; i++)
+{
+for(var k=1; k<=( rows-i ); k++)
+{
+document.write("&nbsp ");
+}
+for(var j=1; j<=i; j++)
+{
+document.write("* ");
+}
+document.write("<br/>");
+}
+   */ 
+        
+var space=rows-1,star=1;
+for(var i=1; i<=rows; i++){
+    for(var k=1; k<=space; k++){
+        document.write(k);
+    }
+    for(var j=1; j<=star; j++){
+        
+        document.write("*");
+    }
+    
+/*     for(var c=space; c>=1; c--){
+        document.write(c);*/
+        
+    }
+    
+    space--;
+    star+=2;
+    
+    
+    document.write("<br>")
+}        
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

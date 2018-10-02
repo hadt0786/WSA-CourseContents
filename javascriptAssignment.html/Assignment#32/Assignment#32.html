@@ -1,0 +1,58 @@
+<!-- Write a JavaScript to display a image and
+a) When the user places the cursor over the image change the image.
+b) When the user removes the cursor from the image, display the old image.
+Description :
+• Have a image in html document.
+• Whenever user place the cursor over the image, that image should be replaced with another
+image and when cursor is moved it should display the previous image.
+Objective : Understand the events handling in javascript.
+Prerequisites:
+• Document Object Model
+• HTML
+Sample Execution: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment32</title>
+
+    <style>
+    
+    body{
+        background : lightgreen;
+        
+    }
+    
+    </style>
+
+        
+
+    <script>
+    
+        
+        
+        
+
+        function imageChange(img)
+        {
+            
+            document.getElementsByTagName("img")[0].src = "url.jpg";
+        }
+        function defaultImage(img)
+        {
+        
+            document.getElementsByTagName("img")[0].src = "ip.jpg";
+        }
+    
+    </script>
+
+    <img src ="ip.jpg" onmouseover="imageChange()" onmouseout="defaultImage()">
+
+</head>
+<body>
+    
+</body>
+</html>

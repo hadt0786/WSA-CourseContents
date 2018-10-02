@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping SYSTEM
+	"src/hibernate-mapping-3.0.dtd">
+	
+	<hibernate-mapping>
+	
+	<class name="com.UserDetails" >
+	
+	<id column="id" type="integer"></id>
+	
+	<property name="name" column="name" type="string"></property>
+	
+	
+	
+	</class>
+	
+
+	</hibernate-mapping>

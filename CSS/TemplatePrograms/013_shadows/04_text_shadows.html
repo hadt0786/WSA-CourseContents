@@ -1,0 +1,87 @@
+<!-- ******************************************************
++ Description : Text shadow
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Text Shadow</title>
+    <style>
+        /* text-shadow: none | h-shadow v-shadow blur-radius color | initial | inherit;
+         * If the blur value is zero, the shadow’s edge is sharp. 
+         * Otherwise, the larger the value, the more the shadow’s edge is blurred
+         */
+
+        h1 {font-size: 5em;}
+        .text-shadow-blur-left {
+            text-shadow: -4px -4px 3px grey;
+        }
+
+        .text-shadow-away {
+            text-shadow: 30px 10px 0 #aaa;
+        }
+
+        .text-shadow-blur-right {
+            color: white;
+            text-shadow: 5px 5px 4px #ff00dd;
+        }
+
+        .text-shadow-raised {
+            color: white;
+            background: skyblue;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        .text-shadow-golden {
+            color: goldenrod;
+            background: lightgreen;
+            text-shadow: 3px 3px 5px rgba(200, 54, 54, 0.5);
+        }
+
+        /* combining multiple shadows with comma */
+
+        .text-shadow-rainbow {
+            color: #000;
+            background: skyblue;
+            text-shadow: 1px 1px 0 red,
+            2px 2px 0 orange,
+            3px 3px 0 yellow,
+            4px 4px 0 green,
+            5px 5px 0 blue,
+            6px 6px 0 indigo,
+            7px 7px 0 violet;
+        }
+        /* combining multiple shadows with comma */
+
+        .text-shadow-thick {
+            color: #fff;
+            background: skyblue;
+            text-shadow: 1px 1px 0 yellow,
+            2px 2px 0 yellow,
+            3px 3px 0 yellow,
+            4px 4px 0 yellow,
+            5px 5px 0 orange,
+            6px 6px 0 orange,
+            7px 7px 0 orange,
+            8px 8px 0 orange;
+        }        
+
+    </style>
+
+</head>
+
+<body>
+    <h1 class="text-shadow-blur-left" align="center"> Webstack Academy</h1>
+    <h1 class="text-shadow-away" align="center"> Webstack Academy</h1>
+    <h1 class="text-shadow-blur-right" align="center"> Webstack Academy</h1>
+    <h1 class="text-shadow-raised" align="center"> Webstack Academy</h1>
+    <h1 class="text-shadow-golden" align="center"> Webstack Academy</h1>
+    <h1 class="text-shadow-rainbow" align="center"> Webstack Academy</h1>
+    <h1 class="text-shadow-thick" align="center"> Webstack Academy</h1>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!-- *************************************************************
++ Description : Debugging Techniques - Throw example
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+<html>
+	<h1> Debugging - Throw example </h1>
+    <head> 
+		<script>
+            function errorFunc()
+            {
+				var x = eval(prompt("enter x value"));
+				var y = eval(prompt("enter y value"));
+               
+				try{
+					if ( y == 0 ){
+						throw("Divide by zero error"); 
+					}
+					else
+					{
+						var z = x / y;
+						document.write("z =" + z + "<br>");
+					}
+               }
+               catch ( e ) {
+                  alert("Error: " + e );
+               }
+            }
+		</script>
+    </head>
+    <body>
+      <button onclick="errorFunc()">Test Thow Example</button>  
+	</body>
+</html>

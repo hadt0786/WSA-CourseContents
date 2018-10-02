@@ -1,0 +1,44 @@
+<!-- ******************************************************
++ Description : Method rotate
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Method rotate</title>
+    <style>
+        * {
+            margin: 20px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: grey;
+            text-align: center;
+            /* for text alignment */
+            line-height: 150px;
+            transition: all 1.6s;
+
+        }
+
+        .rotated:hover {
+            transform-origin: left top;
+            transform: rotate(-45.0deg);
+            background-color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">Static box</div> <br>
+    <div class="box rotated">Rotated box</div> <br>
+    <div class="box">Static box</div>
+</body>
+
+</html>

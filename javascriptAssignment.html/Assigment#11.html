@@ -1,0 +1,57 @@
+<!-- Write a javascript program to swap the word from lowercase to uppercase and vice versa.
+Description:
+• Given a string “Hello World” it should swap the case of the string.
+• For example if user enters Hello World then the ouput should be hELLO wORLD
+Prerequisites:
+•
+•
+•
+For loop
+If else
+Function
+Sample Execution:
+Test case 1:
+Input : Hello World
+Output : hELLO wORLD
+Test case 2:
+Input : hOw ArE yOu
+Output : HoW aRe YoU -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignement 11</title>
+
+    <style>
+            body{
+                background: lightgreen;
+            }
+
+    </style>
+</head>
+<body>
+        <script>
+        var string = prompt("enter the string");
+
+            var ans = "";
+        for(var x = 0 ; x<string.length;x++)
+        {
+            if(string.charAt(x)===string.charAt(x).toLowerCase())
+            {
+                document.write(string.charAt(x).toUpperCase());
+            }
+            else {
+                document.write(string.charAt(x).toLowerCase());
+            }
+        }
+        document.write(ans);
+        
+        </script>
+
+
+    
+</body>
+</html>

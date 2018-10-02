@@ -1,0 +1,64 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Intersection and Union</title>
+
+    <script>
+    
+    var array1 = [4,7,13,94,100];
+    var array2 = [5,13,94,120];
+
+    var union = [];
+   
+    var intersection = [];
+
+        for(let array1Index = 0; array1Index<array1.length;array1Index++)
+        {
+            for(let array2Index = 0;array2Index<array2.length;array2Index++)
+            {
+                if(array1[array1Index]==array2[array2Index])
+                {
+                    intersection.push(array1[array1Index]);
+                }
+            }
+        }
+
+      for(var array1Index=0;array1Index<array1.length;array1Index++)
+      {
+              if((array1[array1Index])!=array2[array1Index])
+              {
+                  union.push(array1[array1Index]);
+                  
+              }
+    }  
+      document.write("---------");
+      for(x in array2)
+      {
+          document.write("<br>"+array2[x]);
+      }
+
+document.write("Intersection array"+"<br>");
+    for(let arrayOutput = 0; arrayOutput<intersection.length;arrayOutput++)
+    {
+        document.write("Element at Index "+arrayOutput+"is "+ intersection[arrayOutput]+"<br>");
+    }
+
+    document.write("<br>"+"Union Array");
+    for(let unionIndex = 0; unionIndex<union.length;unionIndex++)
+    {
+        document.write("Element at Index "+unionIndex+"is "+ union[unionIndex]+"<br>");
+    }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

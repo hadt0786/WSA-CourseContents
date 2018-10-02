@@ -1,0 +1,38 @@
+<!--
+* @Developer: Divek
+* @Problem  : To Calulate power
+* @Company  : XYZ
+* @Date     : 22-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+<script>
+var NumOne = parseInt(prompt("Please enter Num 1", ""));
+        var NumTwo = parseInt(prompt("Please enter Num 2", ""));
+   
+  Power(NumOne,NumTwo);
+	
+    function Power(NumOne,Numtwo){
+      var power=3;
+	/*copying from Base to temp to multiply*/
+        var temp1=NumOne;     
+       var temp2=NumTwo;   
+
+	/*looping to lesser than power */            					
+        for(var iLoopIndex=1; iLoopIndex<power; iLoopIndex++){ 
+	    
+	    /*Multplying base into power*/                  
+            NumOne*=temp1;  
+            NumTwo*=temp2;                         				
+        }
+        
+        sum=NumOne+Numtwo;
+        
+            
+     document.write(+temp1+" power "+power+" is "+NumOne); 
+    document.write("<br>"+temp2+" power "+power+" is "+NumTwo+"<br>");
+        document.write("Sum is"+sum);
+    }
+
+    </script>

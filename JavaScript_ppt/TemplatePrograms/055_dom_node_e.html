@@ -1,0 +1,135 @@
+<!-- *************************************************************
++ Description : DOM Nodes - Add and remove elements into HTML 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<html>
+<body>
+
+<h1>Try out HTML changes...by understanding DOM Node APIs</h1>
+
+<button onclick="myListAdd()">Create an Unordered List</button>
+<button onclick="myListDelete()">Delete an item in Unordered List </button>
+<button onclick="myListAppend()">Append an item in Unordered List </button>
+<button onclick="myListInsert()">Insert an item in Unordered List </button>
+<button onclick="myListReplace()">Replace an item in Unordered List </button>
+
+<script>
+
+function myListAdd() {
+    
+	// Create a list element 
+	var ulElement = document.createElement("Ul");
+	document.body.appendChild(ulElement);
+	
+	// Set the attribute of the list by creating an ID 
+	var listName = prompt("Enter the list name");
+	
+	var lAttribute = document.createAttribute("id");
+	lAttribute.value = listName;
+	
+	ulElement.setAttributeNode(lAttribute);
+	
+	// Display the list name dynamically 
+	
+	var pElement = document.createElement("P");
+	document.body.appendChild(pElement);
+	pElement.innerHTML = "The List name is : " + listName + "<br>" + "<br>"; 
+	
+	
+	var listItems = parseInt(prompt("How many list items do you have?"));
+	
+	for (var loopIndex = 0;loopIndex < listItems;loopIndex++)
+	{
+		listContent = prompt("Enter the list items, one by one");
+		
+		var newListItem = document.createElement("Li");
+		var listText    = document.createTextNode(listContent);
+		
+		newListItem.appendChild(listText);
+		ulElement.appendChild(newListItem);
+	}
+    
+}
+
+
+function myListDelete() {
+    
+	var dListName   = prompt("Enter the list name");
+	var dNodeNumber = parseInt(prompt("Enter the item number you want to delete,starting with 0"));
+	
+	console.log("The entered node number is: " + dNodeNumber);
+	
+	// Given multiple lists get the actual list name 
+	var deleteList = document.getElementById(dListName);
+	
+	// Delete the child number which you need to remove 
+	var dNode = deleteList.childNodes[dNodeNumber];
+	
+	deleteList.removeChild(dNode);
+}
+
+
+function myListAppend()
+{
+	var aListName    = prompt("Enter the list name");
+	var aListContent = prompt("Enter the text for your list item");
+	
+	var appendList = document.getElementById(aListName);
+	
+	var newListItem = document.createElement("Li");
+	var listText    = document.createTextNode(aListContent);
+		
+	newListItem.appendChild(listText);
+	
+	appendList.appendChild(newListItem);
+
+}
+
+
+function myListInsert()
+{
+	var iListName    = prompt("Enter the list name");
+	var iListContent = prompt("Enter the text for your list item");
+	var iPosition    = prompt("Enter the position you want to insert before,starting with 0"); 
+	
+	var iList = document.getElementById(iListName);
+	
+	var newListItem = document.createElement("Li");
+	var listText    = document.createTextNode(iListContent);
+	
+	newListItem.appendChild(listText);
+
+	// Delete the child number which you need to remove 
+	var iNode = iList.childNodes[iPosition];
+		
+	iList.insertBefore(newListItem,iNode);	
+
+}
+
+function myListReplace()
+{
+	var rListName    = prompt("Enter the list name");
+	var rListContent = prompt("Enter the text for your list item");
+	var rPosition    = prompt("Enter the position you want to insert before,starting with 0"); 
+	
+	var rList = document.getElementById(rListName);
+	
+	var newListItem = document.createElement("Li");
+	var listText    = document.createTextNode(rListContent);
+	
+	newListItem.appendChild(listText);
+
+	// Delete the child number which you need to remove 
+	var rNode = rList.childNodes[rPosition];
+		
+	rList.replaceChild(newListItem,rNode);	
+}
+
+</script>
+
+</body>
+</html>

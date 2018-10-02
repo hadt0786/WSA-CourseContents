@@ -1,0 +1,120 @@
+<!--
+Function to generate the unique PIN number of given length n-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assigment 3</title>
+    <style>
+        body{
+            background-color: coral;
+        }
+        
+        .back{
+            
+            background-color: black;
+            width: 350px;
+            position: absolute;
+            margin-left: 33%;
+            margin-top:  12%;
+            opacity: 0.4;
+            z-index: -1;
+            height: 250px;
+           
+        }
+        
+          p
+        {
+           /* background: lightgrey;*/
+            width: 280px;
+            margin-top: 15px;
+            height: 35px;
+            color: whitesmoke;
+            font-size: 20px;
+        
+        }
+        .para{
+            margin-left:36.6%;
+            position: absolute;
+                    margin-top: 12%;
+                
+        }
+        input
+        {
+           /* background: lightgrey;*/
+          
+            width: 280px;
+            margin-top: 15px;
+            height: 30px;
+            border-radius: 25px;
+            padding: 2px;
+        
+        }
+      
+        button[type="submit"]{
+            background: grey;
+            color: whitesmoke;
+           height: 38px;
+               width: 285px;
+             border-radius: 25px;
+             padding: 2px;
+        }
+        input:focus{
+              box-shadow: 5px 5px 15px black;
+             width: 300px;
+            margin-left: -10px;
+           
+        }
+       
+    </style>
+    <script>
+        revflag=1;
+        function callme(){
+        var Length =parseInt(document.getElementById("Length").value);
+        var Numberone='1';
+                  debugger;
+            for(var i=1; i<=Length;i++){
+               
+                Numberone=i+Numberone;
+            }
+             var Sum=0,digit,reminder=0,count=0;
+        while(Length>=1){
+      
+               /* Mod The Number With 10 to get last digit*/
+	 digit = Numberone % 10;
+
+  	   //Adding Sum and current Digit
+            Sum = Sum + digit;
+
+	    //Calculating Reminder x 10 plus digit to get reverse of number
+            reminder =(reminder*10) + digit; 
+
+	    //Dividing number To Get remaining digits
+            Numberone = parseInt(Numberone/10); 
+            Length--;
+               
+           }
+           
+            if(!Length){
+         document.getElementById("paragraph").innerHTML="Genrated pin is "+reminder;}
+            else{
+                  document.getElementById("paragraph").innerHTML="Please input length";
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="back"></div>
+ <div  class="para"style=" margin-left:35.6%;
+            position: absolute;
+                    margin-top: 14%;">
+                          <br>
+                           <input id="Length" type="text" placeholder="  Length">  <br><br>
+                          <button id="button"type="submit" onclick="callme();">Calculate</button>
+                             <p id="paragraph" type="text" ></p> <br>
+                            
+        
+      </div>
+ 
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!-- ***********************************************************
++ Description : Internal style sheet - Pseudo element selector 
++               with value and element selector
++ Author      : Webstack Academy (P) Ltd
++ Date        : 2-nov-2016
+************************************************************ -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <title>Pseudo element selector</title>
+	
+	<style>   
+        
+    h1::before {
+        content: "~~ ";
+    }
+    h1::after {
+        content: " ~~";
+    }  
+        
+	</style>
+	
+</head>
+
+<body>
+        <h1>Programming Languages</h1>
+        <p>Programming languages are used to write software. C, C++, Java are popular languages. Scripting languages are also evolving and have become very popular among developers. Some of the scripting languages are JavaScript, PHP, Perl, Kotlin.</p>
+</body>
+
+</html>

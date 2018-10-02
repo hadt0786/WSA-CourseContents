@@ -1,0 +1,20 @@
+
+<script>
+var string=prompt("Enter a string");
+
+var start=+prompt("Enter a postion to start");
+string2=string.split(" ");
+var noofchar=+prompt("Enter number of characters");
+stringremove=string2[start];
+stringremoved=stringremove.slice(string2, noofchar);
+    
+
+
+for (x in string2){
+  (x==start)? document.write(stringremoved): document.write(string2[x]);
+    document.write("&nbsp");
+    
+}
+
+
+</script>

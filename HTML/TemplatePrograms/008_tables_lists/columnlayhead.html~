@@ -1,0 +1,42 @@
+<!-- Program Description :Design a simple web page using table layout 
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<html>
+<body>
+<title>Emertxe IT Training</title>
+</head>
+<body style="margin: 0px; padding: 0px; font-family: 'Trebuchet MS',verdana;">
+<table width="100%" style="height: 100%;" cellpadding="10" cellspacing="0" border="0">
+<tr>
+  <!--HEADER SECTION-->
+<td colspan="3" style="height: 100px;" bgcolor="#777d6a"><h1>Emertxe </h1></td></tr>
+<!--NAVIGATION BAR SECTION-->
+<tr> <td colspan="3" valign="middle" height="30" bgcolor="#a9ae9f">
+<a href="#home">Home</a></td></tr>
+
+<tr>
+<!--  LEFT COLUMN (MENU)  -->
+<td width="20%" valign="top" bgcolor="#999f8e">
+<a href="#carrers">Carrers <br></a>
+<a href="#placements">Placements <br></a>
+<a href="#aboutus">About Us<br></a>
+<a href="#contactUs">Contact Us <br></a>
+</td>
+<!--  MIDDLE COLUMN (CONTENT)  -->
+<td width="55%" valign="top" bgcolor="#d2d8c7">
+<h2>India’s Leading IT Finishing School</h2>
+
+Emertxe is a pioneer of Embedded Systems training in Bangalore. Our Embedded training vertical has generated huge pool of industry ready embedded engineers. For freshers we offer placement oriented embedded course with attractive scholarships.  <br>
+<br>
+Along with embedded systems, we offer trainings in Java, Android, Software engineering and Oracle as individual verticals. We offer short term and long term trainings in each technology areas, catering to various segments.<br>
+<br>
+</td>
+<td width="25%" valign="top" bgcolor="#999f8e">&nbsp;</td>
+</tr>
+<!--  FOOTER SECTION  -->
+<tr><td colspan="3" align="center" height="20" bgcolor="#777d6a">Copyrights 2013-2017</td></tr>
+</table>
+</body>
+</html>
+

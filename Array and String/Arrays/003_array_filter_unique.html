@@ -1,0 +1,23 @@
+<!-- ******************************************************************
++ Description : Display only unique elements of array using filter method
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 30-Jun-2018
+**********************************************************************-->
+
+<html>
+<head>
+    <title>ArrayUnique</title>
+    <script>
+        var myArray=["sam","tim","sam","john","sam","john"];
+
+        var result = myArray.filter(function(value, index, array){
+            return array.indexOf(value) == index;
+        });
+        document.write(result);
+        
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

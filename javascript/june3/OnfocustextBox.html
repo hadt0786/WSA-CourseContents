@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Onfocus and off Focus example</title>
+
+
+
+Onfocus Text box:<input type = "text" onfocus="myFocusFunction(this)">
+<br><br>
+
+
+Onblur Text box : <input type = "text" onblur = "myBlurFunction(this)">
+<br><br>
+
+<p> which course do you want to join</p>
+
+   
+<select id="courseSelection" onchange = "myChangeFunction(this)">
+    <option value = "Code: FED">Frontend developer
+    <option value = "Code: BED">Backend developer
+    <option value = "Code: FSD">FullStack developer
+    <option value = "Code: MC">FullStack developer
+
+</select>          
+
+<script>
+
+function myBlurFunction(obj)
+{
+    obj.style.background = "red";
+}
+function myFocusFunction(obj)
+{
+    obj.style.background = "yellow";
+}
+
+function myChangeFunction(obj)
+{
+    
+ var x = document.getElementById("courseSelection").value;
+ document.write("this course you have selected is: "+x);
+}
+
+</script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

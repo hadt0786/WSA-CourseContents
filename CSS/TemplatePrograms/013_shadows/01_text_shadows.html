@@ -1,0 +1,43 @@
+<!-- ******************************************************
++ Description : Text shadow
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Text Shadow</title>
+    <style>
+        /* text-shadow: none | h-shadow v-shadow blur-radius color | initial | inherit;
+         * If the blur value is zero, the shadow’s edge is sharp. 
+         * Otherwise, the larger the value, the more the shadow’s edge is blurred
+         */
+
+        h1 {font-size: 10em;}
+        .ts-blur-ltc {
+            text-shadow: -20px -20px 4px grey;
+        }    
+        .ts-blur-rtc {
+            text-shadow: 20px -20px 4px grey;
+        }    
+        .ts-blur-rbc {
+            text-shadow: 20px 20px 4px grey;
+        }    
+        .ts-blur-lbc {
+            text-shadow: -20px 20px 4px grey;
+        }            
+    </style>
+
+</head>
+
+<body>
+    <h1 class="ts-blur-ltc" align="center"> M </h1>
+    <h1 class="ts-blur-rtc" align="center"> M </h1>
+    <h1 class="ts-blur-rbc" align="center"> M </h1>
+    <h1 class="ts-blur-lbc" align="center"> M </h1>
+</body>
+
+</html>

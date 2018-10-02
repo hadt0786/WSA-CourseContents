@@ -1,0 +1,36 @@
+<!-- *************************************************************
++ Description : Simple prototype example - Books
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Simple prototype example - Books</title>
+		<script>
+            function book (name,author)
+			{
+				this.name = name;
+				this.author = author;
+			}
+			
+			var bestseller = new book("Hit Refresh","Satya Nadella");
+			
+			// New property addition using prototype!! 
+			book.prototype.company = "Microsoft";
+			
+			// Which is picked up by 'team' as inherited property
+			document.write("Book name: " + bestseller.name + "<br>");
+			document.write("Book author: " + bestseller.author + "<br>");
+			document.write("Author's company: " + bestseller.company + "<br>");			
+		</script>
+    </head>
+    <body>
+    </body>
+    
+</html>
+
+

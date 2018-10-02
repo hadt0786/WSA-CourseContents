@@ -1,0 +1,63 @@
+<!--
+* @Developer: Divek
+* @Problem  : Calculator webapp
+* @Company  : XYZ
+* @Date     : 14-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+        //Promting users to input First number and Second number and the opreator
+        var numberOne=+prompt("Enter first number");
+		var numberTwo=+prompt("Enter second number");
+		var operation=prompt("Enter the operation");
+        
+        //setting Result as zero intially
+        var result=0;
+        Calc(numberOne,numberTwo,operation);
+  
+function Calc(numberOne,numberTwo,operation){
+		switch(operation) {
+    //Checking which opreand the user is inputted using Switch case and Calulating according to the given opreator
+		case "*" :
+					result=numberOne*numberTwo;	
+                //Break Statement is used to Exit the switch case
+		              break;
+                
+		case "+" :
+					result=numberOne+numberTwo;
+		              break;
+                
+		case "/" :
+					result=numberOne/numberTwo;
+		              break;	
+                
+		case "-" :
+
+					result=numberOne-numberTwo;
+		              break;	
+                
+		default:
+    //Setting default Result as zero if invalid opreator is found
+			result=0;	
+		}
+}
+        
+        
+       if(result){
+		 alert(numberOne+" "+operation+" "+numberTwo+" ="+result);		
+       }
+        else
+            alert("Invalid Operator");
+	
+	</script>
+</body>
+</html>

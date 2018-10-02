@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		function arithmetic(n1,n2,operation) {
+			 var num1=n1,num2=n2,ch=operation;
+
+		switch(operation) {
+		case "*" :
+				return function () {
+					return num1*num2;
+				}
+		break;
+		case "+" :
+				return function () {
+					return num1+num2;
+				}
+		break;
+		case "/" :
+				return function () {
+					return num1/num2;
+				}
+		break;	
+		case "-" :
+				return function () {
+					return num1-num2;
+				}
+		break;	
+		default:
+			return("Wrong Choice");	
+		}
+
+			
+		}
+
+		var x=+prompt("Enter first number");
+		var y=+prompt("Enter second number");
+		var op=prompt("Enter the operation");
+		var obj=arithmetic(x,y,op);
+		document.write(op+" of "+x+" "+y+" is: "+obj());
+
+		
+	</script>
+</body>
+</html>

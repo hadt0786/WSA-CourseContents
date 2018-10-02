@@ -1,0 +1,24 @@
+<!-- Program Description : Program to change the content of an HTML using javascript
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Example</h1>
+
+<p>JavaScript can change the content of an HTML element:</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo">Welcome to Javascript Page</p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello Friends!";
+}
+</script>
+
+
+</body>
+</html>
+

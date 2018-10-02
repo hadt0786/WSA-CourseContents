@@ -1,0 +1,17 @@
+var myNumber;
+var myString;
+var myNumber;
+var myString;
+myNumber = 'a';
+myString = 100;
+console.log(myNumber);
+console.log(myString);
+myLetTest = 100;
+var myLetTest;
+var anytest;
+anytest = '123';
+anytest = 100;
+var myBoolean;
+myBoolean = [true, false];
+myBoolean[0] = 'false';
+myBoolean[1] = 'true';

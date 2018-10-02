@@ -1,0 +1,55 @@
+<!-- ******************************************************
++ Description : Background-orgin property
++ Author      : Webstack Academy (P) Ltd
++ Date        : 2-nov-2016
+******************************************************* -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background-orgin property</title>
+<style>
+#div1 {
+    border: 20px dotted blue;
+    padding: 40px;
+    background: url(./images/rose.jpg);
+    background-repeat: no-repeat;
+    background-origin :padding-box;
+}
+#div2 {
+    border: 20px dotted maroon;
+    padding: 40px;
+    background: url(./images/rose.jpg);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+}
+#div3 {
+    border: 20px solid red;
+    padding: 40px;
+    background: url(./images/rose.jpg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+</style>
+</head>
+<body>
+
+<p>No background-origin (padding-box is default):</p>
+<div id="div1">
+<h2>Flowers</h2>
+<p>Flowers are a part of the most important occasions in our lives.</p>
+</div>
+
+<p><b>background-origin: border-box:</b></p>
+<div id="div2">
+<h2>Religious Flower</h2>
+<p><b>Flowers are  used in various religious ritual performances. Particularly, flowers are common in almost all the wedding ceremonies.</b> </p>
+</div>
+
+<p><b>background-origin: content-box:</b></p>
+<div id="div3">
+<h2>Roses</h2>
+<p><b>Roses for the longest time have enjoyed the honor of being the most popular flowers in the world</b></p>
+</div>
+
+</body>
+</html>

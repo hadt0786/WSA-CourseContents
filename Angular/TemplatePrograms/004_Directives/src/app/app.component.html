@@ -1,0 +1,72 @@
+<!-- <h2>Directives - Simple Examples</h2>
+
+<p><b>Usage of ngIf condition...</b></p>
+
+<div *ngIf= "coursesList.length > 0;then listCourses else errCourses"></div>
+
+<ng-template #listCourses>
+  List of courses: {{coursesList}}
+  </ng-template>
+
+<ng-template #errCourses>
+   No courses now.Try back later.
+</ng-template>
+
+<div [hidden]="coursesList.length == 0">
+   [Using Hidden] List of courses: {{coursesList}}  
+</div>
+
+<div [hidden]="coursesList.length > 0">
+     [Using Hidden]  No courses now.Try back later. 
+</div>
+<br>
+<br>
+<ul [ngSwitch]="courseNumber">
+  <li *ngSwitchCase="'1'">Hello FullStack Student</li> 
+  <li *ngSwitchCase="'2'">Hello MeanStack Student</li>      
+  <li *ngSwitchCase="'3'">Hello Front-End Student</li> 
+  <li *ngSwitchCase="'4'">Hello Back-End Student</li> 
+  <li *ngSwitchDefault>Looks like you are not WSA student</li> 
+</ul>
+
+<p><b>Usage of for loop with index...</b></p>
+<ul>
+  <li *ngFor="let student of studentList">
+  Student:{{student.name}}  
+</li>
+</ul>
+
+<ul>
+  <li *ngFor="let course of coursesList">
+    Course: {{ course }}
+  </li>
+</ul> -->
+
+<!-- <input [(ngModel)]="userInput" (keyup.enter)="userKeyPress()"/> -->
+
+<!-- <p><b>Usage of loops with events</b></p>
+<button (click) ="addNewCourse()">Add Course</button>
+<button (click) ="removeCourse()">Remove Course</button>
+<ul>
+  <li *ngFor="let course of coursesList; let cIndex = index">
+    {{cIndex +1}} : {{course}}
+    </li>
+  </ul> -->
+
+  <!-- usage of loop with if conditions -->
+
+  <p><b>Usage of loops with events</b></p>
+
+  <!-- <ul *ngFor="let course of coursesList; let eIndex = even; let cIndex = index">
+    <li *ngIf="eIndex == true; then eList">
+      </li>
+      <ng-template #eList>
+        <li> Hello:{{cIndex}}:{{course}} </li>
+        </ng-template>
+    </ul> -->
+
+    <!-- custom directive -->
+
+    <p><b>Custom directive</b></p>
+
+    <input type="text" appCustomdirective/>

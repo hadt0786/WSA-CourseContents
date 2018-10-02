@@ -1,0 +1,48 @@
+<!-- Write a program to compute sum and product of array of integer.
+Description :
+• In this program you should input the elements and store it to the array.
+• Find the sum and product of those integers.
+Objective : Understand the array and loops in javascript.
+Prerequisites:
+• array
+• arithmetic operation
+Sample Execution:
+Test case:
+Input : [1,2,3,4,5,6,7,8,9]
+Output : sum : 45
+product : 362880 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 21</title>
+
+    <style>
+    
+    body{
+        background: lightgreen;
+    }
+    </style>
+
+    <script>
+        var array = [1,2,3,4,5,6,7,8,9];
+
+        var sum =0, product = 1;
+
+        for(x in array)
+        {
+            sum+=array[x];
+            product*=array[x];
+        }
+
+        document.write("The sum is "+sum+" <br>"+ "The product is "+product);
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

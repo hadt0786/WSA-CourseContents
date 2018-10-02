@@ -1,0 +1,65 @@
+<!-- Write a program to input three subjects marks and calculate average marks and display grade
+according to average marks.
+Description :
+•
+The Average marks and grade will be given as:
+Average
+Grade
+>=90 Ex
+80-90 A+
+70-80 A
+60-70 B+
+<60 Fail
+Objective : Understand the conditional statement and switch cases in javascript.
+Prerequisites:
+• For loop
+• If else
+• switch
+Sample Execution:
+Test case:
+Input : 55, 55 , 55
+Output : Fail -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignement 13</title>
+
+    <style>
+    
+    body{
+        background: lightgreen;
+    }
+    </style>
+
+</head>
+<body>
+    
+    <script>
+        var sum = 0, avg = 0, count = 0;
+            for(var i = 0 ; i<=2;i++)
+            {
+            var sub = Number(prompt("Enter subject "+i));
+               sum+=sub; 
+               count++;
+           }
+                avg = sum/count;
+            checkGrade(avg);
+            function checkGrade(avg)
+            {
+                var ans = (avg>=90)? "EX":
+                (avg>=80 && avg >= 90)? "A+":(avg>=70 && avg <=80)?"A":(avg>=60 && avg<=70)?"B":"FAIL";
+                document.write(ans);
+            }
+             
+
+
+                </script>
+
+
+
+</body>
+</html>

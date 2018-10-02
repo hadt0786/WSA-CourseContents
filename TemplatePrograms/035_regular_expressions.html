@@ -1,0 +1,37 @@
+<!-- *************************************************************
++ Description : Regular expressions 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Regular expressions</title>
+		<script>
+			
+			// Check if the given input has first character is upper case or not
+			function upper_case(str)  
+			{  
+				var regexp = /^[A-Z]/;  
+				if (regexp.test(str))  
+				{  
+					console.log("String's first character is uppercase");  
+				}   
+				else  
+				{  
+					console.log("String's first character is not uppercase");  
+				}  
+			}  
+			upper_case('WebStack Academy');  
+			upper_case('webstack academy');  
+		</script>
+    </head>
+    <body>
+    </body>
+    
+</html>
+
+

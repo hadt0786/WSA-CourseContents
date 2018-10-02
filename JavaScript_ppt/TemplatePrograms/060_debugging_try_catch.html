@@ -1,0 +1,29 @@
+<!-- *************************************************************
++ Description : Debugging Techniques - Try & Catch 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+<html>
+	<h1> Debugging - Try & Catch example </h1>
+    <head> 
+		<script>
+             function errorFunc()
+            {
+               try {
+                    // Write some incorrect stuff here...
+					somejunk(); 
+               } 
+               
+               catch ( e ) {
+					alert("Error Name    : " + e.name);
+					alert("Error Message : " + e.message);
+               }
+            }
+        </script> 
+    </head>
+    <body>
+      <button onclick="errorFunc()">Test Error Function</button>  
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!--
+* @Developer: Divek
+* @Problem  : To print n number if prime number
+* @Company  : XYZ
+* @Date     : 17-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+<script>
+debugger;
+                var iLoopIndex = 0;
+                var jLoopindex = 0;
+                var Stopflag=0;
+ 
+                limit = parseInt(prompt("Please Nth number", ""));
+ 
+                //loop till i equals to $limit
+                for (iLoopIndex = 1; Stopflag<limit ; iLoopIndex++) {
+                    Counter = 0;
+               
+ 
+                    for (jLoopindex = 1; jLoopindex <= iLoopIndex; jLoopindex++) {
+                        // % modules will give the reminder value, so if the reminder is 0 then it is divisible
+                        if (iLoopIndex % jLoopindex == 0) {
+                            //increment the value of Counter
+                            Counter++;
+                        }
+                    }
+                    
+                    //if the value of c is 2 then it is a prime number
+                    //because a prime number should be exactly divisible by 2 times only (itself and 1)
+                    if (Counter==2) {
+                        document.write(iLoopIndex+"<br>");
+                          Stopflag++;
+                    }
+                  
+                }
+            </script>

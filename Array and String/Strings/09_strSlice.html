@@ -1,0 +1,42 @@
+<!-- *************************************************************
++ Description : Demo of string slice()
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 28-07-2018
+************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String slice()</title>
+        <script>
+            var str = "Hello World Welcome to JS";
+
+            var sliceOfStr = str.slice(1,8);
+            document.write("Sliced string is: "+sliceOfStr);
+
+
+            //What if first index is larger than second
+            var subStr = str.slice(10,0);
+            document.write("<br>Sub string when first index is larger than second: "+subStr);
+
+            //What if only one index is passed
+            var subStr = str.slice(3);
+            document.write("<br>Sub string when passed one index: "+subStr);
+
+
+            //What if negative index is passed
+            var subStr = str.slice(-3);
+            document.write("<br>Sub string when passed -negative index: "+subStr);
+
+            var subStr = str.slice(-3,2);
+            document.write("<br>Sub string when passed negative and positive index: "+subStr);
+
+            var subStr = str.slice(2,-3);
+            document.write("<br>Sub string when passed positive and negative index: "+subStr);
+
+            var subStr = str.slice(-3,-5);
+            document.write("<br>Sub string when passed negative index: "+subStr);
+
+        </script>
+    </head>
+</html>

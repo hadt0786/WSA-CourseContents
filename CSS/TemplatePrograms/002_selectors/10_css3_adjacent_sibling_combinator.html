@@ -1,0 +1,37 @@
+<!-- ***************************************************************
++ Description : Internal style sheet - Adjacent Sibling Combinator
++               with value and element selector
++ Author      : Webstack Academy (P) Ltd
++ Date        : 2-nov-2016
+*************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <title>Adjacent Sibling Combinator</title>
+	
+	<style>
+
+    /* Selects <p> that immediately follows <div> */
+    div + p {
+      color: blue;
+    }    
+          
+	</style>
+	
+</head>
+
+<body>
+    <div>
+        <p>This is child paragraph of division.</p>
+    </div>
+    <p>This is first and adjecent paragraph to division.</p>
+    <p>This is second paragraph to division.</p>
+    <h2>Heading - Programming Languages</h2>
+
+</body>
+
+</html>

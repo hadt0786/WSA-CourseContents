@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String</title>
+</head>
+<body>
+
+    <script>
+            // var str = " Hello World ";
+            // var str2 = new String("Hello World");
+            // //document.write(str.length);
+            // console.log(str===str2);
+            // console.log("<br>"+str==str2);//false because it will concatenating
+            // console.log(str==str2);//true
+
+            var trimExample = "  Hello      World   ";
+       
+            var strReplace = "hello This string is need to be this";
+
+            var ans = strReplace.replace(/t/gi,"replace");
+            console.log(ans);
+            console.log(strReplace.substring(200,20));//swap the values if start Index is greater thean end index
+            console.log(strReplace.substring(-1,23));//-1 will be taken from 0 index
+        
+            console.log("test",strReplace.substr(0,-1));//end index = strReplace.length - 1
+            
+            console.log(trimExample.trim());
+            console.log(trimExample.trimStart());
+            console.log(trimExample.trimEnd());
+    //         document.write("<br>"+" "+str.includes(str2));
+    // </script>
+    
+</body>
+</html>

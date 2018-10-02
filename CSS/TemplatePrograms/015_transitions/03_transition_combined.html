@@ -1,0 +1,44 @@
+<!-- ******************************************************
++ Description : Transitions combined
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Transitions combined</title>
+    <style>
+        h1 {
+            /* initial font size */
+            font-size: 30px;
+            
+            /* list of transition properties */
+            transition-property: font-size, background-color, color;
+            
+            /* how long transition shall last */
+            transition-duration: 3s;
+            
+            /* transition curve */
+            transition-timing-function: ease-in-out;
+        }
+
+        h1:hover {
+            /* font size when mouse hover over heading */
+            font-size: 50px;
+            background-color: blueviolet;
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>This is heading</h1>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!-- *************************************************************
++ Description : DOM - Query selector APIs
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<html>
+<body>
+
+<h2  class="example">Heading class - Example</h2>
+<div width:300px;color:#800000" class="example">Div class - Example</div>
+
+<p>Choose your option: </p>
+
+<button onclick="testQuerySelector()">Test - QuerySelector</button>
+<button onclick="testQuerySelectorAll()">Test - QuerySelectorAll</button>
+
+<script>
+
+// Function for query selector
+function testQuerySelector() {
+	// Returns first matching item
+    var x = document.querySelector(".example");
+    x.style.backgroundColor = "red";
+}
+
+
+// Function for query selector all 
+function testQuerySelectorAll() {
+	// Returns all matching items 
+    var x = document.querySelectorAll(".example");
+    x[0].style.backgroundColor = "blue";
+	x[1].style.backgroundColor = "red";
+}
+
+
+</script>
+
+</body>
+</html>

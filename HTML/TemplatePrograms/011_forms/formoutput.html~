@@ -1,0 +1,15 @@
+<!-- Program Description : Program to input two numbers and finding output  using output element
+Author : Sandhya 
+Written  : 21-oct-2016-->
+<!DOCTYPE html>
+<html>
+<body>
+<form oninput="y.value=parseInt(b.value)+parseInt(c.value)">0
+<input type="range" name="b" value="55" />150
++<input type="number" name="c" value="55" />
+=<output name="y" for="b c"></output>
+</form>
+
+</body>
+</html>
+

@@ -1,0 +1,46 @@
+<!-- *************************************************************
++ Description : Display even numbers in array using filter method
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 30-Jun-2018
+************************************************************** -->
+
+<html>
+<head>
+    <title>arrayFilter</title>
+    <script>
+        var myArray=[1,2,3,4,5,6,7,8,9,10];
+
+        function demoFilter(elem,index,arr){
+            document.write("<br>Element: "+elem+" Position: "+index);
+            document.write("<br>"+arr+"<br>");
+        }
+        
+        myArray.filter(demoFilter);
+
+        var words = ['limit', 'elite', 'exuberant', 'destruction'];
+ 
+        function word(elem) {
+            return elem.length > 6;
+        }
+        var result = words.filter(word);
+        document.write("<br><br>Filtered array: "+result);
+ 
+        
+        function isEven(currentElement) {
+            if(currentElement%2 == 0) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        var result = myArray.filter(isEven);
+        document.write("<br><br>Even numbers are"+result);
+        
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

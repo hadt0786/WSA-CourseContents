@@ -1,0 +1,73 @@
+<!-- ****************************************************
++ Description : Responsive design with Grid layout
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive design with Grid layout</title>
+<style>
+
+    /* set the box-sizing property to border box
+     * to include padding and border in box size
+     */
+    
+    * {
+        box-sizing: border-box;
+    }
+
+.header { grid-area: header; }
+.navmenu { grid-area: navmenu; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }   
+    
+.grid-container {
+  display: grid; /* set display property as grid */
+  grid-gap: 20px 20px; /* row-gap  column-gap */
+  grid-template-areas: "header header" "navmenu navmenu" "main main" "footer footer";    
+
+  background-color: #808080;
+  padding: 10px;
+}
+    
+
+.grid-container > * {
+  grid-column: 1 / span 2;
+}   
+    
+/* set property for grid items (child) */
+.grid-container > * {
+  background-color: rgba(242, 242, 242, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 2vw;
+  text-align: center;
+}
+
+/* Media querries to alter the layout at breakpoints */
+
+/* for large screens (laptop) */    
+@media (min-width: 700px) {
+  .navmenu {
+    grid-area: 2 / 1 / 4 / 2;
+  }
+  .main {
+    grid-area: 2 / 2 / 4 / 3;
+  }
+}    
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="header">Header</div>
+  <div class="navmenu">Nav Menu</div>
+  <div class="main">Main</div>  
+  <div class="footer">Footer</div>
+</div>
+
+
+</body>
+</html>

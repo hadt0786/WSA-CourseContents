@@ -1,0 +1,88 @@
+<!-- *************************************************************
++ Description : Program to create a table with table header, 
++               table footer 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Table Enhanced</title>
+	<style>
+	td, th {
+    	border: 1px solid #dddddd;
+    	text-align: left;
+    	padding: 8px;
+    }
+    /* background color of table body rows */
+    tbody tr:nth-child(even) {
+    		background-color: #dddddd;
+		
+	}
+    </style>
+</head>
+
+<body>
+    <h1> Student Details </h1>
+
+    <table border="1" style="border-collapse:collapse; width:34%;">
+        <caption>Marks Sheet</caption>
+
+        <thead><!-- table header -->
+          <tr bgcolor="aqua"> <!-- row -->
+            <th>Student Name</th>
+            <th>Physics</th>
+            <th>Chemistry</th>
+            <th>Maths</th>
+          </tr>
+        </thead>
+
+        <tfoot><!-- table header -->
+          <tr bgcolor="green"> <!-- row -->
+            <th>Average</th>
+            <th>76.00</th>
+            <th>77.60</th>
+            <th>75.00</th>
+          </tr>
+        </tfoot>
+
+        <tbody> <!-- table body -->
+          <tr> <!-- row -->
+            <td>Ramesh</td>
+            <td>98</td>
+            <td>99</td>
+            <td>97</td>
+          </tr>
+          <tr> <!-- row -->
+            <td>Kunal</td>
+            <td>88</td>
+            <td>73</td>
+            <td>91</td>
+          </tr>
+          <tr> <!-- row -->
+            <td>Bharti</td>
+            <td>64</td>
+            <td>72</td>
+            <td>55</td>
+          </tr>
+            <tr> <!-- row -->
+            <td>Anupam</td>
+            <td>75</td>
+            <td>82</td>
+            <td>87</td>
+          </tr>
+            <tr> <!-- row -->
+            <td>Venkatesh</td>
+            <td>55</td>
+            <td>62</td>
+            <td>45</td>
+          </tr>
+        </tbody>
+
+    </table>
+
+</body>
+</html>
+

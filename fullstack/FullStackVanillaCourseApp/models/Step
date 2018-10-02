@@ -1,0 +1,16 @@
+//create a User
+        --> create a Schema : username and Password(stored as a encrypted as a hashFormat)
+        --> Model --> user.js
+//update
+
+//read
+
+//delete
+
+//Session Management
+
+//Login/ Session Management
+
+//Update a Session
+
+//Logout/Delete a Session

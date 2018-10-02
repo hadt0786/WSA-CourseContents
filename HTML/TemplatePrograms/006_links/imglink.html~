@@ -1,0 +1,16 @@
+<!-- Program Description : Program to create image as a link
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<html>
+<body>
+<p>The image is a link. You can click on it.</p>
+<a href="http://http://www.disneylandparis.co.uk/attractions/disneyland-park/dumbo-the-flying-elephant/">
+<img src="dumboelephant.gif" alt="HTML tutorial"
+style="width:42px;height:42px">1
+ 
+  
+</div>
+</body>
+</html>
+

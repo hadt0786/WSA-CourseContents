@@ -1,0 +1,114 @@
+<!-- *************************************************************
++ Description : DOM - Table Handling - Excercise 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<!DOCTYPE html>
+<head>
+<style>
+table, td {
+    border: 1px solid green;
+}
+</style>
+</head>
+<body>
+<table id="ipl">    
+<tr>
+    <td>MS Dhoni</td>
+    <td>CSK</td>
+</tr>
+<tr>
+    <td>Virat Kohli</td>
+    <td>RCB</td>
+</tr>
+<tr>
+    <td>SS Iyer</td>
+    <td>DD</td>
+</tr>
+</table>
+<br>
+<p> Table operations using DOM - Check your option </p> <br> 
+<button onclick="insertRow()">Insert Row</button>
+<button onclick="deleteRow()">Delete Row</button>
+<button onclick="insertColumn()">Insert Column</button>
+<button onclick="deleteColumn()">Delete Column</button>
+<button onclick="addtHead()">Add Table Header</button>
+
+<script>
+function insertRow() {
+
+	// Get hold of the table first by using DOM API 
+    var table = document.getElementById("ipl");
+	
+	// Row is the child of table 
+    var row   = table.insertRow(0);
+	
+	// Cells are child of the row 
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+	
+	// Now change the content in the table 
+    cell1.innerHTML = prompt("Enter the captain name");
+    cell2.innerHTML = prompt("Enter the team name");
+}
+
+function insertColumn() {
+
+	var table = document.getElementById("ipl");
+	var nRowCount = document.getElementById("ipl").rows.length;
+	
+	// Now go through reach row and insert column in 2nd index	
+	for (var rLoopCount=0; rLoopCount < nRowCount; rLoopCount++)
+	{
+		var cell  = table.rows[rLoopCount].insertCell(2);
+		 
+	    cell.innerHTML = prompt("Enter the city name");
+    }
+}
+
+
+function deleteRow() {
+    
+	var table = document.getElementById("ipl");
+
+	var rowIndex = prompt("Enter the row number which you want to delete");
+	table.deleteRow(rowIndex);    
+}
+
+function deleteColumn() {
+	
+	var table = document.getElementById("ipl");
+	var nRowCount = document.getElementById("ipl").rows.length;
+	
+	var cIndex = prompt("Enter the column number which you want to delete");
+	
+	// Now go through reach row and delete the column 
+	for (var rLoopCount=0; rLoopCount < nRowCount; rLoopCount++)
+	{
+		table.rows[rLoopCount].deleteCell(cIndex);	 	    
+    }
+	
+}
+
+function addtHead() {
+
+	var table = document.getElementById("ipl");
+	
+	// Get the number of columns 
+	var nColumnCount = table.rows[0].cells.length;
+	
+	var tHeader = table.createTHead();
+	var row = tHeader.insertRow(0);	
+	
+	for (var cLoopCount = 0; cLoopCount < nColumnCount; cLoopCount++)
+	{
+		
+		var column = row.insertCell(cLoopCount);
+		column.innerHTML = prompt("Enter the Header text"); 
+	}
+}
+</script>
+</body>

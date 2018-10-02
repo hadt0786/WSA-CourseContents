@@ -1,0 +1,18 @@
+<!-- --------------------------------------------
++ Description : Program to define small quotes 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 20-oct-2016
++-------------------------------------------- -->
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+<h1> Real Life Quotation</h1>
+<p> Abraham Lincoln said <q>In the end It is not the years in your life count. It's the life in your years.</q></p>
+<blockquote><p>A 21 year old boy seeing out from the train's window shouted "Dad, look the trees are going behind !" Dad smiled and young couple sitting nearby, looked at the 21 year old childish behavior with pity, suddenly he again exclaimed .. "Dad look the clouds are running with us !"  The couple said to the old man.. "Why don't you take your son to a good doctor?" The old man smiled and said "I did and we are just coming from the hospital, my son was blind from birth, he just got his eyes today. Every single person on the planet has a story. Don't judge people before you truly know them. The truth might surprise you.</p></blockquote>
+
+</body>
+
+</html>

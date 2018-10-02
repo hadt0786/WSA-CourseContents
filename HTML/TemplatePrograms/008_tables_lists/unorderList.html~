@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<!-- Unordered List with list-style-type  -->
+<h2> Scripting Langauge </h2>
+<ul style =”list-style-type:circle”>
+
+<li> Shell script </li>
+<li> Java  Script </li>
+</ul>
+<h2> RDBMS </h2>
+<ul style =”list-style-type:disc”>
+<li> MS-Access</li>
+<li> SQL</li>
+</ul> 
+
+</body>
+</html>
+

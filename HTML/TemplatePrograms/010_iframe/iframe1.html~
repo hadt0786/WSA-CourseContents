@@ -1,0 +1,14 @@
+<!-- Program Description : Program to design a web page using iframe tag with frameborder ,scrolling attribute
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe frameborder="0" scrolling="no" width="130" height="198"
+   src="poppy_flower_nature.jpg" name="imgbox" id="imgbox">
+   <p>iframes images</p>
+</iframe><br />
+</body>
+</html>
+

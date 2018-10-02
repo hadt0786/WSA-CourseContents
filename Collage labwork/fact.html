@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>factorial of a number</title>
+<script type="text/javascript">
+fuction findFactorial(){
+var num=window.prompt("enter the value of N :");
+var n=parseInt(num);
+window.alert("factorial of"+n+" is:"+fact(n));
+}
+function fact(n){
+if(n==0)
+return 1;
+else
+return(n*fact(n-1));
+}
+</script>
+</head>
+<body background="farsha\AS1.jpg">
+<form>
+<input type="button"value="find factorial of a number"onclick="findFactorial()"/>
+</form>
+</body>
+</html>

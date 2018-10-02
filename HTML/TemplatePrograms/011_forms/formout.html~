@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<form onsubmit="return false"  &ouml;ninput="o.value = parseInt(a.value) + parseInt(b.value)">
+<input name="a" type="number"> +
+<input name="b" type="number"> =
+<output name="o" />
+<output name="o" for="a b"></output>  
+</form>>
+
+</body>
+</html>
+

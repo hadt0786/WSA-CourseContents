@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+
+<html>
+	
+    <head>
+    	 <title>Internal style sheet</title>
+		
+    </head>
+    <style>
+          #body-id{
+              background-color: lightgrey;
+                  }
+         #para-id{
+                     color: green;
+                  }
+                      #para-2{
+                          font-size: 55px;
+                           color:blue;
+                               }
+.para-bg{
+background-color: #fff;
+}
+
+input[title]{
+color:#fff;
+background-color:#000;
+
+}
+p[title~="Html"]{ /*case sensentive */
+color:yellow;
+background-color:grey;
+font-size:25px;
+
+}
+p[lang|="en"]{
+color:green;
+
+}
+  a[href$="in"],a[href^="www"],p[lang="en"],p[lang="fr"]{ 
+color:yellow;
+background-color:grey ;
+}
+      a[href*="xyz"]
+            {
+           color: red;
+        font-style: italic;
+             }
+       *{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+         }
+
+/*div > p{
+color:blue;
+}*/
+
+div>div>p{
+color:yellow;
+}
+div+p+p{
+color:yellow;
+}
+
+		
+</style>
+    <body id="body-id">
+<h1> HTMl & CSS</h1>
+	<p id="para-id">Html are used to design modern webpages!</p>
+           <p  title="Html Css3 are used to design modern webpages!">Html Css3 are used to design modern webpages!</p>
+     <form>
+<label> Name:
+<input type="text" placeholder=" Your name" title="Enter your name !">
+</label>
+</form>
+
+<p lang="en-us"> This is a paragraph with english language US</p>
+<p lang="en"> This is a paragraph with english language</p>
+<p lang="es"> This is a paragraph with Spaninsh language</p>
+<p lang="fr"> This is a paragraph with French language</p>
+<a href="www.com">www.com</a>
+<br>
+<a href="www.in"> www.in</a>
+<br>
+<a href="www.xyz"> www.xyz</a>
+<br>
+<a href="xyz.abc.abc"> xyz.abc.abc</a>
+<br>
+<a href="abc.xyz.abc"> abc.xyz.abc</a>
+
+<div>
+<h1> Example of child combinator </h1>
+<p> combinator paragraph 1</p>
+<div>
+<p> combinator paragraph green</p>
+</div>
+
+</div>
+
+
+    </body>
+    
+</html>
+

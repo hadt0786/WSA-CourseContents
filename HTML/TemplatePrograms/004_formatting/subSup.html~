@@ -1,0 +1,14 @@
+<!-- Program Description : Program to define subscript and superscript
+Author :Sandhya
+Written  : 20-oct-2016-->
+
+<!DOCTYPE html>
+<body>
+<h1> SuperScript Example</h1>
+<p> E=MC<sup>2</sup></p><br>
+<p> Sin <sup> 2</sup> 30</p><br>
+<hr/>
+<h2> Subscript Example </h2>
+<p> H<sub>2</sub>O</p><br>
+</body>
+</html>

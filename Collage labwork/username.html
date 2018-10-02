@@ -1,0 +1,23 @@
+<html>
+<head>
+<tittle>focus and blur Event</tittle>
+<script type="text/javascript">
+function checkUserName(){
+var username=document.getElementById("nameText").value;
+if(username.length<8)
+alert("User name cannot be less than 8 characaters");
+}
+function displayPwdRules(){
+alert("password must be minimum 6 characters");
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text"id="nameText"onblur="checkUserName()"/><br/><br/>
+<input type="password"id="pwdText"onfocus="displayPwdRules()"/>
+</form>
+</body>
+</html>
+
+

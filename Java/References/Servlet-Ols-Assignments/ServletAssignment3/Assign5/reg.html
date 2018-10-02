@@ -1,0 +1,127 @@
+/* Create a customer registration application with html and store the data into database and display the data from database erifying the name and password .*/
+<SCRIPT language="javascript">
+function checkAcctypeselection()
+{
+	if(document.Registration.acc_type.value=="Select")
+	{
+ 		alert("Please Select Account Type");
+		document.Registration.user_password.value="";
+        return false;
+	}
+}
+
+function pinCheck()
+{
+	if(document.Registration.pin.value.length != 6)
+	{
+		alert("Pin code should be of Six Digit")
+		return lsefa;
+	}
+}
+
+function IsEmpty()
+{
+	if(document.Registration.cust_first_name.value.length==0)
+    {
+	    alert("Please Enter First Name\n");
+        return false;
+    }
+	if(document.Registration.cust_last_name.value.length==0)
+	{
+       	alert("Please Enter Last Name\n");
+        return false;
+	}
+
+    if(document.Registration.user_password.value.length==0)
+	{
+   		alert("Please Enter password \n");
+        return false;
+	}
+
+    var pass=document.Registration.user_password.value;
+    if(document.Registration.confirm_password.value!=pass)
+	{
+    	alert("Confirmed password  is not matching \n");
+        return false;
+	}
+
+    if(document.Registration.city.value.length==0)
+    
+    {
+        alert("Please Enter City Name\n");
+        return false;
+    }
+
+    if(document.Registration.pin.value.length==0)
+    {
+		alert("Please Enter pin Code\n");
+        return false;
+    }
+
+    if(document.Registration.email.value.length==0)
+    {
+		alert("Please Enter Email\n");
+        return false;
+    }
+	else
+		return true;
+}
+</script>
+
+<HTML>
+<HEAD>
+<H2 ALIGN="center" > Customer Registration</H2>
+</HEAD>
+
+<BODY bgcolor="lightblue">
+
+<FORM NAME="Registration" ACTION="Registration"   METHOD="post" ;">
+<TABLE ALIGN="Center" WIDTH="50%" CELLSPACING="2">
+<TR><TD> First Name:</TD><TD><INPUT TYPE="text" name="cust_first_name" ></TD></TR>
+<TR><TD> Last Name:</TD><TD><INPUT TYPE="text" name="cust_last_name" ></TD></TR>
+<TR><TD>Account No:</TD><TD><INPUT TYPE="text" name="Acc_no" disabled="true" value= "auto Generated" ></TD></TR>
+
+
+<TR><TD>Account Type:</TD><TD>
+<SELECT NAME="acc_type">
+<OPTION VALUE="Select">Select one</OPTION>
+<OPTION VALUE="S">SB</OPTION>
+<OPTION VALUE="C">Current</OPTION>
+</SELECT>
+
+<TR><TD>Customer ID:</TD><TD><INPUT TYPE="text" name="cust_ID" disabled="true" value= "auto Generated"></TD></TR>
+<TR><TD>Password:</TD><TD><INPUT TYPE="password" name="user_password" onChange="return checkAcctypeselection();"/></TD></TR>
+<TR><TD>Confirm Password:</TD><TD><INPUT TYPE="password" name="confirm_password"/></TD></TR>
+
+</TD></TR>
+<TR><TD>Address:</TD><TD>
+<TEXTAREA NAME="addressbox" ROWS="5" COLS="15" ALIGN="center"></TEXTAREA>
+</TD></TR>
+
+    <TR><TD> City:</TD><TD><INPUT TYPE="text" name="city"/></TD></TR>
+<TR><TD> pin:</TD><TD><INPUT TYPE="text" name="pin" onChange="return pinCheck();"/></TD></TR>
+
+<TR><TD>Profession:</TD><TD>
+<SELECT NAME="Profession">
+<OPTION VALUE="Select">Select one</OPTION>
+<OPTION VALUE="Studying">Student</OPTION>
+<OPTION VALUE="Employed">Employee</OPTION>
+<OPTION VALUE="Businessman">SelfEmployed</OPTION>
+</SELECT>
+
+<TR><TD>eMail:</TD><TD><INPUT TYPE="text" name="email"/></TD></TR>
+<TR><TD>Gender:</TD><TD>
+Male:&nbsp;<INPUT TYPE="Radio" NAME="R1" VALUE="M"/>&nbsp;&nbsp;Female:&nbsp;
+<INPUT TYPE="Radio" NAME="R1" VALUE="F"/>
+
+
+</TD></TR>
+
+<TR><TD align="right"> <INPUT TYPE="submit" name="submit" onClick="return IsEmpty();" value="Confirm Details"></TD></TR>
+
+</TABLE>
+</FORM>
+</BODY>
+</HTML>
+
+    

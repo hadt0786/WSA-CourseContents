@@ -1,0 +1,66 @@
+<!-- Write a JavaScript program that works as a trim() function using regular expression.
+Description :
+•
+Input string from user and the word or space or any special characters which user wants to
+trim.
+•
+Instead of trim function, use regular expression to trim the entered input from the string.
+Objective : Understand the type coversion and regular expression in javascript.
+Prerequisites:
+• Regular expression
+Sample Execution:
+Test case 1:
+Input : Hi how are you?
+Trim : space or “ “
+Output : hihowareyou?
+Test case 2:
+Input : Hi how are you?
+Trim : ?
+Output : hi how are you -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 35</title>
+
+    <style>
+    
+    body{
+        background:lightgreen;
+    }
+    
+    </style>
+
+</head>
+<body>
+
+    <script>
+    
+    //working for space not for special character
+    // ? is not working because ? is a keyword in a regular expression
+    var p = prompt(" Enter the string for trim function");
+
+    var ans = "";
+    var trimString = prompt(" Enter the character it can be symbol, whitespace");
+    regex =/\s/g;
+    
+
+    var reg="\\" +prompt("Enter an Special character to remove");
+   console.log(reg);
+
+    if(trimString == ' ')
+        ans=p.replace(regex,'');
+    else {
+        ans=p.replace(reg,' ');
+    }
+
+    document.write("<br>"+ans);
+    
+    </script>
+
+
+</body>
+</html>

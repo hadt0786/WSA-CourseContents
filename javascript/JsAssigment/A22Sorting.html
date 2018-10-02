@@ -1,0 +1,41 @@
+<!-- Write a program to arrange the element of an array in ascending and descending order. -->
+<script>
+
+function sortit(a)
+{
+    ///swap is used whether the loop should run or not
+    var flag;
+    //finding length of array
+    var n = a.length-1;
+    //storing array variable in other
+    var x=a;
+    do {
+        //doing false so that  loop runs a swap or when it reaches end
+        flag = false;
+        for (var i=0; i < n; i++)
+        {
+            //check if Ith element is grater done next element
+            if (x[i] > x[i+1])
+            {
+               var temp = x[i];
+               x[i] = x[i+1];
+               x[i+1] = temp;
+               flag = true;
+            }
+        }
+        n--;
+    } while (flag);
+ return x; 
+}
+    var x=new Array();
+    size=+prompt("Enter size of array");
+    for(var i=0; i<size; i++ ){
+        x[i]=+prompt("Enter "+i+"th Element");
+        
+    }
+  
+    document.write("Acending Order  "+sortit(x) );  
+    x=x.reverse();
+    document.writeln("<br> Decending Order  "+x);
+    
+</script>

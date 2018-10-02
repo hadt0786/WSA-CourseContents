@@ -1,0 +1,70 @@
+<!-- Write a JavaScript function to get the value of href ,hreflang ,rel ,target and type attributes of the
+specified links.
+Description :
+•
+Create a html page with a link which should have href, hreflang, rel, target, and type
+attributes.
+•
+Your job is call a function in javascript which should return those values to the user.
+Objective : Understand the Dom in javascript
+Prerequisites:
+• HTML
+• DOM
+Sample Execution: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 39</title>
+
+    <style>
+    body{
+        background:lightgreen;
+    }
+    
+    </style>
+
+
+
+
+
+</head>
+<body>
+
+    <p><a id="id1" type="text/html" hreflang="en-us" rel="nofollow" 
+        target="_self" href="https://www.google.com/">google</a></p> 
+
+
+    <button onclick="getAttribut()">Click here</button>
+
+<script>
+
+   function getAttribut()
+{
+ var u = document.getElementById("id1").href;
+ document.writeln('The value of the href attribute of the link is : '+u);
+ var v = document.getElementById("id1").hreflang;   
+ document.writeln('The value of the hreflang attribute of the link is : '+v);
+ var w = document.getElementById("id1").rel; 
+  document.writeln('The value of the rel attribute of the link is : '+w);
+ var x = document.getElementById("id1").target; 
+  document.writeln('The value of the taget attribute of the link is : '+x);
+ var y = document.getElementById("id1").type; 
+  document.writeln('The value of the type attribute of the link is : '+y);  
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

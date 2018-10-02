@@ -1,0 +1,30 @@
+<!-- *************************************************************
++ Description : Regular expressions 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Regular expressions - String functions</title>
+		<script>
+			var arr = "10/3/5/6/5".split(/[\/]+/);
+			
+			//Split()allows you to ignore whitespace or delimeter
+			document.write("After splitting: " + arr + "<br>");
+			
+			var str = "Hello.How.are You?";
+			
+			//Replace all dots with double stars
+			var res = str.replace(/\./g,"**"); 
+			document.write("After replacing: " + res); 
+		</script>
+    </head>
+    <body>
+    </body>
+</html>
+
+

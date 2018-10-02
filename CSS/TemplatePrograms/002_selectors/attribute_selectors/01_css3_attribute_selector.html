@@ -1,0 +1,41 @@
+<!-- ******************************************************
++ Description : Internal style sheet - attribute selector 
++               with value and element selector
++ Author      : Webstack Academy (P) Ltd
++ Date        : 2-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <title>Attribute selector with value and element selector</title>
+	
+	<style>
+
+    /* Attribute selector */    
+	p[title] {
+		color: deeppink;
+	}        
+	</style>	
+</head>
+<body>
+    
+    <p>This is first paragraph</p>
+    <p title="Fill the below form">This is second paragraph. 
+        Kindly fill below required information.</p>
+    <form>
+        <label> Name : 
+            <input type="text" placeholder="your name" 
+            title="Enter your name here">
+        </label> <br /> <br />
+        <label> Email : 
+            <input type="email" placeholder="you@example.com">
+        </label>   
+    </form>
+    
+</body>
+
+</html>

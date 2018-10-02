@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function numberDivisible(num)
+		{
+			document.write("Numbers which are divisible by "+num);
+			for(var i = 1;i <= 100;i++)
+			{
+				if(i % num == 0)
+					document.write("<br>"+i);
+			}
+		}
+		var n=+prompt("Enter the number");
+		var result=numberDivisible(n);
+		
+	</script>
+</head>
+</html>

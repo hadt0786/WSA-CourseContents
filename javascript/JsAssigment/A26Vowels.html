@@ -1,0 +1,48 @@
+<!--
+* @Developer: Divek
+* @Problem  :To count num of vowels
+* @Company  : XYZ
+* @Date     : 23-05-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+
+
+<script>
+var string=prompt("Enter a string").toLowerCase();
+var count=0;
+
+    
+    for(var i=0; i<=string.length;i++){
+        
+        switch(  string.charAt(i)  ){
+                
+            case 'a':
+                count++;
+                break;
+                
+            case 'e':
+                count++;
+                break; 
+                
+            case 'i':
+                count++;
+                break; 
+                
+            case 'o':
+                count++;
+                break; 
+            
+            case 'u':
+                count++;
+                break;
+        }
+    }
+    
+    
+    alert("Number of vowels is "+count);
+    
+
+
+</script>

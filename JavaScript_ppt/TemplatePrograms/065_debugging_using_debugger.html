@@ -1,0 +1,97 @@
+<!-- *************************************************************
++ Description : Debugging using Chrome's debugger 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<html>
+<h1> Debugging using Browser </h1>  
+
+<style>
+table, td {
+    border: 1px solid green;
+}
+</style>
+<body>
+
+<table id="ipl">    
+<tr>
+    <td>MS Dhoni</td>
+    <td>CSK</td>
+</tr>
+<tr>
+    <td>Virat Kohli</td>
+    <td>RCB</td>
+</tr>
+<tr>
+    <td>SS Iyer</td>
+    <td>DD</td>
+</tr>
+</table>
+
+<button onclick="testFunction()">Test Function</button>
+
+<script>
+function testFunction() {
+
+	// Understanding debugging from loop perspective 
+	debugger;
+	
+	for (var loopIndex = 1; loopIndex <= 10; loopIndex++)
+	{
+		for (var iLoopIndex = 1; iLoopIndex <= loopIndex; iLoopIndex++)
+		{
+			console.log("Dummy loop for learning debugging" + "<br>");
+			
+			inputValue = parseInt(prompt("Enter the input value")); 
+			// After calling the testFunction2, observe the call stack 			
+			testFunction2(inputValue); 
+		}
+	}
+}
+
+function testFunction2(argumentValue) {
+
+	if (argumentValue%2 == 0)
+	{
+		console.log("Given number is even number...now calling testFunction3()");
+		testFunction3();
+	}
+	else
+	{
+		console.log("Given number is odd number...now calling testFunction4()"); 
+		testFunction4(); 
+	}
+	
+}
+
+
+function testFunction3() {
+    
+	var table = document.getElementById("ipl");
+	
+	var rowIndex = prompt("Enter the row number which you want to delete");
+	table.deleteRow(rowIndex);    
+}
+
+function testFunction4() {
+	
+	var table = document.getElementById("ipl");
+	var nRowCount = document.getElementById("ipl").rows.length;
+	
+	var cIndex = prompt("Enter the column number which you want to delete");
+	
+	// Now go through reach row and delete the column 
+	for (var rLoopCount=0; rLoopCount < nRowCount; rLoopCount++)
+	{
+		table.rows[rLoopCount].deleteCell(cIndex);	 	    
+    }
+	
+}
+
+</script>
+</body>
+</html>
+

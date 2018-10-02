@@ -1,0 +1,49 @@
+<!-- Write a program to input 10 numbers in an array and count total positive and negative number.
+Description :
+• In this program you should input 10 numbers and store it to the array.
+• From that array count how many positive integer and how many negative integers are
+present.
+Objective : Understand the array and control flow in javascript.
+Prerequisites:
+• array
+• control flowSample Execution:
+Test case:
+Input : 1, -2, -3, 4, 6, -9, 3, 5, -9, 10
+Output : Positive Numbers : 6
+Negative Numbers : 4 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 19</title>
+
+    <style>
+    body{
+        background: lightgreen;
+    }
+    </style>
+</head>
+<body>
+    
+    <script>
+    
+    var array = [1, -2, -3, 4, 6, -9, 3, 5, -9, 10];
+    var countPos =0,countNeg=0;
+    for(var i = 0; i<array.length;i++)
+    {
+        if(array[i]>0)
+        {
+            countPos++;
+        }
+        else{
+            countNeg++;
+        }
+    }
+    document.write("the number of positive terms "+countPos+"<br>"+"The number of negative numbers "+countNeg);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>                                                                                                        <tittle>reverse a Number</tittle>
+<script type="text/javascript">
+function rev_num()
+{ 
+var num=parseInt(prompt("Enter the Number to be reversed:",""));
+var n=num;
+var rev=0,rem;
+while(n>0)
+{
+rem=n % 10;
+rev=rev * 10 + rem;
+n=Math.floor(n/10);
+}
+document.write("The given number is:"+num+"<br/>The reverse of the given number is: "+rev+"\n");
+} 
+</script> 
+</head>
+<body bgcolor="green">
+<form>
+<input type="button"value="reverse"onclick="rev_num()"/>
+</form>
+</body>
+</html>             

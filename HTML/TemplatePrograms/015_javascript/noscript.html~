@@ -1,0 +1,14 @@
+<!-- Program Description : Program using noscript
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<html>
+<body>
+<script>  
+document.write("Hello World")  
+</script>  
+<!--noscript defines an alternate content for users that do not support client-side scripts-->
+<noscript>Sorry! Your browser does not support JavaScript.!</noscript>  
+</body>
+</html>
+

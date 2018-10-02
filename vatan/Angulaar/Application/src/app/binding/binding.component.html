@@ -1,0 +1,11 @@
+<h2>Data Binding examples: Business logic -> View </h2>
+<p>The component name is:{{myAppTitle}}</p>
+<p>The binding array consisit of:{{bindingMaterials}}</p>
+<p><b>Example of property binding: Image</b></p>
+<img [src]= "imageLink"/>
+<p><b>Example of property binding:text</b></p>
+<p [textContent]="myParagraph"></p>
+<p><b>Example of property binding:Text Background</b></p>
+<p [style.backgroundColor]="myBackground">Go Green...</p>
+<p><b>Example of property binding:Button</b></p>
+<button [disabled] = "myButtonStatus">Click here</button>

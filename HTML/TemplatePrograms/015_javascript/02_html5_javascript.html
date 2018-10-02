@@ -1,0 +1,33 @@
+<!-- ***************************************************************
++ Description : Program to change the font style, color 
++               and font family of  HTML element  using javascript
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 20-oct-2016
+**************************************************************** -->
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Applying styles using JavaScript</title>
+    </head>
+    
+    <body>
+
+        <h1>Javascript Page</h1>
+
+        <p id="test">Change the style of HTML element using JavaScript</p>
+
+        <script>
+            function myFunction() {
+                document.getElementById("test").style.fontSize = "30px";
+                document.getElementById("test").style.color = "green";
+                document.getElementById("test").style.fontfamily = "vardana";
+            }
+        </script>
+
+        <button type="button" onclick="myFunction()">Click Me!</button>
+
+    </body>
+</html>
+

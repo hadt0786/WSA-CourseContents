@@ -1,0 +1,53 @@
+<!--font color , font size , font family and font weight-->
+<html>
+  <style>
+      button{
+          padding:15px;
+          margin: 25px;
+      }
+    </style>
+   <body></body> 
+    
+</html>
+<script>
+   var p = document.createElement("p");
+   var button1 = document.createElement("button");
+   var button2 = document.createElement("button");
+        document.body.appendChild(p);
+        document.body.appendChild(button1);
+        document.body.appendChild(button2);
+           var t = document.createTextNode("Change font Attr ");
+                          button1.appendChild(t);  
+    var text = document.createTextNode("Change Border ");
+                          button2.appendChild(text);
+    
+    var fontatt=document.createAttribute("onclick");
+      fontatt.value="changefont();";
+     button1.setAttributeNode(fontatt);
+    
+    
+        var borderatt=document.createAttribute("onclick");
+      borderatt.value="changeb();";
+      button2.setAttributeNode(borderatt);
+    
+        var para = document.createTextNode("This is a sample paragraphThis is a sample paragraphThis is a sample paragraphThis is a sample paragraphThis is a sample paragraphThis is a sample paragraphThis is a sample paragraphThis is a sample paragraphThis is a sample paragraphThis is a sample paragraphThis is a sample paragraphThis is a sample paragraphThis is a sample paragraph ");
+                        p.appendChild(para);
+    
+             var para= document.getElementsByTagName("p")[0];
+    function changefont(){
+
+         para.style.color="Cyan";
+            para.style.fontSize="25px";
+            para.style.fontWeight="5px";
+        para.style.background="grey";
+        para.style.background="Helvetica";
+        
+    }
+    function changeb(){
+                para.style.border="10px solid transparent";
+                para.style.borderImage="url(border.png) 10 round";
+    }
+    
+  
+</script>
+

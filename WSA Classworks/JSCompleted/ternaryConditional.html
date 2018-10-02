@@ -1,0 +1,19 @@
+<!--
+* @Developer: Divek
+* @Problem  :Ternary conditional
+* @Company  : XYZ
+* @Date     : 15-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+  <script>
+var FirstNum = parseInt(prompt("Please Enter 1st number", ""));
+var SecondNum = parseInt(prompt("Please enter 2nd number", ""));
+var ThirdNum = parseInt(prompt("Please enter 3rd number", ""));
+var maxNum=0;
+      //Checking condtition using ternary opreator
+        var  maxNum = (FirstNum >SecondNum) ? FirstNum : (SecondNum >ThirdNum) ? SecondNum :ThirdNum; 
+	//alerting using the Ternary condition
+            alert((maxNum)?"Max Is =" + maxNum:"Error invalid inputs");   
+</script>

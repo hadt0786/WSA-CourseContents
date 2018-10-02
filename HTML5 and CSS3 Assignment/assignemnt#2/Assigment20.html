@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+
+<html>
+	
+    <head>
+    	 <title>Fixed Header</title>
+<style>
+.header{
+position:fixed;
+width:100%;
+top:0px;
+background:black;
+color:#fff;
+text-align:center;
+height:35px;
+left:0px;
+           }
+
+img{
+height:498px;
+width:499px;
+
+
+}
+
+img:hover{
+box-shadow:5px 5px 15px black;
+
+}
+
+div[name=image]{
+/*column-count:2;*/
+/*columns:300px 2;/*Shorthhand property*/
+column-gap:1px;
+margin-left:180px;
+margin-top:5%;
+/*column-rule-style:solid;
+column-rule-width:10px;
+column-rule-color:red;*/
+/*column-rule:150px groove green;*//*short hand property
+column-fill:balance;/*filing the contet*/
+
+}
+img[name=second]{
+margin-left:15px;
+margin-bottom:15px;
+}
+h2{
+column-span:all;/*span on div columns*/
+}
+</style>
+		
+    </head>
+    
+    <body>
+	<div class="header">
+       <p>Group of images!</p>
+</div>	
+
+<div name="image">
+
+     <img src="img_avatar2.png">
+     <img name="second"src="img_avatar5.png">
+<br>
+     <img src="img_avatar2.png">
+     <img name="second"src="img_avatar5.png">
+<br>
+     <img src="img_avatar2.png">
+     <img name="second"src="img_avatar5.png">
+</div>
+
+    </body>
+    
+</html>
+

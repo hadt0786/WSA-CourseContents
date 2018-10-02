@@ -1,0 +1,45 @@
+<!-- *************************************************************
++ Description : Type conversions 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Type conversion examples</title>
+        <button onclick="checkType()">click</button>
+		<p id="ex1"></p>
+		<p id="ex2"></p>
+		<p id="ex3"></p>
+		<p id="ex4"></p>
+		<script>
+			
+		// Checking type function....
+		function checkType() {
+		
+			// String and integer conversions 
+			var y = "5";
+			var x = + y;
+			document.getElementById("ex1").innerHTML =
+			typeof y + "<br>" + typeof x;
+			
+			// Date conversion example+s
+		   document.getElementById("ex2").innerHTML = "Converting date-to-string: " + Date().toString();
+		   
+		   // Boolean conversion examples
+		   document.getElementById("ex3").innerHTML = "True example: " + String(true) + "<br>";
+		   document.getElementById("ex4").innerHTML = "False example: " + false.toString();
+		   
+		}
+		
+		</script>
+    </head>
+    <body>
+    </body>
+    
+</html>
+
+

@@ -1,0 +1,67 @@
+<!-- ******************************************************
++ Description : Negative Margin
++ Author      : Webstack Academy (P) Ltd
++ Date        : 4-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Box sizing property</title>
+    <style>
+    
+        * {
+            box-sizing: border-box;
+        }    
+    
+    	.parent {
+            width: 100%;
+            height: auto;
+            border: 2px solid red;    	
+            padding: 30px;
+    	}    
+    
+    	.box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;    	
+            padding: 30px;
+    	}
+   
+        .m-n30 {
+            margin: -30px;
+        }
+        .m-30 {
+            margin: 30px;
+        }  
+        
+        .m-0 {
+            margin: 0;
+        }          
+        
+
+        
+    </style>
+</head>
+    
+<body>
+
+    <h3>Parent padding 30px, child Margin 0</h3>
+    <div class = "parent">
+    		<div class = "box m-0"></div>
+    </div>
+
+    <h3>Parent padding 30px, child Margin 30px</h3>
+    <div class = "parent">
+    		<div class = "box m-30"></div>
+    </div>
+
+    <h3>Parent padding 30px, child Margin -30px</h3>
+    <div class = "parent">
+    	<div class = "box m-n30"></div>
+    </div>
+
+</body>
+    
+</html>

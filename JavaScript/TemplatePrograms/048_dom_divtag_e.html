@@ -1,0 +1,30 @@
+<!-- *************************************************************
++ Description : DOM - Get Elements by id and modify Div
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<html>
+
+
+<script>  
+	// Get the Div tag element 
+	function testDivProperty(){        
+		element = document.getElementById("div");
+		
+		// Change properties here 
+		element.style.backgroundColor = "blue";
+		
+	}
+ </script>
+
+ <body>
+	<div id="div" style="border-style: solid; border-width: thick; border-color: blue;
+        width: 515px; height: 20px;">
+        Div text
+    </div>
+	<button onclick="testDivProperty()">Test - Div properties change</button>
+</body>
+</html>

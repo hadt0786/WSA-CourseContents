@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table 2</title>
+
+    <style>
+        table, td {
+            border: 1px solid green;
+        }
+        </style>
+    
+    <table id="ipl">    
+        <tr>
+            <td>MS Dhoni</td>
+            <td>CSK</td>
+        </tr>
+        <tr>
+            <td>Virat Kohli</td>
+            <td>RCB</td>
+        </tr>
+        <tr>
+            <td>SS Iyer</td>
+            <td>DD</td>
+        </tr>
+        </table>
+        <br>
+        <p> Table operations using DOM - Check your option </p> <br> 
+        <button onclick="insertRow()">Insert Row</button>
+        <button onclick="insertColumn()">Insert Column</button>
+        <button onclick="deleteColumn()">Delete Column</button>
+        <button onclick="changeHeader()"> Change header</button>
+
+<script>
+
+            function insertRow()
+            {
+                var n = Number(prompt("enter the position of the row you want to insert"));
+                var table = document.getElementById("ipl");
+                
+                var row = table.insertRow(n);
+
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+
+                cell1.innerHTML = prompt("Enter the team captain");
+                cell2.innerHTML = prompt("Enter the team name");
+            }
+            function insertColumn()
+            {
+                var table = document.getElementById("ipl");
+                var rowCount = table.rows.length;
+                for(var rLoopCounter = 0;rLoopCounter<rowCount;rLoopCounter++)
+                {
+                    var cell = table.rows[rLoopCounter].insertCell(2);
+
+                    cell.innerHTML = prompt("Enter the city name");
+                }
+
+            }
+            function deleteColumn()
+            {
+                var columnDelete = Number(prompt("Enter the column you want to delete"));
+                var table = document.getElementById("ipl");
+                var rowCount = table.rows.length;
+
+                for(rLoopCounter=0;rLoopCounter<rowCount;rLoopCounter++)
+                {
+                    table.rows[rLoopCounter].deleteCell(columnDelete);
+                }
+                
+            }
+            function changeHeader()
+            {
+                var table = document.getElementById("ipl");
+                var colCount = table.rows[0].cells.length;
+
+                var head = table.createTHead();
+                var row = head.insertRow(0);
+
+                for(var columnCount = 0; columnCount<colCount;columnCount++)
+                {
+                    var column = row.insertCell(columnCount);
+                    column.innerHTML = prompt("enter the header");
+                }
+
+            }
+
+</script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

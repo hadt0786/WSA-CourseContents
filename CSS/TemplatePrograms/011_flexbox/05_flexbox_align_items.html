@@ -1,0 +1,42 @@
+<!-- ****************************************************
++ Description : Flexbox
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Flexbox</title>
+        
+        <meta name="viewport" content="width=device-width initial-scale=1.0" />
+        
+        <style>
+            .flex-container {
+                display: flex;
+                
+                /* Aligh the items along cross-axis */
+                /* flex-start | flex-end | center | baseline | stretch */
+                align-items: baseline; /* default stretch */
+                
+                border: 1px solid red;
+            }
+            
+            .flex-item {
+                border: 1px solid blue;
+            }
+        </style>
+
+    </head>
+    <body>
+         
+        <div class="flex-container">
+          <div class="flex-item" style="font-size: 1.2em">ITEM1</div>
+          <div class="flex-item" style="font-size: 2em">ITEM2</div>
+          <div class="flex-item" style="font-size: 3em">ITEM3</div>
+        </div>
+    </body>
+    
+</html>

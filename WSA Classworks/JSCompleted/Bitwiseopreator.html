@@ -1,0 +1,27 @@
+<!--
+* @Developer: Divek
+* @Problem  :Bitwise opreator setting bit by postion
+* @Company  : XYZ
+* @Date     : 18-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+  <script>
+      //To set the bit
+       var Number=prompt("Enter an number to set bit");
+        var Posotion=prompt("Enter the Postion to set ");
+      
+      var output=Number|1<<(Posotion-1);
+      alert("output is "+output);   
+      
+      
+      
+      //To Clear the bit
+      var Number=prompt("Enter an number to unset bit");
+        var Posotion=prompt("Enter the Postion to unset ");
+      
+      var output=Number^1<<(Posotion-1);
+      alert("output is "+output);
+      
+</script>

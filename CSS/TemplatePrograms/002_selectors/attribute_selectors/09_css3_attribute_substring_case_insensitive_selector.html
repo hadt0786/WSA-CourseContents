@@ -1,0 +1,33 @@
+<!-- ******************************************************
++ Description : Internal style sheet - attribute selector 
++               with value and element selector
++ Author      : Webstack Academy (P) Ltd
++ Date        : 2-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <title>Attribute selector with value and element selector</title>
+	<style>
+    /* Substring Selector : Selecting element with title attribute
+     * whose value contains example substring 
+     */
+	[title*="big" i] {
+		color: yellow;
+        font-weight: bold;
+        font-style: italic;
+	}    
+	</style>	
+</head>
+<body>   
+    <p title="A big fat hen">A big fat hen</p>
+    <p title="A BIG fat hen">A BIG fat hen</p>
+    <p title="The lion is walking down the street">The lion is walking down the street</p>
+    <p title="The jungle book">The jungle book</p>
+</body>
+
+</html>

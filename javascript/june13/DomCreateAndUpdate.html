@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Try out html changes ...NODE APIs</h1>
+
+    <button onclick="myListAdd()">Create an Unordered list</button>
+    <button onclick="myListDelete()">Delete an item in the unordered list</button>
+    <button onclick="myListInsert()">Insert an item in the unordered list</button>
+    <button onclick="myListAppend()">Append an item in the </button>
+
+    <script>
+    
+    function mylistAdd()
+    {
+        var ulElement = document.createElement("Ul");
+        document.body.appendChild(ulElement);
+
+        var listName = prompt("Enter the list name");
+
+        var lAttribute = document.createAttribute("id");
+
+        lAttribute.value = listName ;
+
+        ulElement.setAttribute(lAttribute);
+
+        var pElement = document.createELement("P");
+        document.body.appendChild(pElement);
+        pElement.innerHTML = "this List name is: "+listName+"<br>"+"<br>";
+
+        
+    }
+    function myListDelete()
+    {
+
+    }
+    function myListInsert()
+    {
+
+    }
+    function myAppend()
+    {
+
+    }
+    </script>
+    
+</body>
+</html>

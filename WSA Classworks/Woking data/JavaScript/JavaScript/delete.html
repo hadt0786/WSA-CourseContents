@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		var person={ };
+		Object.defineProperty(person, 'firstName',{configurable:false});
+		document.write("person is an "+typeof person+"<br>");
+
+		if((delete person.firstName)==true)
+			document.write("non-configurable property is deleted<br>");
+		else
+			document.write("non-configurable property could not be deleted<br>");
+		
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nime Game</title>
+    <script>
+    
+          var Stones = prompt("Enter Number of Stones");
+            turn=1;
+        
+     while(Stones!=0)
+         {
+         
+             if(turn)
+                 {
+                    var RemStone = prompt("Player One Enter Number of Stones To Romove from 1 to 3 Stone="+Stones);  
+                     turn=0;
+                     if(RemStone>3)
+                         {
+                             
+                            alert("Given Stone  is  Grater than 3") ;
+                                    turn=1;
+                         }
+                   
+                     else if(Stones==RemStone)
+                         {
+                              alert("Player one is Winner") ;
+                             Stones=0;
+                      
+                         }
+                     else{
+                         
+                          Stones-=RemStone;
+                     }
+                     
+                     turn=0;
+                     
+                 }
+             else{
+                   var RemStone = prompt("Player Two Enter Number of Stones To Romove from 1 to 3 Stone="+Stones);   
+                     if(RemStone>3)
+                         {
+                             
+                            alert("Given Stone is  Grater than 3") ;
+                               turn=0;
+                         }
+                     else if(Stones==RemStone)
+                         {
+                              alert("Player Two is Winner") ;
+                                     Stones=0;
+                            
+                             
+                         }
+                     else{
+                         
+                          Stones-=RemStone;
+                     }
+                      turn=1;
+                 
+             }
+             
+             
+         }
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

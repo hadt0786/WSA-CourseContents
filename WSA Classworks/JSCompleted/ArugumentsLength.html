@@ -1,0 +1,54 @@
+<!--
+* @Developer: Divek
+* @Problem  :To illustrate aruguments .length
+* @Company  : XYZ
+* @Date     : 23-05-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+<script> 
+    var sum=0;
+    
+      
+    
+    function Callme(){
+          var max=arguments[0];
+    for(var IloopIndex=0; IloopIndex<arguments.length; IloopIndex++){
+      
+        
+        if(max<arguments[IloopIndex]){
+            
+            max=arguments[IloopIndex];
+        }
+        
+   /*      sum=sum+arguments[IloopIndex];*/
+
+    }
+        return max;
+    }
+
+
+function callmemin(){
+ var min=arguments[0];
+  for(var IloopIndex=0; IloopIndex<arguments.length; IloopIndex++){
+       
+        
+        if(min>arguments[IloopIndex]){
+            
+            min=arguments[IloopIndex];
+        }
+        
+   /*      sum=sum+arguments[IloopIndex];*/
+
+    }
+        return min;
+    }
+    
+    document.write(Callme(10,3,60,80,90)+"<br>");
+    document.write(callmemin(40,10,60,80,90));
+    
+
+
+
+</script>

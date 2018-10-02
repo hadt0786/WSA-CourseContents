@@ -1,0 +1,46 @@
+<!-- *************************************************************
++ Description : Program for ternary operators
++ Author      : Webstack Academy (P) Ltd
++ Date        : 19-Apr-2018
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>JavaScript operators - Ternary operators</title>
+	<script>
+		
+		// Ternary to find biggest among given two numbers
+		var num1 = 500;
+		var num2 = 200;
+		
+		var res = (num1 > num2) ? num1 : num2;
+		document.write("The bigger number is: " + res + "<br>");
+		
+		// Absolute value of the given number without using Math.abs()
+		num1 = 100;
+		num2 = -400;
+		
+		res = (num1 > 0) ? num1 : num1 - (2*num1);
+		document.write("The absolute value is: " + res + "<br>");
+		
+		res = (num2 > 0) ? num2 : num2 - (2*num2);
+		document.write("The absolute value is: " + res + "<br>");
+		
+		// Check if the given number is odd or even 
+		num1 = 2;
+		num2 = 7;
+		
+		res = (num1 % 2 == 0) ? "even" : "odd"; 
+		document.write("The Num1 result is:" + res + "<br>");
+				
+		res = (num2 % 2 == 0) ? "even" : "odd"; 
+		document.write("The Num2 sresult is:" + res + "<br>");
+		
+		
+	</script>
+</head>
+
+</html>	

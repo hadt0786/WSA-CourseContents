@@ -1,0 +1,14 @@
+<!-- Program Description : Design a simple web page using div tag 
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<html>
+<body>
+<div style=”border:1px solid pink;padding:20px;font-size:20px”>
+<p> Welcome to Emertxe IT Training</p>
+<p> Embedded System, Linux ,Java and Web Devlopment</p>
+</div>
+
+</body>
+</html>
+

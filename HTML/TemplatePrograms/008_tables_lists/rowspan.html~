@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<table border="1">
+<caption>Student Details</caption>    
+<tr><th>Name</th><td>Neha Verma</td></tr>    
+<tr><th rowspan="2">Marks</th><td>67</td></tr>    
+<tr><td>68</td></tr>    
+</table>   
+
+</body>
+</html>
+

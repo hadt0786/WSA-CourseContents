@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <p id="ex">This is the old content</p>
+        <p> click the button to make a new BUTTON</p>
+        <button onclick="myFun()">Click</button>
+    
+        <script>
+            function myFun()
+            {
+                var p = document.getElementsByTagName("p");
+                for(var x in p.length)
+                {
+                    p[i].style.backgroundColor = "pink";
+                }
+                document.getElementById("ex").innerHTML = "this the new content"; 
+            }
+            
+
+    
+      </script>
+
+
+
+    
+</body>
+</html>

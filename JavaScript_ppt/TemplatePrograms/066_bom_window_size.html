@@ -1,0 +1,29 @@
++<!-- *************************************************************
++ Description : DOM - Window size displaying 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<html>
+<body>
+<p id="win"></p>
+
+<script>
+
+var abs
+
+	// Start using window object 
+	var winWidth  = window.innerWidth;
+	var winHeight = window.innerHeight;
+
+	var winSize = document.getElementById("win");
+	
+	// Change your browser size and try again..U will get different values 
+	winSize.innerHTML = "Browser inner window width: " + winWidth + "<br>" + "Browse inner window height: " + winHeight;
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,37 @@
+<!-- *************************************************************
++ Description : Regular expressions 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Regular expressions - Finding a word</title>
+		<script>
+			
+			// Check if the given input has first character is upper case or not
+			function string_check(str)  
+			{  
+				var regexp = /fullstack/;  
+				if (regexp.test(str))  
+				{  
+					document.write("The pattern fullstack is matching" + "<br>");  
+				}   
+				else  
+				{  
+					document.write("The pattern fullstack is not matching" + "<br>");  
+				}  
+			}  
+			string_check("webstack academy offers fullstack training");  
+			string_check("fullstack consist of frontend and backend" );
+			string_check("nostack...");
+		</script>
+    </head>
+    <body>
+    </body>
+</html>
+
+

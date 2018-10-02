@@ -1,0 +1,94 @@
+<!-- Write a JavaScript program
+a) To create employee object and access all the properties of employee.
+b) To delete deptName property from employee object.
+c) To find the length of employee object.
+Description :
+•
+In programming language Object is a real world entity which will have two property state
+and behavior.
+• In JavaScript, almost "everything" is an object.
+• This program should demonstrate the usage of object in Javascript.
+• Your job is to create an employee object and that object shouls have properties like,
+EmpName, EmpId, EmpSal, and deptName.
+• Find the length of the employee object.
+• Delete the deptName property from the object and display the output after deleting the
+property.
+Objective : Understand the basics of objects in javascript.
+Objective : Understand the basics of objects in javascript.
+Prerequisites:
+• Object
+Sample Execution:
+Test case:
+Input : Employee {
+name : “raghunath”,
+empId : 001,
+empSalray : 10000,
+deptName : “WSA”
+}
+Output : a) name : raghunath
+empId : 001
+empSalray : 10000
+deptName : “WSA”
+b) Length of the Employee object : 4
+c) deptName deleted -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 30</title>
+
+    <style>
+    
+    body{
+        background: lightgreen;
+    }
+    
+    </style>
+
+    <script>
+    
+    var Employee = { 
+        name : prompt("Enter the name please"),
+        empId : prompt("enter the empID"),
+        empSalary : Number(prompt("Enter the salary")),
+        deptName : prompt("Enter your department name")
+    
+    };
+
+    // const Employee = Object.create(Employee);
+    
+    document.write(Employee.name+" "+Employee.empId+" "+Employee.empSalary+" "+Employee.deptName);
+
+    Employee.name="divek";
+    Employee.empId="4554";
+    Employee.empSalary = 76574;
+    Employee.deptName = "innovation";
+    document.write("value changing"+Employee.name+" "+"value chaging "+Employee.empId+" "+"value chaging "+
+    Employee.empSalary+" "+"value chaging "+Employee.deptName);
+
+    document.write("<br>")
+    
+    
+    //b
+    delete Employee.empId;
+    document.write("value changing"+Employee.name+" "+"value chaging "+Employee.empId+" "+"value chaging "+
+    Employee.empSalary+" "+"value chaging "+Employee.deptName);
+
+    //c
+    document.write("<br>"+"<br>");
+    document.write(Object.keys(Employee).length);
+
+    </script>
+
+</head>
+<body>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!--a) To create employee object and access all the properties of employee.
+b) To delete deptName property from employee object.
+c) To find the length of employee object.
+            -->
+<script>
+            var employee={
+                empName:"John D",
+                empID:1244,
+                empSal:40000,
+                empDept:"UI/UX"
+       }
+
+//using object . propertyname to get object value
+            document.write("<h2>Before deletion </h2>"+"<br>");
+         document.write("<h3> Length of object is "+Object.keys(employee).length+"</h3> <br>");
+document.write("EmpName ="+employee.empName+"<br>");
+    document.write("EmpId ="+employee.empID+"<br>");  
+    document.write("EmpSal ="+employee.empSal+"<br>");
+    document.write("EmpDept ="+employee.empDept+"<br>");
+        document.write("<h2> After deletion </h2>"+"<br>");
+        delete employee.empDept;
+    document.write("EmpName ="+employee.empName+"<br>");
+    document.write("EmpId ="+employee.empID+"<br>");  
+    document.write("EmpSal ="+employee.empSal+"<br>");
+    document.write("EmpDept ="+employee.empDept+"<br>");
+         document.write("<h3> Length of object is "+Object.keys(employee).length+"</h3><br>");
+    
+      
+</script>

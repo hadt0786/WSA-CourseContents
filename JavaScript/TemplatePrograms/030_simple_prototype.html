@@ -1,0 +1,36 @@
+<!-- *************************************************************
++ Description : Simple prototype example
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Simple prototype example</title>
+		<script>
+            function ipl (name,team)
+			{
+				this.name = name;
+				this.team = team;
+			}
+			
+			var team = new ipl("MSD","CSK");
+			
+			// New property addition using prototype!! 
+			ipl.prototype.sponsor = "VIVO";
+			
+			// Which is picked up by 'team' as inherited property
+			document.write("The captain name: " + team.name + "<br>");
+			document.write("The team name: " + team.team + "<br>");
+			document.write("The sponsor..prototyped: " + team.sponsor + "<br>");			
+		</script>
+    </head>
+    <body>
+    </body>
+    
+</html>
+
+

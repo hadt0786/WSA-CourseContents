@@ -1,0 +1,48 @@
+<!-- ****************************************************
++ Description : Flexbox
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Flexbox</title>
+        
+        <meta name="viewport" content="width=device-width initial-scale=1.0" />
+        
+        <style>
+            .flex-container {
+                display: flex;
+                border: 1px solid red;
+            }
+            
+            .side {
+                border: 1px solid blue;
+                flex-grow: 1; /* default vlaue 0 */
+            }
+            
+            .middle {
+                border: 1px solid darkgreen;
+                flex-shrink: 2; /* default 1 */
+            }
+         
+        </style>
+
+    </head>
+    <body>
+         
+        <div class="flex-container">
+          <div class="side">ITEM1</div>
+          <div class="middle">ITEM2</div>
+          <div class="side">ITEM3 - this
+              <br>is
+              <br>item
+              <br>three
+          </div>
+        </div>
+    </body>
+    
+</html>

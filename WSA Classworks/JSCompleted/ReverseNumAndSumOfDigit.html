@@ -1,0 +1,47 @@
+<!--
+* @Developer: Divek
+* @Problem  : To print Reverse Of Number
+* @Company  : XYZ
+* @Date     : 10-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+ 	/* Declaring Variables and setting 0 to sum and reminder as intial value*/
+        var Sum=0,digit,reminder=0;
+        var Number = parseInt(prompt("Please enter number Reverse", ""));
+
+
+        while(Number>0){
+
+         /* Mod The Number With 10 to get last digit*/
+	 digit = Number % 10;
+
+  	   //Adding Sum and current Digit
+            Sum = Sum + digit;
+
+	    //Calculating Reminder x 10 plus digit to get reverse of number
+            reminder =(reminder*10) + digit; 
+
+	    //Dividing number To Get remaining digits
+            Number = parseInt(Number/10); 
+        }
+
+	//Printing Sum and Reverse of Number
+        document.write("Sum is = "+Sum+"<br>");
+        document.write("And Reverse is "+reminder);
+    
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!-- -----------------------------------------------------------
++ Description : Object Fit 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++----------------------------------------------------------- -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Object fit</title>
+    
+    <style>
+        img {
+            width:150px;
+            height:150px;
+            border:1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <figure>
+        <img src="./images/cat.jpg" alt="Image" style="object-fit: none;" />
+        <figcaption>Object fit : none</figcaption>
+    </figure>
+
+    <figure>
+        <img src="./images/cat.jpg" alt="Image" style="object-fit: contain;" />
+        <figcaption>Object fit : contain</figcaption>
+    </figure>
+
+    <figure>
+        <img src="./images/cat.jpg" alt="Image" style="object-fit: scale-down;" />
+        <figcaption>Object fit : scale-down</figcaption>
+    </figure>
+
+    <figure>
+        <img src="./images/cat.jpg" alt="Image" style="object-fit: cover;" />
+        <figcaption>Object fit : cover</figcaption>
+    </figure>
+
+    <figure>
+        <img src="./images/cat.jpg" alt="Image" style="object-fit: fill;" />
+        <figcaption>Object fit : fill</figcaption>
+    </figure>
+
+</body>
+
+</html>

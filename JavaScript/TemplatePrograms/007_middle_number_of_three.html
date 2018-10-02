@@ -1,0 +1,46 @@
+<!-- *************************************************************
++ Description : Write a program in javascript to find middle 
++               number among given three numbers 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 18-Apr-2018
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>JavaScript prompt usage example</title>
+	<script>
+				
+		var num1 = Number(prompt("Enter the first number"));
+		var num2 = Number(prompt("Enter the second number"));
+		var num3 = Number(prompt("Enter the third number"));
+		
+		if (num1 > num2)
+		{
+			if (num2 > num3) {
+				document.write("The middle number is: NUM2");
+			}	
+			else if (num3 > num1) {
+				document.write("The middle number is: NUM1");
+			} else {
+				document.write("The middle number is: NUM3");
+			}
+		} else {
+			if (num2 < num3) {
+				document.write("The middle number is:NUM2");
+			} else if (num3 < num1) {
+				document.write("The middle number is:NUM1");
+			}	
+			else {
+				document.write("The middle number is: NUM3");
+			}	
+		}
+			
+	</script>
+</head>
+
+<body>
+    
+</body>

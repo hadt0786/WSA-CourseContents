@@ -1,0 +1,36 @@
+<!-- *************************************************************
++ Description : Function constructor (Dynamic Functions)
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Function Constructor</title>
+		<p id="demo"></p>
+        <script>
+            
+			var foo = new Function("arg1" , "arg2", "return arg1 + arg2;");
+			
+			var num1 = 100;
+			var num2 = 100;
+			
+			var val = foo(num1,num2);
+			document.write("The dynamic result is: " + val);
+							
+			// Self invoking function
+			(function () {
+			    // document.getElementById("demo").innerHTML = "Hello! I called myself";
+				document.write("Hello world");
+			})( );
+		
+		</script>
+    </head>
+    <body>
+    </body>
+    
+</html>
+

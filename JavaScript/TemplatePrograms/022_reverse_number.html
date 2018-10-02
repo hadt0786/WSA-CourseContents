@@ -1,0 +1,40 @@
+<!-- *************************************************************
++ Description : Function to reverse a given number
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Reverse a given number</title>
+        <script>
+            
+			function reverse(loop)
+			{
+				var rev = 0;
+								
+				while (loop != 0)
+				{
+					last = loop % 10;
+					loop = parseInt(loop/10);
+					rev = (rev * 10) + last;
+				}
+				
+				return rev;
+			}
+			
+			var value = 12345;
+						
+			result = reverse(value);
+			
+			document.write("Reverse of a given number is : " + result);
+        </script>
+    </head>
+    <body>
+    </body>
+    
+</html>
+

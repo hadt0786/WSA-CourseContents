@@ -1,0 +1,13 @@
+<!-- Program Description : Program to define computer code  
+Author : Sandhya 
+Written  : 20-oct-2016-->
+
+<!DOCTYPE html>
+<body>
+<code>
+var x=2;
+var y=3;
+document.getElementById(“Sum”).innerHTML=x+y;
+</code>
+</body>
+</html>

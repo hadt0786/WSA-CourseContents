@@ -1,0 +1,58 @@
+<!-- Program Description : Program to create a table with table header ,table footer
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+thead {color:green;}
+tbody {color:blue;}
+tfoot {color:Magenta;}
+table ,th,td
+{
+border :1px solid red;
+}
+</style>
+</head>
+<body>
+<h1> Employee Details </h1>
+<table>
+<thead><!-- table header -->
+<tr>
+<th>Employee Name</th>
+<th>Employee Id</th>
+<th>Salary</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Smith</td>
+    <td>E001</td>
+    <td>45000</td>
+  </tr>
+  <tr>
+    <td>Mac</td>
+    <td>E002</td>
+    <td>42000</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>E003</td>
+    <td>46000</td>
+  </tr>
+</tbody>
+<tfoot> <!-- table footer -->
+  <tr>
+    <td>Total</td>
+    <td>Total</td>
+    <td>Total</td>
+</tfoot>
+  </tr>
+
+
+
+
+</table>
+
+</body>
+</html>

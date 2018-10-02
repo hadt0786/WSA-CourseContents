@@ -1,0 +1,28 @@
+<!-- *************************************************************
++ Description : DOM - Table Handling
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<body>
+<p>MG Road</p>
+<p>Brigade Road</p>
+<p>Church Street</p>
+<p>WhiteField</p>
+<p>Click button to change the colour</p> 
+<p>Length of the Paragraph</p>
+<p id="ex"></p>
+<button onclick="nodeLen()">Click Here</button>
+<script>
+function nodeLen() {
+    var addr = document.getElementsByTagName("p");    
+var i;
+    for (i = 0; i < addr.length; i++) {
+        addr[i].style.backgroundColor = "pink";
+    }
+document.getElementById("ex").innerHTML = addr.length;
+}
+</script>
+</body>

@@ -1,0 +1,33 @@
+<!-- *************************************************************
++ Description : EventListener example - Multiple Listeners 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 15-dec-2016
+************************************************************** -->
+
+<!-- DOCTYPE html -->
+
+<html>
+<body>
+
+<p>EventListener works on the document. Click and check! </p>
+
+<script>
+
+// EventListener function. Check out the slight change in event name!!
+
+document.addEventListener("click", myEventHandler1);
+document.addEventListener("click", myEventHandler2);
+
+function myEventHandler1(){
+    document.body.style.backgroundColor = "red";
+}
+
+function myEventHandler2(){
+    alert("Same event two handlers");
+}
+
+
+</script>
+
+</body>
+</html>

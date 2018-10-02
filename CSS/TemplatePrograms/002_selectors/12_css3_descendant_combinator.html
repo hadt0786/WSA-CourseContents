@@ -1,0 +1,33 @@
+<!-- ***************************************************************
++ Description : Internal style sheet - Descendant Combinator
++               with value and element selector
++ Author      : Webstack Academy (P) Ltd
++ Date        : 2-nov-2016
+*************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+<head>  
+    <title>Descendant Combinator</title>	
+	<style>
+    /* Selects all <p> that direct or indirect child to <div> */
+    div p {
+      color: red;
+    }             
+	</style>
+	
+</head>
+
+<body>
+    <div>
+        <h2>First Heading</h2>
+        <nav>
+        <p>This is first paragraph.</p>
+        </nav>
+        <h2>Second Heading</h2>
+        <p>This is second paragraph.</p>
+    </div>
+</body>
+
+</html>

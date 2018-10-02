@@ -1,0 +1,71 @@
+<!-- *************************************************************
++ Description : Design a simple web page using layout techniques 
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++************************************************************* -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Layout with  aside</title>
+<style>
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left; /* header and footer shall not have any element on right side */
+    text-align: center;
+}
+
+article {
+    max-width: 70%;
+    height: 460px;
+    /* border: 1px solid red; */
+    padding: 1em;
+    overflow: hidden;
+    float:left;
+}
+
+aside {
+    /* margin-left: 80%; */
+    border-left: 1px solid gray;
+    height: 460px;
+    /* border: 1px solid green; */
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+    
+<body>
+
+
+<header>
+   <h1>States</h1>
+</header>
+<article>
+  <h1>Karnataka</h1>
+  <p>Karnataka is a state in southwest India with Arabian Sea coastlines. The capital, Bengaluru (formerly Bangalore), is a high-tech hub known for its shopping and nightlife.</p>
+  <p>The southwest, Mysore is home to lavish temples including Mysore Palace, former seat of the region's maharajas. Hampi, once the medieval Vijayanagara empire's capital, contains ruins of Hindu temples, elephant stables and a stone chariot.</p>
+</article>
+    
+<aside>
+    <!-- This aside is outside of the article. Its content is related
+    to the page, but not as closely related to the above article -->
+    <h3>Other states</h3>
+    <ul>
+      <li><a href="#">Andhra Pradesh</a></li>
+      <li><a href="#">Tamilnadu</a></li>
+      <li><a href="#">Gujrat</a></li>
+    </ul>
+</aside>
+
+<footer>&copy; Webstack Academy 2018</footer>
+
+</body>
+</html>
+
+
+

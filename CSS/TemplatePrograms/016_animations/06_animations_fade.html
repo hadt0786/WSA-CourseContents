@@ -1,0 +1,77 @@
+<!-- ******************************************************
++ Description : Animations
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Animations</title>
+    <style>
+        /* Container for box */
+
+        .container {
+            /* Dimensions */
+            width: 100%;
+            height: 100vh;
+
+            /* flex container for easy children alignment */
+            display: flex;
+
+            /* Alignment for children */
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Define box */
+
+        .box {
+            height: 250px;
+            width: 250px;
+            background-color: blue;
+        }
+
+        .anim-fade {
+            /* Animation name */
+            animation-name: fade-frames;
+
+            /* Duration */
+            animation-duration: 1.5s;
+
+            /* Timing function */
+            animation-timing-function: ease-out;
+
+            /* Direction */
+            animation-direction: alternate;
+
+            /* Repeatition */
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes fade-frames {
+            0% {
+                opacity: 0;
+            }
+            60% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.5
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box anim-fade"></div>
+    </div>
+
+</body>
+
+</html>

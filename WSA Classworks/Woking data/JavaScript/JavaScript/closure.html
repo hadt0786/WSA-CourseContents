@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		function disp(name) {
+			var xname=name;
+
+		return function greet() {
+			alert("Hello "+xname);		
+		}
+		}
+
+		var obj=disp("Rajanikant");
+		obj();
+	</script>
+</body>
+</html>

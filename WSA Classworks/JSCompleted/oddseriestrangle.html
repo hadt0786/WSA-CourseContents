@@ -1,0 +1,36 @@
+<!--
+* @Developer: Divek
+* @Problem  : To print odd triangle
+* @Company  : XYZ
+* @Date     : 10-5-2018
+* @copyright: WSA Academy
+* @license  : GPL
+* @version  : 1.0
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Print triangle with odd</title>
+    <script>
+        var Rows = parseInt(prompt("Please Enter number rows", ""));
+
+        /* making it  to print till rows */	
+	  for(var iLoopIndex=1; iLoopIndex<=Rows ;iLoopIndex++){  
+
+ 	   /* to print trangle from 1 to 2*i-1 */
+            for(var jLoopIndex=1; jLoopIndex<=2*iLoopIndex-1; jLoopIndex++){    
+                document.write("*"+"&nbsp"+"&nbsp");
+
+            }
+	   // Adding Break in Html Page
+            document.write("<br>"); 
+
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

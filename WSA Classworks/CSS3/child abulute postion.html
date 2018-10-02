@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Positioning in css
+</title>
+<style>
+
+.parent{
+position: relative;
+background:black;
+height:500px;
+left:20px;
+top:200px;
+margin-right:50px;
+
+}
+
+.child{
+position: absolute;
+background:blue;
+height:80%;
+width:75%;
+margin-left:25px;
+border-radius:10px;
+font-size:50px;
+
+}
+.front {
+z-index: 3;/* push it to front*/
+background:#fff;
+left:5px;
+top:10px;
+opacity:.4;
+
+}
+.middle {
+z-index: 2;/*push it to middle*/
+background:green;
+left:35px;
+top:45px;
+
+}
+.back {
+z-index: 1;/*Bring it back*/
+background:yellow;
+left:60px;
+top:80px;
+
+}
+</style>
+<body>
+<div class="parent "> 
+<p class="child back">Hello</p>
+<p class="child middle">Hello</p>
+<p class="child front">Hello</p>
+
+</div>
+
+
+</body>
+</html>
+

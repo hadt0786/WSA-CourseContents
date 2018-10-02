@@ -1,0 +1,41 @@
+<!-- *************************************************************
++ Description : Write a program to print the pattern
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 19-Apr-2018
+************************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>JavaScript for in loop example</title>
+	<script>
+		var n = Number(prompt("Enter number of lines in the pyramid:"));
+		var width = 2*n-1;
+		
+		document.write("The width is " + width + "<br>");
+		
+	 	for (var i = 1; i <= n; i++)
+		{
+			var numstar = 2*i-1;
+			var firstlast = (width-numstar)/2;
+			
+			//document.write("The number of star " + numstar + "<br>");
+			//document.write("The first-last " + firstlast + "<br>");
+			
+			for (var j = 0; j < firstlast; j++)
+				document.write("&nbsp");
+		
+			for (j = 0; j < numstar; j++)
+				document.write("*");
+		
+			for (j = 0; j < firstlast; j++)
+				document.write("&nbsp");
+				
+			document.write("<br>");	
+		}  
+		</script>
+</head>
+
+</html>	

@@ -1,0 +1,11 @@
+<!-- Program Description : Design a simple web page using span tag
+Author : Sandhya 
+Written  : 20-oct-2016-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Welcome to <span style="color:blue">Emertxe IT </span> Training Center</p>
+</body>
+</html>
+

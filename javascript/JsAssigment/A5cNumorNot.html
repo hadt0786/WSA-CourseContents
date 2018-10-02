@@ -1,0 +1,31 @@
+<!-- c) Check whether the input value is numeric or not. e.g if user enters 9 then it should display
+it as a numeric. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Check whether the input value is numeric or not. e.g if user enters 9 then it should display
+            it as a numeric.</title>
+
+    <script>
+
+ var exp=/\d/;
+ var str=+prompt("Enter a text");
+
+         if(exp.test(str)){
+      document.write("Its instance of Number <br>");
+}
+else{
+  document.write("Not an number");
+}
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

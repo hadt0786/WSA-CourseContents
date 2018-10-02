@@ -1,0 +1,62 @@
+package com.emertxe;
+
+/**
+ * Program Description: The program is to implement the enum type
+ * in java 
+ * 
+ * Author: Vikas
+ * Written: 02/09/2015
+ * Last Updated: 
+ * 
+ * Compilation: javac EnumTest.java
+ * Execution: java EnumTest
+ * Output: 
+ */
+
+enum Day {
+
+	SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+}
+
+public class EnumTest {
+
+	Day day;
+
+	public EnumTest(Day day) {
+		this.day = day;
+	}
+
+	public void tellItLikeItIs() {
+		switch (day) {
+		case MONDAY:
+			System.out.println("Mondays are bad.");
+			break;
+
+		case FRIDAY:
+			System.out.println("Fridays are better.");
+			break;
+
+		case SATURDAY:
+		case SUNDAY:
+			System.out.println("Weekends are best.");
+			break;
+
+		default:
+			System.out.println("Midweek days are so-so.");
+			break;
+		}
+	}
+
+	public static void main(String[] args) {
+		EnumTest firstDay = new EnumTest(Day.MONDAY);
+		firstDay.tellItLikeItIs();
+		EnumTest thirdDay = new EnumTest(Day.WEDNESDAY);
+		thirdDay.tellItLikeItIs();
+		EnumTest fifthDay = new EnumTest(Day.FRIDAY);
+		fifthDay.tellItLikeItIs();
+		EnumTest sixthDay = new EnumTest(Day.SATURDAY);
+		sixthDay.tellItLikeItIs();
+		EnumTest seventhDay = new EnumTest(Day.SUNDAY);
+		seventhDay.tellItLikeItIs();
+	}
+}

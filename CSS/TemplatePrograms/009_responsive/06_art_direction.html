@@ -1,0 +1,55 @@
+<!-- ****************************************************
++ Description : Art Direction - selecting image for
++               landscape and portrait modes
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Portrait and landscape modes</title>
+        <!-- set the viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <style>
+        img {
+            max-width: 100%; 
+            height: auto;
+        }
+            
+        /* portrait mode */
+        @media only screen and (max-height: 800px) and (orientation: portrait){
+            #portrait {display: inline-block;} /* */
+            #landscape {display: none;} 
+        }  
+        
+        /* landscape mode */
+        @media only screen and (max-width: 800px) and (orientation: landscape){
+            #portrait {display: none;}
+            #landscape {display: inline-block;}
+        }    
+
+        /* default if above queries fail */
+        @media only screen and (orientation: landscape){
+            #portrait {display: none;}
+        }               
+        </style>
+        
+    </head>
+    <body>
+        <div id="landscape">
+        <!-- landscape mode -->
+        <img src="./images/cherry-800x480.jpg" alt="cherry" />
+        </div>
+        <div id="portrait">
+        <!-- portait -->
+        <img src="./images/cherry-480x800.jpg" alt="cherry" />
+        </div>
+        <h1>The cherry fruit</h1>
+        <p>This is a red cherry fruit. It is sweet and sour in taste. The fruit is also used to decorate cakes.</p>
+    </body>
+    
+</html>

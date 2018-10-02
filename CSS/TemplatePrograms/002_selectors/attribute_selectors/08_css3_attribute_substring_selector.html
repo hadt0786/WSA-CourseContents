@@ -1,0 +1,37 @@
+<!-- ******************************************************
++ Description : Internal style sheet - attribute selector 
++               with value and element selector
++ Author      : Webstack Academy (P) Ltd
++ Date        : 2-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+    <title>Attribute selector with value and element selector</title>
+	
+	<style>
+
+    /* Substring Selector : Selecting element with title attribute
+     * whose value contains example substring 
+     */
+	[href*="big"] {
+		color: goldenrod;
+        font-weight: bold;
+        font-style: italic;
+	}
+        
+	</style>
+</head>
+<body>
+    
+    <p><a href="http://www.bigbasket.com">Big basket</a></p>
+    <p><a href="http://www.google.com">Google</a></p>
+    <p><a href="http://www.makeitbig.com">Make it big</a></p>
+    <p><a href="http://www.yahoo.com">Yahoo</a></p>
+</body>
+
+</html>

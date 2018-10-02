@@ -1,0 +1,52 @@
+<!-- ******************************************************
++ Description : Method skew
++ Author      : Webstack Academy (P) Ltd
++ Date        : 9-nov-2016
+******************************************************* -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Method skew</title>
+    <style>
+        * {
+            margin: 20px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: grey;
+            text-align: center;
+            /* for text alignment */
+            line-height: 150px;
+            transition: all 1.6s;
+            
+        }
+
+        .skewed:hover {
+            transform-origin: center; /* left top */
+            /* case 1 */
+            /*transform: skew(15deg);*/
+            /* 0.325rad, -0.08turn */
+            /* case 2 */
+/*                    transform: skewX(15deg); */
+            /* case 3 */
+                     transform: skewY(-15deg); 
+            /* case 4 */
+/*            transform: skew(15deg, 15deg);*/
+
+            background-color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">Static box</div>
+    <div class="box skewed">Skewed box</div>
+</body>
+
+</html>

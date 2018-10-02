@@ -1,0 +1,35 @@
+<!--to display the longest word from the given string.-->
+<script>
+ var str =prompt("Enter text");
+    var arr=[];
+  arr = str.split(" ");
+
+var big="";
+   var bigl=0;
+
+   
+    for(var i=0; i<arr.length;i++){
+
+      if(arr[i].length>big.length){
+    
+           big=arr[i];
+          bigl=arr[i].length;
+      }
+      else if(arr[i].length==bigl){
+           big=big+" "+arr[i];
+      }
+    
+    }
+          
+
+    if(/\s{2}/.test(big)){
+
+         document.write("To many space chracter! "+big);
+    }
+    else{
+              document.write("Big Words ! "+big);   
+    }
+   
+   
+    
+</script>
