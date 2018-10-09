@@ -15,6 +15,7 @@ public class InheritanceEmpMgr {
 		// TODO Auto-generated method stub
   Manager a1=new Manager();//creating object of subclass
   Employee2 e1=new Employee2();
+		System.out.println("Checking Inheritance "
 		System.out.println("manager salary"+e1.salary);//superclass member using subclass object
 		System.out.println("manager bonus"+a1.bonus);
 		

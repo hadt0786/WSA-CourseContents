@@ -2,7 +2,8 @@
 // Author :Sandhya
 
 class Book //super class
-{  String BookName;
+{  
+String BookName;
    int BookId;
    Book(String BookName,int BookId)
    {

@@ -2,6 +2,9 @@
 // Author :Sandhya
 interface A1
 {
+	// Abstract class has a is-a relationship
+	// Interface given a concept of Multiple Inheritance
+
 	final static float val=4.2f;
 	abstract void print();
 	

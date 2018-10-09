@@ -1,7 +1,8 @@
-// Example of Final Class
+javac// Example of Final Class
 // Author :Sandhya
  class A2
 {
+		// final keyword can't let you override the function-- only solution you change function name
 	final void disp()
 	{
 		System.out.print("Hello");

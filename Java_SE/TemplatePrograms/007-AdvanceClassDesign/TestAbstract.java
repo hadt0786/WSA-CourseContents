@@ -3,6 +3,8 @@
 
 abstract class car7
 {
+
+		//Abstract class and Interference can't be instantiated -- > becuase it's a skeleton. its bad prgramming to define a memory for a //skeleton
 	 void disp()
 	 {
 		 System.out.println("hello");
@@ -11,8 +13,12 @@ abstract class car7
 	}
 class Alto extends car7
 {
-	 void disp()
+
+void disp()
+
+
 	 {
+				super.disp();	 
 		 System.out.print("running safely");
 	 }
 }
@@ -22,6 +28,7 @@ class Alto extends car7
 public class TestAbstract {
 
 	public static void main(String[] args) {
+
 		// TODO Auto-generated method stub
        car7 a1=new Alto();
        
