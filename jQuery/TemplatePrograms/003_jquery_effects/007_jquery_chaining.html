@@ -1,0 +1,39 @@
+<!-- **************************************************************************
+  Description : jQuery Effects - Callbacks
+  Author      : Webstack Academy (P) Ltd 
+  Date        : 21-oct-2016
+*************************************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>jQuery Effects</title>
+
+    <script src="../jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+    <script>      
+    $(document).ready(function() {
+
+      /* Chaining multiple jQuery APIs in a single call */
+      $("button").click(function(){
+        console.log("Function called");
+        $("#chain").css("color", "red").slideUp(2000).slideDown(2000);
+      });      
+      
+    });
+    </script>           
+  </head>
+    
+  <body>
+      <h2>jQuery effects - Chaining</h2>
+      <button>Click for chain effects</button>
+      <p id="chain">Checking chain effects....</p>      
+  </body>
+    
+</html>

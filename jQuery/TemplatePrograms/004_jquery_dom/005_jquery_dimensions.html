@@ -1,0 +1,49 @@
+<!-- **************************************************************************
+  Description : jQuery DOM - Dimensions
+  Author      : Webstack Academy (P) Ltd 
+  Date        : 21-oct-2016
+*************************************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>jQuery DOM</title>
+
+    <script src="../jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+    <script>      
+    $(document).ready(function() {
+
+    $("button").click(function(){
+        console.log("Width of div: " + $("#div1").width());
+        console.log("Height of div: " + $("#div1").height());
+        console.log("Outer width of div: " + $("#div1").outerWidth());
+        console.log("Outer height of div: " + $("#div1").outerHeight());        
+    });
+
+    });
+    </script>           
+  </head>
+    
+  <body>
+
+    <style>
+      #div1 {
+          height: 100px;
+          width: 300px;
+          padding: 20px;
+          margin: 3px;
+          border: 2px solid red;
+          background-color: yellow;
+      }
+      </style>
+      <div id="div1"></div><br>
+      <button>Click to print dimensions</button>          
+  </body>    
+</html>

@@ -1,0 +1,48 @@
+<!-- **************************************************************************
+  Description : jQuery Effects - Fading effects
+  Author      : Webstack Academy (P) Ltd 
+  Date        : 21-oct-2016
+*************************************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>jQuery Effects</title>
+
+    <script src="../jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+    <script>
+        
+    $(document).ready(function() {
+
+      /* Example for fade-in event handling */
+      $("#fadeinbutton").click(function(){
+        $("#box1").fadeIn();
+        $("#box2").fadeIn(3000);
+      });
+
+      /*
+       * TODO: Implement fadeOut() / fadeToggle() / fadeTo() methods 
+       *       fadeTo("slow",0.4);
+       */
+        
+    });
+    </script>  
+      
+  </head>
+    
+  <body>
+      <h2>jQuery effects - Fadein / Fadeout / Toggle / Opacity</h2>
+      
+      <button id="fadeinbutton">Click to fade in boxes</button><br><br>
+      <div id="box1" style="width:80px;height:80px;display:none;background-color:purple;"></div><br>
+      <div id="box2" style="width:80px;height:80px;display:none;background-color:pink;"></div><br>               
+  </body>
+    
+</html>

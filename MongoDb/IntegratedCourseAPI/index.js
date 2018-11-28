@@ -28,6 +28,8 @@ app.use(express.urlencoded({extended: true}));
 
 app.use(morgan('tiny'));
 
+// app.use(cors()); add latter
+
 // Use the route
 app.use('/api/courses', courses);
 app.use('/', home);

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Course Lists from ID</title>
+    </head>
+
+    <body>
+
+        <h1>Course Lists from ID</h1>
+
+        <div id="showcourse">  
+            Course ID
+            
+            <form name="form" action="api/courses" method="post" >
+            
+            Course Name : <br>
+            <input type="text" name="name">
+            <br>
+            Author : <br>
+            <input type="text" name="author">
+            <br>
+            Price : <br>
+            <input type="text" name="price">
+            <br>
+
+            <button type = "submit" value="Submit"></button>
+            </form>
+    
+</div>    
+    
+        <script>
+
+
+            function getcourse() {
+                // Create a request object
+                var xhttp = new XMLHttpRequest();
+
+                // Register the function to be called when server responds
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+
+                        var course = JSON.parse(this.responseText);
+                        // console.log(course);
+
+                        var form = createFormCourse(course);
+                        // document.getElementById("demo").innerHTML = this.responseText;  Display
+                        // response
+
+                        var divContainer = document.getElementById("showcourse");
+                        divContainer.innerHTML = "";
+                        divContainer.appendChild(form);
+                    }
+                    console.log(this.readyState);
+                };
+                //  get id from input text box
+
+              
+
+                xhttp.open(method, url, true); // There is a file called ajax_info.txt on server
+                xhttp.setRequestHeader("Contet-type","application/x-www-form-urlencoded");
+                xhttp.send("fname=Henry&lname=ford") // Send the request
+            }
+
+
+
+     //bind the form 
+     
+     function bindForms(){
+         document.querySelector("form").addEventListener("submit", function(e){
+
+             e.preventDefault();
+             var formId = this.id;
+             var path = this.action;
+             var  method = this.method.toUpperCase();
+
+             var payload = [];
+             var elements = this.elements;
+
+             for(var i =0;i<elements.length;i++){
+                 if(elements[i].type!='submit'){
+                     var valueOfElements = elements[i].value;
+                     payload[elements[i].name] = valueOfElements;
+
+                 }
+                 console.log(payload);
+             }
+
+         });
+     }
+     bindForms();
+     
+     </script>
+
+    </body>
+</html>

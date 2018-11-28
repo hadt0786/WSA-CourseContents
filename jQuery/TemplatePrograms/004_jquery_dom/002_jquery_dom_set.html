@@ -1,0 +1,54 @@
+<!-- **************************************************************************
+  Description : jQuery DOM - Setting values into various elements
+  Author      : Webstack Academy (P) Ltd 
+  Date        : 21-oct-2016
+*************************************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>jQuery DOM</title>
+
+    <script src="../jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+    <script>      
+    $(document).ready(function() {
+
+      /* Upon button click change text */
+      $("#btn1").click(function(){
+          $("#test1").text("First paragraph - replaced normal text");
+      });
+
+      /* Upon button click change HTML text */
+      $("#btn2").click(function(){
+          $("#test2").html("<b>Second paragraph - replaced bold text</b>");
+      });
+
+      /* Upon button click change input field value */
+      $("#btn3").click(function(){
+          $("#test3").val("New Value...");
+      });      
+      
+    });
+    </script>           
+  </head>
+    
+  <body>
+
+      <h2>jQuery DOM - Getting / Setting values</h2>
+      <p id="test1">This is first paragraph with simple text</p>
+      <p id="test2">This is second paragraph with simple text</p>
+      <p>Input box: <input type="text" id="test3" value="Default Text"></p>
+
+      <button id="btn1">Set Text</button>
+      <button id="btn2">Set HTML</button>
+      <button id="btn3">Set Value</button>     
+  </body>
+    
+</html>

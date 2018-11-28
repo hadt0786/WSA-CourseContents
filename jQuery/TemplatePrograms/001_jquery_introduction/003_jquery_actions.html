@@ -1,0 +1,46 @@
+<!--***************************************************************************
+  Description : jQuery actions
+  Author      : Webstack Academy (P) Ltd 
+  Date        : 21-oct-2016
+****************************************************************************-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>jQuery Actions</title>
+
+  <script src="../../jQueryLibrary/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      /* Take action on an element with ID as #hide1 */
+      $("#hide1").hide();
+
+      /* Take action on an element with ID as #hide2 upon button click */
+      $("button").click(function () {
+        $("#hide2").hide();
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <h2>Example for jQuery actions</h2>
+
+  <p id="hide1">This is paragraph will be hidden by default</p>
+  <p id="hide2">This is paragraph will go do hidden mode if you click the button</p>
+
+  <button>Click and Hide</button>
+
+</body>
+
+</html>

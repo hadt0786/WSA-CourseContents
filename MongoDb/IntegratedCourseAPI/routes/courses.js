@@ -5,6 +5,7 @@ const Joi = require('joi'); // JSON validation
 
 const route = express.Router();
 
+
 route.get('/', (req, res) => {
    const courses =  getAllCourses();
    console.log(courses);
@@ -30,6 +31,7 @@ route.get('/:id', (req, res) => {
 
 /****************** BEGIN: post requests *************/
 
+
 // POST API to create a new course
 route.post('/', (req, res) => {
     // Validate the course info
@@ -49,7 +51,7 @@ route.post('/', (req, res) => {
             console.log("Created a new course: ", result.name);
         })
         .catch((err) => {
-            res.status(500);
+            res.status(500); // 400 - bad request
             res.send("Error: Unable to create course\n", err.message);
             console.log("Error: Unable to create course\n", err);
         });

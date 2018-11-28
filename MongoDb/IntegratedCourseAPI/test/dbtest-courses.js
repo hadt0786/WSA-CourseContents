@@ -1,15 +1,23 @@
 /* Unit test code for courses model */
 
-const {createCourse, getAllCourses,getCourseById} = require('../models/courses');
+const {
 
+    // object destructuring
+
+    createCourse,
+    getAllCourses,
+    getCourseById
+} = require('../models/courses');
+
+// wrapper test function
 function testCreateCourse() {
     // Create a course document
     createCourse({
-        name: "C++ Programming Language",
-        author: "Mubeen Jukaku",
-        price: 15,
-        isPublished: true
-    }).then((res) => console.log(res))
+            name: "C++ Programming Language",
+            author: "Mubeen Jukaku",
+            price: 15,
+            isPublished: true
+        }).then((res) => console.log(res))
         .catch((err) => console.log(err.message));
 }
 
@@ -28,3 +36,4 @@ function testGetCourseById() {
 testGetCourseById();
 //testCreateCourse();
 //testGetAllCourses();
+// test the all 4 function from modals using mocha framewor

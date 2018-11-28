@@ -1,0 +1,62 @@
+<!-- ****************************************************
++ Description : jQuery Selectors
++ Author      : Webstack Academy (P) Ltd 
++ Date        : 21-oct-2016
++**************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>jQuery Selectors</title>
+
+  <script src="../../jQueryLibrary/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      /* Handling simple double click */
+      $("#dbclicktest").dblclick(function () {
+        console.log("Double click event captured....")
+      });
+
+      /* Handling mouse hover event */
+      $("#hovertest").hover(function () {
+          console.log("Inside the hover paragraph....");
+        },
+        function () {
+          console.log("Outside the hover paragraph");
+        });
+
+      /* Handling multiple events using on method */
+      $("#multipletest").on({
+        mouseenter: function () {
+          $(this).css("background-color", "lightgray");
+        },
+        mouseleave: function () {
+          $(this).css("background-color", "lightblue");
+        },
+        click: function () {
+          $(this).css("background-color", "yellow");
+        }
+      });
+
+
+    });
+  </script>
+
+</head>
+
+<body>
+  <h2>Event handling using jQuery....</h2>
+  <p id="dbclicktest">Double click this paragraph</p>
+  <p id="hovertest">Hover this paragraph</p>
+  <p id="multipletest">Enter, Click and Leave this paragraph</p>
+</body>
+
+</html>

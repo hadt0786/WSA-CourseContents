@@ -1,0 +1,43 @@
+<!-- **************************************************************************
+  Description : jQuery Selectors
+  Author      : Webstack Academy (P) Ltd 
+  Date        : 21-oct-2016
+*************************************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>jQuery Selectors</title>
+
+  <style>
+    .second {
+              
+          }
+      </style>
+  <script src="../../jQueryLibrary/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+  <script>
+    $(document).ready(function () {
+      console.log("Inside jQuery");
+      $("#first").text("This is first paragraph");
+      $(".second").text("This is second paragraph");
+      $("[title='paragraph']").text("This is third paragraph");
+    });
+  </script>
+
+</head>
+
+<body>
+  <p id="first"></p>
+  <p class="second"></p>
+  <p title="paragraph"></p>
+
+</body>
+
+</html>

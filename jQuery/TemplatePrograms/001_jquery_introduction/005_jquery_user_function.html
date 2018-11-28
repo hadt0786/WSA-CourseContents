@@ -1,0 +1,40 @@
+<!-- **************************************************************************
+  Description : Passing user function
+  Author      : Webstack Academy (P) Ltd 
+  Date        : 21-oct-2016
+****************************************************************************-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Passing user function</title>
+      
+    <script src="../../jQueryLibrary/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+    <script>
+    $(document).ready( myFunc );
+    $(window).on( "load", myWinLoad );
+         
+    function myFunc() {
+        console.log("DOM loaded");
+    }
+
+    function myWinLoad() {
+        console.log("Window loaded");
+    }        
+        
+    </script>  
+      
+  </head>
+    
+  <body>
+    <p>Example of calling user functions</p>
+  </body>
+    
+</html>

@@ -1,0 +1,78 @@
+<!-- ----------------------------------------------------------------------
+Program       :JQuery Events
+Date          :27-11-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Events</title>
+
+    <script src="jquery/jquery-3.3.1.min.js" type="text/javascript"> </script>
+
+    <script>
+     $(document).ready(function(){
+        
+        $("#first").click(function(){
+            $(this).css("background-color","red");
+        });
+
+        $("#btnodd").click(function(){
+            $("tr:odd").css("background-color","purple");
+        });
+
+        $("#btneven").click(function(){
+            $("tr:even").css("background-color","yellow");
+        });
+
+        $("#textuser").blur(function(){
+            $(this).css("background-color","pink");
+        });
+        $("#textpwd").blur(function(){
+            $(this).css("background-color","red");
+        });
+
+    
+     });
+    </script>
+</head>
+<body>
+    
+     <p id="first">Double click this paragraph</p>
+     <p id="second">Double click this paragraph</p>
+     <p id="third">Enter, click and Leave this paragraph</p>
+    
+      <table>
+          <tr>
+              <td>Student Name</td>
+              <td>Marks</td>
+          </tr>
+          <tr>
+              <td>Sumit</td>
+              <td>Patil</td>
+          </tr>
+          <tr>
+            <td>Lucky</td>
+            <td>Patil</td>
+        </tr>
+        <tr>
+            <td>Rahul</td>
+            <td>Pande</td>
+        </tr>
+        <tr>
+            <td>Savaniee</td>
+            <td>Dande</td>
+        </tr>
+      </table>
+      <button id="btnodd">btnodd</button>
+      <button id="btneven">btneven</button>
+     <br><br>
+      <input type="text" id="textuser">
+      <input type="text" id="textpwd">
+
+</body>
+</html>

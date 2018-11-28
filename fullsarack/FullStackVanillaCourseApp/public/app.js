@@ -46,6 +46,8 @@ function submitRequest(url, method, payload, headers, callback) {
     }
 }
 
+// authentication part in session management
+
 function saveToken(tokenObj) {
     // Save in config var
     config.token = tokenObj;

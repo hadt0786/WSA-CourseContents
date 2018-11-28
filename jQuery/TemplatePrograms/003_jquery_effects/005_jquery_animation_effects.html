@@ -1,0 +1,42 @@
+<!-- **************************************************************************
+  Description : jQuery Effects - Animation Effects
+  Author      : Webstack Academy (P) Ltd 
+  Date        : 21-oct-2016
+*************************************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>jQuery Effects</title>
+
+    <script src="../jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+    <script>      
+    $(document).ready(function() {
+
+      /* Invoking animate method,queuing of animation */
+      $("button").click(function(){
+        var div = $("#animbox");
+        div.animate({height: '300px', opacity: '0.4'}, "slow");
+        div.animate({width: '300px', opacity: '0.8'}, "slow");
+        div.animate({height: '100px', opacity: '0.4'}, "slow");
+        div.animate({width: '100px', opacity: '0.8'}, "slow");
+      });
+        
+    });
+    </script>           
+  </head>
+    
+  <body>
+      <h2>jQuery effects - Animation Queuing</h2>
+      <button>Resize the box</button><br><br>
+      <div id="animbox" style="background:red;height:50px;width:50px;position:absolute;"></div>      
+  </body>
+    
+</html>
