@@ -7,43 +7,43 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>jQuery Effects</title>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <script src="../jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <title>jQuery Effects</title>
 
-    <script>      
-    $(document).ready(function() {
+  <script src="../../jQueryLibrary/jquery-3.3.1.min.js" type="text/javascript"></script>
+
+  <script>
+    $(document).ready(function () {
 
       /* jQuery with callback */
-      $("#withcallback").click(function(){
-        $("#withcallbacktext").hide("slow", function(){
-            alert("The paragraph is now hidden");
+      $("#withcallback").click(function () {
+        $("#withcallbacktext").hide("slow", function () {
+          alert("The paragraph is now hidden");
         });
       });
-        
+
       /* jQuery without callback */
-      $("#wocallback").click(function(){
+      $("#wocallback").click(function () {
         $("#wocallbacktext").hide("slow");
         alert("The paragraph is now hidden");
       });
 
     });
-    </script>           
-  </head>
-    
-  <body>
-      <h2>jQuery effects - Callbacks</h2>
-      <button id="withcallback">With callback effect</button>
-      <p id="withcallbacktext">jQuery testing with callback....</p>
+  </script>
+</head>
 
-      <button id="wocallback">Without callback effect</button>
-      <p id="wocallbacktext">jQuery testing without callback....</p>
-   </body>
-    
+<body>
+  <h2>jQuery effects - Callbacks</h2>
+  <button id="withcallback">With callback effect</button>
+  <p id="withcallbacktext">jQuery testing with callback....</p>
+
+  <button id="wocallback">Without callback effect</button>
+  <p id="wocallbacktext">jQuery testing without callback....</p>
+</body>
+
 </html>

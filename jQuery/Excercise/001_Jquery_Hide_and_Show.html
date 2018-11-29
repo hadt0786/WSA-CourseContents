@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Effects</title>
+
+    <script src="../jQueryLibrary/jquery-3.3.1.min.js" type="text/javascript">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            /* Example for hide */
+            $("#hidebutton").click(function () {
+                $("#showhidetext").hide();
+            });
+
+            /* Example for show */
+            $("#showbutton").click(function () {
+                $("#showhidetext").show();
+            });
+
+            /* Example for toggle */
+            $("#togglebutton").click(function () {
+                $("#toggletext").toggle();
+            });
+
+            /* Hide slowly in terms of milliseconds */
+            /* Please note both parameters of hide is optional */
+            $("#hideslow").click(function () {
+                $("#hideslowtext").hide(2000);
+            });
+
+            $("#showslow").click(function () {
+                $("#hideslowtext").show(2000);
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <h2>jQuery effects - Show / Hide / Toggle</h2>
+    <p id="showhidetext">Click the button below to hide / show the text</p>
+    <button id="hidebutton">Hide me</button>
+    <button id="showbutton">Show me</button>
+
+    <p id="toggletext">Click the button below to toggle between hide and show</p>
+    <button id="togglebutton">Toggle me</button>
+
+    <p id="hideslowtext">Click the button below to hide the text slowly</p>
+    <button id="hideslow">Hide slow</button>
+    <button id="showslow">Show slow</button>
+
+</body>
+
+</html>
