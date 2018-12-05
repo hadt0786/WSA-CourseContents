@@ -1,38 +1,36 @@
-
 const mongoose = require('mongoose');
 
-mongoose.connect ('mongodb://localhost/courses-subdocument')
-.then(()=>console.log("connected to mongodb"))
-.catch((err) => console.error('colud not find',err));
+mongoose.connect('mongodb://localhost/courses-subdocument')
+    .then(() => console.log("connected to mongodb"))
+    .catch((err) => console.error('colud not find', err));
 
 
 const authorSchema = new mongoose.Schema({
-    name:String,
+    name: String,
     //add other properties
-    bio :String,
-    website:String
+    bio: String,
+    website: String
 
 });
-const Author = mongoose.model('Author',authorSchema);
+const Author = mongoose.model('Author', authorSchema);
 
 const Course = mongoose.model('Course', new mongoose.Schema({
-    name:String,
-    author:authorSchema
+    name: String,
+    author: authorSchema
 }));
 
 
 createCourse("Node course", new Author({
-    name:"Suprita",
-    bio : "My bio",
-    website : "webstack.com"
-    
+    name: "Suprita",
+    bio: "My bio",
+    website: "webstack.com"
+
 }));
 
 
 
 //listCourses();
-async function listCourses()
-{
+async function listCourses() {
     const courses = await Course.find();
     console.log(courses);
 
@@ -42,9 +40,10 @@ async function listCourses()
 //listCourses();
 
 
-async function createCourse(name, author){
+async function createCourse(name, author) {
     const course = new Course({
-        name,author
+        name,
+        author
     });
 
     const result = await course.save();
@@ -57,10 +56,10 @@ async function createCourse(name, author){
 
 // }
 
-async function updateAuthor(courseId){
+async function updateAuthor(courseId) {
     const course = await Course.findById(courseId);
     course.author.name = "UPDate";
-    const result  = await course.save();
+    const result = await course.save();
     console.log(result);
 
 }

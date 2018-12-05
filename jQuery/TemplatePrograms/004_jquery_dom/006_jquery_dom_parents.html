@@ -1,0 +1,65 @@
+<!-- **************************************************************************
+  Description : jQuery DOM - Traversing parents
+  Author      : Webstack Academy (P) Ltd 
+  Date        : 21-oct-2016
+*************************************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>jQuery DOM</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+
+    <style>
+      .ancestors * { 
+          display: block;
+          border: 2px solid lightgrey;
+          color: lightgrey;
+          padding: 5px;
+          margin: 15px;
+      }
+    </style>
+
+    <script>      
+    $(document).ready(function() {
+      /* Find parent of span element and change its attributes */
+      // $("span").parent().css({"color": "red", "border": "2px solid red"}); 
+      
+      /* Find all parents of span element all the way upto HTML root */
+      // $("span").parents().css({"color": "blue", "border": "2px solid blue"});
+      
+      /* Filter parents that are only UL type */
+      // $("span").parents("ul").css({"color": "green", "border": "2px solid green"});
+
+      /* Parent elements till DIV type */
+      // $("span").parentsUntil("div").css({"color": "purple", "border": "2px solid purple"});
+
+    });
+    </script>           
+  </head>
+    
+  <body>
+    <div class="ancestors">
+      <div style="width:500px;">div (great-grandparent)
+        <ul>ul (grandparent)  
+          <li>li (direct parent)
+            <span>span</span>
+          </li>
+        </ul>   
+      </div>
+    
+      <div style="width:500px;">div (grandparent)   
+        <p>p (direct parent)
+            <span>span</span>
+        </p> 
+      </div>
+    </div>        
+  </body>    
+</html>

@@ -7,17 +7,17 @@
 <!DOCTYPE html>
 
 <html lang="en">
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>jQuery DOM</title>
 
-  <title>jQuery DOM</title>
+    <script src="../jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
 
-  <script src="../../jQueryLibrary/jquery-3.3.1.min.js" type="text/javascript"></script>
-
-  <script>
+    <script>      
     $(document).ready(function() {
 
       /* Upon button click change text */
@@ -32,23 +32,23 @@
 
       /* Upon button click change input field value */
       $("#btn3").click(function(){
-          $("#test3").val("new value is set");
+          $("#test3").val("New Value...");
       });      
       
     });
-    </script>
-</head>
+    </script>           
+  </head>
+    
+  <body>
 
-<body>
+      <h2>jQuery DOM - Getting / Setting values</h2>
+      <p id="test1">This is first paragraph with simple text</p>
+      <p id="test2">This is second paragraph with simple text</p>
+      <p>Input box: <input type="text" id="test3" value="Default Text"></p>
 
-  <h2>jQuery DOM - Getting / Setting values</h2>
-  <p id="test1">This is first paragraph with simple text</p>
-  <p id="test2">This is second paragraph with simple text</p>
-  <p>Input box: <input type="text" id="test3" value="Default Text"></p>
-
-  <button id="btn1">Set Text</button>
-  <button id="btn2">Set HTML</button>
-  <button id="btn3">Set Value</button>
-</body>
-
+      <button id="btn1">Set Text</button>
+      <button id="btn2">Set HTML</button>
+      <button id="btn3">Set Value</button>     
+  </body>
+    
 </html>

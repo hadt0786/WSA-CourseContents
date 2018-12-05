@@ -1,0 +1,53 @@
+<!-- **************************************************************************
+  Description : jQuery DOM - Filtering
+  Author      : Webstack Academy (P) Ltd 
+  Date        : 21-oct-2016
+*************************************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>jQuery DOM</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+
+    <script>      
+    $(document).ready(function() {
+      
+      /* Select first div type element and its children */
+      //  $("div").first().css("background-color", "yellow");
+      
+      /* Select last div type element and its children */
+        $("div").last().css("background-color", "green");   
+            
+    });
+    </script>           
+  </head>
+    
+  <body>
+    <h1>jQuery - DOM - Filtering</h1>
+
+    <div style="border: 1px solid black;">
+      <p>First paragraph</p>
+      <p>First paragraph text</p>
+    </div>
+    <br>
+
+    <div style="border: 1px solid black;">
+      <p>Second paragraph</p>
+      <p>Second paragraph text</p>
+    </div>
+    <br>
+
+    <div style="border: 1px solid black;">
+      <p>Third paragraph</p>
+      <p>Third paragraph text</p>
+    </div>
+  </body>    
+</html>

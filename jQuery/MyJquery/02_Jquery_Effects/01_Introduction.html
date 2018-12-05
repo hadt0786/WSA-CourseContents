@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Effects</title>
+</head>
+
+<body>
+
+    <ol>J query has the following effects
+
+        <li>
+            hide
+        </li>
+        <li>Show</li>
+        <li>Toggle</li>
+        <li>Slide</li>
+        <li>Fade</li>
+        <li>Animate</li>
+
+
+    </ol>
+    <h2>Hide and Show</h2>
+    <p>
+        syntax
+        <br>
+        $(selector).hide(speed, callback);
+        $(selector).hide(speed, callback);
+        <br>
+        Example
+        $("button").click(function(){
+        $(".p1").show();
+        $(".p2").hide();
+        });
+    </p>
+
+    <h3>Hide and Show with Speed parameters</h3>
+    <p>
+
+        $("button").click(function(){
+        $(".p1").show(1000);
+        $(".p2").hide("slow");
+        $(".p3").hide("fast");
+        });
+    </p>
+    <h3>Hide and Show with Calback</h3>
+    <p>
+
+        $("button").click(function(){
+        $(".p1").hide(1000, function(){
+        alert("hide() method is finished");
+        });
+        $(".p2").show(1000, function(){
+        alert("show() method is finished");
+        });
+
+        });
+    </p>
+    <h2>Toggle</h2>
+    <p>
+
+        Syntax:
+        $(selector).toggle(speed, callback);
+
+        Example :
+
+
+        $("button").click(function(){
+        $(".p1").toggle();
+        });
+    </p>
+    <h3>Toggle with Speed parameters</h3>
+    <p>
+
+        $("button").click(function(){
+        $(".p1").toggle(2000);
+        $(".p2").toggle("slow");
+        $(".p3").toggle("fast");
+        });
+    </p>
+    <h3>Toggle with Calback</h3>
+    <p>
+
+        $("button").click(function(){
+        $(".p1").toggle(1000, function(){
+        alert("toggle() method is finished");
+        });
+
+
+        });
+    </p>
+
+    // starts with fade in fade out
+</body>
+
+</html>

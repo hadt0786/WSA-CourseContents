@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .ancestors * {
+            display: block;
+            border: 2px, solid, lightgray;
+            color: lightgray;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+
+    <script src="../../jQueryLibrary/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            /** Find the parent of span element and change its attrbutes */
+
+            $("span").parent().css({
+                "color": "red",
+                "border": "2px solid red"
+            });
+
+            /** Find all parents of span element the way upto HTML element */
+
+            // $("span").parents().css({
+            //     "color": "orange",
+            //     "border": "2px solid orange"
+            // });
+
+            // /** Find the parent that of UL type */
+
+            // $("span").parent("ul").css({
+            //     "color": "green",
+            //     "border": "2px solid green"
+            // });
+
+            // /** Find the parent till DIV type */
+
+            // $("span").parentsUntil("div").css({
+            //     "color": "purple",
+            //     "border": "2px solid purple"
+            // });
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div class="ancestors">
+        <div style="width:300px"> div {great - grandparents }
+
+            <ul> ul {grand - parent }
+                <li> li { dirent parent }
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
+        <div style="width:500px"> div {great - grandparents }
+            <p> p { direct parent }</p>
+
+            <span>span</span>
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

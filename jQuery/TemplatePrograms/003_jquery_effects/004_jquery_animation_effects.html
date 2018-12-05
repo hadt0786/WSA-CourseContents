@@ -7,41 +7,32 @@
 <!DOCTYPE html>
 
 <html lang="en">
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>jQuery Effects</title>
 
-  <title>jQuery Effects</title>
+    <script src="../jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
 
-  <script src="../../jQueryLibrary/jquery-3.3.1.min.js" type="text/javascript"></script>
-
-  <script>
-    $(document).ready(function () {
+    <script>      
+    $(document).ready(function() {
 
       /* Invoking animate method, simple CSS properties */
-      // $("button").click(function () {
-      //   $("div").animate({left: '500px'});
-      // });
-
-      $("button").click(function () {
-        $("div").animate({
-          right: '0px'
-        }, 5000);
-        $("div").animate({
-          left: '0px'
-        }, 5000);
+      $("button").click(function(){
+        $("div").animate({left: '500px'});
       });
-
+        
     });
-  </script>
-</head>
-
-<body>
-  <h2>jQuery effects - Graphics</h2>
-  <button>Move the box</button><br><br>
-  <div style="background:red;height:50px;width:50px;position:absolute;"></div>
-</body>
-
+    </script>           
+  </head>
+    
+  <body>
+      <h2>jQuery effects - Graphics</h2>
+      <button>Move the box</button><br><br>
+      <div style="background:red;height:50px;width:50px;position:absolute;"></div>      
+  </body>
+    
 </html>

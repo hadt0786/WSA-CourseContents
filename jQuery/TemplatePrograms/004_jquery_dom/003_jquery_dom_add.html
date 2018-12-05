@@ -7,147 +7,54 @@
 <!DOCTYPE html>
 
 <html lang="en">
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>jQuery DOM</title>
 
-  <title>jQuery DOM</title>
+    <script src="../jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
 
-  <script src="../../jQueryLibrary/jquery-3.3.1.min.js" type="text/javascript"></script>
-
-  <script>
-    $(document).ready(function () {
+    <script>      
+    $(document).ready(function() {
 
       /* Various methods to addition using append method */
-      $("#myButton1").click(function () {
-        $("#test1").append(" <b>Appended new line</b> ");
+      $("#myButton1").click(function(){
+          $("#test1").append(" <b>Appended new line</b> ");
       });
 
-      $("#myButton2").click(function () {
-        $("#test2").append(" <li><b>Appended new list item</b></li> ");
+      $("#myButton2").click(function(){
+          $("#test2").append(" <li><b>Appended new list item</b></li> ");
+      });     
+      
+      $("#myButton3").click(function(){
+          $("#test1").append(" <b>Appended new line</b> ", " <b>Appended additional line</b> ");
       });
 
-      $("#myButton3").click(function () {
-        $("#test1").append(" <b>Appended new line</b> ", " <b>Appended additional line</b> ");
-      });
-
-      $("#myButton4").click(function () {
-        $("#test2").append(" <li><b>Appended new list item</b></li> ",
-          " <li><b>Appended additional new list item</b></li> ");
-      });
-
-      $("#myButton4").click(function () {
-        $("#test2").append(" <li><b>Appended new list item</b></li> ",
-          " <li><b>Appended additional new list item</b></li> ");
-      });
-
-
-      /* Various methods to addition using prepend method */
-
-      $("#myButton5").click(function () {
-        $("#test2").prepend(" <li><b>Appended new list item</b></li> ",
-          " <li><b>Appended additional new list item</b></li> ");
-      });
-
-      $("#myButton6").click(function () {
-        $("#test2").prepend(" <li><b>Appended new list item</b></li> ",
-          " <li><b>Appended additional new list item</b></li> ");
-      });
-
-      $("#myButton7").click(function () {
-        $("#test2").prepend(" <li><b>Appended new list item</b></li> ",
-          " <li><b>Appended additional new list item</b></li> ");
-      });
-
-      $("#myButton8").click(function () {
-        $("#test2").prepend(" <li><b>Appended new list item</b></li> ",
-          " <li><b>Appended additional new list item</b></li> ");
-      });
-
-      /* Various methods to addition using after method */
-
-
-      $("#myButton9").click(function () {
-        $("#test2").after(" <li><b>Appended new list item</b></li> ",
-          " <li><b>Appended additional new list item</b></li> ");
-      });
-
-      $("#myButton10").click(function () {
-        $("#test2").after(" <li><b>Appended new list item</b></li> ",
-          " <li><b>Appended additional new list item</b></li> ");
-      });
-
-      $("#myButton11").click(function () {
-        $("#test2").after(" <li><b>Appended new list item</b></li> ",
-          " <li><b>Appended additional new list item</b></li> ");
-      });
-
-      $("#myButton12").click(function () {
-        $("#test2").after(" <li><b>Appended new list item</b></li> ",
-          " <li><b>Appended additional new list item</b></li> ");
-      });
-
-      /* Various methods to addition using before method */
-
-      $("#myButton13").click(function () {
-        $("#test2").before(" <li><b>Appended new list item</b></li> ",
-          " <li><b>Appended additional new list item</b></li> ");
-      });
-
-      $("#myButton14").click(function () {
-        $("#test2").before(" <li><b>Appended new list item</b></li> ",
-          " <li><b>Appended additional new list item</b></li> ");
-      });
-
-      $("#myButton15").click(function () {
-        $("#test2").before(" <li><b>Appended new list item</b></li> ",
-          " <li><b>Appended additional new list item</b></li> ");
-      });
-
-      $("#myButton16").click(function () {
-        $("#test2").before(" <li><b>Appended new list item</b></li> ",
-          " <li><b>Appended additional new list item</b></li> ");
-      });
-
+      $("#myButton4").click(function(){
+          $("#test2").append(" <li><b>Appended new list item</b></li> ", " <li><b>Appended additional new list item</b></li> ");
+      }); 
 
     });
-  </script>
-</head>
+    </script>           
+  </head>
+    
+  <body>
 
-<body>
-
-  <h2>jQuery DOM - Appending values into various elements</h2>
-  <p id="test1">This is first paragraph with simple text</p>
-  <ul id="test2">
-    <li>Existing line1</li>
-    <li>Existing line2</li>
-    <li>Existing line3</li>
-  </ul>
-
-  <button id="myButton1">Append text</button>
-  <button id="myButton2">Append list item</button>
-  <button id="myButton3">Append multiple text</button>
-  <button id="myButton4">Append multiple list items</button>
-
-
-  <button id="myButton5">prepend text</button>
-  <button id="myButton6">prepend list item</button>
-  <button id="myButton7">prepend multiple text</button>
-  <button id="myButton8">prepend multiple list items</button>
-
-
-  <button id="myButton9">after text</button>
-  <button id="myButton10">after list item</button>
-  <button id="myButton11">after multiple text</button>
-  <button id="myButton12">after multiple list items</button>
-
-
-  <button id="myButton13">before text</button>
-  <button id="myButton14">before list item</button>
-  <button id="myButton15">before multiple text</button>
-  <button id="myButton16">before multiple list items</button>
-</body>
-
+      <h2>jQuery DOM - Appending values into various elements</h2>
+      <p id="test1">This is first paragraph with simple text</p>
+      <ul id="test2">
+        <li>Existing line1</li>
+        <li>Existing line2</li>
+        <li>Existing line3</li>
+      </ul>
+      
+      <button id="myButton1">Append text</button>
+      <button id="myButton2">Append list item</button>
+      <button id="myButton3">Append multiple text</button>     
+      <button id="myButton4">Append multiple list items</button>
+  </body>
+    
 </html>

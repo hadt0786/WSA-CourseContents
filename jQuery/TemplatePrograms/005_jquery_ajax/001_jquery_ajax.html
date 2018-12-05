@@ -1,0 +1,51 @@
+<!-- **************************************************************************
+  Description : jQuery AJAX - Loading
+  Author      : Webstack Academy (P) Ltd 
+  Date        : 21-oct-2016
+*************************************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>jQuery AJAX</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+
+        /* Load a page from external URL */
+         $("#div1").load("http://jsonplaceholder.typicode.com/posts/1");
+
+        /* Load a page from external URL with response / error handling */
+      //   $("#div1").load("http://jsonplaceholder.typicode.com/posts/1", function (responseTxt, statusTxt, xhr) {
+      //     if (statusTxt == "success")
+      //       alert("External content loaded successfully!");
+      //     if (statusTxt == "error")
+      //       alert("Error: " + xhr.status + ": " + xhr.statusText);
+      //   });
+       });
+
+    });
+  </script>
+</head>
+
+<body>
+  <h1>jQuery - AJAX - Get external content</h1>
+
+  <div id="div1">
+    <h2>This will be replaced with typicode post</h2>
+  </div>
+
+  <button>Get Content</button>
+
+</body>
+
+</html>

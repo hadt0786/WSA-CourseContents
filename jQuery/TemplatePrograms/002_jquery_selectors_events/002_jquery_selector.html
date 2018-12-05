@@ -7,83 +7,77 @@
 <!DOCTYPE html>
 
 <html lang="en">
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>jQuery Selectors</title>
 
-  <title>jQuery Selectors</title>
+    <script src="../jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
 
-  <script src="../jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script>
+    $(document).ready(function() {
+        /* Dealing with Paragraphs */
+        $("p:gt(1)").text("This is modified paragraph");
 
-  <script>
-    $(document).ready(function () {
-      /* Dealing with Paragraphs */
+        /* Dealing with UL */
+        $("button").click(function(){
+           $("ul li:first").hide();
+        });
 
-      $("p:gt(1)").text("This is modified paragraph");
-      
-      // lt gt eq
-      // $("p:gte(1)").text("Second test case");
-      /* Dealing with UL */
-      $("button").click(function () {
-
-        $("ul li:first").hide();
-      });
-
-      /* Dealing with Tables */
-      $("tr:odd").css("background-color", "grey");
-      $("tr:even").css("background-color", "purple");
+        /* Dealing with Tables */
+        $("tr:odd").css("background-color", "grey");
+        $("tr:even").css("background-color", "purple");
     });
-  </script>
-
-</head>
-
-<body>
-
-  <h2>Dealing with paragraphs....</h2>
-  <p>First paragraph</p>
-  <p>Second paragraph</p>
-  <p>Third paragraph</p>
-  <p>Fourth paragraph</p>
-
-  <h2>Dealing with lists....</h2>
-  <ul>
-    <li>FullStack Course</li>
-    <li>FrontEnd Course</li>
-    <li>Backend Course</li>
-  </ul>
-  <button>Click to hide</button>
-
-  <h2>Dealing with tables....</h2>
-  <table border="1">
-    <tr>
-      <th>Online portal</th>
-      <th>Discount value</th>
-    </tr>
-    <tr>
-      <td>Flipkart</td>
-      <td>30%</td>
-    </tr>
-    <tr>
-      <td>Amazon</td>
-      <td>25%</td>
-    </tr>
-    <tr>
-      <td>Snapdeal</td>
-      <td>20%</td>
-    </tr>
-    <tr>
-      <td>Shopclues</td>
-      <td>15%</td>
-    </tr>
-    <tr>
-      <td>Limeroad</td>
-      <td>10%</td>
+    </script>  
       
-    </tr>
-  </table>
+  </head>
+    
+  <body>
+    
+      <h2>Dealing with paragraphs....</h2>
+      <p>First paragraph</p>
+      <p>Second paragraph</p>
+      <p>Third paragraph</p>
+      <p>Fourth paragraph</p>
 
-</body>
+      <h2>Dealing with lists....</h2>
+      <ul>
+        <li>FullStack Course</li>
+        <li>FrontEnd Course</li>
+        <li>Backend Course</li>
+      </ul>
+      <button>Click to hide</button>
 
+      <h2>Dealing with tables....</h2>
+      <table border="1">
+        <tr>
+          <th>Online portal</th>
+          <th>Discount value</th>
+        </tr>
+        <tr>
+          <td>Flipkart</td>
+          <td>30%</td>
+        </tr>
+        <tr>
+          <td>Amazon</td>
+          <td>25%</td>
+        </tr>
+        <tr>
+          <td>Snapdeal</td>
+          <td>20%</td>
+        </tr>
+        <tr>
+          <td>Shopclues</td>
+          <td>15%</td>
+        </tr>
+        <tr>
+          <td>Limeroad</td>
+          <td>10%</td>
+        </tr>
+      </table>
+    
+  </body>
 </html>

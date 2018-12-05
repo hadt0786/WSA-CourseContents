@@ -1,0 +1,45 @@
+<!-- **************************************************************************
+  Description : jQuery DOM - Filtering
+  Author      : Webstack Academy (P) Ltd 
+  Date        : 21-oct-2016
+*************************************************************************** -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>jQuery DOM</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+
+    <script>      
+    $(document).ready(function() {
+
+      /* Select an element based on the index value */
+      // $("p").eq(1).css("background-color", "yellow");   
+
+      /* Select an element matching on the class value */
+      // $("p").filter(".name").css("background-color", "pink");
+
+      /* Select an element matching that are not matching */
+      $("p").not(".name").css("background-color", "lightgrey");
+            
+    });
+    </script>           
+  </head>
+    
+  <body>
+    <h1>jQuery - DOM - Filtering</h1>
+
+    <p class="name">Webstack Academy</p>
+    <p>#83 Farah Towers, 1st Floor</p>
+    <p>MG Road</p>
+    <p class="name">Bangalore - 560001</p>
+  
+  </body>    
+</html>
